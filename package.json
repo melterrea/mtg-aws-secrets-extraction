@@ -11,25 +11,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/melterrea/mtg-aws-secrets-extraction"
   },
   "keywords": [
     "GitHub",
     "Actions",
-    "JavaScript"
+    "JavaScript",
+    "AWS Secrets Manager",
+    "Extraction"
   ],
-  "author": "",
+  "author": "Iliya Iliev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/melterrea/mtg-aws-secrets-extraction/issues"
   },
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/melterrea/mtg-aws-secrets-extraction#readme",
   "dependencies": {
     "@actions/core": "^1.2.5"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.31.1",
-    "eslint": "^8.0.0",
-    "jest": "^27.2.5"
+    "eslint": "^8.0.0"
   }
 }
