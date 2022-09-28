@@ -1,13 +1,12 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'AWS Secrets Extractor'
+description: 'Github Action to extrasct secrets from AWS Secrets Manager into Outputs'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  secrets:  # id of input
+    description: 'List of the desired secrets to be extracted'
     required: true
-    default: '1000'
 outputs:
-  time: # output will be available to future steps
-    description: 'The current time after waiting'
+  secrets: # output will be available to future steps
+    description: 'The values for the secrets from AWS Secrets Manager'
 runs:
   using: 'node16'
   main: 'dist/index.js'
