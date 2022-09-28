@@ -1,7 +1,7 @@
 {
-  "name": "javascript-action",
+  "name": "mtg-aws-secrets-extraction",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "Github Action to extrasct secrets from AWS Secrets Manager into Outputs",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
