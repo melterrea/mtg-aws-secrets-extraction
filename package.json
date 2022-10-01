@@ -33,7 +33,7 @@
     "@aws-sdk/client-secrets-manager": "^3.181.0"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.31.1",
+    "@vercel/ncc": "^0.34.0",
     "eslint": "^8.0.0"
   }
 }
