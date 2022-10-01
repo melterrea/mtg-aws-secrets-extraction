@@ -28,7 +28,9 @@
   "homepage": "https://github.com/melterrea/mtg-aws-secrets-extraction#readme",
   "dependencies": {
     "@actions/core": "^1.2.5",
-    "@actions/github": "^5.1.0"
+    "@actions/github": "^5.1.0",
+    "@aws-sdk/client-s3": "^3.181.0",
+    "@aws-sdk/client-secrets-manager": "^3.181.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.31.1",
