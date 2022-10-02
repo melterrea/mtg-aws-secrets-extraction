@@ -1,22 +1,21 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
 const { getSecretsValue } = require("./src/awsUtil");
+const { processInput } = require("./src/utils");
 
-try {
-  const secretsRaw = core.getInput("secrets");
-  const secretsArray = secretsRaw.trim().split(/\s+/);
-  console.log(secretsArray);
+(async () => {
+  try {
+    const result = await getSecretsValue(core.getInput("secrets"));
 
-  getSecretsValue(secretsArray);
+    console.log("Result is: ", result);
 
-  console.log("Result is: ", result);
+    // const time = new Date().toTimeString();
+    // core.setOutput("secrets", time);
 
-  // const time = new Date().toTimeString();
-  // core.setOutput("secrets", time);
-
-  // // Get the JSON webhook payload for the event that triggered the workflow
-  // const payload = JSON.stringify(github.context.payload, undefined, 2);
-  // console.log(`The event payload: ${payload}`);
-} catch (error) {
-  core.setFailed(error.message);
-}
+    // // Get the JSON webhook payload for the event that triggered the workflow
+    // const payload = JSON.stringify(github.context.payload, undefined, 2);
+    // console.log(`The event payload: ${payload}`);
+  } catch (error) {
+    core.setFailed(error.message);
+  }
+})();

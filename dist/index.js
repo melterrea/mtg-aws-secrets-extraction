@@ -26216,8 +26216,7 @@ function wrappy (fn, cb) {
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 const AWS = __nccwpck_require__(9600);
-// To get region from ENV variables
-const client = new AWS.SecretsManager({ region: "eu-central-1" });
+const client = new AWS.SecretsManager({});
 
 const getSecretsValue = async (secretsKey) => {
   try {
@@ -26225,25 +26224,49 @@ const getSecretsValue = async (secretsKey) => {
       throw "No Secrets Keys provided";
     }
 
-    // const secretsKeyResults = {};
+    const secretsKeyResults = {};
 
     for (let i = 0; i < secretsKey.length; i++) {
-      console.log(`Requested secret id is : ${secretsKey[i]}`);
-
-      const command = {
+      const data = await client.getSecretValue({
         SecretId: secretsKey[i],
+      });
+
+      if (!data.SecretString) {
+        throw "No SecretString property returned in data object.";
+      }
+
+      const secretObject = JSON.parse(data.SecretString);
+
+      secretsKeyResults = {
+        ...secretObject,
       };
-
-      const data = await client.getSecretValue(command);
-
-      console.log("Data is ", data);
     }
+
+    return secretsKeyResults;
   } catch (e) {
-    console.log("Error is: ", e.message);
+    console.log("Error fetching secret is: ", e.message);
   }
 };
 
 module.exports = { getSecretsValue };
+
+
+/***/ }),
+
+/***/ 1608:
+/***/ ((module) => {
+
+const processInputToArray = (input) => {
+  if (!input || input.length === 0) {
+    throw "No input string provided!";
+  }
+
+  return input.trim().split(/\s+/);
+};
+
+module.exports = {
+  processInputToArray,
+};
 
 
 /***/ }),
@@ -26500,25 +26523,24 @@ var __webpack_exports__ = {};
 const core = __nccwpck_require__(2186);
 const github = __nccwpck_require__(5438);
 const { getSecretsValue } = __nccwpck_require__(7657);
+const { processInput } = __nccwpck_require__(1608);
 
-try {
-  const secretsRaw = core.getInput("secrets");
-  const secretsArray = secretsRaw.trim().split(/\s+/);
-  console.log(secretsArray);
+(async () => {
+  try {
+    const result = await getSecretsValue(core.getInput("secrets"));
 
-  getSecretsValue(secretsArray);
+    console.log("Result is: ", result);
 
-  console.log("Result is: ", result);
+    // const time = new Date().toTimeString();
+    // core.setOutput("secrets", time);
 
-  // const time = new Date().toTimeString();
-  // core.setOutput("secrets", time);
-
-  // // Get the JSON webhook payload for the event that triggered the workflow
-  // const payload = JSON.stringify(github.context.payload, undefined, 2);
-  // console.log(`The event payload: ${payload}`);
-} catch (error) {
-  core.setFailed(error.message);
-}
+    // // Get the JSON webhook payload for the event that triggered the workflow
+    // const payload = JSON.stringify(github.context.payload, undefined, 2);
+    // console.log(`The event payload: ${payload}`);
+  } catch (error) {
+    core.setFailed(error.message);
+  }
+})();
 
 })();
 

@@ -1,6 +1,5 @@
 const AWS = require("@aws-sdk/client-secrets-manager");
-// To get region from ENV variables
-const client = new AWS.SecretsManager({ region: "eu-central-1" });
+const client = new AWS.SecretsManager({});
 
 const getSecretsValue = async (secretsKey) => {
   try {
@@ -8,21 +7,27 @@ const getSecretsValue = async (secretsKey) => {
       throw "No Secrets Keys provided";
     }
 
-    // const secretsKeyResults = {};
+    const secretsKeyResults = {};
 
     for (let i = 0; i < secretsKey.length; i++) {
-      console.log(`Requested secret id is : ${secretsKey[i]}`);
-
-      const command = {
+      const data = await client.getSecretValue({
         SecretId: secretsKey[i],
+      });
+
+      if (!data.SecretString) {
+        throw "No SecretString property returned in data object.";
+      }
+
+      const secretObject = JSON.parse(data.SecretString);
+
+      secretsKeyResults = {
+        ...secretObject,
       };
-
-      const data = await client.getSecretValue(command);
-
-      console.log("Data is ", data);
     }
+
+    return secretsKeyResults;
   } catch (e) {
-    console.log("Error is: ", e.message);
+    console.log("Error fetching secret is: ", e.message);
   }
 };
 
