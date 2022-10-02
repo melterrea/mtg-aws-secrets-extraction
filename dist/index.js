@@ -26228,6 +26228,8 @@ const getSecretsValue = async (secretsKey) => {
     // const secretsKeyResults = {};
 
     for (let i = 0; i < secretsKey.length; i++) {
+      console.log(`Requested secret id is : secretsKey[i]`);
+
       const command = {
         SecretId: secretsKey[i],
       };
@@ -26237,7 +26239,7 @@ const getSecretsValue = async (secretsKey) => {
       console.log("Data is ", data);
     }
   } catch (e) {
-    console.log("Error: ", e.message);
+    console.log("Error is: ", e.message);
   }
 };
 
