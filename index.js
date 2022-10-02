@@ -8,7 +8,7 @@ const { processInputToArray } = require("./src/utils");
       processInputToArray(core.getInput("secrets"))
     );
 
-    core.setOutput("secrets.abc", result);
+    core.setOutput("abv", result);
   } catch (error) {
     core.setFailed(error.message);
   }
