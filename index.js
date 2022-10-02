@@ -4,9 +4,11 @@ const getSecretsValue = require("./src/awsUtil");
 
 try {
   const secretsRaw = core.getInput("secrets");
-  const secretsArray = secretsRaw.split("\\s+");
+  const secretsArray = secretsRaw.split("/\r?\n/");
 
   console.log("secretsArray is: ", secretsArray);
+
+  getSecretsValue(secretsArray);
 
   // const time = new Date().toTimeString();
   // core.setOutput("secrets", time);
