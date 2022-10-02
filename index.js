@@ -14,7 +14,7 @@ const { processInputToArray } = require("./src/utils");
       arrayResult.push({ key: result[key] });
     });
 
-    core.setOutput("secret", arrayResult);
+    core.setOutput("secrets", arrayResult);
   } catch (error) {
     core.setFailed(error.message);
   }
