@@ -26232,7 +26232,7 @@ const getSecretsValue = async (secretsKey) => {
         SecretId: secretsKey[i],
       };
 
-      const data = await client.getSecretsValue(command);
+      const data = await client.getSecretValue(command);
 
       console.log("Data is ", data);
     }
