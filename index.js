@@ -6,9 +6,9 @@ try {
   const secretsRaw = core.getInput("secrets");
   // const secretsArray = secretsRaw.split("/\r?\n/");
 
-  console.log("secretsRaw is: ", secretsRaw);
+  console.log(secretsRaw.trim().split(/\s+/));
 
-  getSecretsValue(secretsRaw.trim().split(/\s+/));
+  // getSecretsValue();
 
   // const time = new Date().toTimeString();
   // core.setOutput("secrets", time);
