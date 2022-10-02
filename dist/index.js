@@ -26523,12 +26523,12 @@ var __webpack_exports__ = {};
 const core = __nccwpck_require__(2186);
 const github = __nccwpck_require__(5438);
 const { getSecretsValue } = __nccwpck_require__(7657);
-const { processInput } = __nccwpck_require__(1608);
+const { processInputToArray } = __nccwpck_require__(1608);
 
 (async () => {
   try {
     const result = await getSecretsValue(
-      processInput(core.getInput("secrets"))
+      processInputToArray(core.getInput("secrets"))
     );
 
     console.log("Result is: ", result);
@@ -26537,8 +26537,8 @@ const { processInput } = __nccwpck_require__(1608);
     // core.setOutput("secrets", time);
 
     // // Get the JSON webhook payload for the event that triggered the workflow
-    // const payload = JSON.stringify(github.context.payload, undefined, 2);
-    // console.log(`The event payload: ${payload}`);
+    const payload = JSON.stringify(github.context.payload, undefined, 2);
+    console.log(`The event payload: ${payload}`);
   } catch (error) {
     core.setFailed(error.message);
   }
