@@ -26268,7 +26268,7 @@ const processInputToArray = (input) => {
 const changeKeys = (item) => {
   return Object.keys(item).reduce((result, key) => {
     const cleanKey = key.replace(/\s+/g, "_").replace(/\W+/g, "");
-    result[cleanKey] = input[key];
+    result[cleanKey] = item[key];
     return result;
   }, {});
 };
