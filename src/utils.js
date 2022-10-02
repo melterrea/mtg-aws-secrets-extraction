@@ -8,7 +8,7 @@ const processInputToArray = (input) => {
 
 const changeKeys = (item) => {
   return Object.keys(item).reduce((result, key) => {
-    const cleanKey = key.replace(/\s+/g, "_").replace(/\W+/g, "");
+    const cleanKey = key.toLowerCase().replace(/\s+/g, "_").replace(/\W+/g, "");
     result[cleanKey] = item[key];
     return result;
   }, {});
