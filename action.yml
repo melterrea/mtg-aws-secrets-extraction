@@ -1,12 +1,9 @@
-name: 'AWS Secrets Extractor'
-description: 'Github Action to extrasct secrets from AWS Secrets Manager into Outputs'
+name: "AWS Secrets Extractor"
+description: "Github Action to extrasct secrets from AWS Secrets Manager into Outputs"
 inputs:
-  secrets:  # id of input
-    description: 'List of the desired secrets to be extracted'
+  secrets: # id of input
+    description: "List of the desired secrets to be extracted"
     required: true
-outputs:
-  secrets: # output will be available to future steps
-    description: 'The values for the secrets from AWS Secrets Manager'
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"
