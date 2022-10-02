@@ -19022,7 +19022,7 @@ const { processInputToArray } = __nccwpck_require__(1608);
     const arrayResult = [];
 
     Object.keys(result).forEach((key) => {
-      arrayResult.push({ key: result[key] });
+      arrayResult.push({ [key]: result[key] });
     });
 
     core.setOutput("secrets", arrayResult);
