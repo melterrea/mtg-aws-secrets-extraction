@@ -26527,7 +26527,9 @@ const { processInput } = __nccwpck_require__(1608);
 
 (async () => {
   try {
-    const result = await getSecretsValue(core.getInput("secrets"));
+    const result = await getSecretsValue(
+      processInput(core.getInput("secrets"))
+    );
 
     console.log("Result is: ", result);
 
