@@ -9,7 +9,8 @@ const { processInputToArray } = require("./src/utils");
     );
 
     Object.keys(result).forEach((key) => {
-      core.setSecret(key, result[key]);
+      core.setOutput(key, result[key]);
+      core.setSecret(key);
     });
   } catch (error) {
     core.setFailed(error.message);
