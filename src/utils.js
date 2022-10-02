@@ -6,6 +6,15 @@ const processInputToArray = (input) => {
   return input.trim().split(/\s+/);
 };
 
+const changeKeys = (item) => {
+  return Object.keys(item).reduce((result, key) => {
+    const cleanKey = key.replace(/\s+/g, "_").replace(/\W+/g, "");
+    result[cleanKey] = input[key];
+    return result;
+  }, {});
+};
+
 module.exports = {
+  changeKeys,
   processInputToArray,
 };

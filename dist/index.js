@@ -26217,6 +26217,7 @@ function wrappy (fn, cb) {
 
 const AWS = __nccwpck_require__(9600);
 const client = new AWS.SecretsManager({});
+const { changeKeys } = __nccwpck_require__(1608);
 
 const getSecretsValue = async (secretsKey) => {
   try {
@@ -26235,7 +26236,7 @@ const getSecretsValue = async (secretsKey) => {
         throw "No SecretString property returned in data object.";
       }
 
-      const secretObject = JSON.parse(data.SecretString);
+      const secretObject = changeKeys(JSON.parse(data.SecretString));
 
       secretsKeyResults = {
         ...secretObject,
@@ -26264,7 +26265,16 @@ const processInputToArray = (input) => {
   return input.trim().split(/\s+/);
 };
 
+const changeKeys = (item) => {
+  return Object.keys(item).reduce((result, key) => {
+    const cleanKey = key.replace(/\s+/g, "_").replace(/\W+/g, "");
+    result[cleanKey] = input[key];
+    return result;
+  }, {});
+};
+
 module.exports = {
+  changeKeys,
   processInputToArray,
 };
 
@@ -26535,10 +26545,6 @@ const { processInputToArray } = __nccwpck_require__(1608);
 
     // const time = new Date().toTimeString();
     // core.setOutput("secrets", time);
-
-    // // Get the JSON webhook payload for the event that triggered the workflow
-    const payload = JSON.stringify(github.context.payload, undefined, 2);
-    console.log(`The event payload: ${payload}`);
   } catch (error) {
     core.setFailed(error.message);
   }

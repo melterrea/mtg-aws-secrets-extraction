@@ -1,5 +1,6 @@
 const AWS = require("@aws-sdk/client-secrets-manager");
 const client = new AWS.SecretsManager({});
+const { changeKeys } = require("./utils");
 
 const getSecretsValue = async (secretsKey) => {
   try {
@@ -18,7 +19,7 @@ const getSecretsValue = async (secretsKey) => {
         throw "No SecretString property returned in data object.";
       }
 
-      const secretObject = JSON.parse(data.SecretString);
+      const secretObject = changeKeys(JSON.parse(data.SecretString));
 
       secretsKeyResults = {
         ...secretObject,
