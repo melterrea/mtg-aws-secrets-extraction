@@ -26518,7 +26518,7 @@ try {
 
   console.log("secretsRaw is: ", secretsRaw);
 
-  getSecretsValue(secretsArray);
+  getSecretsValue(secretsRaw.trim().split(/\s+/));
 
   // const time = new Date().toTimeString();
   // core.setOutput("secrets", time);
