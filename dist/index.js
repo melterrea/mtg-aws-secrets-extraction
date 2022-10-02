@@ -19018,8 +19018,8 @@ const { processInputToArray } = __nccwpck_require__(1608);
     const result = await getSecretsValue(
       processInputToArray(core.getInput("secrets"))
     );
-    console.log("Result is: ", result);
-    core.setOutput("secrets", result);
+
+    core.setOutput("secrets.abc", result);
   } catch (error) {
     core.setFailed(error.message);
   }

@@ -7,8 +7,8 @@ const { processInputToArray } = require("./src/utils");
     const result = await getSecretsValue(
       processInputToArray(core.getInput("secrets"))
     );
-    console.log("Result is: ", result);
-    core.setOutput("secrets", result);
+
+    core.setOutput("secrets.abc", result);
   } catch (error) {
     core.setFailed(error.message);
   }
