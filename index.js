@@ -1,10 +1,10 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
-const getSecretsValue = require("./src/awsUtil");
+const { getSecretsValue } = require("./src/awsUtil");
 
 try {
   const secretsRaw = core.getInput("secrets");
-  const secretsArray = secretsRaw.split("/\r?\n/");
+  // const secretsArray = secretsRaw.split("/\r?\n/");
 
   console.log("secretsArray is: ", secretsArray);
 

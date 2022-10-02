@@ -24,4 +24,4 @@ const getSecretsValue = async (secretsKey) => {
   }
 };
 
-export default getSecretsValue;
+module.export = { getSecretsValue };
