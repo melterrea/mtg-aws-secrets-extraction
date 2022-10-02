@@ -7,7 +7,7 @@ const getSecretsValue = async (secretsKey) => {
       throw "No Secrets Keys provided";
     }
 
-    const secretsKeyResults = {};
+    let secretsKeyResults = {};
 
     for (let i = 0; i < secretsKey.length; i++) {
       const data = await client.getSecretValue({
