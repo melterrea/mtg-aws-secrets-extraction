@@ -6,7 +6,7 @@ try {
   const secretsRaw = core.getInput("secrets");
   // const secretsArray = secretsRaw.split("/\r?\n/");
 
-  console.log("secretsArray is: ", secretsArray);
+  console.log("secretsRaw is: ", secretsRaw);
 
   getSecretsValue(secretsArray);
 
