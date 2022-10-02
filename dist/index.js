@@ -19021,7 +19021,7 @@ const { processInputToArray } = __nccwpck_require__(1608);
 
     Object.keys(result).forEach((key) => {
       core.setOutput(key, result[key]);
-      core.setSecret(key);
+      core.setSecret(result[key]);
     });
   } catch (error) {
     core.setFailed(error.message);
