@@ -6,13 +6,16 @@ const processInputToArray = (input) => {
   return input.trim().split(/\s+/);
 };
 
-const changeKeys = (item) => {
+const changeKeys = (prefix, item) => {
   return Object.keys(item).reduce((result, key) => {
-    const cleanKey = key.toLowerCase().replace(/\s+/g, "_").replace(/\W+/g, "");
+    const cleanKey = `${cleanString(prefix)}_${cleanString(key)}`;
     result[cleanKey] = item[key];
     return result;
   }, {});
 };
+
+const cleanString = (string) =>
+  string.toLowerCase().replace(/\s+/g, "_").replace(/\W+/g, "");
 
 module.exports = {
   changeKeys,

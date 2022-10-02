@@ -19,7 +19,10 @@ const getSecretsValue = async (secretsKey) => {
         throw "No SecretString property returned in data object.";
       }
 
-      const secretObject = changeKeys(JSON.parse(data.SecretString));
+      const secretObject = changeKeys(
+        secretsKey[i],
+        JSON.parse(data.SecretString)
+      );
 
       secretsKeyResults = {
         ...secretObject,
