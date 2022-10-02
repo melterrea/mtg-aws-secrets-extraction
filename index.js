@@ -5,7 +5,9 @@ const { processInput } = require("./src/utils");
 
 (async () => {
   try {
-    const result = await getSecretsValue(core.getInput("secrets"));
+    const result = await getSecretsValue(
+      processInput(core.getInput("secrets"))
+    );
 
     console.log("Result is: ", result);
 
