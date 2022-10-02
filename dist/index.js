@@ -26215,7 +26215,6 @@ function wrappy (fn, cb) {
 /***/ 7657:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
-/* module decorator */ module = __nccwpck_require__.nmd(module);
 const AWS = __nccwpck_require__(9600);
 // To get region from ENV variables
 const client = new AWS.SecretsManager({ region: "eu-central-1" });
@@ -26242,7 +26241,7 @@ const getSecretsValue = async (secretsKey) => {
   }
 };
 
-module.export = { getSecretsValue };
+module.exports = { getSecretsValue };
 
 
 /***/ }),
@@ -26469,8 +26468,8 @@ module.exports = require("zlib");
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			loaded: false,
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
@@ -26483,23 +26482,11 @@ module.exports = require("zlib");
 /******/ 			if(threw) delete __webpack_module_cache__[moduleId];
 /******/ 		}
 /******/ 	
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
-/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/node module decorator */
-/******/ 	(() => {
-/******/ 		__nccwpck_require__.nmd = (module) => {
-/******/ 			module.paths = [];
-/******/ 			if (!module.children) module.children = [];
-/******/ 			return module;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/compat */
 /******/ 	
 /******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
