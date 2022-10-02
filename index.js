@@ -7,7 +7,7 @@ try {
   const secretsArray = secretsRaw.trim().split(/\s+/);
   console.log(secretsArray);
 
-  getSecretsValue(secretsRaw);
+  getSecretsValue(secretsArray);
 
   console.log("Result is: ", result);
 
