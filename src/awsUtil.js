@@ -11,7 +11,7 @@ const getSecretsValue = async (secretsKey) => {
     // const secretsKeyResults = {};
 
     for (let i = 0; i < secretsKey.length; i++) {
-      console.log(`Requested secret id is : secretsKey[i]`);
+      console.log(`Requested secret id is : ${secretsKey[i]}`);
 
       const command = {
         SecretId: secretsKey[i],
