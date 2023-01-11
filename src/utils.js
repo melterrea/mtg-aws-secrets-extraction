@@ -8,7 +8,7 @@ const processInputToArray = (input) => {
 
 const changeKeys = (prefix, item) => {
   return Object.keys(item).reduce((result, key) => {
-    const cleanKey = `${cleanString(prefix)}_${cleanString(key)}`;
+    const cleanKey = `${cleanString(key)}`;
     result[cleanKey] = item[key];
     return result;
   }, {});

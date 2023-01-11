@@ -10,7 +10,7 @@ const { processInputToArray } = require("./src/utils");
 
     Object.keys(result).forEach((key) => {
       core.setOutput(key, result[key]);
-      core.setSecret(result[key]);
+      core.setSecret(result[key]); // hiding in the worfklow console
     });
   } catch (error) {
     core.setFailed(error.message);

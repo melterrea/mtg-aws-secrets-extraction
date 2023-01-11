@@ -18775,7 +18775,9 @@ const processInputToArray = (input) => {
 
 const changeKeys = (prefix, item) => {
   return Object.keys(item).reduce((result, key) => {
-    const cleanKey = `${cleanString(prefix)}_${cleanString(key)}`;
+    const cleanKey = {
+      [`${cleanString(prefix)}`]: `${cleanString(key)}`,
+    };
     result[cleanKey] = item[key];
     return result;
   }, {});
@@ -19021,7 +19023,7 @@ const { processInputToArray } = __nccwpck_require__(1608);
 
     Object.keys(result).forEach((key) => {
       core.setOutput(key, result[key]);
-      core.setSecret(result[key]);
+      core.setSecret(result[key]); // hiding in the worfklow console
     });
   } catch (error) {
     core.setFailed(error.message);
