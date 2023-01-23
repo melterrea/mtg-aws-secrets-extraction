@@ -5,7 +5,15 @@ require('./sourcemap-register.js');/******/ (() => { // webpackBootstrap
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-secrets-manager","description":"AWS SDK for JavaScript Secrets Manager Client for Node.js, Browser and React Native","version":"3.181.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:include:deps":"lerna run --scope $npm_package_name --include-dependencies build","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.181.0","@aws-sdk/config-resolver":"3.178.0","@aws-sdk/credential-provider-node":"3.181.0","@aws-sdk/fetch-http-handler":"3.178.0","@aws-sdk/hash-node":"3.178.0","@aws-sdk/invalid-dependency":"3.178.0","@aws-sdk/middleware-content-length":"3.178.0","@aws-sdk/middleware-host-header":"3.178.0","@aws-sdk/middleware-logger":"3.178.0","@aws-sdk/middleware-recursion-detection":"3.178.0","@aws-sdk/middleware-retry":"3.178.0","@aws-sdk/middleware-serde":"3.178.0","@aws-sdk/middleware-signing":"3.179.0","@aws-sdk/middleware-stack":"3.178.0","@aws-sdk/middleware-user-agent":"3.178.0","@aws-sdk/node-config-provider":"3.178.0","@aws-sdk/node-http-handler":"3.178.0","@aws-sdk/protocol-http":"3.178.0","@aws-sdk/smithy-client":"3.180.0","@aws-sdk/types":"3.178.0","@aws-sdk/url-parser":"3.178.0","@aws-sdk/util-base64-browser":"3.170.0","@aws-sdk/util-base64-node":"3.170.0","@aws-sdk/util-body-length-browser":"3.170.0","@aws-sdk/util-body-length-node":"3.170.0","@aws-sdk/util-defaults-mode-browser":"3.180.0","@aws-sdk/util-defaults-mode-node":"3.180.0","@aws-sdk/util-user-agent-browser":"3.178.0","@aws-sdk/util-user-agent-node":"3.178.0","@aws-sdk/util-utf8-browser":"3.170.0","@aws-sdk/util-utf8-node":"3.170.0","tslib":"^2.3.1","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.170.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","@types/uuid":"^8.3.0","concurrently":"7.0.0","downlevel-dts":"0.10.1","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"overrides":{"typedoc":{"typescript":"~4.6.2"}},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-secrets-manager","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-secrets-manager"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-secrets-manager","description":"AWS SDK for JavaScript Secrets Manager Client for Node.js, Browser and React Native","version":"3.254.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:include:deps":"lerna run --scope $npm_package_name --include-dependencies build","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo","generate:client":"node ../../scripts/generate-clients/single-service --solo secrets-manager"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"3.0.0","@aws-crypto/sha256-js":"3.0.0","@aws-sdk/client-sts":"3.254.0","@aws-sdk/config-resolver":"3.254.0","@aws-sdk/credential-provider-node":"3.254.0","@aws-sdk/fetch-http-handler":"3.254.0","@aws-sdk/hash-node":"3.254.0","@aws-sdk/invalid-dependency":"3.254.0","@aws-sdk/middleware-content-length":"3.254.0","@aws-sdk/middleware-endpoint":"3.254.0","@aws-sdk/middleware-host-header":"3.254.0","@aws-sdk/middleware-logger":"3.254.0","@aws-sdk/middleware-recursion-detection":"3.254.0","@aws-sdk/middleware-retry":"3.254.0","@aws-sdk/middleware-serde":"3.254.0","@aws-sdk/middleware-signing":"3.254.0","@aws-sdk/middleware-stack":"3.254.0","@aws-sdk/middleware-user-agent":"3.254.0","@aws-sdk/node-config-provider":"3.254.0","@aws-sdk/node-http-handler":"3.254.0","@aws-sdk/protocol-http":"3.254.0","@aws-sdk/smithy-client":"3.254.0","@aws-sdk/types":"3.254.0","@aws-sdk/url-parser":"3.254.0","@aws-sdk/util-base64":"3.208.0","@aws-sdk/util-body-length-browser":"3.188.0","@aws-sdk/util-body-length-node":"3.208.0","@aws-sdk/util-defaults-mode-browser":"3.254.0","@aws-sdk/util-defaults-mode-node":"3.254.0","@aws-sdk/util-endpoints":"3.254.0","@aws-sdk/util-retry":"3.254.0","@aws-sdk/util-user-agent-browser":"3.254.0","@aws-sdk/util-user-agent-node":"3.254.0","@aws-sdk/util-utf8-browser":"3.188.0","@aws-sdk/util-utf8-node":"3.208.0","tslib":"^2.3.1","uuid":"^8.3.2"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.208.0","@tsconfig/node14":"1.0.3","@types/node":"^14.14.31","@types/uuid":"^8.3.0","concurrently":"7.0.0","downlevel-dts":"0.10.1","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"overrides":{"typedoc":{"typescript":"~4.6.2"}},"engines":{"node":">=14.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-secrets-manager","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-secrets-manager"}}');
+
+/***/ }),
+
+/***/ 6570:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso-oidc","description":"AWS SDK for JavaScript Sso Oidc Client for Node.js, Browser and React Native","version":"3.254.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:include:deps":"lerna run --scope $npm_package_name --include-dependencies build","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo","generate:client":"node ../../scripts/generate-clients/single-service --solo sso-oidc"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"3.0.0","@aws-crypto/sha256-js":"3.0.0","@aws-sdk/config-resolver":"3.254.0","@aws-sdk/fetch-http-handler":"3.254.0","@aws-sdk/hash-node":"3.254.0","@aws-sdk/invalid-dependency":"3.254.0","@aws-sdk/middleware-content-length":"3.254.0","@aws-sdk/middleware-endpoint":"3.254.0","@aws-sdk/middleware-host-header":"3.254.0","@aws-sdk/middleware-logger":"3.254.0","@aws-sdk/middleware-recursion-detection":"3.254.0","@aws-sdk/middleware-retry":"3.254.0","@aws-sdk/middleware-serde":"3.254.0","@aws-sdk/middleware-stack":"3.254.0","@aws-sdk/middleware-user-agent":"3.254.0","@aws-sdk/node-config-provider":"3.254.0","@aws-sdk/node-http-handler":"3.254.0","@aws-sdk/protocol-http":"3.254.0","@aws-sdk/smithy-client":"3.254.0","@aws-sdk/types":"3.254.0","@aws-sdk/url-parser":"3.254.0","@aws-sdk/util-base64":"3.208.0","@aws-sdk/util-body-length-browser":"3.188.0","@aws-sdk/util-body-length-node":"3.208.0","@aws-sdk/util-defaults-mode-browser":"3.254.0","@aws-sdk/util-defaults-mode-node":"3.254.0","@aws-sdk/util-endpoints":"3.254.0","@aws-sdk/util-retry":"3.254.0","@aws-sdk/util-user-agent-browser":"3.254.0","@aws-sdk/util-user-agent-node":"3.254.0","@aws-sdk/util-utf8-browser":"3.188.0","@aws-sdk/util-utf8-node":"3.208.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.208.0","@tsconfig/node14":"1.0.3","@types/node":"^14.14.31","concurrently":"7.0.0","downlevel-dts":"0.10.1","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"overrides":{"typedoc":{"typescript":"~4.6.2"}},"engines":{"node":">=14.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso-oidc","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso-oidc"}}');
 
 /***/ }),
 
@@ -13,7 +21,7 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-secrets-manager","descript
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.181.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:include:deps":"lerna run --scope $npm_package_name --include-dependencies build","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.178.0","@aws-sdk/fetch-http-handler":"3.178.0","@aws-sdk/hash-node":"3.178.0","@aws-sdk/invalid-dependency":"3.178.0","@aws-sdk/middleware-content-length":"3.178.0","@aws-sdk/middleware-host-header":"3.178.0","@aws-sdk/middleware-logger":"3.178.0","@aws-sdk/middleware-recursion-detection":"3.178.0","@aws-sdk/middleware-retry":"3.178.0","@aws-sdk/middleware-serde":"3.178.0","@aws-sdk/middleware-stack":"3.178.0","@aws-sdk/middleware-user-agent":"3.178.0","@aws-sdk/node-config-provider":"3.178.0","@aws-sdk/node-http-handler":"3.178.0","@aws-sdk/protocol-http":"3.178.0","@aws-sdk/smithy-client":"3.180.0","@aws-sdk/types":"3.178.0","@aws-sdk/url-parser":"3.178.0","@aws-sdk/util-base64-browser":"3.170.0","@aws-sdk/util-base64-node":"3.170.0","@aws-sdk/util-body-length-browser":"3.170.0","@aws-sdk/util-body-length-node":"3.170.0","@aws-sdk/util-defaults-mode-browser":"3.180.0","@aws-sdk/util-defaults-mode-node":"3.180.0","@aws-sdk/util-user-agent-browser":"3.178.0","@aws-sdk/util-user-agent-node":"3.178.0","@aws-sdk/util-utf8-browser":"3.170.0","@aws-sdk/util-utf8-node":"3.170.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.170.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.10.1","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"overrides":{"typedoc":{"typescript":"~4.6.2"}},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SDK for JavaScript Sso Client for Node.js, Browser and React Native","version":"3.254.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:include:deps":"lerna run --scope $npm_package_name --include-dependencies build","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo","generate:client":"node ../../scripts/generate-clients/single-service --solo sso"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"3.0.0","@aws-crypto/sha256-js":"3.0.0","@aws-sdk/config-resolver":"3.254.0","@aws-sdk/fetch-http-handler":"3.254.0","@aws-sdk/hash-node":"3.254.0","@aws-sdk/invalid-dependency":"3.254.0","@aws-sdk/middleware-content-length":"3.254.0","@aws-sdk/middleware-endpoint":"3.254.0","@aws-sdk/middleware-host-header":"3.254.0","@aws-sdk/middleware-logger":"3.254.0","@aws-sdk/middleware-recursion-detection":"3.254.0","@aws-sdk/middleware-retry":"3.254.0","@aws-sdk/middleware-serde":"3.254.0","@aws-sdk/middleware-stack":"3.254.0","@aws-sdk/middleware-user-agent":"3.254.0","@aws-sdk/node-config-provider":"3.254.0","@aws-sdk/node-http-handler":"3.254.0","@aws-sdk/protocol-http":"3.254.0","@aws-sdk/smithy-client":"3.254.0","@aws-sdk/types":"3.254.0","@aws-sdk/url-parser":"3.254.0","@aws-sdk/util-base64":"3.208.0","@aws-sdk/util-body-length-browser":"3.188.0","@aws-sdk/util-body-length-node":"3.208.0","@aws-sdk/util-defaults-mode-browser":"3.254.0","@aws-sdk/util-defaults-mode-node":"3.254.0","@aws-sdk/util-endpoints":"3.254.0","@aws-sdk/util-retry":"3.254.0","@aws-sdk/util-user-agent-browser":"3.254.0","@aws-sdk/util-user-agent-node":"3.254.0","@aws-sdk/util-utf8-browser":"3.188.0","@aws-sdk/util-utf8-node":"3.208.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.208.0","@tsconfig/node14":"1.0.3","@types/node":"^14.14.31","concurrently":"7.0.0","downlevel-dts":"0.10.1","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"overrides":{"typedoc":{"typescript":"~4.6.2"}},"engines":{"node":">=14.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sso","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sso"}}');
 
 /***/ }),
 
@@ -21,1281 +29,15 @@ module.exports = JSON.parse('{"name":"@aws-sdk/client-sso","description":"AWS SD
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.181.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:include:deps":"lerna run --scope $npm_package_name --include-dependencies build","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo","test":"yarn test:unit","test:unit":"jest"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/config-resolver":"3.178.0","@aws-sdk/credential-provider-node":"3.181.0","@aws-sdk/fetch-http-handler":"3.178.0","@aws-sdk/hash-node":"3.178.0","@aws-sdk/invalid-dependency":"3.178.0","@aws-sdk/middleware-content-length":"3.178.0","@aws-sdk/middleware-host-header":"3.178.0","@aws-sdk/middleware-logger":"3.178.0","@aws-sdk/middleware-recursion-detection":"3.178.0","@aws-sdk/middleware-retry":"3.178.0","@aws-sdk/middleware-sdk-sts":"3.179.0","@aws-sdk/middleware-serde":"3.178.0","@aws-sdk/middleware-signing":"3.179.0","@aws-sdk/middleware-stack":"3.178.0","@aws-sdk/middleware-user-agent":"3.178.0","@aws-sdk/node-config-provider":"3.178.0","@aws-sdk/node-http-handler":"3.178.0","@aws-sdk/protocol-http":"3.178.0","@aws-sdk/smithy-client":"3.180.0","@aws-sdk/types":"3.178.0","@aws-sdk/url-parser":"3.178.0","@aws-sdk/util-base64-browser":"3.170.0","@aws-sdk/util-base64-node":"3.170.0","@aws-sdk/util-body-length-browser":"3.170.0","@aws-sdk/util-body-length-node":"3.170.0","@aws-sdk/util-defaults-mode-browser":"3.180.0","@aws-sdk/util-defaults-mode-node":"3.180.0","@aws-sdk/util-user-agent-browser":"3.178.0","@aws-sdk/util-user-agent-node":"3.178.0","@aws-sdk/util-utf8-browser":"3.170.0","@aws-sdk/util-utf8-node":"3.170.0","entities":"2.2.0","fast-xml-parser":"3.19.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.170.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.10.1","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"overrides":{"typedoc":{"typescript":"~4.6.2"}},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
+module.exports = JSON.parse('{"name":"@aws-sdk/client-sts","description":"AWS SDK for JavaScript Sts Client for Node.js, Browser and React Native","version":"3.254.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:include:deps":"lerna run --scope $npm_package_name --include-dependencies build","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo","generate:client":"node ../../scripts/generate-clients/single-service --solo sts","test":"yarn test:unit","test:unit":"jest"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"3.0.0","@aws-crypto/sha256-js":"3.0.0","@aws-sdk/config-resolver":"3.254.0","@aws-sdk/credential-provider-node":"3.254.0","@aws-sdk/fetch-http-handler":"3.254.0","@aws-sdk/hash-node":"3.254.0","@aws-sdk/invalid-dependency":"3.254.0","@aws-sdk/middleware-content-length":"3.254.0","@aws-sdk/middleware-endpoint":"3.254.0","@aws-sdk/middleware-host-header":"3.254.0","@aws-sdk/middleware-logger":"3.254.0","@aws-sdk/middleware-recursion-detection":"3.254.0","@aws-sdk/middleware-retry":"3.254.0","@aws-sdk/middleware-sdk-sts":"3.254.0","@aws-sdk/middleware-serde":"3.254.0","@aws-sdk/middleware-signing":"3.254.0","@aws-sdk/middleware-stack":"3.254.0","@aws-sdk/middleware-user-agent":"3.254.0","@aws-sdk/node-config-provider":"3.254.0","@aws-sdk/node-http-handler":"3.254.0","@aws-sdk/protocol-http":"3.254.0","@aws-sdk/smithy-client":"3.254.0","@aws-sdk/types":"3.254.0","@aws-sdk/url-parser":"3.254.0","@aws-sdk/util-base64":"3.208.0","@aws-sdk/util-body-length-browser":"3.188.0","@aws-sdk/util-body-length-node":"3.208.0","@aws-sdk/util-defaults-mode-browser":"3.254.0","@aws-sdk/util-defaults-mode-node":"3.254.0","@aws-sdk/util-endpoints":"3.254.0","@aws-sdk/util-retry":"3.254.0","@aws-sdk/util-user-agent-browser":"3.254.0","@aws-sdk/util-user-agent-node":"3.254.0","@aws-sdk/util-utf8-browser":"3.188.0","@aws-sdk/util-utf8-node":"3.208.0","fast-xml-parser":"4.0.11","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.208.0","@tsconfig/node14":"1.0.3","@types/node":"^14.14.31","concurrently":"7.0.0","downlevel-dts":"0.10.1","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"overrides":{"typedoc":{"typescript":"~4.6.2"}},"engines":{"node":">=14.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-sts","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-sts"}}');
 
 /***/ }),
 
-/***/ 7351:
-/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+/***/ 1477:
+/***/ ((module) => {
 
 "use strict";
-
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.issue = exports.issueCommand = void 0;
-const os = __importStar(__nccwpck_require__(2087));
-const utils_1 = __nccwpck_require__(5278);
-/**
- * Commands
- *
- * Command Format:
- *   ::name key=value,key=value::message
- *
- * Examples:
- *   ::warning::This is the message
- *   ::set-env name=MY_VAR::some value
- */
-function issueCommand(command, properties, message) {
-    const cmd = new Command(command, properties, message);
-    process.stdout.write(cmd.toString() + os.EOL);
-}
-exports.issueCommand = issueCommand;
-function issue(name, message = '') {
-    issueCommand(name, {}, message);
-}
-exports.issue = issue;
-const CMD_STRING = '::';
-class Command {
-    constructor(command, properties, message) {
-        if (!command) {
-            command = 'missing.command';
-        }
-        this.command = command;
-        this.properties = properties;
-        this.message = message;
-    }
-    toString() {
-        let cmdStr = CMD_STRING + this.command;
-        if (this.properties && Object.keys(this.properties).length > 0) {
-            cmdStr += ' ';
-            let first = true;
-            for (const key in this.properties) {
-                if (this.properties.hasOwnProperty(key)) {
-                    const val = this.properties[key];
-                    if (val) {
-                        if (first) {
-                            first = false;
-                        }
-                        else {
-                            cmdStr += ',';
-                        }
-                        cmdStr += `${key}=${escapeProperty(val)}`;
-                    }
-                }
-            }
-        }
-        cmdStr += `${CMD_STRING}${escapeData(this.message)}`;
-        return cmdStr;
-    }
-}
-function escapeData(s) {
-    return utils_1.toCommandValue(s)
-        .replace(/%/g, '%25')
-        .replace(/\r/g, '%0D')
-        .replace(/\n/g, '%0A');
-}
-function escapeProperty(s) {
-    return utils_1.toCommandValue(s)
-        .replace(/%/g, '%25')
-        .replace(/\r/g, '%0D')
-        .replace(/\n/g, '%0A')
-        .replace(/:/g, '%3A')
-        .replace(/,/g, '%2C');
-}
-//# sourceMappingURL=command.js.map
-
-/***/ }),
-
-/***/ 2186:
-/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
-
-"use strict";
-
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getIDToken = exports.getState = exports.saveState = exports.group = exports.endGroup = exports.startGroup = exports.info = exports.notice = exports.warning = exports.error = exports.debug = exports.isDebug = exports.setFailed = exports.setCommandEcho = exports.setOutput = exports.getBooleanInput = exports.getMultilineInput = exports.getInput = exports.addPath = exports.setSecret = exports.exportVariable = exports.ExitCode = void 0;
-const command_1 = __nccwpck_require__(7351);
-const file_command_1 = __nccwpck_require__(717);
-const utils_1 = __nccwpck_require__(5278);
-const os = __importStar(__nccwpck_require__(2087));
-const path = __importStar(__nccwpck_require__(5622));
-const oidc_utils_1 = __nccwpck_require__(8041);
-/**
- * The code to exit an action
- */
-var ExitCode;
-(function (ExitCode) {
-    /**
-     * A code indicating that the action was successful
-     */
-    ExitCode[ExitCode["Success"] = 0] = "Success";
-    /**
-     * A code indicating that the action was a failure
-     */
-    ExitCode[ExitCode["Failure"] = 1] = "Failure";
-})(ExitCode = exports.ExitCode || (exports.ExitCode = {}));
-//-----------------------------------------------------------------------
-// Variables
-//-----------------------------------------------------------------------
-/**
- * Sets env variable for this action and future actions in the job
- * @param name the name of the variable to set
- * @param val the value of the variable. Non-string values will be converted to a string via JSON.stringify
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function exportVariable(name, val) {
-    const convertedVal = utils_1.toCommandValue(val);
-    process.env[name] = convertedVal;
-    const filePath = process.env['GITHUB_ENV'] || '';
-    if (filePath) {
-        const delimiter = '_GitHubActionsFileCommandDelimeter_';
-        const commandValue = `${name}<<${delimiter}${os.EOL}${convertedVal}${os.EOL}${delimiter}`;
-        file_command_1.issueCommand('ENV', commandValue);
-    }
-    else {
-        command_1.issueCommand('set-env', { name }, convertedVal);
-    }
-}
-exports.exportVariable = exportVariable;
-/**
- * Registers a secret which will get masked from logs
- * @param secret value of the secret
- */
-function setSecret(secret) {
-    command_1.issueCommand('add-mask', {}, secret);
-}
-exports.setSecret = setSecret;
-/**
- * Prepends inputPath to the PATH (for this action and future actions)
- * @param inputPath
- */
-function addPath(inputPath) {
-    const filePath = process.env['GITHUB_PATH'] || '';
-    if (filePath) {
-        file_command_1.issueCommand('PATH', inputPath);
-    }
-    else {
-        command_1.issueCommand('add-path', {}, inputPath);
-    }
-    process.env['PATH'] = `${inputPath}${path.delimiter}${process.env['PATH']}`;
-}
-exports.addPath = addPath;
-/**
- * Gets the value of an input.
- * Unless trimWhitespace is set to false in InputOptions, the value is also trimmed.
- * Returns an empty string if the value is not defined.
- *
- * @param     name     name of the input to get
- * @param     options  optional. See InputOptions.
- * @returns   string
- */
-function getInput(name, options) {
-    const val = process.env[`INPUT_${name.replace(/ /g, '_').toUpperCase()}`] || '';
-    if (options && options.required && !val) {
-        throw new Error(`Input required and not supplied: ${name}`);
-    }
-    if (options && options.trimWhitespace === false) {
-        return val;
-    }
-    return val.trim();
-}
-exports.getInput = getInput;
-/**
- * Gets the values of an multiline input.  Each value is also trimmed.
- *
- * @param     name     name of the input to get
- * @param     options  optional. See InputOptions.
- * @returns   string[]
- *
- */
-function getMultilineInput(name, options) {
-    const inputs = getInput(name, options)
-        .split('\n')
-        .filter(x => x !== '');
-    return inputs;
-}
-exports.getMultilineInput = getMultilineInput;
-/**
- * Gets the input value of the boolean type in the YAML 1.2 "core schema" specification.
- * Support boolean input list: `true | True | TRUE | false | False | FALSE` .
- * The return value is also in boolean type.
- * ref: https://yaml.org/spec/1.2/spec.html#id2804923
- *
- * @param     name     name of the input to get
- * @param     options  optional. See InputOptions.
- * @returns   boolean
- */
-function getBooleanInput(name, options) {
-    const trueValue = ['true', 'True', 'TRUE'];
-    const falseValue = ['false', 'False', 'FALSE'];
-    const val = getInput(name, options);
-    if (trueValue.includes(val))
-        return true;
-    if (falseValue.includes(val))
-        return false;
-    throw new TypeError(`Input does not meet YAML 1.2 "Core Schema" specification: ${name}\n` +
-        `Support boolean input list: \`true | True | TRUE | false | False | FALSE\``);
-}
-exports.getBooleanInput = getBooleanInput;
-/**
- * Sets the value of an output.
- *
- * @param     name     name of the output to set
- * @param     value    value to store. Non-string values will be converted to a string via JSON.stringify
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function setOutput(name, value) {
-    process.stdout.write(os.EOL);
-    command_1.issueCommand('set-output', { name }, value);
-}
-exports.setOutput = setOutput;
-/**
- * Enables or disables the echoing of commands into stdout for the rest of the step.
- * Echoing is disabled by default if ACTIONS_STEP_DEBUG is not set.
- *
- */
-function setCommandEcho(enabled) {
-    command_1.issue('echo', enabled ? 'on' : 'off');
-}
-exports.setCommandEcho = setCommandEcho;
-//-----------------------------------------------------------------------
-// Results
-//-----------------------------------------------------------------------
-/**
- * Sets the action status to failed.
- * When the action exits it will be with an exit code of 1
- * @param message add error issue message
- */
-function setFailed(message) {
-    process.exitCode = ExitCode.Failure;
-    error(message);
-}
-exports.setFailed = setFailed;
-//-----------------------------------------------------------------------
-// Logging Commands
-//-----------------------------------------------------------------------
-/**
- * Gets whether Actions Step Debug is on or not
- */
-function isDebug() {
-    return process.env['RUNNER_DEBUG'] === '1';
-}
-exports.isDebug = isDebug;
-/**
- * Writes debug message to user log
- * @param message debug message
- */
-function debug(message) {
-    command_1.issueCommand('debug', {}, message);
-}
-exports.debug = debug;
-/**
- * Adds an error issue
- * @param message error issue message. Errors will be converted to string via toString()
- * @param properties optional properties to add to the annotation.
- */
-function error(message, properties = {}) {
-    command_1.issueCommand('error', utils_1.toCommandProperties(properties), message instanceof Error ? message.toString() : message);
-}
-exports.error = error;
-/**
- * Adds a warning issue
- * @param message warning issue message. Errors will be converted to string via toString()
- * @param properties optional properties to add to the annotation.
- */
-function warning(message, properties = {}) {
-    command_1.issueCommand('warning', utils_1.toCommandProperties(properties), message instanceof Error ? message.toString() : message);
-}
-exports.warning = warning;
-/**
- * Adds a notice issue
- * @param message notice issue message. Errors will be converted to string via toString()
- * @param properties optional properties to add to the annotation.
- */
-function notice(message, properties = {}) {
-    command_1.issueCommand('notice', utils_1.toCommandProperties(properties), message instanceof Error ? message.toString() : message);
-}
-exports.notice = notice;
-/**
- * Writes info to log with console.log.
- * @param message info message
- */
-function info(message) {
-    process.stdout.write(message + os.EOL);
-}
-exports.info = info;
-/**
- * Begin an output group.
- *
- * Output until the next `groupEnd` will be foldable in this group
- *
- * @param name The name of the output group
- */
-function startGroup(name) {
-    command_1.issue('group', name);
-}
-exports.startGroup = startGroup;
-/**
- * End an output group.
- */
-function endGroup() {
-    command_1.issue('endgroup');
-}
-exports.endGroup = endGroup;
-/**
- * Wrap an asynchronous function call in a group.
- *
- * Returns the same type as the function itself.
- *
- * @param name The name of the group
- * @param fn The function to wrap in the group
- */
-function group(name, fn) {
-    return __awaiter(this, void 0, void 0, function* () {
-        startGroup(name);
-        let result;
-        try {
-            result = yield fn();
-        }
-        finally {
-            endGroup();
-        }
-        return result;
-    });
-}
-exports.group = group;
-//-----------------------------------------------------------------------
-// Wrapper action state
-//-----------------------------------------------------------------------
-/**
- * Saves state for current action, the state can only be retrieved by this action's post job execution.
- *
- * @param     name     name of the state to store
- * @param     value    value to store. Non-string values will be converted to a string via JSON.stringify
- */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function saveState(name, value) {
-    command_1.issueCommand('save-state', { name }, value);
-}
-exports.saveState = saveState;
-/**
- * Gets the value of an state set by this action's main execution.
- *
- * @param     name     name of the state to get
- * @returns   string
- */
-function getState(name) {
-    return process.env[`STATE_${name}`] || '';
-}
-exports.getState = getState;
-function getIDToken(aud) {
-    return __awaiter(this, void 0, void 0, function* () {
-        return yield oidc_utils_1.OidcClient.getIDToken(aud);
-    });
-}
-exports.getIDToken = getIDToken;
-//# sourceMappingURL=core.js.map
-
-/***/ }),
-
-/***/ 717:
-/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
-
-"use strict";
-
-// For internal use, subject to change.
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.issueCommand = void 0;
-// We use any as a valid input type
-/* eslint-disable @typescript-eslint/no-explicit-any */
-const fs = __importStar(__nccwpck_require__(5747));
-const os = __importStar(__nccwpck_require__(2087));
-const utils_1 = __nccwpck_require__(5278);
-function issueCommand(command, message) {
-    const filePath = process.env[`GITHUB_${command}`];
-    if (!filePath) {
-        throw new Error(`Unable to find environment variable for file command ${command}`);
-    }
-    if (!fs.existsSync(filePath)) {
-        throw new Error(`Missing file at path: ${filePath}`);
-    }
-    fs.appendFileSync(filePath, `${utils_1.toCommandValue(message)}${os.EOL}`, {
-        encoding: 'utf8'
-    });
-}
-exports.issueCommand = issueCommand;
-//# sourceMappingURL=file-command.js.map
-
-/***/ }),
-
-/***/ 8041:
-/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
-
-"use strict";
-
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.OidcClient = void 0;
-const http_client_1 = __nccwpck_require__(9925);
-const auth_1 = __nccwpck_require__(3702);
-const core_1 = __nccwpck_require__(2186);
-class OidcClient {
-    static createHttpClient(allowRetry = true, maxRetry = 10) {
-        const requestOptions = {
-            allowRetries: allowRetry,
-            maxRetries: maxRetry
-        };
-        return new http_client_1.HttpClient('actions/oidc-client', [new auth_1.BearerCredentialHandler(OidcClient.getRequestToken())], requestOptions);
-    }
-    static getRequestToken() {
-        const token = process.env['ACTIONS_ID_TOKEN_REQUEST_TOKEN'];
-        if (!token) {
-            throw new Error('Unable to get ACTIONS_ID_TOKEN_REQUEST_TOKEN env variable');
-        }
-        return token;
-    }
-    static getIDTokenUrl() {
-        const runtimeUrl = process.env['ACTIONS_ID_TOKEN_REQUEST_URL'];
-        if (!runtimeUrl) {
-            throw new Error('Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable');
-        }
-        return runtimeUrl;
-    }
-    static getCall(id_token_url) {
-        var _a;
-        return __awaiter(this, void 0, void 0, function* () {
-            const httpclient = OidcClient.createHttpClient();
-            const res = yield httpclient
-                .getJson(id_token_url)
-                .catch(error => {
-                throw new Error(`Failed to get ID Token. \n 
-        Error Code : ${error.statusCode}\n 
-        Error Message: ${error.result.message}`);
-            });
-            const id_token = (_a = res.result) === null || _a === void 0 ? void 0 : _a.value;
-            if (!id_token) {
-                throw new Error('Response json body do not have ID Token field');
-            }
-            return id_token;
-        });
-    }
-    static getIDToken(audience) {
-        return __awaiter(this, void 0, void 0, function* () {
-            try {
-                // New ID Token is requested from action service
-                let id_token_url = OidcClient.getIDTokenUrl();
-                if (audience) {
-                    const encodedAudience = encodeURIComponent(audience);
-                    id_token_url = `${id_token_url}&audience=${encodedAudience}`;
-                }
-                core_1.debug(`ID token url is ${id_token_url}`);
-                const id_token = yield OidcClient.getCall(id_token_url);
-                core_1.setSecret(id_token);
-                return id_token;
-            }
-            catch (error) {
-                throw new Error(`Error message: ${error.message}`);
-            }
-        });
-    }
-}
-exports.OidcClient = OidcClient;
-//# sourceMappingURL=oidc-utils.js.map
-
-/***/ }),
-
-/***/ 5278:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-// We use any as a valid input type
-/* eslint-disable @typescript-eslint/no-explicit-any */
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.toCommandProperties = exports.toCommandValue = void 0;
-/**
- * Sanitizes an input into a string so it can be passed into issueCommand safely
- * @param input input to sanitize into a string
- */
-function toCommandValue(input) {
-    if (input === null || input === undefined) {
-        return '';
-    }
-    else if (typeof input === 'string' || input instanceof String) {
-        return input;
-    }
-    return JSON.stringify(input);
-}
-exports.toCommandValue = toCommandValue;
-/**
- *
- * @param annotationProperties
- * @returns The command properties to send with the actual annotation command
- * See IssueCommandProperties: https://github.com/actions/runner/blob/main/src/Runner.Worker/ActionCommandManager.cs#L646
- */
-function toCommandProperties(annotationProperties) {
-    if (!Object.keys(annotationProperties).length) {
-        return {};
-    }
-    return {
-        title: annotationProperties.title,
-        file: annotationProperties.file,
-        line: annotationProperties.startLine,
-        endLine: annotationProperties.endLine,
-        col: annotationProperties.startColumn,
-        endColumn: annotationProperties.endColumn
-    };
-}
-exports.toCommandProperties = toCommandProperties;
-//# sourceMappingURL=utils.js.map
-
-/***/ }),
-
-/***/ 3702:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-class BasicCredentialHandler {
-    constructor(username, password) {
-        this.username = username;
-        this.password = password;
-    }
-    prepareRequest(options) {
-        options.headers['Authorization'] =
-            'Basic ' +
-                Buffer.from(this.username + ':' + this.password).toString('base64');
-    }
-    // This handler cannot handle 401
-    canHandleAuthentication(response) {
-        return false;
-    }
-    handleAuthentication(httpClient, requestInfo, objs) {
-        return null;
-    }
-}
-exports.BasicCredentialHandler = BasicCredentialHandler;
-class BearerCredentialHandler {
-    constructor(token) {
-        this.token = token;
-    }
-    // currently implements pre-authorization
-    // TODO: support preAuth = false where it hooks on 401
-    prepareRequest(options) {
-        options.headers['Authorization'] = 'Bearer ' + this.token;
-    }
-    // This handler cannot handle 401
-    canHandleAuthentication(response) {
-        return false;
-    }
-    handleAuthentication(httpClient, requestInfo, objs) {
-        return null;
-    }
-}
-exports.BearerCredentialHandler = BearerCredentialHandler;
-class PersonalAccessTokenCredentialHandler {
-    constructor(token) {
-        this.token = token;
-    }
-    // currently implements pre-authorization
-    // TODO: support preAuth = false where it hooks on 401
-    prepareRequest(options) {
-        options.headers['Authorization'] =
-            'Basic ' + Buffer.from('PAT:' + this.token).toString('base64');
-    }
-    // This handler cannot handle 401
-    canHandleAuthentication(response) {
-        return false;
-    }
-    handleAuthentication(httpClient, requestInfo, objs) {
-        return null;
-    }
-}
-exports.PersonalAccessTokenCredentialHandler = PersonalAccessTokenCredentialHandler;
-
-
-/***/ }),
-
-/***/ 9925:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const http = __nccwpck_require__(8605);
-const https = __nccwpck_require__(7211);
-const pm = __nccwpck_require__(6443);
-let tunnel;
-var HttpCodes;
-(function (HttpCodes) {
-    HttpCodes[HttpCodes["OK"] = 200] = "OK";
-    HttpCodes[HttpCodes["MultipleChoices"] = 300] = "MultipleChoices";
-    HttpCodes[HttpCodes["MovedPermanently"] = 301] = "MovedPermanently";
-    HttpCodes[HttpCodes["ResourceMoved"] = 302] = "ResourceMoved";
-    HttpCodes[HttpCodes["SeeOther"] = 303] = "SeeOther";
-    HttpCodes[HttpCodes["NotModified"] = 304] = "NotModified";
-    HttpCodes[HttpCodes["UseProxy"] = 305] = "UseProxy";
-    HttpCodes[HttpCodes["SwitchProxy"] = 306] = "SwitchProxy";
-    HttpCodes[HttpCodes["TemporaryRedirect"] = 307] = "TemporaryRedirect";
-    HttpCodes[HttpCodes["PermanentRedirect"] = 308] = "PermanentRedirect";
-    HttpCodes[HttpCodes["BadRequest"] = 400] = "BadRequest";
-    HttpCodes[HttpCodes["Unauthorized"] = 401] = "Unauthorized";
-    HttpCodes[HttpCodes["PaymentRequired"] = 402] = "PaymentRequired";
-    HttpCodes[HttpCodes["Forbidden"] = 403] = "Forbidden";
-    HttpCodes[HttpCodes["NotFound"] = 404] = "NotFound";
-    HttpCodes[HttpCodes["MethodNotAllowed"] = 405] = "MethodNotAllowed";
-    HttpCodes[HttpCodes["NotAcceptable"] = 406] = "NotAcceptable";
-    HttpCodes[HttpCodes["ProxyAuthenticationRequired"] = 407] = "ProxyAuthenticationRequired";
-    HttpCodes[HttpCodes["RequestTimeout"] = 408] = "RequestTimeout";
-    HttpCodes[HttpCodes["Conflict"] = 409] = "Conflict";
-    HttpCodes[HttpCodes["Gone"] = 410] = "Gone";
-    HttpCodes[HttpCodes["TooManyRequests"] = 429] = "TooManyRequests";
-    HttpCodes[HttpCodes["InternalServerError"] = 500] = "InternalServerError";
-    HttpCodes[HttpCodes["NotImplemented"] = 501] = "NotImplemented";
-    HttpCodes[HttpCodes["BadGateway"] = 502] = "BadGateway";
-    HttpCodes[HttpCodes["ServiceUnavailable"] = 503] = "ServiceUnavailable";
-    HttpCodes[HttpCodes["GatewayTimeout"] = 504] = "GatewayTimeout";
-})(HttpCodes = exports.HttpCodes || (exports.HttpCodes = {}));
-var Headers;
-(function (Headers) {
-    Headers["Accept"] = "accept";
-    Headers["ContentType"] = "content-type";
-})(Headers = exports.Headers || (exports.Headers = {}));
-var MediaTypes;
-(function (MediaTypes) {
-    MediaTypes["ApplicationJson"] = "application/json";
-})(MediaTypes = exports.MediaTypes || (exports.MediaTypes = {}));
-/**
- * Returns the proxy URL, depending upon the supplied url and proxy environment variables.
- * @param serverUrl  The server URL where the request will be sent. For example, https://api.github.com
- */
-function getProxyUrl(serverUrl) {
-    let proxyUrl = pm.getProxyUrl(new URL(serverUrl));
-    return proxyUrl ? proxyUrl.href : '';
-}
-exports.getProxyUrl = getProxyUrl;
-const HttpRedirectCodes = [
-    HttpCodes.MovedPermanently,
-    HttpCodes.ResourceMoved,
-    HttpCodes.SeeOther,
-    HttpCodes.TemporaryRedirect,
-    HttpCodes.PermanentRedirect
-];
-const HttpResponseRetryCodes = [
-    HttpCodes.BadGateway,
-    HttpCodes.ServiceUnavailable,
-    HttpCodes.GatewayTimeout
-];
-const RetryableHttpVerbs = ['OPTIONS', 'GET', 'DELETE', 'HEAD'];
-const ExponentialBackoffCeiling = 10;
-const ExponentialBackoffTimeSlice = 5;
-class HttpClientError extends Error {
-    constructor(message, statusCode) {
-        super(message);
-        this.name = 'HttpClientError';
-        this.statusCode = statusCode;
-        Object.setPrototypeOf(this, HttpClientError.prototype);
-    }
-}
-exports.HttpClientError = HttpClientError;
-class HttpClientResponse {
-    constructor(message) {
-        this.message = message;
-    }
-    readBody() {
-        return new Promise(async (resolve, reject) => {
-            let output = Buffer.alloc(0);
-            this.message.on('data', (chunk) => {
-                output = Buffer.concat([output, chunk]);
-            });
-            this.message.on('end', () => {
-                resolve(output.toString());
-            });
-        });
-    }
-}
-exports.HttpClientResponse = HttpClientResponse;
-function isHttps(requestUrl) {
-    let parsedUrl = new URL(requestUrl);
-    return parsedUrl.protocol === 'https:';
-}
-exports.isHttps = isHttps;
-class HttpClient {
-    constructor(userAgent, handlers, requestOptions) {
-        this._ignoreSslError = false;
-        this._allowRedirects = true;
-        this._allowRedirectDowngrade = false;
-        this._maxRedirects = 50;
-        this._allowRetries = false;
-        this._maxRetries = 1;
-        this._keepAlive = false;
-        this._disposed = false;
-        this.userAgent = userAgent;
-        this.handlers = handlers || [];
-        this.requestOptions = requestOptions;
-        if (requestOptions) {
-            if (requestOptions.ignoreSslError != null) {
-                this._ignoreSslError = requestOptions.ignoreSslError;
-            }
-            this._socketTimeout = requestOptions.socketTimeout;
-            if (requestOptions.allowRedirects != null) {
-                this._allowRedirects = requestOptions.allowRedirects;
-            }
-            if (requestOptions.allowRedirectDowngrade != null) {
-                this._allowRedirectDowngrade = requestOptions.allowRedirectDowngrade;
-            }
-            if (requestOptions.maxRedirects != null) {
-                this._maxRedirects = Math.max(requestOptions.maxRedirects, 0);
-            }
-            if (requestOptions.keepAlive != null) {
-                this._keepAlive = requestOptions.keepAlive;
-            }
-            if (requestOptions.allowRetries != null) {
-                this._allowRetries = requestOptions.allowRetries;
-            }
-            if (requestOptions.maxRetries != null) {
-                this._maxRetries = requestOptions.maxRetries;
-            }
-        }
-    }
-    options(requestUrl, additionalHeaders) {
-        return this.request('OPTIONS', requestUrl, null, additionalHeaders || {});
-    }
-    get(requestUrl, additionalHeaders) {
-        return this.request('GET', requestUrl, null, additionalHeaders || {});
-    }
-    del(requestUrl, additionalHeaders) {
-        return this.request('DELETE', requestUrl, null, additionalHeaders || {});
-    }
-    post(requestUrl, data, additionalHeaders) {
-        return this.request('POST', requestUrl, data, additionalHeaders || {});
-    }
-    patch(requestUrl, data, additionalHeaders) {
-        return this.request('PATCH', requestUrl, data, additionalHeaders || {});
-    }
-    put(requestUrl, data, additionalHeaders) {
-        return this.request('PUT', requestUrl, data, additionalHeaders || {});
-    }
-    head(requestUrl, additionalHeaders) {
-        return this.request('HEAD', requestUrl, null, additionalHeaders || {});
-    }
-    sendStream(verb, requestUrl, stream, additionalHeaders) {
-        return this.request(verb, requestUrl, stream, additionalHeaders);
-    }
-    /**
-     * Gets a typed object from an endpoint
-     * Be aware that not found returns a null.  Other errors (4xx, 5xx) reject the promise
-     */
-    async getJson(requestUrl, additionalHeaders = {}) {
-        additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
-        let res = await this.get(requestUrl, additionalHeaders);
-        return this._processResponse(res, this.requestOptions);
-    }
-    async postJson(requestUrl, obj, additionalHeaders = {}) {
-        let data = JSON.stringify(obj, null, 2);
-        additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
-        additionalHeaders[Headers.ContentType] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.ContentType, MediaTypes.ApplicationJson);
-        let res = await this.post(requestUrl, data, additionalHeaders);
-        return this._processResponse(res, this.requestOptions);
-    }
-    async putJson(requestUrl, obj, additionalHeaders = {}) {
-        let data = JSON.stringify(obj, null, 2);
-        additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
-        additionalHeaders[Headers.ContentType] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.ContentType, MediaTypes.ApplicationJson);
-        let res = await this.put(requestUrl, data, additionalHeaders);
-        return this._processResponse(res, this.requestOptions);
-    }
-    async patchJson(requestUrl, obj, additionalHeaders = {}) {
-        let data = JSON.stringify(obj, null, 2);
-        additionalHeaders[Headers.Accept] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.Accept, MediaTypes.ApplicationJson);
-        additionalHeaders[Headers.ContentType] = this._getExistingOrDefaultHeader(additionalHeaders, Headers.ContentType, MediaTypes.ApplicationJson);
-        let res = await this.patch(requestUrl, data, additionalHeaders);
-        return this._processResponse(res, this.requestOptions);
-    }
-    /**
-     * Makes a raw http request.
-     * All other methods such as get, post, patch, and request ultimately call this.
-     * Prefer get, del, post and patch
-     */
-    async request(verb, requestUrl, data, headers) {
-        if (this._disposed) {
-            throw new Error('Client has already been disposed.');
-        }
-        let parsedUrl = new URL(requestUrl);
-        let info = this._prepareRequest(verb, parsedUrl, headers);
-        // Only perform retries on reads since writes may not be idempotent.
-        let maxTries = this._allowRetries && RetryableHttpVerbs.indexOf(verb) != -1
-            ? this._maxRetries + 1
-            : 1;
-        let numTries = 0;
-        let response;
-        while (numTries < maxTries) {
-            response = await this.requestRaw(info, data);
-            // Check if it's an authentication challenge
-            if (response &&
-                response.message &&
-                response.message.statusCode === HttpCodes.Unauthorized) {
-                let authenticationHandler;
-                for (let i = 0; i < this.handlers.length; i++) {
-                    if (this.handlers[i].canHandleAuthentication(response)) {
-                        authenticationHandler = this.handlers[i];
-                        break;
-                    }
-                }
-                if (authenticationHandler) {
-                    return authenticationHandler.handleAuthentication(this, info, data);
-                }
-                else {
-                    // We have received an unauthorized response but have no handlers to handle it.
-                    // Let the response return to the caller.
-                    return response;
-                }
-            }
-            let redirectsRemaining = this._maxRedirects;
-            while (HttpRedirectCodes.indexOf(response.message.statusCode) != -1 &&
-                this._allowRedirects &&
-                redirectsRemaining > 0) {
-                const redirectUrl = response.message.headers['location'];
-                if (!redirectUrl) {
-                    // if there's no location to redirect to, we won't
-                    break;
-                }
-                let parsedRedirectUrl = new URL(redirectUrl);
-                if (parsedUrl.protocol == 'https:' &&
-                    parsedUrl.protocol != parsedRedirectUrl.protocol &&
-                    !this._allowRedirectDowngrade) {
-                    throw new Error('Redirect from HTTPS to HTTP protocol. This downgrade is not allowed for security reasons. If you want to allow this behavior, set the allowRedirectDowngrade option to true.');
-                }
-                // we need to finish reading the response before reassigning response
-                // which will leak the open socket.
-                await response.readBody();
-                // strip authorization header if redirected to a different hostname
-                if (parsedRedirectUrl.hostname !== parsedUrl.hostname) {
-                    for (let header in headers) {
-                        // header names are case insensitive
-                        if (header.toLowerCase() === 'authorization') {
-                            delete headers[header];
-                        }
-                    }
-                }
-                // let's make the request with the new redirectUrl
-                info = this._prepareRequest(verb, parsedRedirectUrl, headers);
-                response = await this.requestRaw(info, data);
-                redirectsRemaining--;
-            }
-            if (HttpResponseRetryCodes.indexOf(response.message.statusCode) == -1) {
-                // If not a retry code, return immediately instead of retrying
-                return response;
-            }
-            numTries += 1;
-            if (numTries < maxTries) {
-                await response.readBody();
-                await this._performExponentialBackoff(numTries);
-            }
-        }
-        return response;
-    }
-    /**
-     * Needs to be called if keepAlive is set to true in request options.
-     */
-    dispose() {
-        if (this._agent) {
-            this._agent.destroy();
-        }
-        this._disposed = true;
-    }
-    /**
-     * Raw request.
-     * @param info
-     * @param data
-     */
-    requestRaw(info, data) {
-        return new Promise((resolve, reject) => {
-            let callbackForResult = function (err, res) {
-                if (err) {
-                    reject(err);
-                }
-                resolve(res);
-            };
-            this.requestRawWithCallback(info, data, callbackForResult);
-        });
-    }
-    /**
-     * Raw request with callback.
-     * @param info
-     * @param data
-     * @param onResult
-     */
-    requestRawWithCallback(info, data, onResult) {
-        let socket;
-        if (typeof data === 'string') {
-            info.options.headers['Content-Length'] = Buffer.byteLength(data, 'utf8');
-        }
-        let callbackCalled = false;
-        let handleResult = (err, res) => {
-            if (!callbackCalled) {
-                callbackCalled = true;
-                onResult(err, res);
-            }
-        };
-        let req = info.httpModule.request(info.options, (msg) => {
-            let res = new HttpClientResponse(msg);
-            handleResult(null, res);
-        });
-        req.on('socket', sock => {
-            socket = sock;
-        });
-        // If we ever get disconnected, we want the socket to timeout eventually
-        req.setTimeout(this._socketTimeout || 3 * 60000, () => {
-            if (socket) {
-                socket.end();
-            }
-            handleResult(new Error('Request timeout: ' + info.options.path), null);
-        });
-        req.on('error', function (err) {
-            // err has statusCode property
-            // res should have headers
-            handleResult(err, null);
-        });
-        if (data && typeof data === 'string') {
-            req.write(data, 'utf8');
-        }
-        if (data && typeof data !== 'string') {
-            data.on('close', function () {
-                req.end();
-            });
-            data.pipe(req);
-        }
-        else {
-            req.end();
-        }
-    }
-    /**
-     * Gets an http agent. This function is useful when you need an http agent that handles
-     * routing through a proxy server - depending upon the url and proxy environment variables.
-     * @param serverUrl  The server URL where the request will be sent. For example, https://api.github.com
-     */
-    getAgent(serverUrl) {
-        let parsedUrl = new URL(serverUrl);
-        return this._getAgent(parsedUrl);
-    }
-    _prepareRequest(method, requestUrl, headers) {
-        const info = {};
-        info.parsedUrl = requestUrl;
-        const usingSsl = info.parsedUrl.protocol === 'https:';
-        info.httpModule = usingSsl ? https : http;
-        const defaultPort = usingSsl ? 443 : 80;
-        info.options = {};
-        info.options.host = info.parsedUrl.hostname;
-        info.options.port = info.parsedUrl.port
-            ? parseInt(info.parsedUrl.port)
-            : defaultPort;
-        info.options.path =
-            (info.parsedUrl.pathname || '') + (info.parsedUrl.search || '');
-        info.options.method = method;
-        info.options.headers = this._mergeHeaders(headers);
-        if (this.userAgent != null) {
-            info.options.headers['user-agent'] = this.userAgent;
-        }
-        info.options.agent = this._getAgent(info.parsedUrl);
-        // gives handlers an opportunity to participate
-        if (this.handlers) {
-            this.handlers.forEach(handler => {
-                handler.prepareRequest(info.options);
-            });
-        }
-        return info;
-    }
-    _mergeHeaders(headers) {
-        const lowercaseKeys = obj => Object.keys(obj).reduce((c, k) => ((c[k.toLowerCase()] = obj[k]), c), {});
-        if (this.requestOptions && this.requestOptions.headers) {
-            return Object.assign({}, lowercaseKeys(this.requestOptions.headers), lowercaseKeys(headers));
-        }
-        return lowercaseKeys(headers || {});
-    }
-    _getExistingOrDefaultHeader(additionalHeaders, header, _default) {
-        const lowercaseKeys = obj => Object.keys(obj).reduce((c, k) => ((c[k.toLowerCase()] = obj[k]), c), {});
-        let clientHeader;
-        if (this.requestOptions && this.requestOptions.headers) {
-            clientHeader = lowercaseKeys(this.requestOptions.headers)[header];
-        }
-        return additionalHeaders[header] || clientHeader || _default;
-    }
-    _getAgent(parsedUrl) {
-        let agent;
-        let proxyUrl = pm.getProxyUrl(parsedUrl);
-        let useProxy = proxyUrl && proxyUrl.hostname;
-        if (this._keepAlive && useProxy) {
-            agent = this._proxyAgent;
-        }
-        if (this._keepAlive && !useProxy) {
-            agent = this._agent;
-        }
-        // if agent is already assigned use that agent.
-        if (!!agent) {
-            return agent;
-        }
-        const usingSsl = parsedUrl.protocol === 'https:';
-        let maxSockets = 100;
-        if (!!this.requestOptions) {
-            maxSockets = this.requestOptions.maxSockets || http.globalAgent.maxSockets;
-        }
-        if (useProxy) {
-            // If using proxy, need tunnel
-            if (!tunnel) {
-                tunnel = __nccwpck_require__(4294);
-            }
-            const agentOptions = {
-                maxSockets: maxSockets,
-                keepAlive: this._keepAlive,
-                proxy: {
-                    ...((proxyUrl.username || proxyUrl.password) && {
-                        proxyAuth: `${proxyUrl.username}:${proxyUrl.password}`
-                    }),
-                    host: proxyUrl.hostname,
-                    port: proxyUrl.port
-                }
-            };
-            let tunnelAgent;
-            const overHttps = proxyUrl.protocol === 'https:';
-            if (usingSsl) {
-                tunnelAgent = overHttps ? tunnel.httpsOverHttps : tunnel.httpsOverHttp;
-            }
-            else {
-                tunnelAgent = overHttps ? tunnel.httpOverHttps : tunnel.httpOverHttp;
-            }
-            agent = tunnelAgent(agentOptions);
-            this._proxyAgent = agent;
-        }
-        // if reusing agent across request and tunneling agent isn't assigned create a new agent
-        if (this._keepAlive && !agent) {
-            const options = { keepAlive: this._keepAlive, maxSockets: maxSockets };
-            agent = usingSsl ? new https.Agent(options) : new http.Agent(options);
-            this._agent = agent;
-        }
-        // if not using private agent and tunnel agent isn't setup then use global agent
-        if (!agent) {
-            agent = usingSsl ? https.globalAgent : http.globalAgent;
-        }
-        if (usingSsl && this._ignoreSslError) {
-            // we don't want to set NODE_TLS_REJECT_UNAUTHORIZED=0 since that will affect request for entire process
-            // http.RequestOptions doesn't expose a way to modify RequestOptions.agent.options
-            // we have to cast it to any and change it directly
-            agent.options = Object.assign(agent.options || {}, {
-                rejectUnauthorized: false
-            });
-        }
-        return agent;
-    }
-    _performExponentialBackoff(retryNumber) {
-        retryNumber = Math.min(ExponentialBackoffCeiling, retryNumber);
-        const ms = ExponentialBackoffTimeSlice * Math.pow(2, retryNumber);
-        return new Promise(resolve => setTimeout(() => resolve(), ms));
-    }
-    static dateTimeDeserializer(key, value) {
-        if (typeof value === 'string') {
-            let a = new Date(value);
-            if (!isNaN(a.valueOf())) {
-                return a;
-            }
-        }
-        return value;
-    }
-    async _processResponse(res, options) {
-        return new Promise(async (resolve, reject) => {
-            const statusCode = res.message.statusCode;
-            const response = {
-                statusCode: statusCode,
-                result: null,
-                headers: {}
-            };
-            // not found leads to null obj returned
-            if (statusCode == HttpCodes.NotFound) {
-                resolve(response);
-            }
-            let obj;
-            let contents;
-            // get the result from the body
-            try {
-                contents = await res.readBody();
-                if (contents && contents.length > 0) {
-                    if (options && options.deserializeDates) {
-                        obj = JSON.parse(contents, HttpClient.dateTimeDeserializer);
-                    }
-                    else {
-                        obj = JSON.parse(contents);
-                    }
-                    response.result = obj;
-                }
-                response.headers = res.message.headers;
-            }
-            catch (err) {
-                // Invalid resource (contents not json);  leaving result obj null
-            }
-            // note that 3xx redirects are handled by the http layer.
-            if (statusCode > 299) {
-                let msg;
-                // if exception/error in body, attempt to get better error
-                if (obj && obj.message) {
-                    msg = obj.message;
-                }
-                else if (contents && contents.length > 0) {
-                    // it may be the case that the exception is in the body message as string
-                    msg = contents;
-                }
-                else {
-                    msg = 'Failed request: (' + statusCode + ')';
-                }
-                let err = new HttpClientError(msg, statusCode);
-                err.result = response.result;
-                reject(err);
-            }
-            else {
-                resolve(response);
-            }
-        });
-    }
-}
-exports.HttpClient = HttpClient;
-
-
-/***/ }),
-
-/***/ 6443:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-function getProxyUrl(reqUrl) {
-    let usingSsl = reqUrl.protocol === 'https:';
-    let proxyUrl;
-    if (checkBypass(reqUrl)) {
-        return proxyUrl;
-    }
-    let proxyVar;
-    if (usingSsl) {
-        proxyVar = process.env['https_proxy'] || process.env['HTTPS_PROXY'];
-    }
-    else {
-        proxyVar = process.env['http_proxy'] || process.env['HTTP_PROXY'];
-    }
-    if (proxyVar) {
-        proxyUrl = new URL(proxyVar);
-    }
-    return proxyUrl;
-}
-exports.getProxyUrl = getProxyUrl;
-function checkBypass(reqUrl) {
-    if (!reqUrl.hostname) {
-        return false;
-    }
-    let noProxy = process.env['no_proxy'] || process.env['NO_PROXY'] || '';
-    if (!noProxy) {
-        return false;
-    }
-    // Determine the request port
-    let reqPort;
-    if (reqUrl.port) {
-        reqPort = Number(reqUrl.port);
-    }
-    else if (reqUrl.protocol === 'http:') {
-        reqPort = 80;
-    }
-    else if (reqUrl.protocol === 'https:') {
-        reqPort = 443;
-    }
-    // Format the request hostname and hostname with port
-    let upperReqHosts = [reqUrl.hostname.toUpperCase()];
-    if (typeof reqPort === 'number') {
-        upperReqHosts.push(`${upperReqHosts[0]}:${reqPort}`);
-    }
-    // Compare request host against noproxy
-    for (let upperNoProxyItem of noProxy
-        .split(',')
-        .map(x => x.trim().toUpperCase())
-        .filter(x => x)) {
-        if (upperReqHosts.some(x => x === upperNoProxyItem)) {
-            return true;
-        }
-    }
-    return false;
-}
-exports.checkBypass = checkBypass;
-
+module.exports = JSON.parse('{"partitions":[{"id":"aws","outputs":{"dnsSuffix":"amazonaws.com","dualStackDnsSuffix":"api.aws","name":"aws","supportsDualStack":true,"supportsFIPS":true},"regionRegex":"^(us|eu|ap|sa|ca|me|af)\\\\-\\\\w+\\\\-\\\\d+$","regions":{"af-south-1":{"description":"Africa (Cape Town)"},"ap-east-1":{"description":"Asia Pacific (Hong Kong)"},"ap-northeast-1":{"description":"Asia Pacific (Tokyo)"},"ap-northeast-2":{"description":"Asia Pacific (Seoul)"},"ap-northeast-3":{"description":"Asia Pacific (Osaka)"},"ap-south-1":{"description":"Asia Pacific (Mumbai)"},"ap-south-2":{"description":"Asia Pacific (Hyderabad)"},"ap-southeast-1":{"description":"Asia Pacific (Singapore)"},"ap-southeast-2":{"description":"Asia Pacific (Sydney)"},"ap-southeast-3":{"description":"Asia Pacific (Jakarta)"},"aws-global":{"description":"AWS Standard global region"},"ca-central-1":{"description":"Canada (Central)"},"eu-central-1":{"description":"Europe (Frankfurt)"},"eu-central-2":{"description":"Europe (Zurich)"},"eu-north-1":{"description":"Europe (Stockholm)"},"eu-south-1":{"description":"Europe (Milan)"},"eu-south-2":{"description":"Europe (Spain)"},"eu-west-1":{"description":"Europe (Ireland)"},"eu-west-2":{"description":"Europe (London)"},"eu-west-3":{"description":"Europe (Paris)"},"me-central-1":{"description":"Middle East (UAE)"},"me-south-1":{"description":"Middle East (Bahrain)"},"sa-east-1":{"description":"South America (Sao Paulo)"},"us-east-1":{"description":"US East (N. Virginia)"},"us-east-2":{"description":"US East (Ohio)"},"us-west-1":{"description":"US West (N. California)"},"us-west-2":{"description":"US West (Oregon)"}}},{"id":"aws-cn","outputs":{"dnsSuffix":"amazonaws.com.cn","dualStackDnsSuffix":"api.amazonwebservices.com.cn","name":"aws-cn","supportsDualStack":true,"supportsFIPS":true},"regionRegex":"^cn\\\\-\\\\w+\\\\-\\\\d+$","regions":{"aws-cn-global":{"description":"AWS China global region"},"cn-north-1":{"description":"China (Beijing)"},"cn-northwest-1":{"description":"China (Ningxia)"}}},{"id":"aws-us-gov","outputs":{"dnsSuffix":"amazonaws.com","dualStackDnsSuffix":"api.aws","name":"aws-us-gov","supportsDualStack":true,"supportsFIPS":true},"regionRegex":"^us\\\\-gov\\\\-\\\\w+\\\\-\\\\d+$","regions":{"aws-us-gov-global":{"description":"AWS GovCloud (US) global region"},"us-gov-east-1":{"description":"AWS GovCloud (US-East)"},"us-gov-west-1":{"description":"AWS GovCloud (US-West)"}}},{"id":"aws-iso","outputs":{"dnsSuffix":"c2s.ic.gov","dualStackDnsSuffix":"c2s.ic.gov","name":"aws-iso","supportsDualStack":false,"supportsFIPS":true},"regionRegex":"^us\\\\-iso\\\\-\\\\w+\\\\-\\\\d+$","regions":{"aws-iso-global":{"description":"AWS ISO (US) global region"},"us-iso-east-1":{"description":"US ISO East"},"us-iso-west-1":{"description":"US ISO WEST"}}},{"id":"aws-iso-b","outputs":{"dnsSuffix":"sc2s.sgov.gov","dualStackDnsSuffix":"sc2s.sgov.gov","name":"aws-iso-b","supportsDualStack":false,"supportsFIPS":true},"regionRegex":"^us\\\\-isob\\\\-\\\\w+\\\\-\\\\d+$","regions":{"aws-iso-b-global":{"description":"AWS ISOB (US) global region"},"us-isob-east-1":{"description":"US ISOB East (Ohio)"}}}],"version":"1.1"}');
 
 /***/ }),
 
@@ -1308,7 +50,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SecretsManager = void 0;
 const CancelRotateSecretCommand_1 = __nccwpck_require__(3679);
 const CreateSecretCommand_1 = __nccwpck_require__(3210);
-const DeleteResourcePolicyCommand_1 = __nccwpck_require__(5727);
+const DeleteResourcePolicyCommand_1 = __nccwpck_require__(717);
 const DeleteSecretCommand_1 = __nccwpck_require__(6643);
 const DescribeSecretCommand_1 = __nccwpck_require__(5973);
 const GetRandomPasswordCommand_1 = __nccwpck_require__(8342);
@@ -1653,6 +395,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SecretsManagerClient = void 0;
 const config_resolver_1 = __nccwpck_require__(6153);
 const middleware_content_length_1 = __nccwpck_require__(2245);
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_host_header_1 = __nccwpck_require__(2545);
 const middleware_logger_1 = __nccwpck_require__(14);
 const middleware_recursion_detection_1 = __nccwpck_require__(5525);
@@ -1660,18 +403,20 @@ const middleware_retry_1 = __nccwpck_require__(6064);
 const middleware_signing_1 = __nccwpck_require__(4935);
 const middleware_user_agent_1 = __nccwpck_require__(4688);
 const smithy_client_1 = __nccwpck_require__(4963);
+const EndpointParameters_1 = __nccwpck_require__(7732);
 const runtimeConfig_1 = __nccwpck_require__(1501);
 class SecretsManagerClient extends smithy_client_1.Client {
     constructor(configuration) {
         const _config_0 = (0, runtimeConfig_1.getRuntimeConfig)(configuration);
-        const _config_1 = (0, config_resolver_1.resolveRegionConfig)(_config_0);
-        const _config_2 = (0, config_resolver_1.resolveEndpointsConfig)(_config_1);
-        const _config_3 = (0, middleware_retry_1.resolveRetryConfig)(_config_2);
-        const _config_4 = (0, middleware_host_header_1.resolveHostHeaderConfig)(_config_3);
-        const _config_5 = (0, middleware_signing_1.resolveAwsAuthConfig)(_config_4);
-        const _config_6 = (0, middleware_user_agent_1.resolveUserAgentConfig)(_config_5);
-        super(_config_6);
-        this.config = _config_6;
+        const _config_1 = (0, EndpointParameters_1.resolveClientEndpointParameters)(_config_0);
+        const _config_2 = (0, config_resolver_1.resolveRegionConfig)(_config_1);
+        const _config_3 = (0, middleware_endpoint_1.resolveEndpointConfig)(_config_2);
+        const _config_4 = (0, middleware_retry_1.resolveRetryConfig)(_config_3);
+        const _config_5 = (0, middleware_host_header_1.resolveHostHeaderConfig)(_config_4);
+        const _config_6 = (0, middleware_signing_1.resolveAwsAuthConfig)(_config_5);
+        const _config_7 = (0, middleware_user_agent_1.resolveUserAgentConfig)(_config_6);
+        super(_config_7);
+        this.config = _config_7;
         this.middlewareStack.use((0, middleware_retry_1.getRetryPlugin)(this.config));
         this.middlewareStack.use((0, middleware_content_length_1.getContentLengthPlugin)(this.config));
         this.middlewareStack.use((0, middleware_host_header_1.getHostHeaderPlugin)(this.config));
@@ -1696,6 +441,7 @@ exports.SecretsManagerClient = SecretsManagerClient;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.CancelRotateSecretCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -1705,8 +451,17 @@ class CancelRotateSecretCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, CancelRotateSecretCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -1740,6 +495,7 @@ exports.CancelRotateSecretCommand = CancelRotateSecretCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.CreateSecretCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -1749,8 +505,17 @@ class CreateSecretCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, CreateSecretCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -1777,13 +542,14 @@ exports.CreateSecretCommand = CreateSecretCommand;
 
 /***/ }),
 
-/***/ 5727:
+/***/ 717:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.DeleteResourcePolicyCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -1793,8 +559,17 @@ class DeleteResourcePolicyCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, DeleteResourcePolicyCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -1828,6 +603,7 @@ exports.DeleteResourcePolicyCommand = DeleteResourcePolicyCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.DeleteSecretCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -1837,8 +613,17 @@ class DeleteSecretCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, DeleteSecretCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -1872,6 +657,7 @@ exports.DeleteSecretCommand = DeleteSecretCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.DescribeSecretCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -1881,8 +667,17 @@ class DescribeSecretCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, DescribeSecretCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -1916,6 +711,7 @@ exports.DescribeSecretCommand = DescribeSecretCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetRandomPasswordCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -1925,8 +721,17 @@ class GetRandomPasswordCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, GetRandomPasswordCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -1960,6 +765,7 @@ exports.GetRandomPasswordCommand = GetRandomPasswordCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetResourcePolicyCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -1969,8 +775,17 @@ class GetResourcePolicyCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, GetResourcePolicyCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2004,6 +819,7 @@ exports.GetResourcePolicyCommand = GetResourcePolicyCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetSecretValueCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2013,8 +829,17 @@ class GetSecretValueCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, GetSecretValueCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2048,6 +873,7 @@ exports.GetSecretValueCommand = GetSecretValueCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ListSecretVersionIdsCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2057,8 +883,17 @@ class ListSecretVersionIdsCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, ListSecretVersionIdsCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2092,6 +927,7 @@ exports.ListSecretVersionIdsCommand = ListSecretVersionIdsCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ListSecretsCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2101,8 +937,17 @@ class ListSecretsCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, ListSecretsCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2136,6 +981,7 @@ exports.ListSecretsCommand = ListSecretsCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutResourcePolicyCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2145,8 +991,17 @@ class PutResourcePolicyCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, PutResourcePolicyCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2180,6 +1035,7 @@ exports.PutResourcePolicyCommand = PutResourcePolicyCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.PutSecretValueCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2189,8 +1045,17 @@ class PutSecretValueCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, PutSecretValueCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2224,6 +1089,7 @@ exports.PutSecretValueCommand = PutSecretValueCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.RemoveRegionsFromReplicationCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2233,8 +1099,17 @@ class RemoveRegionsFromReplicationCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, RemoveRegionsFromReplicationCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2268,6 +1143,7 @@ exports.RemoveRegionsFromReplicationCommand = RemoveRegionsFromReplicationComman
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ReplicateSecretToRegionsCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2277,8 +1153,17 @@ class ReplicateSecretToRegionsCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, ReplicateSecretToRegionsCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2312,6 +1197,7 @@ exports.ReplicateSecretToRegionsCommand = ReplicateSecretToRegionsCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.RestoreSecretCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2321,8 +1207,17 @@ class RestoreSecretCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, RestoreSecretCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2356,6 +1251,7 @@ exports.RestoreSecretCommand = RestoreSecretCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.RotateSecretCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2365,8 +1261,17 @@ class RotateSecretCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, RotateSecretCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2400,6 +1305,7 @@ exports.RotateSecretCommand = RotateSecretCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.StopReplicationToReplicaCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2409,8 +1315,17 @@ class StopReplicationToReplicaCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, StopReplicationToReplicaCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2444,6 +1359,7 @@ exports.StopReplicationToReplicaCommand = StopReplicationToReplicaCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.TagResourceCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2453,8 +1369,17 @@ class TagResourceCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, TagResourceCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2488,6 +1413,7 @@ exports.TagResourceCommand = TagResourceCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.UntagResourceCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2497,8 +1423,17 @@ class UntagResourceCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, UntagResourceCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2532,6 +1467,7 @@ exports.UntagResourceCommand = UntagResourceCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.UpdateSecretCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2541,8 +1477,17 @@ class UpdateSecretCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, UpdateSecretCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2576,6 +1521,7 @@ exports.UpdateSecretCommand = UpdateSecretCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.UpdateSecretVersionStageCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2585,8 +1531,17 @@ class UpdateSecretVersionStageCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, UpdateSecretVersionStageCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2620,6 +1575,7 @@ exports.UpdateSecretVersionStageCommand = UpdateSecretVersionStageCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ValidateResourcePolicyCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(5498);
@@ -2629,8 +1585,17 @@ class ValidateResourcePolicyCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, ValidateResourcePolicyCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SecretsManagerClient";
@@ -2666,7 +1631,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(3679), exports);
 tslib_1.__exportStar(__nccwpck_require__(3210), exports);
-tslib_1.__exportStar(__nccwpck_require__(5727), exports);
+tslib_1.__exportStar(__nccwpck_require__(717), exports);
 tslib_1.__exportStar(__nccwpck_require__(6643), exports);
 tslib_1.__exportStar(__nccwpck_require__(5973), exports);
 tslib_1.__exportStar(__nccwpck_require__(8342), exports);
@@ -2690,204 +1655,57 @@ tslib_1.__exportStar(__nccwpck_require__(1486), exports);
 
 /***/ }),
 
-/***/ 6267:
+/***/ 7732:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveClientEndpointParameters = void 0;
+const resolveClientEndpointParameters = (options) => {
+    return {
+        ...options,
+        useDualstackEndpoint: options.useDualstackEndpoint ?? false,
+        useFipsEndpoint: options.useFipsEndpoint ?? false,
+        defaultSigningName: "secretsmanager",
+    };
+};
+exports.resolveClientEndpointParameters = resolveClientEndpointParameters;
+
+
+/***/ }),
+
+/***/ 5606:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.defaultRegionInfoProvider = void 0;
-const config_resolver_1 = __nccwpck_require__(6153);
-const regionHash = {
-    "ca-central-1": {
-        variants: [
-            {
-                hostname: "secretsmanager-fips.ca-central-1.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-east-1": {
-        variants: [
-            {
-                hostname: "secretsmanager-fips.us-east-1.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-east-2": {
-        variants: [
-            {
-                hostname: "secretsmanager-fips.us-east-2.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-gov-east-1": {
-        variants: [
-            {
-                hostname: "secretsmanager-fips.us-gov-east-1.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-gov-west-1": {
-        variants: [
-            {
-                hostname: "secretsmanager-fips.us-gov-west-1.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-west-1": {
-        variants: [
-            {
-                hostname: "secretsmanager-fips.us-west-1.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-west-2": {
-        variants: [
-            {
-                hostname: "secretsmanager-fips.us-west-2.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
+exports.defaultEndpointResolver = void 0;
+const util_endpoints_1 = __nccwpck_require__(3350);
+const ruleset_1 = __nccwpck_require__(8167);
+const defaultEndpointResolver = (endpointParams, context = {}) => {
+    return (0, util_endpoints_1.resolveEndpoint)(ruleset_1.ruleSet, {
+        endpointParams: endpointParams,
+        logger: context.logger,
+    });
 };
-const partitionHash = {
-    aws: {
-        regions: [
-            "af-south-1",
-            "ap-east-1",
-            "ap-northeast-1",
-            "ap-northeast-2",
-            "ap-northeast-3",
-            "ap-south-1",
-            "ap-southeast-1",
-            "ap-southeast-2",
-            "ap-southeast-3",
-            "ca-central-1",
-            "ca-central-1-fips",
-            "eu-central-1",
-            "eu-north-1",
-            "eu-south-1",
-            "eu-west-1",
-            "eu-west-2",
-            "eu-west-3",
-            "me-central-1",
-            "me-south-1",
-            "sa-east-1",
-            "us-east-1",
-            "us-east-1-fips",
-            "us-east-2",
-            "us-east-2-fips",
-            "us-west-1",
-            "us-west-1-fips",
-            "us-west-2",
-            "us-west-2-fips",
-        ],
-        regionRegex: "^(us|eu|ap|sa|ca|me|af)\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "secretsmanager.{region}.amazonaws.com",
-                tags: [],
-            },
-            {
-                hostname: "secretsmanager-fips.{region}.amazonaws.com",
-                tags: ["fips"],
-            },
-            {
-                hostname: "secretsmanager-fips.{region}.api.aws",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "secretsmanager.{region}.api.aws",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-    "aws-cn": {
-        regions: ["cn-north-1", "cn-northwest-1"],
-        regionRegex: "^cn\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "secretsmanager.{region}.amazonaws.com.cn",
-                tags: [],
-            },
-            {
-                hostname: "secretsmanager-fips.{region}.amazonaws.com.cn",
-                tags: ["fips"],
-            },
-            {
-                hostname: "secretsmanager-fips.{region}.api.amazonwebservices.com.cn",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "secretsmanager.{region}.api.amazonwebservices.com.cn",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-    "aws-iso": {
-        regions: ["us-iso-east-1", "us-iso-west-1"],
-        regionRegex: "^us\\-iso\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "secretsmanager.{region}.c2s.ic.gov",
-                tags: [],
-            },
-            {
-                hostname: "secretsmanager-fips.{region}.c2s.ic.gov",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "aws-iso-b": {
-        regions: ["us-isob-east-1"],
-        regionRegex: "^us\\-isob\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "secretsmanager.{region}.sc2s.sgov.gov",
-                tags: [],
-            },
-            {
-                hostname: "secretsmanager-fips.{region}.sc2s.sgov.gov",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "aws-us-gov": {
-        regions: ["us-gov-east-1", "us-gov-east-1-fips", "us-gov-west-1", "us-gov-west-1-fips"],
-        regionRegex: "^us\\-gov\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "secretsmanager.{region}.amazonaws.com",
-                tags: [],
-            },
-            {
-                hostname: "secretsmanager-fips.{region}.amazonaws.com",
-                tags: ["fips"],
-            },
-            {
-                hostname: "secretsmanager-fips.{region}.api.aws",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "secretsmanager.{region}.api.aws",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-};
-const defaultRegionInfoProvider = async (region, options) => (0, config_resolver_1.getRegionInfo)(region, {
-    ...options,
-    signingService: "secretsmanager",
-    regionHash,
-    partitionHash,
-});
-exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
+exports.defaultEndpointResolver = defaultEndpointResolver;
+
+
+/***/ }),
+
+/***/ 8167:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ruleSet = void 0;
+const q = "fn", r = "argv", s = "ref";
+const a = true, b = false, c = "String", d = "PartitionResult", e = "tree", f = "error", g = "endpoint", h = { "required": true, "default": false, "type": "Boolean" }, i = { [s]: "Endpoint" }, j = { [q]: "booleanEquals", [r]: [{ [s]: "UseFIPS" }, true] }, k = { [q]: "booleanEquals", [r]: [{ [s]: "UseDualStack" }, true] }, l = {}, m = { [q]: "booleanEquals", [r]: [true, { [q]: "getAttr", [r]: [{ [s]: d }, "supportsFIPS"] }] }, n = { [q]: "booleanEquals", [r]: [true, { [q]: "getAttr", [r]: [{ [s]: d }, "supportsDualStack"] }] }, o = [j], p = [k];
+const _data = { version: "1.0", parameters: { Region: { required: a, type: c }, UseDualStack: h, UseFIPS: h, Endpoint: { required: b, type: c } }, rules: [{ conditions: [{ [q]: "aws.partition", [r]: [{ [s]: "Region" }], assign: d }], type: e, rules: [{ conditions: [{ [q]: "isSet", [r]: [i] }], type: e, rules: [{ conditions: o, error: "Invalid Configuration: FIPS and custom endpoint are not supported", type: f }, { type: e, rules: [{ conditions: p, error: "Invalid Configuration: Dualstack and custom endpoint are not supported", type: f }, { endpoint: { url: i, properties: l, headers: l }, type: g }] }] }, { conditions: [j, k], type: e, rules: [{ conditions: [m, n], type: e, rules: [{ endpoint: { url: "https://secretsmanager-fips.{Region}.{PartitionResult#dualStackDnsSuffix}", properties: l, headers: l }, type: g }] }, { error: "FIPS and DualStack are enabled, but this partition does not support one or both", type: f }] }, { conditions: o, type: e, rules: [{ conditions: [m], type: e, rules: [{ type: e, rules: [{ endpoint: { url: "https://secretsmanager-fips.{Region}.{PartitionResult#dnsSuffix}", properties: l, headers: l }, type: g }] }] }, { error: "FIPS is enabled but this partition does not support FIPS", type: f }] }, { conditions: p, type: e, rules: [{ conditions: [n], type: e, rules: [{ endpoint: { url: "https://secretsmanager.{Region}.{PartitionResult#dualStackDnsSuffix}", properties: l, headers: l }, type: g }] }, { error: "DualStack is enabled but this partition does not support DualStack", type: f }] }, { endpoint: { url: "https://secretsmanager.{Region}.{PartitionResult#dnsSuffix}", properties: l, headers: l }, type: g }] }] };
+exports.ruleSet = _data;
 
 
 /***/ }),
@@ -3103,6 +1921,7 @@ var FilterNameStringType;
     FilterNameStringType["all"] = "all";
     FilterNameStringType["description"] = "description";
     FilterNameStringType["name"] = "name";
+    FilterNameStringType["owning_service"] = "owning-service";
     FilterNameStringType["primary_region"] = "primary-region";
     FilterNameStringType["tag_key"] = "tag-key";
     FilterNameStringType["tag_value"] = "tag-value";
@@ -4812,12 +3631,11 @@ const serializeAws_json1_1CancelRotateSecretRequest = (input, context) => {
     };
 };
 const serializeAws_json1_1CreateSecretRequest = (input, context) => {
-    var _a;
     return {
         ...(input.AddReplicaRegions != null && {
             AddReplicaRegions: serializeAws_json1_1AddReplicaRegionListType(input.AddReplicaRegions, context),
         }),
-        ClientRequestToken: (_a = input.ClientRequestToken) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
+        ClientRequestToken: input.ClientRequestToken ?? (0, uuid_1.v4)(),
         ...(input.Description != null && { Description: input.Description }),
         ...(input.ForceOverwriteReplicaSecret != null && {
             ForceOverwriteReplicaSecret: input.ForceOverwriteReplicaSecret,
@@ -4893,6 +3711,7 @@ const serializeAws_json1_1GetSecretValueRequest = (input, context) => {
 const serializeAws_json1_1ListSecretsRequest = (input, context) => {
     return {
         ...(input.Filters != null && { Filters: serializeAws_json1_1FiltersListType(input.Filters, context) }),
+        ...(input.IncludePlannedDeletion != null && { IncludePlannedDeletion: input.IncludePlannedDeletion }),
         ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
         ...(input.NextToken != null && { NextToken: input.NextToken }),
         ...(input.SortOrder != null && { SortOrder: input.SortOrder }),
@@ -4914,9 +3733,8 @@ const serializeAws_json1_1PutResourcePolicyRequest = (input, context) => {
     };
 };
 const serializeAws_json1_1PutSecretValueRequest = (input, context) => {
-    var _a;
     return {
-        ClientRequestToken: (_a = input.ClientRequestToken) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
+        ClientRequestToken: input.ClientRequestToken ?? (0, uuid_1.v4)(),
         ...(input.SecretBinary != null && { SecretBinary: context.base64Encoder(input.SecretBinary) }),
         ...(input.SecretId != null && { SecretId: input.SecretId }),
         ...(input.SecretString != null && { SecretString: input.SecretString }),
@@ -4963,9 +3781,8 @@ const serializeAws_json1_1RestoreSecretRequest = (input, context) => {
     };
 };
 const serializeAws_json1_1RotateSecretRequest = (input, context) => {
-    var _a;
     return {
-        ClientRequestToken: (_a = input.ClientRequestToken) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
+        ClientRequestToken: input.ClientRequestToken ?? (0, uuid_1.v4)(),
         ...(input.RotateImmediately != null && { RotateImmediately: input.RotateImmediately }),
         ...(input.RotationLambdaARN != null && { RotationLambdaARN: input.RotationLambdaARN }),
         ...(input.RotationRules != null && {
@@ -5026,9 +3843,8 @@ const serializeAws_json1_1UntagResourceRequest = (input, context) => {
     };
 };
 const serializeAws_json1_1UpdateSecretRequest = (input, context) => {
-    var _a;
     return {
-        ClientRequestToken: (_a = input.ClientRequestToken) !== null && _a !== void 0 ? _a : (0, uuid_1.v4)(),
+        ClientRequestToken: input.ClientRequestToken ?? (0, uuid_1.v4)(),
         ...(input.Description != null && { Description: input.Description }),
         ...(input.KmsKeyId != null && { KmsKeyId: input.KmsKeyId }),
         ...(input.SecretBinary != null && { SecretBinary: context.base64Encoder(input.SecretBinary) }),
@@ -5108,6 +3924,9 @@ const deserializeAws_json1_1DescribeSecretResponse = (output, context) => {
             ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.LastRotatedDate)))
             : undefined,
         Name: (0, smithy_client_1.expectString)(output.Name),
+        NextRotationDate: output.NextRotationDate != null
+            ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.NextRotationDate)))
+            : undefined,
         OwningService: (0, smithy_client_1.expectString)(output.OwningService),
         PrimaryRegion: (0, smithy_client_1.expectString)(output.PrimaryRegion),
         ReplicationStatus: output.ReplicationStatus != null
@@ -5324,6 +4143,9 @@ const deserializeAws_json1_1SecretListEntry = (output, context) => {
             ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.LastRotatedDate)))
             : undefined,
         Name: (0, smithy_client_1.expectString)(output.Name),
+        NextRotationDate: output.NextRotationDate != null
+            ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.NextRotationDate)))
+            : undefined,
         OwningService: (0, smithy_client_1.expectString)(output.OwningService),
         PrimaryRegion: (0, smithy_client_1.expectString)(output.PrimaryRegion),
         RotationEnabled: (0, smithy_client_1.expectBoolean)(output.RotationEnabled),
@@ -5388,10 +4210,8 @@ const deserializeAws_json1_1SecretVersionsToStagesMapType = (output, context) =>
         if (value === null) {
             return acc;
         }
-        return {
-            ...acc,
-            [key]: deserializeAws_json1_1SecretVersionStagesType(value, context),
-        };
+        acc[key] = deserializeAws_json1_1SecretVersionStagesType(value, context);
+        return acc;
     }, {});
 };
 const deserializeAws_json1_1StopReplicationToReplicaResponse = (output, context) => {
@@ -5454,15 +4274,12 @@ const deserializeAws_json1_1ValidationErrorsType = (output, context) => {
     });
     return retVal;
 };
-const deserializeMetadata = (output) => {
-    var _a;
-    return ({
-        httpStatusCode: output.statusCode,
-        requestId: (_a = output.headers["x-amzn-requestid"]) !== null && _a !== void 0 ? _a : output.headers["x-amzn-request-id"],
-        extendedRequestId: output.headers["x-amz-id-2"],
-        cfId: output.headers["x-amz-cf-id"],
-    });
-};
+const deserializeMetadata = (output) => ({
+    httpStatusCode: output.statusCode,
+    requestId: output.headers["x-amzn-requestid"] ?? output.headers["x-amzn-request-id"] ?? output.headers["x-amz-request-id"],
+    extendedRequestId: output.headers["x-amz-id-2"],
+    cfId: output.headers["x-amz-cf-id"],
+});
 const collectBody = (streamBody = new Uint8Array(), context) => {
     if (streamBody instanceof Uint8Array) {
         return Promise.resolve(streamBody);
@@ -5495,9 +4312,8 @@ const parseBody = (streamBody, context) => collectBodyString(streamBody, context
     return {};
 });
 const parseErrorBody = async (errorBody, context) => {
-    var _a;
     const value = await parseBody(errorBody, context);
-    value.message = (_a = value.message) !== null && _a !== void 0 ? _a : value.Message;
+    value.message = value.message ?? value.Message;
     return value;
 };
 const loadRestJsonErrorCode = (output, data) => {
@@ -5549,8 +4365,8 @@ const hash_node_1 = __nccwpck_require__(7442);
 const middleware_retry_1 = __nccwpck_require__(6064);
 const node_config_provider_1 = __nccwpck_require__(7684);
 const node_http_handler_1 = __nccwpck_require__(8805);
-const util_base64_node_1 = __nccwpck_require__(8588);
 const util_body_length_node_1 = __nccwpck_require__(4147);
+const util_retry_1 = __nccwpck_require__(9395);
 const util_user_agent_node_1 = __nccwpck_require__(8095);
 const util_utf8_node_1 = __nccwpck_require__(6278);
 const runtimeConfig_shared_1 = __nccwpck_require__(8670);
@@ -5558,7 +4374,6 @@ const smithy_client_1 = __nccwpck_require__(4963);
 const util_defaults_mode_node_1 = __nccwpck_require__(4243);
 const smithy_client_2 = __nccwpck_require__(4963);
 const getRuntimeConfig = (config) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q;
     (0, smithy_client_2.emitWarningIfUnsupportedVersion)(process.version);
     const defaultsMode = (0, util_defaults_mode_node_1.resolveDefaultsModeConfig)(config);
     const defaultConfigProvider = () => defaultsMode().then(smithy_client_1.loadConfigsForDefaultMode);
@@ -5568,24 +4383,24 @@ const getRuntimeConfig = (config) => {
         ...config,
         runtime: "node",
         defaultsMode,
-        base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
-        base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
-        bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
-        credentialDefaultProvider: (_d = config === null || config === void 0 ? void 0 : config.credentialDefaultProvider) !== null && _d !== void 0 ? _d : (0, client_sts_1.decorateDefaultCredentialProvider)(credential_provider_node_1.defaultProvider),
-        defaultUserAgentProvider: (_e = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : (0, util_user_agent_node_1.defaultUserAgent)({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
-        maxAttempts: (_f = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _f !== void 0 ? _f : (0, node_config_provider_1.loadConfig)(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
-        region: (_g = config === null || config === void 0 ? void 0 : config.region) !== null && _g !== void 0 ? _g : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-        requestHandler: (_h = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
-        retryMode: (_j = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _j !== void 0 ? _j : (0, node_config_provider_1.loadConfig)({
-            ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
-            default: async () => (await defaultConfigProvider()).retryMode || middleware_retry_1.DEFAULT_RETRY_MODE,
-        }),
-        sha256: (_k = config === null || config === void 0 ? void 0 : config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
-        streamCollector: (_l = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
-        useDualstackEndpoint: (_m = config === null || config === void 0 ? void 0 : config.useDualstackEndpoint) !== null && _m !== void 0 ? _m : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
-        useFipsEndpoint: (_o = config === null || config === void 0 ? void 0 : config.useFipsEndpoint) !== null && _o !== void 0 ? _o : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS),
-        utf8Decoder: (_p = config === null || config === void 0 ? void 0 : config.utf8Decoder) !== null && _p !== void 0 ? _p : util_utf8_node_1.fromUtf8,
-        utf8Encoder: (_q = config === null || config === void 0 ? void 0 : config.utf8Encoder) !== null && _q !== void 0 ? _q : util_utf8_node_1.toUtf8,
+        bodyLengthChecker: config?.bodyLengthChecker ?? util_body_length_node_1.calculateBodyLength,
+        credentialDefaultProvider: config?.credentialDefaultProvider ?? (0, client_sts_1.decorateDefaultCredentialProvider)(credential_provider_node_1.defaultProvider),
+        defaultUserAgentProvider: config?.defaultUserAgentProvider ??
+            (0, util_user_agent_node_1.defaultUserAgent)({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        maxAttempts: config?.maxAttempts ?? (0, node_config_provider_1.loadConfig)(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        region: config?.region ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: config?.requestHandler ?? new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
+        retryMode: config?.retryMode ??
+            (0, node_config_provider_1.loadConfig)({
+                ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
+                default: async () => (await defaultConfigProvider()).retryMode || util_retry_1.DEFAULT_RETRY_MODE,
+            }),
+        sha256: config?.sha256 ?? hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: config?.streamCollector ?? node_http_handler_1.streamCollector,
+        useDualstackEndpoint: config?.useDualstackEndpoint ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
+        useFipsEndpoint: config?.useFipsEndpoint ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS),
+        utf8Decoder: config?.utf8Decoder ?? util_utf8_node_1.fromUtf8,
+        utf8Encoder: config?.utf8Encoder ?? util_utf8_node_1.toUtf8,
     };
 };
 exports.getRuntimeConfig = getRuntimeConfig;
@@ -5600,19 +4415,1233 @@ exports.getRuntimeConfig = getRuntimeConfig;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getRuntimeConfig = void 0;
-const url_parser_1 = __nccwpck_require__(7190);
-const endpoints_1 = __nccwpck_require__(6267);
-const getRuntimeConfig = (config) => {
-    var _a, _b, _c, _d, _e;
-    return ({
-        apiVersion: "2017-10-17",
-        disableHostPrefix: (_a = config === null || config === void 0 ? void 0 : config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
-        logger: (_b = config === null || config === void 0 ? void 0 : config.logger) !== null && _b !== void 0 ? _b : {},
-        regionInfoProvider: (_c = config === null || config === void 0 ? void 0 : config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
-        serviceId: (_d = config === null || config === void 0 ? void 0 : config.serviceId) !== null && _d !== void 0 ? _d : "Secrets Manager",
-        urlParser: (_e = config === null || config === void 0 ? void 0 : config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
+const smithy_client_1 = __nccwpck_require__(4963);
+const url_parser_1 = __nccwpck_require__(2992);
+const util_base64_1 = __nccwpck_require__(7727);
+const endpointResolver_1 = __nccwpck_require__(5606);
+const getRuntimeConfig = (config) => ({
+    apiVersion: "2017-10-17",
+    base64Decoder: config?.base64Decoder ?? util_base64_1.fromBase64,
+    base64Encoder: config?.base64Encoder ?? util_base64_1.toBase64,
+    disableHostPrefix: config?.disableHostPrefix ?? false,
+    endpointProvider: config?.endpointProvider ?? endpointResolver_1.defaultEndpointResolver,
+    logger: config?.logger ?? new smithy_client_1.NoOpLogger(),
+    serviceId: config?.serviceId ?? "Secrets Manager",
+    urlParser: config?.urlParser ?? url_parser_1.parseUrl,
+});
+exports.getRuntimeConfig = getRuntimeConfig;
+
+
+/***/ }),
+
+/***/ 7124:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.SSOOIDC = void 0;
+const CreateTokenCommand_1 = __nccwpck_require__(2853);
+const RegisterClientCommand_1 = __nccwpck_require__(6677);
+const StartDeviceAuthorizationCommand_1 = __nccwpck_require__(8359);
+const SSOOIDCClient_1 = __nccwpck_require__(139);
+class SSOOIDC extends SSOOIDCClient_1.SSOOIDCClient {
+    createToken(args, optionsOrCb, cb) {
+        const command = new CreateTokenCommand_1.CreateTokenCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    registerClient(args, optionsOrCb, cb) {
+        const command = new RegisterClientCommand_1.RegisterClientCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    startDeviceAuthorization(args, optionsOrCb, cb) {
+        const command = new StartDeviceAuthorizationCommand_1.StartDeviceAuthorizationCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+}
+exports.SSOOIDC = SSOOIDC;
+
+
+/***/ }),
+
+/***/ 139:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.SSOOIDCClient = void 0;
+const config_resolver_1 = __nccwpck_require__(6153);
+const middleware_content_length_1 = __nccwpck_require__(2245);
+const middleware_endpoint_1 = __nccwpck_require__(5497);
+const middleware_host_header_1 = __nccwpck_require__(2545);
+const middleware_logger_1 = __nccwpck_require__(14);
+const middleware_recursion_detection_1 = __nccwpck_require__(5525);
+const middleware_retry_1 = __nccwpck_require__(6064);
+const middleware_user_agent_1 = __nccwpck_require__(4688);
+const smithy_client_1 = __nccwpck_require__(4963);
+const EndpointParameters_1 = __nccwpck_require__(1426);
+const runtimeConfig_1 = __nccwpck_require__(5524);
+class SSOOIDCClient extends smithy_client_1.Client {
+    constructor(configuration) {
+        const _config_0 = (0, runtimeConfig_1.getRuntimeConfig)(configuration);
+        const _config_1 = (0, EndpointParameters_1.resolveClientEndpointParameters)(_config_0);
+        const _config_2 = (0, config_resolver_1.resolveRegionConfig)(_config_1);
+        const _config_3 = (0, middleware_endpoint_1.resolveEndpointConfig)(_config_2);
+        const _config_4 = (0, middleware_retry_1.resolveRetryConfig)(_config_3);
+        const _config_5 = (0, middleware_host_header_1.resolveHostHeaderConfig)(_config_4);
+        const _config_6 = (0, middleware_user_agent_1.resolveUserAgentConfig)(_config_5);
+        super(_config_6);
+        this.config = _config_6;
+        this.middlewareStack.use((0, middleware_retry_1.getRetryPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_content_length_1.getContentLengthPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_host_header_1.getHostHeaderPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_logger_1.getLoggerPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_recursion_detection_1.getRecursionDetectionPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_user_agent_1.getUserAgentPlugin)(this.config));
+    }
+    destroy() {
+        super.destroy();
+    }
+}
+exports.SSOOIDCClient = SSOOIDCClient;
+
+
+/***/ }),
+
+/***/ 2853:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.CreateTokenCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
+const middleware_serde_1 = __nccwpck_require__(3631);
+const smithy_client_1 = __nccwpck_require__(4963);
+const models_0_1 = __nccwpck_require__(9374);
+const Aws_restJson1_1 = __nccwpck_require__(1518);
+class CreateTokenCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, CreateTokenCommand.getEndpointParameterInstructions()));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "SSOOIDCClient";
+        const commandName = "CreateTokenCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.CreateTokenRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreateTokenResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_restJson1_1.serializeAws_restJson1CreateTokenCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_restJson1_1.deserializeAws_restJson1CreateTokenCommand)(output, context);
+    }
+}
+exports.CreateTokenCommand = CreateTokenCommand;
+
+
+/***/ }),
+
+/***/ 6677:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.RegisterClientCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
+const middleware_serde_1 = __nccwpck_require__(3631);
+const smithy_client_1 = __nccwpck_require__(4963);
+const models_0_1 = __nccwpck_require__(9374);
+const Aws_restJson1_1 = __nccwpck_require__(1518);
+class RegisterClientCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, RegisterClientCommand.getEndpointParameterInstructions()));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "SSOOIDCClient";
+        const commandName = "RegisterClientCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.RegisterClientRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.RegisterClientResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_restJson1_1.serializeAws_restJson1RegisterClientCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_restJson1_1.deserializeAws_restJson1RegisterClientCommand)(output, context);
+    }
+}
+exports.RegisterClientCommand = RegisterClientCommand;
+
+
+/***/ }),
+
+/***/ 8359:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.StartDeviceAuthorizationCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
+const middleware_serde_1 = __nccwpck_require__(3631);
+const smithy_client_1 = __nccwpck_require__(4963);
+const models_0_1 = __nccwpck_require__(9374);
+const Aws_restJson1_1 = __nccwpck_require__(1518);
+class StartDeviceAuthorizationCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, StartDeviceAuthorizationCommand.getEndpointParameterInstructions()));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "SSOOIDCClient";
+        const commandName = "StartDeviceAuthorizationCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.StartDeviceAuthorizationRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.StartDeviceAuthorizationResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_restJson1_1.serializeAws_restJson1StartDeviceAuthorizationCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_restJson1_1.deserializeAws_restJson1StartDeviceAuthorizationCommand)(output, context);
+    }
+}
+exports.StartDeviceAuthorizationCommand = StartDeviceAuthorizationCommand;
+
+
+/***/ }),
+
+/***/ 447:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(2853), exports);
+tslib_1.__exportStar(__nccwpck_require__(6677), exports);
+tslib_1.__exportStar(__nccwpck_require__(8359), exports);
+
+
+/***/ }),
+
+/***/ 1426:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveClientEndpointParameters = void 0;
+const resolveClientEndpointParameters = (options) => {
+    return {
+        ...options,
+        useDualstackEndpoint: options.useDualstackEndpoint ?? false,
+        useFipsEndpoint: options.useFipsEndpoint ?? false,
+        defaultSigningName: "awsssooidc",
+    };
+};
+exports.resolveClientEndpointParameters = resolveClientEndpointParameters;
+
+
+/***/ }),
+
+/***/ 7604:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.defaultEndpointResolver = void 0;
+const util_endpoints_1 = __nccwpck_require__(3350);
+const ruleset_1 = __nccwpck_require__(1756);
+const defaultEndpointResolver = (endpointParams, context = {}) => {
+    return (0, util_endpoints_1.resolveEndpoint)(ruleset_1.ruleSet, {
+        endpointParams: endpointParams,
+        logger: context.logger,
     });
 };
+exports.defaultEndpointResolver = defaultEndpointResolver;
+
+
+/***/ }),
+
+/***/ 1756:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ruleSet = void 0;
+const p = "required", q = "fn", r = "argv", s = "ref";
+const a = "PartitionResult", b = "tree", c = "error", d = "endpoint", e = { [p]: false, "type": "String" }, f = { [p]: true, "default": false, "type": "Boolean" }, g = { [s]: "Endpoint" }, h = { [q]: "booleanEquals", [r]: [{ [s]: "UseFIPS" }, true] }, i = { [q]: "booleanEquals", [r]: [{ [s]: "UseDualStack" }, true] }, j = {}, k = { [q]: "booleanEquals", [r]: [true, { [q]: "getAttr", [r]: [{ [s]: a }, "supportsFIPS"] }] }, l = { [q]: "booleanEquals", [r]: [true, { [q]: "getAttr", [r]: [{ [s]: a }, "supportsDualStack"] }] }, m = [g], n = [h], o = [i];
+const _data = { version: "1.0", parameters: { Region: e, UseDualStack: f, UseFIPS: f, Endpoint: e }, rules: [{ conditions: [{ [q]: "aws.partition", [r]: [{ [s]: "Region" }], assign: a }], type: b, rules: [{ conditions: [{ [q]: "isSet", [r]: m }, { [q]: "parseURL", [r]: m, assign: "url" }], type: b, rules: [{ conditions: n, error: "Invalid Configuration: FIPS and custom endpoint are not supported", type: c }, { type: b, rules: [{ conditions: o, error: "Invalid Configuration: Dualstack and custom endpoint are not supported", type: c }, { endpoint: { url: g, properties: j, headers: j }, type: d }] }] }, { conditions: [h, i], type: b, rules: [{ conditions: [k, l], type: b, rules: [{ endpoint: { url: "https://oidc-fips.{Region}.{PartitionResult#dualStackDnsSuffix}", properties: j, headers: j }, type: d }] }, { error: "FIPS and DualStack are enabled, but this partition does not support one or both", type: c }] }, { conditions: n, type: b, rules: [{ conditions: [k], type: b, rules: [{ type: b, rules: [{ endpoint: { url: "https://oidc-fips.{Region}.{PartitionResult#dnsSuffix}", properties: j, headers: j }, type: d }] }] }, { error: "FIPS is enabled but this partition does not support FIPS", type: c }] }, { conditions: o, type: b, rules: [{ conditions: [l], type: b, rules: [{ endpoint: { url: "https://oidc.{Region}.{PartitionResult#dualStackDnsSuffix}", properties: j, headers: j }, type: d }] }, { error: "DualStack is enabled but this partition does not support DualStack", type: c }] }, { endpoint: { url: "https://oidc.{Region}.{PartitionResult#dnsSuffix}", properties: j, headers: j }, type: d }] }] };
+exports.ruleSet = _data;
+
+
+/***/ }),
+
+/***/ 4527:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.SSOOIDCServiceException = void 0;
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(7124), exports);
+tslib_1.__exportStar(__nccwpck_require__(139), exports);
+tslib_1.__exportStar(__nccwpck_require__(447), exports);
+tslib_1.__exportStar(__nccwpck_require__(5732), exports);
+var SSOOIDCServiceException_1 = __nccwpck_require__(3026);
+Object.defineProperty(exports, "SSOOIDCServiceException", ({ enumerable: true, get: function () { return SSOOIDCServiceException_1.SSOOIDCServiceException; } }));
+
+
+/***/ }),
+
+/***/ 3026:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.SSOOIDCServiceException = void 0;
+const smithy_client_1 = __nccwpck_require__(4963);
+class SSOOIDCServiceException extends smithy_client_1.ServiceException {
+    constructor(options) {
+        super(options);
+        Object.setPrototypeOf(this, SSOOIDCServiceException.prototype);
+    }
+}
+exports.SSOOIDCServiceException = SSOOIDCServiceException;
+
+
+/***/ }),
+
+/***/ 5732:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(9374), exports);
+
+
+/***/ }),
+
+/***/ 9374:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.StartDeviceAuthorizationResponseFilterSensitiveLog = exports.StartDeviceAuthorizationRequestFilterSensitiveLog = exports.RegisterClientResponseFilterSensitiveLog = exports.RegisterClientRequestFilterSensitiveLog = exports.CreateTokenResponseFilterSensitiveLog = exports.CreateTokenRequestFilterSensitiveLog = exports.InvalidClientMetadataException = exports.UnsupportedGrantTypeException = exports.UnauthorizedClientException = exports.SlowDownException = exports.InvalidScopeException = exports.InvalidRequestException = exports.InvalidGrantException = exports.InvalidClientException = exports.InternalServerException = exports.ExpiredTokenException = exports.AuthorizationPendingException = exports.AccessDeniedException = void 0;
+const SSOOIDCServiceException_1 = __nccwpck_require__(3026);
+class AccessDeniedException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "AccessDeniedException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "AccessDeniedException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, AccessDeniedException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.AccessDeniedException = AccessDeniedException;
+class AuthorizationPendingException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "AuthorizationPendingException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "AuthorizationPendingException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, AuthorizationPendingException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.AuthorizationPendingException = AuthorizationPendingException;
+class ExpiredTokenException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "ExpiredTokenException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "ExpiredTokenException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, ExpiredTokenException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.ExpiredTokenException = ExpiredTokenException;
+class InternalServerException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "InternalServerException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "InternalServerException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, InternalServerException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.InternalServerException = InternalServerException;
+class InvalidClientException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidClientException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidClientException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidClientException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.InvalidClientException = InvalidClientException;
+class InvalidGrantException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidGrantException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidGrantException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidGrantException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.InvalidGrantException = InvalidGrantException;
+class InvalidRequestException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidRequestException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidRequestException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidRequestException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.InvalidRequestException = InvalidRequestException;
+class InvalidScopeException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidScopeException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidScopeException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidScopeException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.InvalidScopeException = InvalidScopeException;
+class SlowDownException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "SlowDownException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "SlowDownException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, SlowDownException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.SlowDownException = SlowDownException;
+class UnauthorizedClientException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "UnauthorizedClientException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "UnauthorizedClientException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, UnauthorizedClientException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.UnauthorizedClientException = UnauthorizedClientException;
+class UnsupportedGrantTypeException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "UnsupportedGrantTypeException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "UnsupportedGrantTypeException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, UnsupportedGrantTypeException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.UnsupportedGrantTypeException = UnsupportedGrantTypeException;
+class InvalidClientMetadataException extends SSOOIDCServiceException_1.SSOOIDCServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidClientMetadataException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidClientMetadataException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidClientMetadataException.prototype);
+        this.error = opts.error;
+        this.error_description = opts.error_description;
+    }
+}
+exports.InvalidClientMetadataException = InvalidClientMetadataException;
+const CreateTokenRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateTokenRequestFilterSensitiveLog = CreateTokenRequestFilterSensitiveLog;
+const CreateTokenResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateTokenResponseFilterSensitiveLog = CreateTokenResponseFilterSensitiveLog;
+const RegisterClientRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.RegisterClientRequestFilterSensitiveLog = RegisterClientRequestFilterSensitiveLog;
+const RegisterClientResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.RegisterClientResponseFilterSensitiveLog = RegisterClientResponseFilterSensitiveLog;
+const StartDeviceAuthorizationRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.StartDeviceAuthorizationRequestFilterSensitiveLog = StartDeviceAuthorizationRequestFilterSensitiveLog;
+const StartDeviceAuthorizationResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.StartDeviceAuthorizationResponseFilterSensitiveLog = StartDeviceAuthorizationResponseFilterSensitiveLog;
+
+
+/***/ }),
+
+/***/ 1518:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.deserializeAws_restJson1StartDeviceAuthorizationCommand = exports.deserializeAws_restJson1RegisterClientCommand = exports.deserializeAws_restJson1CreateTokenCommand = exports.serializeAws_restJson1StartDeviceAuthorizationCommand = exports.serializeAws_restJson1RegisterClientCommand = exports.serializeAws_restJson1CreateTokenCommand = void 0;
+const protocol_http_1 = __nccwpck_require__(223);
+const smithy_client_1 = __nccwpck_require__(4963);
+const models_0_1 = __nccwpck_require__(9374);
+const SSOOIDCServiceException_1 = __nccwpck_require__(3026);
+const serializeAws_restJson1CreateTokenCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
+    const headers = {
+        "content-type": "application/json",
+    };
+    const resolvedPath = `${basePath?.endsWith("/") ? basePath.slice(0, -1) : basePath || ""}` + "/token";
+    let body;
+    body = JSON.stringify({
+        ...(input.clientId != null && { clientId: input.clientId }),
+        ...(input.clientSecret != null && { clientSecret: input.clientSecret }),
+        ...(input.code != null && { code: input.code }),
+        ...(input.deviceCode != null && { deviceCode: input.deviceCode }),
+        ...(input.grantType != null && { grantType: input.grantType }),
+        ...(input.redirectUri != null && { redirectUri: input.redirectUri }),
+        ...(input.refreshToken != null && { refreshToken: input.refreshToken }),
+        ...(input.scope != null && { scope: serializeAws_restJson1Scopes(input.scope, context) }),
+    });
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "POST",
+        headers,
+        path: resolvedPath,
+        body,
+    });
+};
+exports.serializeAws_restJson1CreateTokenCommand = serializeAws_restJson1CreateTokenCommand;
+const serializeAws_restJson1RegisterClientCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
+    const headers = {
+        "content-type": "application/json",
+    };
+    const resolvedPath = `${basePath?.endsWith("/") ? basePath.slice(0, -1) : basePath || ""}` + "/client/register";
+    let body;
+    body = JSON.stringify({
+        ...(input.clientName != null && { clientName: input.clientName }),
+        ...(input.clientType != null && { clientType: input.clientType }),
+        ...(input.scopes != null && { scopes: serializeAws_restJson1Scopes(input.scopes, context) }),
+    });
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "POST",
+        headers,
+        path: resolvedPath,
+        body,
+    });
+};
+exports.serializeAws_restJson1RegisterClientCommand = serializeAws_restJson1RegisterClientCommand;
+const serializeAws_restJson1StartDeviceAuthorizationCommand = async (input, context) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
+    const headers = {
+        "content-type": "application/json",
+    };
+    const resolvedPath = `${basePath?.endsWith("/") ? basePath.slice(0, -1) : basePath || ""}` + "/device_authorization";
+    let body;
+    body = JSON.stringify({
+        ...(input.clientId != null && { clientId: input.clientId }),
+        ...(input.clientSecret != null && { clientSecret: input.clientSecret }),
+        ...(input.startUrl != null && { startUrl: input.startUrl }),
+    });
+    return new protocol_http_1.HttpRequest({
+        protocol,
+        hostname,
+        port,
+        method: "POST",
+        headers,
+        path: resolvedPath,
+        body,
+    });
+};
+exports.serializeAws_restJson1StartDeviceAuthorizationCommand = serializeAws_restJson1StartDeviceAuthorizationCommand;
+const deserializeAws_restJson1CreateTokenCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1CreateTokenCommandError(output, context);
+    }
+    const contents = map({
+        $metadata: deserializeMetadata(output),
+    });
+    const data = (0, smithy_client_1.expectNonNull)((0, smithy_client_1.expectObject)(await parseBody(output.body, context)), "body");
+    if (data.accessToken != null) {
+        contents.accessToken = (0, smithy_client_1.expectString)(data.accessToken);
+    }
+    if (data.expiresIn != null) {
+        contents.expiresIn = (0, smithy_client_1.expectInt32)(data.expiresIn);
+    }
+    if (data.idToken != null) {
+        contents.idToken = (0, smithy_client_1.expectString)(data.idToken);
+    }
+    if (data.refreshToken != null) {
+        contents.refreshToken = (0, smithy_client_1.expectString)(data.refreshToken);
+    }
+    if (data.tokenType != null) {
+        contents.tokenType = (0, smithy_client_1.expectString)(data.tokenType);
+    }
+    return contents;
+};
+exports.deserializeAws_restJson1CreateTokenCommand = deserializeAws_restJson1CreateTokenCommand;
+const deserializeAws_restJson1CreateTokenCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "AccessDeniedException":
+        case "com.amazonaws.ssooidc#AccessDeniedException":
+            throw await deserializeAws_restJson1AccessDeniedExceptionResponse(parsedOutput, context);
+        case "AuthorizationPendingException":
+        case "com.amazonaws.ssooidc#AuthorizationPendingException":
+            throw await deserializeAws_restJson1AuthorizationPendingExceptionResponse(parsedOutput, context);
+        case "ExpiredTokenException":
+        case "com.amazonaws.ssooidc#ExpiredTokenException":
+            throw await deserializeAws_restJson1ExpiredTokenExceptionResponse(parsedOutput, context);
+        case "InternalServerException":
+        case "com.amazonaws.ssooidc#InternalServerException":
+            throw await deserializeAws_restJson1InternalServerExceptionResponse(parsedOutput, context);
+        case "InvalidClientException":
+        case "com.amazonaws.ssooidc#InvalidClientException":
+            throw await deserializeAws_restJson1InvalidClientExceptionResponse(parsedOutput, context);
+        case "InvalidGrantException":
+        case "com.amazonaws.ssooidc#InvalidGrantException":
+            throw await deserializeAws_restJson1InvalidGrantExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.ssooidc#InvalidRequestException":
+            throw await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidScopeException":
+        case "com.amazonaws.ssooidc#InvalidScopeException":
+            throw await deserializeAws_restJson1InvalidScopeExceptionResponse(parsedOutput, context);
+        case "SlowDownException":
+        case "com.amazonaws.ssooidc#SlowDownException":
+            throw await deserializeAws_restJson1SlowDownExceptionResponse(parsedOutput, context);
+        case "UnauthorizedClientException":
+        case "com.amazonaws.ssooidc#UnauthorizedClientException":
+            throw await deserializeAws_restJson1UnauthorizedClientExceptionResponse(parsedOutput, context);
+        case "UnsupportedGrantTypeException":
+        case "com.amazonaws.ssooidc#UnsupportedGrantTypeException":
+            throw await deserializeAws_restJson1UnsupportedGrantTypeExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: SSOOIDCServiceException_1.SSOOIDCServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_restJson1RegisterClientCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1RegisterClientCommandError(output, context);
+    }
+    const contents = map({
+        $metadata: deserializeMetadata(output),
+    });
+    const data = (0, smithy_client_1.expectNonNull)((0, smithy_client_1.expectObject)(await parseBody(output.body, context)), "body");
+    if (data.authorizationEndpoint != null) {
+        contents.authorizationEndpoint = (0, smithy_client_1.expectString)(data.authorizationEndpoint);
+    }
+    if (data.clientId != null) {
+        contents.clientId = (0, smithy_client_1.expectString)(data.clientId);
+    }
+    if (data.clientIdIssuedAt != null) {
+        contents.clientIdIssuedAt = (0, smithy_client_1.expectLong)(data.clientIdIssuedAt);
+    }
+    if (data.clientSecret != null) {
+        contents.clientSecret = (0, smithy_client_1.expectString)(data.clientSecret);
+    }
+    if (data.clientSecretExpiresAt != null) {
+        contents.clientSecretExpiresAt = (0, smithy_client_1.expectLong)(data.clientSecretExpiresAt);
+    }
+    if (data.tokenEndpoint != null) {
+        contents.tokenEndpoint = (0, smithy_client_1.expectString)(data.tokenEndpoint);
+    }
+    return contents;
+};
+exports.deserializeAws_restJson1RegisterClientCommand = deserializeAws_restJson1RegisterClientCommand;
+const deserializeAws_restJson1RegisterClientCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServerException":
+        case "com.amazonaws.ssooidc#InternalServerException":
+            throw await deserializeAws_restJson1InternalServerExceptionResponse(parsedOutput, context);
+        case "InvalidClientMetadataException":
+        case "com.amazonaws.ssooidc#InvalidClientMetadataException":
+            throw await deserializeAws_restJson1InvalidClientMetadataExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.ssooidc#InvalidRequestException":
+            throw await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidScopeException":
+        case "com.amazonaws.ssooidc#InvalidScopeException":
+            throw await deserializeAws_restJson1InvalidScopeExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: SSOOIDCServiceException_1.SSOOIDCServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_restJson1StartDeviceAuthorizationCommand = async (output, context) => {
+    if (output.statusCode !== 200 && output.statusCode >= 300) {
+        return deserializeAws_restJson1StartDeviceAuthorizationCommandError(output, context);
+    }
+    const contents = map({
+        $metadata: deserializeMetadata(output),
+    });
+    const data = (0, smithy_client_1.expectNonNull)((0, smithy_client_1.expectObject)(await parseBody(output.body, context)), "body");
+    if (data.deviceCode != null) {
+        contents.deviceCode = (0, smithy_client_1.expectString)(data.deviceCode);
+    }
+    if (data.expiresIn != null) {
+        contents.expiresIn = (0, smithy_client_1.expectInt32)(data.expiresIn);
+    }
+    if (data.interval != null) {
+        contents.interval = (0, smithy_client_1.expectInt32)(data.interval);
+    }
+    if (data.userCode != null) {
+        contents.userCode = (0, smithy_client_1.expectString)(data.userCode);
+    }
+    if (data.verificationUri != null) {
+        contents.verificationUri = (0, smithy_client_1.expectString)(data.verificationUri);
+    }
+    if (data.verificationUriComplete != null) {
+        contents.verificationUriComplete = (0, smithy_client_1.expectString)(data.verificationUriComplete);
+    }
+    return contents;
+};
+exports.deserializeAws_restJson1StartDeviceAuthorizationCommand = deserializeAws_restJson1StartDeviceAuthorizationCommand;
+const deserializeAws_restJson1StartDeviceAuthorizationCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServerException":
+        case "com.amazonaws.ssooidc#InternalServerException":
+            throw await deserializeAws_restJson1InternalServerExceptionResponse(parsedOutput, context);
+        case "InvalidClientException":
+        case "com.amazonaws.ssooidc#InvalidClientException":
+            throw await deserializeAws_restJson1InvalidClientExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.ssooidc#InvalidRequestException":
+            throw await deserializeAws_restJson1InvalidRequestExceptionResponse(parsedOutput, context);
+        case "SlowDownException":
+        case "com.amazonaws.ssooidc#SlowDownException":
+            throw await deserializeAws_restJson1SlowDownExceptionResponse(parsedOutput, context);
+        case "UnauthorizedClientException":
+        case "com.amazonaws.ssooidc#UnauthorizedClientException":
+            throw await deserializeAws_restJson1UnauthorizedClientExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: SSOOIDCServiceException_1.SSOOIDCServiceException,
+                errorCode,
+            });
+    }
+};
+const map = smithy_client_1.map;
+const deserializeAws_restJson1AccessDeniedExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.AccessDeniedException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1AuthorizationPendingExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.AuthorizationPendingException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1ExpiredTokenExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.ExpiredTokenException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1InternalServerExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.InternalServerException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1InvalidClientExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.InvalidClientException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1InvalidClientMetadataExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.InvalidClientMetadataException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1InvalidGrantExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.InvalidGrantException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1InvalidRequestExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.InvalidRequestException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1InvalidScopeExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.InvalidScopeException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1SlowDownExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.SlowDownException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1UnauthorizedClientExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.UnauthorizedClientException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const deserializeAws_restJson1UnsupportedGrantTypeExceptionResponse = async (parsedOutput, context) => {
+    const contents = map({});
+    const data = parsedOutput.body;
+    if (data.error != null) {
+        contents.error = (0, smithy_client_1.expectString)(data.error);
+    }
+    if (data.error_description != null) {
+        contents.error_description = (0, smithy_client_1.expectString)(data.error_description);
+    }
+    const exception = new models_0_1.UnsupportedGrantTypeException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...contents,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, parsedOutput.body);
+};
+const serializeAws_restJson1Scopes = (input, context) => {
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        return entry;
+    });
+};
+const deserializeMetadata = (output) => ({
+    httpStatusCode: output.statusCode,
+    requestId: output.headers["x-amzn-requestid"] ?? output.headers["x-amzn-request-id"] ?? output.headers["x-amz-request-id"],
+    extendedRequestId: output.headers["x-amz-id-2"],
+    cfId: output.headers["x-amz-cf-id"],
+});
+const collectBody = (streamBody = new Uint8Array(), context) => {
+    if (streamBody instanceof Uint8Array) {
+        return Promise.resolve(streamBody);
+    }
+    return context.streamCollector(streamBody) || Promise.resolve(new Uint8Array());
+};
+const collectBodyString = (streamBody, context) => collectBody(streamBody, context).then((body) => context.utf8Encoder(body));
+const isSerializableHeaderValue = (value) => value !== undefined &&
+    value !== null &&
+    value !== "" &&
+    (!Object.getOwnPropertyNames(value).includes("length") || value.length != 0) &&
+    (!Object.getOwnPropertyNames(value).includes("size") || value.size != 0);
+const parseBody = (streamBody, context) => collectBodyString(streamBody, context).then((encoded) => {
+    if (encoded.length) {
+        return JSON.parse(encoded);
+    }
+    return {};
+});
+const parseErrorBody = async (errorBody, context) => {
+    const value = await parseBody(errorBody, context);
+    value.message = value.message ?? value.Message;
+    return value;
+};
+const loadRestJsonErrorCode = (output, data) => {
+    const findKey = (object, key) => Object.keys(object).find((k) => k.toLowerCase() === key.toLowerCase());
+    const sanitizeErrorCode = (rawValue) => {
+        let cleanValue = rawValue;
+        if (typeof cleanValue === "number") {
+            cleanValue = cleanValue.toString();
+        }
+        if (cleanValue.indexOf(",") >= 0) {
+            cleanValue = cleanValue.split(",")[0];
+        }
+        if (cleanValue.indexOf(":") >= 0) {
+            cleanValue = cleanValue.split(":")[0];
+        }
+        if (cleanValue.indexOf("#") >= 0) {
+            cleanValue = cleanValue.split("#")[1];
+        }
+        return cleanValue;
+    };
+    const headerKey = findKey(output.headers, "x-amzn-errortype");
+    if (headerKey !== undefined) {
+        return sanitizeErrorCode(output.headers[headerKey]);
+    }
+    if (data.code !== undefined) {
+        return sanitizeErrorCode(data.code);
+    }
+    if (data["__type"] !== undefined) {
+        return sanitizeErrorCode(data["__type"]);
+    }
+};
+
+
+/***/ }),
+
+/***/ 5524:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getRuntimeConfig = void 0;
+const tslib_1 = __nccwpck_require__(4351);
+const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(6570));
+const config_resolver_1 = __nccwpck_require__(6153);
+const hash_node_1 = __nccwpck_require__(7442);
+const middleware_retry_1 = __nccwpck_require__(6064);
+const node_config_provider_1 = __nccwpck_require__(7684);
+const node_http_handler_1 = __nccwpck_require__(8805);
+const util_body_length_node_1 = __nccwpck_require__(4147);
+const util_retry_1 = __nccwpck_require__(9395);
+const util_user_agent_node_1 = __nccwpck_require__(8095);
+const util_utf8_node_1 = __nccwpck_require__(6278);
+const runtimeConfig_shared_1 = __nccwpck_require__(8005);
+const smithy_client_1 = __nccwpck_require__(4963);
+const util_defaults_mode_node_1 = __nccwpck_require__(4243);
+const smithy_client_2 = __nccwpck_require__(4963);
+const getRuntimeConfig = (config) => {
+    (0, smithy_client_2.emitWarningIfUnsupportedVersion)(process.version);
+    const defaultsMode = (0, util_defaults_mode_node_1.resolveDefaultsModeConfig)(config);
+    const defaultConfigProvider = () => defaultsMode().then(smithy_client_1.loadConfigsForDefaultMode);
+    const clientSharedValues = (0, runtimeConfig_shared_1.getRuntimeConfig)(config);
+    return {
+        ...clientSharedValues,
+        ...config,
+        runtime: "node",
+        defaultsMode,
+        bodyLengthChecker: config?.bodyLengthChecker ?? util_body_length_node_1.calculateBodyLength,
+        defaultUserAgentProvider: config?.defaultUserAgentProvider ??
+            (0, util_user_agent_node_1.defaultUserAgent)({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        maxAttempts: config?.maxAttempts ?? (0, node_config_provider_1.loadConfig)(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        region: config?.region ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: config?.requestHandler ?? new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
+        retryMode: config?.retryMode ??
+            (0, node_config_provider_1.loadConfig)({
+                ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
+                default: async () => (await defaultConfigProvider()).retryMode || util_retry_1.DEFAULT_RETRY_MODE,
+            }),
+        sha256: config?.sha256 ?? hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: config?.streamCollector ?? node_http_handler_1.streamCollector,
+        useDualstackEndpoint: config?.useDualstackEndpoint ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
+        useFipsEndpoint: config?.useFipsEndpoint ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS),
+        utf8Decoder: config?.utf8Decoder ?? util_utf8_node_1.fromUtf8,
+        utf8Encoder: config?.utf8Encoder ?? util_utf8_node_1.toUtf8,
+    };
+};
+exports.getRuntimeConfig = getRuntimeConfig;
+
+
+/***/ }),
+
+/***/ 8005:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getRuntimeConfig = void 0;
+const smithy_client_1 = __nccwpck_require__(4963);
+const url_parser_1 = __nccwpck_require__(2992);
+const util_base64_1 = __nccwpck_require__(7727);
+const endpointResolver_1 = __nccwpck_require__(7604);
+const getRuntimeConfig = (config) => ({
+    apiVersion: "2019-06-10",
+    base64Decoder: config?.base64Decoder ?? util_base64_1.fromBase64,
+    base64Encoder: config?.base64Encoder ?? util_base64_1.toBase64,
+    disableHostPrefix: config?.disableHostPrefix ?? false,
+    endpointProvider: config?.endpointProvider ?? endpointResolver_1.defaultEndpointResolver,
+    logger: config?.logger ?? new smithy_client_1.NoOpLogger(),
+    serviceId: config?.serviceId ?? "SSO OIDC",
+    urlParser: config?.urlParser ?? url_parser_1.parseUrl,
+});
 exports.getRuntimeConfig = getRuntimeConfig;
 
 
@@ -5702,23 +5731,26 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SSOClient = void 0;
 const config_resolver_1 = __nccwpck_require__(6153);
 const middleware_content_length_1 = __nccwpck_require__(2245);
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_host_header_1 = __nccwpck_require__(2545);
 const middleware_logger_1 = __nccwpck_require__(14);
 const middleware_recursion_detection_1 = __nccwpck_require__(5525);
 const middleware_retry_1 = __nccwpck_require__(6064);
 const middleware_user_agent_1 = __nccwpck_require__(4688);
 const smithy_client_1 = __nccwpck_require__(4963);
+const EndpointParameters_1 = __nccwpck_require__(4214);
 const runtimeConfig_1 = __nccwpck_require__(9756);
 class SSOClient extends smithy_client_1.Client {
     constructor(configuration) {
         const _config_0 = (0, runtimeConfig_1.getRuntimeConfig)(configuration);
-        const _config_1 = (0, config_resolver_1.resolveRegionConfig)(_config_0);
-        const _config_2 = (0, config_resolver_1.resolveEndpointsConfig)(_config_1);
-        const _config_3 = (0, middleware_retry_1.resolveRetryConfig)(_config_2);
-        const _config_4 = (0, middleware_host_header_1.resolveHostHeaderConfig)(_config_3);
-        const _config_5 = (0, middleware_user_agent_1.resolveUserAgentConfig)(_config_4);
-        super(_config_5);
-        this.config = _config_5;
+        const _config_1 = (0, EndpointParameters_1.resolveClientEndpointParameters)(_config_0);
+        const _config_2 = (0, config_resolver_1.resolveRegionConfig)(_config_1);
+        const _config_3 = (0, middleware_endpoint_1.resolveEndpointConfig)(_config_2);
+        const _config_4 = (0, middleware_retry_1.resolveRetryConfig)(_config_3);
+        const _config_5 = (0, middleware_host_header_1.resolveHostHeaderConfig)(_config_4);
+        const _config_6 = (0, middleware_user_agent_1.resolveUserAgentConfig)(_config_5);
+        super(_config_6);
+        this.config = _config_6;
         this.middlewareStack.use((0, middleware_retry_1.getRetryPlugin)(this.config));
         this.middlewareStack.use((0, middleware_content_length_1.getContentLengthPlugin)(this.config));
         this.middlewareStack.use((0, middleware_host_header_1.getHostHeaderPlugin)(this.config));
@@ -5742,6 +5774,7 @@ exports.SSOClient = SSOClient;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetRoleCredentialsCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(6390);
@@ -5751,8 +5784,17 @@ class GetRoleCredentialsCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, GetRoleCredentialsCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SSOClient";
@@ -5786,6 +5828,7 @@ exports.GetRoleCredentialsCommand = GetRoleCredentialsCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ListAccountRolesCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(6390);
@@ -5795,8 +5838,17 @@ class ListAccountRolesCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, ListAccountRolesCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SSOClient";
@@ -5830,6 +5882,7 @@ exports.ListAccountRolesCommand = ListAccountRolesCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ListAccountsCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(6390);
@@ -5839,8 +5892,17 @@ class ListAccountsCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, ListAccountsCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SSOClient";
@@ -5874,6 +5936,7 @@ exports.ListAccountsCommand = ListAccountsCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.LogoutCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(6390);
@@ -5883,8 +5946,17 @@ class LogoutCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, LogoutCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "SSOClient";
@@ -5926,332 +5998,57 @@ tslib_1.__exportStar(__nccwpck_require__(2586), exports);
 
 /***/ }),
 
-/***/ 3546:
+/***/ 4214:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveClientEndpointParameters = void 0;
+const resolveClientEndpointParameters = (options) => {
+    return {
+        ...options,
+        useDualstackEndpoint: options.useDualstackEndpoint ?? false,
+        useFipsEndpoint: options.useFipsEndpoint ?? false,
+        defaultSigningName: "awsssoportal",
+    };
+};
+exports.resolveClientEndpointParameters = resolveClientEndpointParameters;
+
+
+/***/ }),
+
+/***/ 898:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.defaultRegionInfoProvider = void 0;
-const config_resolver_1 = __nccwpck_require__(6153);
-const regionHash = {
-    "ap-east-1": {
-        variants: [
-            {
-                hostname: "portal.sso.ap-east-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "ap-east-1",
-    },
-    "ap-northeast-1": {
-        variants: [
-            {
-                hostname: "portal.sso.ap-northeast-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "ap-northeast-1",
-    },
-    "ap-northeast-2": {
-        variants: [
-            {
-                hostname: "portal.sso.ap-northeast-2.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "ap-northeast-2",
-    },
-    "ap-northeast-3": {
-        variants: [
-            {
-                hostname: "portal.sso.ap-northeast-3.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "ap-northeast-3",
-    },
-    "ap-south-1": {
-        variants: [
-            {
-                hostname: "portal.sso.ap-south-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "ap-south-1",
-    },
-    "ap-southeast-1": {
-        variants: [
-            {
-                hostname: "portal.sso.ap-southeast-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "ap-southeast-1",
-    },
-    "ap-southeast-2": {
-        variants: [
-            {
-                hostname: "portal.sso.ap-southeast-2.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "ap-southeast-2",
-    },
-    "ca-central-1": {
-        variants: [
-            {
-                hostname: "portal.sso.ca-central-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "ca-central-1",
-    },
-    "eu-central-1": {
-        variants: [
-            {
-                hostname: "portal.sso.eu-central-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "eu-central-1",
-    },
-    "eu-north-1": {
-        variants: [
-            {
-                hostname: "portal.sso.eu-north-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "eu-north-1",
-    },
-    "eu-south-1": {
-        variants: [
-            {
-                hostname: "portal.sso.eu-south-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "eu-south-1",
-    },
-    "eu-west-1": {
-        variants: [
-            {
-                hostname: "portal.sso.eu-west-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "eu-west-1",
-    },
-    "eu-west-2": {
-        variants: [
-            {
-                hostname: "portal.sso.eu-west-2.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "eu-west-2",
-    },
-    "eu-west-3": {
-        variants: [
-            {
-                hostname: "portal.sso.eu-west-3.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "eu-west-3",
-    },
-    "me-south-1": {
-        variants: [
-            {
-                hostname: "portal.sso.me-south-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "me-south-1",
-    },
-    "sa-east-1": {
-        variants: [
-            {
-                hostname: "portal.sso.sa-east-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "sa-east-1",
-    },
-    "us-east-1": {
-        variants: [
-            {
-                hostname: "portal.sso.us-east-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "us-east-1",
-    },
-    "us-east-2": {
-        variants: [
-            {
-                hostname: "portal.sso.us-east-2.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "us-east-2",
-    },
-    "us-gov-east-1": {
-        variants: [
-            {
-                hostname: "portal.sso.us-gov-east-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "us-gov-east-1",
-    },
-    "us-gov-west-1": {
-        variants: [
-            {
-                hostname: "portal.sso.us-gov-west-1.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "us-gov-west-1",
-    },
-    "us-west-2": {
-        variants: [
-            {
-                hostname: "portal.sso.us-west-2.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "us-west-2",
-    },
+exports.defaultEndpointResolver = void 0;
+const util_endpoints_1 = __nccwpck_require__(3350);
+const ruleset_1 = __nccwpck_require__(3341);
+const defaultEndpointResolver = (endpointParams, context = {}) => {
+    return (0, util_endpoints_1.resolveEndpoint)(ruleset_1.ruleSet, {
+        endpointParams: endpointParams,
+        logger: context.logger,
+    });
 };
-const partitionHash = {
-    aws: {
-        regions: [
-            "af-south-1",
-            "ap-east-1",
-            "ap-northeast-1",
-            "ap-northeast-2",
-            "ap-northeast-3",
-            "ap-south-1",
-            "ap-southeast-1",
-            "ap-southeast-2",
-            "ap-southeast-3",
-            "ca-central-1",
-            "eu-central-1",
-            "eu-north-1",
-            "eu-south-1",
-            "eu-west-1",
-            "eu-west-2",
-            "eu-west-3",
-            "me-central-1",
-            "me-south-1",
-            "sa-east-1",
-            "us-east-1",
-            "us-east-2",
-            "us-west-1",
-            "us-west-2",
-        ],
-        regionRegex: "^(us|eu|ap|sa|ca|me|af)\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "portal.sso.{region}.amazonaws.com",
-                tags: [],
-            },
-            {
-                hostname: "portal.sso-fips.{region}.amazonaws.com",
-                tags: ["fips"],
-            },
-            {
-                hostname: "portal.sso-fips.{region}.api.aws",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "portal.sso.{region}.api.aws",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-    "aws-cn": {
-        regions: ["cn-north-1", "cn-northwest-1"],
-        regionRegex: "^cn\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "portal.sso.{region}.amazonaws.com.cn",
-                tags: [],
-            },
-            {
-                hostname: "portal.sso-fips.{region}.amazonaws.com.cn",
-                tags: ["fips"],
-            },
-            {
-                hostname: "portal.sso-fips.{region}.api.amazonwebservices.com.cn",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "portal.sso.{region}.api.amazonwebservices.com.cn",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-    "aws-iso": {
-        regions: ["us-iso-east-1", "us-iso-west-1"],
-        regionRegex: "^us\\-iso\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "portal.sso.{region}.c2s.ic.gov",
-                tags: [],
-            },
-            {
-                hostname: "portal.sso-fips.{region}.c2s.ic.gov",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "aws-iso-b": {
-        regions: ["us-isob-east-1"],
-        regionRegex: "^us\\-isob\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "portal.sso.{region}.sc2s.sgov.gov",
-                tags: [],
-            },
-            {
-                hostname: "portal.sso-fips.{region}.sc2s.sgov.gov",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "aws-us-gov": {
-        regions: ["us-gov-east-1", "us-gov-west-1"],
-        regionRegex: "^us\\-gov\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "portal.sso.{region}.amazonaws.com",
-                tags: [],
-            },
-            {
-                hostname: "portal.sso-fips.{region}.amazonaws.com",
-                tags: ["fips"],
-            },
-            {
-                hostname: "portal.sso-fips.{region}.api.aws",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "portal.sso.{region}.api.aws",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-};
-const defaultRegionInfoProvider = async (region, options) => (0, config_resolver_1.getRegionInfo)(region, {
-    ...options,
-    signingService: "awsssoportal",
-    regionHash,
-    partitionHash,
-});
-exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
+exports.defaultEndpointResolver = defaultEndpointResolver;
+
+
+/***/ }),
+
+/***/ 3341:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ruleSet = void 0;
+const p = "required", q = "fn", r = "argv", s = "ref";
+const a = "PartitionResult", b = "tree", c = "error", d = "endpoint", e = { [p]: false, "type": "String" }, f = { [p]: true, "default": false, "type": "Boolean" }, g = { [s]: "Endpoint" }, h = { [q]: "booleanEquals", [r]: [{ [s]: "UseFIPS" }, true] }, i = { [q]: "booleanEquals", [r]: [{ [s]: "UseDualStack" }, true] }, j = {}, k = { [q]: "booleanEquals", [r]: [true, { [q]: "getAttr", [r]: [{ [s]: a }, "supportsFIPS"] }] }, l = { [q]: "booleanEquals", [r]: [true, { [q]: "getAttr", [r]: [{ [s]: a }, "supportsDualStack"] }] }, m = [g], n = [h], o = [i];
+const _data = { version: "1.0", parameters: { Region: e, UseDualStack: f, UseFIPS: f, Endpoint: e }, rules: [{ conditions: [{ [q]: "aws.partition", [r]: [{ [s]: "Region" }], assign: a }], type: b, rules: [{ conditions: [{ [q]: "isSet", [r]: m }, { [q]: "parseURL", [r]: m, assign: "url" }], type: b, rules: [{ conditions: n, error: "Invalid Configuration: FIPS and custom endpoint are not supported", type: c }, { type: b, rules: [{ conditions: o, error: "Invalid Configuration: Dualstack and custom endpoint are not supported", type: c }, { endpoint: { url: g, properties: j, headers: j }, type: d }] }] }, { conditions: [h, i], type: b, rules: [{ conditions: [k, l], type: b, rules: [{ endpoint: { url: "https://portal.sso-fips.{Region}.{PartitionResult#dualStackDnsSuffix}", properties: j, headers: j }, type: d }] }, { error: "FIPS and DualStack are enabled, but this partition does not support one or both", type: c }] }, { conditions: n, type: b, rules: [{ conditions: [k], type: b, rules: [{ type: b, rules: [{ endpoint: { url: "https://portal.sso-fips.{Region}.{PartitionResult#dnsSuffix}", properties: j, headers: j }, type: d }] }] }, { error: "FIPS is enabled but this partition does not support FIPS", type: c }] }, { conditions: o, type: b, rules: [{ conditions: [l], type: b, rules: [{ endpoint: { url: "https://portal.sso.{Region}.{PartitionResult#dualStackDnsSuffix}", properties: j, headers: j }, type: d }] }, { error: "DualStack is enabled but this partition does not support DualStack", type: c }] }, { endpoint: { url: "https://portal.sso.{Region}.{PartitionResult#dnsSuffix}", properties: j, headers: j }, type: d }] }] };
+exports.ruleSet = _data;
 
 
 /***/ }),
@@ -6546,10 +6343,10 @@ const serializeAws_restJson1GetRoleCredentialsCommand = async (input, context) =
     const headers = map({}, isSerializableHeaderValue, {
         "x-amz-sso_bearer_token": input.accessToken,
     });
-    const resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/federation/credentials";
+    const resolvedPath = `${basePath?.endsWith("/") ? basePath.slice(0, -1) : basePath || ""}` + "/federation/credentials";
     const query = map({
-        role_name: [, input.roleName],
-        account_id: [, input.accountId],
+        role_name: [, (0, smithy_client_1.expectNonNull)(input.roleName, `roleName`)],
+        account_id: [, (0, smithy_client_1.expectNonNull)(input.accountId, `accountId`)],
     });
     let body;
     return new protocol_http_1.HttpRequest({
@@ -6569,11 +6366,11 @@ const serializeAws_restJson1ListAccountRolesCommand = async (input, context) => 
     const headers = map({}, isSerializableHeaderValue, {
         "x-amz-sso_bearer_token": input.accessToken,
     });
-    const resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/assignment/roles";
+    const resolvedPath = `${basePath?.endsWith("/") ? basePath.slice(0, -1) : basePath || ""}` + "/assignment/roles";
     const query = map({
         next_token: [, input.nextToken],
         max_result: [() => input.maxResults !== void 0, () => input.maxResults.toString()],
-        account_id: [, input.accountId],
+        account_id: [, (0, smithy_client_1.expectNonNull)(input.accountId, `accountId`)],
     });
     let body;
     return new protocol_http_1.HttpRequest({
@@ -6593,7 +6390,7 @@ const serializeAws_restJson1ListAccountsCommand = async (input, context) => {
     const headers = map({}, isSerializableHeaderValue, {
         "x-amz-sso_bearer_token": input.accessToken,
     });
-    const resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/assignment/accounts";
+    const resolvedPath = `${basePath?.endsWith("/") ? basePath.slice(0, -1) : basePath || ""}` + "/assignment/accounts";
     const query = map({
         next_token: [, input.nextToken],
         max_result: [() => input.maxResults !== void 0, () => input.maxResults.toString()],
@@ -6616,7 +6413,7 @@ const serializeAws_restJson1LogoutCommand = async (input, context) => {
     const headers = map({}, isSerializableHeaderValue, {
         "x-amz-sso_bearer_token": input.accessToken,
     });
-    const resolvedPath = `${(basePath === null || basePath === void 0 ? void 0 : basePath.endsWith("/")) ? basePath.slice(0, -1) : basePath || ""}` + "/logout";
+    const resolvedPath = `${basePath?.endsWith("/") ? basePath.slice(0, -1) : basePath || ""}` + "/logout";
     let body;
     return new protocol_http_1.HttpRequest({
         protocol,
@@ -6893,15 +6690,12 @@ const deserializeAws_restJson1RoleListType = (output, context) => {
     });
     return retVal;
 };
-const deserializeMetadata = (output) => {
-    var _a;
-    return ({
-        httpStatusCode: output.statusCode,
-        requestId: (_a = output.headers["x-amzn-requestid"]) !== null && _a !== void 0 ? _a : output.headers["x-amzn-request-id"],
-        extendedRequestId: output.headers["x-amz-id-2"],
-        cfId: output.headers["x-amz-cf-id"],
-    });
-};
+const deserializeMetadata = (output) => ({
+    httpStatusCode: output.statusCode,
+    requestId: output.headers["x-amzn-requestid"] ?? output.headers["x-amzn-request-id"] ?? output.headers["x-amz-request-id"],
+    extendedRequestId: output.headers["x-amz-id-2"],
+    cfId: output.headers["x-amz-cf-id"],
+});
 const collectBody = (streamBody = new Uint8Array(), context) => {
     if (streamBody instanceof Uint8Array) {
         return Promise.resolve(streamBody);
@@ -6921,9 +6715,8 @@ const parseBody = (streamBody, context) => collectBodyString(streamBody, context
     return {};
 });
 const parseErrorBody = async (errorBody, context) => {
-    var _a;
     const value = await parseBody(errorBody, context);
-    value.message = (_a = value.message) !== null && _a !== void 0 ? _a : value.Message;
+    value.message = value.message ?? value.Message;
     return value;
 };
 const loadRestJsonErrorCode = (output, data) => {
@@ -6973,8 +6766,8 @@ const hash_node_1 = __nccwpck_require__(7442);
 const middleware_retry_1 = __nccwpck_require__(6064);
 const node_config_provider_1 = __nccwpck_require__(7684);
 const node_http_handler_1 = __nccwpck_require__(8805);
-const util_base64_node_1 = __nccwpck_require__(8588);
 const util_body_length_node_1 = __nccwpck_require__(4147);
+const util_retry_1 = __nccwpck_require__(9395);
 const util_user_agent_node_1 = __nccwpck_require__(8095);
 const util_utf8_node_1 = __nccwpck_require__(6278);
 const runtimeConfig_shared_1 = __nccwpck_require__(4355);
@@ -6982,7 +6775,6 @@ const smithy_client_1 = __nccwpck_require__(4963);
 const util_defaults_mode_node_1 = __nccwpck_require__(4243);
 const smithy_client_2 = __nccwpck_require__(4963);
 const getRuntimeConfig = (config) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p;
     (0, smithy_client_2.emitWarningIfUnsupportedVersion)(process.version);
     const defaultsMode = (0, util_defaults_mode_node_1.resolveDefaultsModeConfig)(config);
     const defaultConfigProvider = () => defaultsMode().then(smithy_client_1.loadConfigsForDefaultMode);
@@ -6992,23 +6784,23 @@ const getRuntimeConfig = (config) => {
         ...config,
         runtime: "node",
         defaultsMode,
-        base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
-        base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
-        bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
-        defaultUserAgentProvider: (_d = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _d !== void 0 ? _d : (0, util_user_agent_node_1.defaultUserAgent)({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
-        maxAttempts: (_e = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _e !== void 0 ? _e : (0, node_config_provider_1.loadConfig)(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
-        region: (_f = config === null || config === void 0 ? void 0 : config.region) !== null && _f !== void 0 ? _f : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-        requestHandler: (_g = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _g !== void 0 ? _g : new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
-        retryMode: (_h = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _h !== void 0 ? _h : (0, node_config_provider_1.loadConfig)({
-            ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
-            default: async () => (await defaultConfigProvider()).retryMode || middleware_retry_1.DEFAULT_RETRY_MODE,
-        }),
-        sha256: (_j = config === null || config === void 0 ? void 0 : config.sha256) !== null && _j !== void 0 ? _j : hash_node_1.Hash.bind(null, "sha256"),
-        streamCollector: (_k = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _k !== void 0 ? _k : node_http_handler_1.streamCollector,
-        useDualstackEndpoint: (_l = config === null || config === void 0 ? void 0 : config.useDualstackEndpoint) !== null && _l !== void 0 ? _l : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
-        useFipsEndpoint: (_m = config === null || config === void 0 ? void 0 : config.useFipsEndpoint) !== null && _m !== void 0 ? _m : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS),
-        utf8Decoder: (_o = config === null || config === void 0 ? void 0 : config.utf8Decoder) !== null && _o !== void 0 ? _o : util_utf8_node_1.fromUtf8,
-        utf8Encoder: (_p = config === null || config === void 0 ? void 0 : config.utf8Encoder) !== null && _p !== void 0 ? _p : util_utf8_node_1.toUtf8,
+        bodyLengthChecker: config?.bodyLengthChecker ?? util_body_length_node_1.calculateBodyLength,
+        defaultUserAgentProvider: config?.defaultUserAgentProvider ??
+            (0, util_user_agent_node_1.defaultUserAgent)({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        maxAttempts: config?.maxAttempts ?? (0, node_config_provider_1.loadConfig)(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        region: config?.region ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: config?.requestHandler ?? new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
+        retryMode: config?.retryMode ??
+            (0, node_config_provider_1.loadConfig)({
+                ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
+                default: async () => (await defaultConfigProvider()).retryMode || util_retry_1.DEFAULT_RETRY_MODE,
+            }),
+        sha256: config?.sha256 ?? hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: config?.streamCollector ?? node_http_handler_1.streamCollector,
+        useDualstackEndpoint: config?.useDualstackEndpoint ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
+        useFipsEndpoint: config?.useFipsEndpoint ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS),
+        utf8Decoder: config?.utf8Decoder ?? util_utf8_node_1.fromUtf8,
+        utf8Encoder: config?.utf8Encoder ?? util_utf8_node_1.toUtf8,
     };
 };
 exports.getRuntimeConfig = getRuntimeConfig;
@@ -7023,19 +6815,20 @@ exports.getRuntimeConfig = getRuntimeConfig;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getRuntimeConfig = void 0;
-const url_parser_1 = __nccwpck_require__(7190);
-const endpoints_1 = __nccwpck_require__(3546);
-const getRuntimeConfig = (config) => {
-    var _a, _b, _c, _d, _e;
-    return ({
-        apiVersion: "2019-06-10",
-        disableHostPrefix: (_a = config === null || config === void 0 ? void 0 : config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
-        logger: (_b = config === null || config === void 0 ? void 0 : config.logger) !== null && _b !== void 0 ? _b : {},
-        regionInfoProvider: (_c = config === null || config === void 0 ? void 0 : config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
-        serviceId: (_d = config === null || config === void 0 ? void 0 : config.serviceId) !== null && _d !== void 0 ? _d : "SSO",
-        urlParser: (_e = config === null || config === void 0 ? void 0 : config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
-    });
-};
+const smithy_client_1 = __nccwpck_require__(4963);
+const url_parser_1 = __nccwpck_require__(2992);
+const util_base64_1 = __nccwpck_require__(7727);
+const endpointResolver_1 = __nccwpck_require__(898);
+const getRuntimeConfig = (config) => ({
+    apiVersion: "2019-06-10",
+    base64Decoder: config?.base64Decoder ?? util_base64_1.fromBase64,
+    base64Encoder: config?.base64Encoder ?? util_base64_1.toBase64,
+    disableHostPrefix: config?.disableHostPrefix ?? false,
+    endpointProvider: config?.endpointProvider ?? endpointResolver_1.defaultEndpointResolver,
+    logger: config?.logger ?? new smithy_client_1.NoOpLogger(),
+    serviceId: config?.serviceId ?? "SSO",
+    urlParser: config?.urlParser ?? url_parser_1.parseUrl,
+});
 exports.getRuntimeConfig = getRuntimeConfig;
 
 
@@ -7185,6 +6978,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.STSClient = void 0;
 const config_resolver_1 = __nccwpck_require__(6153);
 const middleware_content_length_1 = __nccwpck_require__(2245);
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_host_header_1 = __nccwpck_require__(2545);
 const middleware_logger_1 = __nccwpck_require__(14);
 const middleware_recursion_detection_1 = __nccwpck_require__(5525);
@@ -7192,18 +6986,20 @@ const middleware_retry_1 = __nccwpck_require__(6064);
 const middleware_sdk_sts_1 = __nccwpck_require__(5959);
 const middleware_user_agent_1 = __nccwpck_require__(4688);
 const smithy_client_1 = __nccwpck_require__(4963);
+const EndpointParameters_1 = __nccwpck_require__(510);
 const runtimeConfig_1 = __nccwpck_require__(3405);
 class STSClient extends smithy_client_1.Client {
     constructor(configuration) {
         const _config_0 = (0, runtimeConfig_1.getRuntimeConfig)(configuration);
-        const _config_1 = (0, config_resolver_1.resolveRegionConfig)(_config_0);
-        const _config_2 = (0, config_resolver_1.resolveEndpointsConfig)(_config_1);
-        const _config_3 = (0, middleware_retry_1.resolveRetryConfig)(_config_2);
-        const _config_4 = (0, middleware_host_header_1.resolveHostHeaderConfig)(_config_3);
-        const _config_5 = (0, middleware_sdk_sts_1.resolveStsAuthConfig)(_config_4, { stsClientCtor: STSClient });
-        const _config_6 = (0, middleware_user_agent_1.resolveUserAgentConfig)(_config_5);
-        super(_config_6);
-        this.config = _config_6;
+        const _config_1 = (0, EndpointParameters_1.resolveClientEndpointParameters)(_config_0);
+        const _config_2 = (0, config_resolver_1.resolveRegionConfig)(_config_1);
+        const _config_3 = (0, middleware_endpoint_1.resolveEndpointConfig)(_config_2);
+        const _config_4 = (0, middleware_retry_1.resolveRetryConfig)(_config_3);
+        const _config_5 = (0, middleware_host_header_1.resolveHostHeaderConfig)(_config_4);
+        const _config_6 = (0, middleware_sdk_sts_1.resolveStsAuthConfig)(_config_5, { stsClientCtor: STSClient });
+        const _config_7 = (0, middleware_user_agent_1.resolveUserAgentConfig)(_config_6);
+        super(_config_7);
+        this.config = _config_7;
         this.middlewareStack.use((0, middleware_retry_1.getRetryPlugin)(this.config));
         this.middlewareStack.use((0, middleware_content_length_1.getContentLengthPlugin)(this.config));
         this.middlewareStack.use((0, middleware_host_header_1.getHostHeaderPlugin)(this.config));
@@ -7227,6 +7023,7 @@ exports.STSClient = STSClient;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AssumeRoleCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
@@ -7237,8 +7034,18 @@ class AssumeRoleCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseGlobalEndpoint: { type: "builtInParams", name: "useGlobalEndpoint" },
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, AssumeRoleCommand.getEndpointParameterInstructions()));
         this.middlewareStack.use((0, middleware_signing_1.getAwsAuthPlugin)(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
@@ -7273,6 +7080,7 @@ exports.AssumeRoleCommand = AssumeRoleCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AssumeRoleWithSAMLCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(1780);
@@ -7282,8 +7090,18 @@ class AssumeRoleWithSAMLCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseGlobalEndpoint: { type: "builtInParams", name: "useGlobalEndpoint" },
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, AssumeRoleWithSAMLCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "STSClient";
@@ -7317,6 +7135,7 @@ exports.AssumeRoleWithSAMLCommand = AssumeRoleWithSAMLCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AssumeRoleWithWebIdentityCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const smithy_client_1 = __nccwpck_require__(4963);
 const models_0_1 = __nccwpck_require__(1780);
@@ -7326,8 +7145,18 @@ class AssumeRoleWithWebIdentityCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseGlobalEndpoint: { type: "builtInParams", name: "useGlobalEndpoint" },
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, AssumeRoleWithWebIdentityCommand.getEndpointParameterInstructions()));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
         const clientName = "STSClient";
@@ -7361,6 +7190,7 @@ exports.AssumeRoleWithWebIdentityCommand = AssumeRoleWithWebIdentityCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.DecodeAuthorizationMessageCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
@@ -7371,8 +7201,18 @@ class DecodeAuthorizationMessageCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseGlobalEndpoint: { type: "builtInParams", name: "useGlobalEndpoint" },
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, DecodeAuthorizationMessageCommand.getEndpointParameterInstructions()));
         this.middlewareStack.use((0, middleware_signing_1.getAwsAuthPlugin)(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
@@ -7407,6 +7247,7 @@ exports.DecodeAuthorizationMessageCommand = DecodeAuthorizationMessageCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetAccessKeyInfoCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
@@ -7417,8 +7258,18 @@ class GetAccessKeyInfoCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseGlobalEndpoint: { type: "builtInParams", name: "useGlobalEndpoint" },
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, GetAccessKeyInfoCommand.getEndpointParameterInstructions()));
         this.middlewareStack.use((0, middleware_signing_1.getAwsAuthPlugin)(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
@@ -7453,6 +7304,7 @@ exports.GetAccessKeyInfoCommand = GetAccessKeyInfoCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetCallerIdentityCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
@@ -7463,8 +7315,18 @@ class GetCallerIdentityCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseGlobalEndpoint: { type: "builtInParams", name: "useGlobalEndpoint" },
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, GetCallerIdentityCommand.getEndpointParameterInstructions()));
         this.middlewareStack.use((0, middleware_signing_1.getAwsAuthPlugin)(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
@@ -7499,6 +7361,7 @@ exports.GetCallerIdentityCommand = GetCallerIdentityCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetFederationTokenCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
@@ -7509,8 +7372,18 @@ class GetFederationTokenCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseGlobalEndpoint: { type: "builtInParams", name: "useGlobalEndpoint" },
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, GetFederationTokenCommand.getEndpointParameterInstructions()));
         this.middlewareStack.use((0, middleware_signing_1.getAwsAuthPlugin)(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
@@ -7545,6 +7418,7 @@ exports.GetFederationTokenCommand = GetFederationTokenCommand;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GetSessionTokenCommand = void 0;
+const middleware_endpoint_1 = __nccwpck_require__(5497);
 const middleware_serde_1 = __nccwpck_require__(3631);
 const middleware_signing_1 = __nccwpck_require__(4935);
 const smithy_client_1 = __nccwpck_require__(4963);
@@ -7555,8 +7429,18 @@ class GetSessionTokenCommand extends smithy_client_1.Command {
         super();
         this.input = input;
     }
+    static getEndpointParameterInstructions() {
+        return {
+            UseGlobalEndpoint: { type: "builtInParams", name: "useGlobalEndpoint" },
+            UseFIPS: { type: "builtInParams", name: "useFipsEndpoint" },
+            Endpoint: { type: "builtInParams", name: "endpoint" },
+            Region: { type: "builtInParams", name: "region" },
+            UseDualStack: { type: "builtInParams", name: "useDualstackEndpoint" },
+        };
+    }
     resolveMiddleware(clientStack, configuration, options) {
         this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        this.middlewareStack.use((0, middleware_endpoint_1.getEndpointPlugin)(configuration, GetSessionTokenCommand.getEndpointParameterInstructions()));
         this.middlewareStack.use((0, middleware_signing_1.getAwsAuthPlugin)(configuration));
         const stack = clientStack.concat(this.middlewareStack);
         const { logger } = configuration;
@@ -7723,205 +7607,58 @@ exports.decorateDefaultCredentialProvider = decorateDefaultCredentialProvider;
 
 /***/ }),
 
-/***/ 3571:
+/***/ 510:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveClientEndpointParameters = void 0;
+const resolveClientEndpointParameters = (options) => {
+    return {
+        ...options,
+        useDualstackEndpoint: options.useDualstackEndpoint ?? false,
+        useFipsEndpoint: options.useFipsEndpoint ?? false,
+        useGlobalEndpoint: options.useGlobalEndpoint ?? false,
+        defaultSigningName: "sts",
+    };
+};
+exports.resolveClientEndpointParameters = resolveClientEndpointParameters;
+
+
+/***/ }),
+
+/***/ 1203:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.defaultRegionInfoProvider = void 0;
-const config_resolver_1 = __nccwpck_require__(6153);
-const regionHash = {
-    "aws-global": {
-        variants: [
-            {
-                hostname: "sts.amazonaws.com",
-                tags: [],
-            },
-        ],
-        signingRegion: "us-east-1",
-    },
-    "us-east-1": {
-        variants: [
-            {
-                hostname: "sts-fips.us-east-1.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-east-2": {
-        variants: [
-            {
-                hostname: "sts-fips.us-east-2.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-gov-east-1": {
-        variants: [
-            {
-                hostname: "sts.us-gov-east-1.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-gov-west-1": {
-        variants: [
-            {
-                hostname: "sts.us-gov-west-1.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-west-1": {
-        variants: [
-            {
-                hostname: "sts-fips.us-west-1.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-west-2": {
-        variants: [
-            {
-                hostname: "sts-fips.us-west-2.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
+exports.defaultEndpointResolver = void 0;
+const util_endpoints_1 = __nccwpck_require__(3350);
+const ruleset_1 = __nccwpck_require__(6882);
+const defaultEndpointResolver = (endpointParams, context = {}) => {
+    return (0, util_endpoints_1.resolveEndpoint)(ruleset_1.ruleSet, {
+        endpointParams: endpointParams,
+        logger: context.logger,
+    });
 };
-const partitionHash = {
-    aws: {
-        regions: [
-            "af-south-1",
-            "ap-east-1",
-            "ap-northeast-1",
-            "ap-northeast-2",
-            "ap-northeast-3",
-            "ap-south-1",
-            "ap-southeast-1",
-            "ap-southeast-2",
-            "ap-southeast-3",
-            "aws-global",
-            "ca-central-1",
-            "eu-central-1",
-            "eu-north-1",
-            "eu-south-1",
-            "eu-west-1",
-            "eu-west-2",
-            "eu-west-3",
-            "me-central-1",
-            "me-south-1",
-            "sa-east-1",
-            "us-east-1",
-            "us-east-1-fips",
-            "us-east-2",
-            "us-east-2-fips",
-            "us-west-1",
-            "us-west-1-fips",
-            "us-west-2",
-            "us-west-2-fips",
-        ],
-        regionRegex: "^(us|eu|ap|sa|ca|me|af)\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "sts.{region}.amazonaws.com",
-                tags: [],
-            },
-            {
-                hostname: "sts-fips.{region}.amazonaws.com",
-                tags: ["fips"],
-            },
-            {
-                hostname: "sts-fips.{region}.api.aws",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "sts.{region}.api.aws",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-    "aws-cn": {
-        regions: ["cn-north-1", "cn-northwest-1"],
-        regionRegex: "^cn\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "sts.{region}.amazonaws.com.cn",
-                tags: [],
-            },
-            {
-                hostname: "sts-fips.{region}.amazonaws.com.cn",
-                tags: ["fips"],
-            },
-            {
-                hostname: "sts-fips.{region}.api.amazonwebservices.com.cn",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "sts.{region}.api.amazonwebservices.com.cn",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-    "aws-iso": {
-        regions: ["us-iso-east-1", "us-iso-west-1"],
-        regionRegex: "^us\\-iso\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "sts.{region}.c2s.ic.gov",
-                tags: [],
-            },
-            {
-                hostname: "sts-fips.{region}.c2s.ic.gov",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "aws-iso-b": {
-        regions: ["us-isob-east-1"],
-        regionRegex: "^us\\-isob\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "sts.{region}.sc2s.sgov.gov",
-                tags: [],
-            },
-            {
-                hostname: "sts-fips.{region}.sc2s.sgov.gov",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "aws-us-gov": {
-        regions: ["us-gov-east-1", "us-gov-east-1-fips", "us-gov-west-1", "us-gov-west-1-fips"],
-        regionRegex: "^us\\-gov\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "sts.{region}.amazonaws.com",
-                tags: [],
-            },
-            {
-                hostname: "sts.{region}.amazonaws.com",
-                tags: ["fips"],
-            },
-            {
-                hostname: "sts-fips.{region}.api.aws",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "sts.{region}.api.aws",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-};
-const defaultRegionInfoProvider = async (region, options) => (0, config_resolver_1.getRegionInfo)(region, {
-    ...options,
-    signingService: "sts",
-    regionHash,
-    partitionHash,
-});
-exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
+exports.defaultEndpointResolver = defaultEndpointResolver;
+
+
+/***/ }),
+
+/***/ 6882:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ruleSet = void 0;
+const H = "required", I = "fn", J = "argv", K = "ref", L = "properties", M = "headers";
+const a = false, b = true, c = "PartitionResult", d = "tree", e = "booleanEquals", f = "stringEquals", g = "https://sts.amazonaws.com", h = "sigv4", i = "sts", j = "us-east-1", k = "endpoint", l = "https://sts.{Region}.{PartitionResult#dnsSuffix}", m = "error", n = "getAttr", o = { [H]: false, "type": "String" }, p = { [H]: true, "default": false, "type": "Boolean" }, q = { [K]: "Region" }, r = { [K]: "UseFIPS" }, s = { [K]: "UseDualStack" }, t = { [I]: "isSet", [J]: [{ [K]: "Endpoint" }] }, u = { [K]: "Endpoint" }, v = { "url": g, [L]: { "authSchemes": [{ "name": h, "signingName": i, "signingRegion": j }] }, [M]: {} }, w = {}, x = { [I]: e, [J]: [r, true] }, y = { [I]: e, [J]: [s, true] }, z = { [I]: e, [J]: [true, { [I]: n, [J]: [{ [K]: c }, "supportsFIPS"] }] }, A = { [K]: c }, B = { [I]: e, [J]: [true, { [I]: n, [J]: [A, "supportsDualStack"] }] }, C = { "url": l, [L]: {}, [M]: {} }, D = [u], E = [{ [I]: f, [J]: [q, "aws-global"] }], F = [x], G = [y];
+const _data = { version: "1.0", parameters: { Region: o, UseDualStack: p, UseFIPS: p, Endpoint: o, UseGlobalEndpoint: p }, rules: [{ conditions: [{ [I]: "aws.partition", [J]: [q], assign: c }], type: d, rules: [{ conditions: [{ [I]: e, [J]: [{ [K]: "UseGlobalEndpoint" }, b] }, { [I]: e, [J]: [r, a] }, { [I]: e, [J]: [s, a] }, { [I]: "not", [J]: [t] }], type: d, rules: [{ conditions: [{ [I]: f, [J]: [q, "ap-northeast-1"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "ap-south-1"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "ap-southeast-1"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "ap-southeast-2"] }], endpoint: v, type: k }, { conditions: E, endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "ca-central-1"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "eu-central-1"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "eu-north-1"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "eu-west-1"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "eu-west-2"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "eu-west-3"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "sa-east-1"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, j] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "us-east-2"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "us-west-1"] }], endpoint: v, type: k }, { conditions: [{ [I]: f, [J]: [q, "us-west-2"] }], endpoint: v, type: k }, { endpoint: { url: l, [L]: { authSchemes: [{ name: h, signingName: i, signingRegion: "{Region}" }] }, [M]: w }, type: k }] }, { conditions: [t, { [I]: "parseURL", [J]: D, assign: "url" }], type: d, rules: [{ conditions: F, error: "Invalid Configuration: FIPS and custom endpoint are not supported", type: m }, { type: d, rules: [{ conditions: G, error: "Invalid Configuration: Dualstack and custom endpoint are not supported", type: m }, { endpoint: { url: u, [L]: w, [M]: w }, type: k }] }] }, { conditions: [x, y], type: d, rules: [{ conditions: [z, B], type: d, rules: [{ endpoint: { url: "https://sts-fips.{Region}.{PartitionResult#dualStackDnsSuffix}", [L]: w, [M]: w }, type: k }] }, { error: "FIPS and DualStack are enabled, but this partition does not support one or both", type: m }] }, { conditions: F, type: d, rules: [{ conditions: [z], type: d, rules: [{ type: d, rules: [{ conditions: [{ [I]: f, [J]: ["aws-us-gov", { [I]: n, [J]: [A, "name"] }] }], endpoint: C, type: k }, { endpoint: { url: "https://sts-fips.{Region}.{PartitionResult#dnsSuffix}", [L]: w, [M]: w }, type: k }] }] }, { error: "FIPS is enabled but this partition does not support FIPS", type: m }] }, { conditions: G, type: d, rules: [{ conditions: [B], type: d, rules: [{ endpoint: { url: "https://sts.{Region}.{PartitionResult#dualStackDnsSuffix}", [L]: w, [M]: w }, type: k }] }, { error: "DualStack is enabled but this partition does not support DualStack", type: m }] }, { type: d, rules: [{ conditions: E, endpoint: { url: g, [L]: { authSchemes: [{ name: h, signingRegion: j, signingName: i }] }, [M]: w }, type: k }, { endpoint: C, type: k }] }] }] };
+exports.ruleSet = _data;
 
 
 /***/ }),
@@ -8185,8 +7922,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.deserializeAws_queryGetSessionTokenCommand = exports.deserializeAws_queryGetFederationTokenCommand = exports.deserializeAws_queryGetCallerIdentityCommand = exports.deserializeAws_queryGetAccessKeyInfoCommand = exports.deserializeAws_queryDecodeAuthorizationMessageCommand = exports.deserializeAws_queryAssumeRoleWithWebIdentityCommand = exports.deserializeAws_queryAssumeRoleWithSAMLCommand = exports.deserializeAws_queryAssumeRoleCommand = exports.serializeAws_queryGetSessionTokenCommand = exports.serializeAws_queryGetFederationTokenCommand = exports.serializeAws_queryGetCallerIdentityCommand = exports.serializeAws_queryGetAccessKeyInfoCommand = exports.serializeAws_queryDecodeAuthorizationMessageCommand = exports.serializeAws_queryAssumeRoleWithWebIdentityCommand = exports.serializeAws_queryAssumeRoleWithSAMLCommand = exports.serializeAws_queryAssumeRoleCommand = void 0;
 const protocol_http_1 = __nccwpck_require__(223);
 const smithy_client_1 = __nccwpck_require__(4963);
-const entities_1 = __nccwpck_require__(3000);
-const fast_xml_parser_1 = __nccwpck_require__(7448);
+const fast_xml_parser_1 = __nccwpck_require__(2603);
 const models_0_1 = __nccwpck_require__(1780);
 const STSServiceException_1 = __nccwpck_require__(6450);
 const serializeAws_queryAssumeRoleCommand = async (input, context) => {
@@ -8683,6 +8419,9 @@ const serializeAws_queryAssumeRoleRequest = (input, context) => {
     }
     if (input.PolicyArns != null) {
         const memberEntries = serializeAws_querypolicyDescriptorListType(input.PolicyArns, context);
+        if (input.PolicyArns?.length === 0) {
+            entries.PolicyArns = [];
+        }
         Object.entries(memberEntries).forEach(([key, value]) => {
             const loc = `PolicyArns.${key}`;
             entries[loc] = value;
@@ -8696,6 +8435,9 @@ const serializeAws_queryAssumeRoleRequest = (input, context) => {
     }
     if (input.Tags != null) {
         const memberEntries = serializeAws_querytagListType(input.Tags, context);
+        if (input.Tags?.length === 0) {
+            entries.Tags = [];
+        }
         Object.entries(memberEntries).forEach(([key, value]) => {
             const loc = `Tags.${key}`;
             entries[loc] = value;
@@ -8703,6 +8445,9 @@ const serializeAws_queryAssumeRoleRequest = (input, context) => {
     }
     if (input.TransitiveTagKeys != null) {
         const memberEntries = serializeAws_querytagKeyListType(input.TransitiveTagKeys, context);
+        if (input.TransitiveTagKeys?.length === 0) {
+            entries.TransitiveTagKeys = [];
+        }
         Object.entries(memberEntries).forEach(([key, value]) => {
             const loc = `TransitiveTagKeys.${key}`;
             entries[loc] = value;
@@ -8735,6 +8480,9 @@ const serializeAws_queryAssumeRoleWithSAMLRequest = (input, context) => {
     }
     if (input.PolicyArns != null) {
         const memberEntries = serializeAws_querypolicyDescriptorListType(input.PolicyArns, context);
+        if (input.PolicyArns?.length === 0) {
+            entries.PolicyArns = [];
+        }
         Object.entries(memberEntries).forEach(([key, value]) => {
             const loc = `PolicyArns.${key}`;
             entries[loc] = value;
@@ -8764,6 +8512,9 @@ const serializeAws_queryAssumeRoleWithWebIdentityRequest = (input, context) => {
     }
     if (input.PolicyArns != null) {
         const memberEntries = serializeAws_querypolicyDescriptorListType(input.PolicyArns, context);
+        if (input.PolicyArns?.length === 0) {
+            entries.PolicyArns = [];
+        }
         Object.entries(memberEntries).forEach(([key, value]) => {
             const loc = `PolicyArns.${key}`;
             entries[loc] = value;
@@ -8805,6 +8556,9 @@ const serializeAws_queryGetFederationTokenRequest = (input, context) => {
     }
     if (input.PolicyArns != null) {
         const memberEntries = serializeAws_querypolicyDescriptorListType(input.PolicyArns, context);
+        if (input.PolicyArns?.length === 0) {
+            entries.PolicyArns = [];
+        }
         Object.entries(memberEntries).forEach(([key, value]) => {
             const loc = `PolicyArns.${key}`;
             entries[loc] = value;
@@ -8815,6 +8569,9 @@ const serializeAws_queryGetFederationTokenRequest = (input, context) => {
     }
     if (input.Tags != null) {
         const memberEntries = serializeAws_querytagListType(input.Tags, context);
+        if (input.Tags?.length === 0) {
+            entries.Tags = [];
+        }
         Object.entries(memberEntries).forEach(([key, value]) => {
             const loc = `Tags.${key}`;
             entries[loc] = value;
@@ -9169,15 +8926,12 @@ const deserializeAws_queryRegionDisabledException = (output, context) => {
     }
     return contents;
 };
-const deserializeMetadata = (output) => {
-    var _a;
-    return ({
-        httpStatusCode: output.statusCode,
-        requestId: (_a = output.headers["x-amzn-requestid"]) !== null && _a !== void 0 ? _a : output.headers["x-amzn-request-id"],
-        extendedRequestId: output.headers["x-amz-id-2"],
-        cfId: output.headers["x-amz-cf-id"],
-    });
-};
+const deserializeMetadata = (output) => ({
+    httpStatusCode: output.statusCode,
+    requestId: output.headers["x-amzn-requestid"] ?? output.headers["x-amzn-request-id"] ?? output.headers["x-amz-request-id"],
+    extendedRequestId: output.headers["x-amz-id-2"],
+    cfId: output.headers["x-amz-cf-id"],
+});
 const collectBody = (streamBody = new Uint8Array(), context) => {
     if (streamBody instanceof Uint8Array) {
         return Promise.resolve(streamBody);
@@ -9205,13 +8959,18 @@ const buildHttpRpcRequest = async (context, headers, path, resolvedHostname, bod
 };
 const parseBody = (streamBody, context) => collectBodyString(streamBody, context).then((encoded) => {
     if (encoded.length) {
-        const parsedObj = (0, fast_xml_parser_1.parse)(encoded, {
+        const parser = new fast_xml_parser_1.XMLParser({
             attributeNamePrefix: "",
+            htmlEntities: true,
             ignoreAttributes: false,
-            parseNodeValue: false,
+            ignoreDeclaration: true,
+            parseTagValue: false,
             trimValues: false,
-            tagValueProcessor: (val) => (val.trim() === "" && val.includes("\n") ? "" : (0, entities_1.decodeHTML)(val)),
+            tagValueProcessor: (_, val) => (val.trim() === "" && val.includes("\n") ? "" : undefined),
         });
+        parser.addEntity("#xD", "\r");
+        parser.addEntity("#10", "\n");
+        const parsedObj = parser.parse(encoded);
         const textNodeName = "#text";
         const key = Object.keys(parsedObj)[0];
         const parsedObjToReturn = parsedObj[key];
@@ -9224,10 +8983,9 @@ const parseBody = (streamBody, context) => collectBodyString(streamBody, context
     return {};
 });
 const parseErrorBody = async (errorBody, context) => {
-    var _a;
     const value = await parseBody(errorBody, context);
     if (value.Error) {
-        value.Error.message = (_a = value.Error.message) !== null && _a !== void 0 ? _a : value.Error.Message;
+        value.Error.message = value.Error.message ?? value.Error.Message;
     }
     return value;
 };
@@ -9262,8 +9020,8 @@ const hash_node_1 = __nccwpck_require__(7442);
 const middleware_retry_1 = __nccwpck_require__(6064);
 const node_config_provider_1 = __nccwpck_require__(7684);
 const node_http_handler_1 = __nccwpck_require__(8805);
-const util_base64_node_1 = __nccwpck_require__(8588);
 const util_body_length_node_1 = __nccwpck_require__(4147);
+const util_retry_1 = __nccwpck_require__(9395);
 const util_user_agent_node_1 = __nccwpck_require__(8095);
 const util_utf8_node_1 = __nccwpck_require__(6278);
 const runtimeConfig_shared_1 = __nccwpck_require__(2642);
@@ -9271,7 +9029,6 @@ const smithy_client_1 = __nccwpck_require__(4963);
 const util_defaults_mode_node_1 = __nccwpck_require__(4243);
 const smithy_client_2 = __nccwpck_require__(4963);
 const getRuntimeConfig = (config) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q;
     (0, smithy_client_2.emitWarningIfUnsupportedVersion)(process.version);
     const defaultsMode = (0, util_defaults_mode_node_1.resolveDefaultsModeConfig)(config);
     const defaultConfigProvider = () => defaultsMode().then(smithy_client_1.loadConfigsForDefaultMode);
@@ -9281,24 +9038,24 @@ const getRuntimeConfig = (config) => {
         ...config,
         runtime: "node",
         defaultsMode,
-        base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
-        base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
-        bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
-        credentialDefaultProvider: (_d = config === null || config === void 0 ? void 0 : config.credentialDefaultProvider) !== null && _d !== void 0 ? _d : (0, defaultStsRoleAssumers_1.decorateDefaultCredentialProvider)(credential_provider_node_1.defaultProvider),
-        defaultUserAgentProvider: (_e = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : (0, util_user_agent_node_1.defaultUserAgent)({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
-        maxAttempts: (_f = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _f !== void 0 ? _f : (0, node_config_provider_1.loadConfig)(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
-        region: (_g = config === null || config === void 0 ? void 0 : config.region) !== null && _g !== void 0 ? _g : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-        requestHandler: (_h = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
-        retryMode: (_j = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _j !== void 0 ? _j : (0, node_config_provider_1.loadConfig)({
-            ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
-            default: async () => (await defaultConfigProvider()).retryMode || middleware_retry_1.DEFAULT_RETRY_MODE,
-        }),
-        sha256: (_k = config === null || config === void 0 ? void 0 : config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
-        streamCollector: (_l = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
-        useDualstackEndpoint: (_m = config === null || config === void 0 ? void 0 : config.useDualstackEndpoint) !== null && _m !== void 0 ? _m : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
-        useFipsEndpoint: (_o = config === null || config === void 0 ? void 0 : config.useFipsEndpoint) !== null && _o !== void 0 ? _o : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS),
-        utf8Decoder: (_p = config === null || config === void 0 ? void 0 : config.utf8Decoder) !== null && _p !== void 0 ? _p : util_utf8_node_1.fromUtf8,
-        utf8Encoder: (_q = config === null || config === void 0 ? void 0 : config.utf8Encoder) !== null && _q !== void 0 ? _q : util_utf8_node_1.toUtf8,
+        bodyLengthChecker: config?.bodyLengthChecker ?? util_body_length_node_1.calculateBodyLength,
+        credentialDefaultProvider: config?.credentialDefaultProvider ?? (0, defaultStsRoleAssumers_1.decorateDefaultCredentialProvider)(credential_provider_node_1.defaultProvider),
+        defaultUserAgentProvider: config?.defaultUserAgentProvider ??
+            (0, util_user_agent_node_1.defaultUserAgent)({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        maxAttempts: config?.maxAttempts ?? (0, node_config_provider_1.loadConfig)(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        region: config?.region ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: config?.requestHandler ?? new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
+        retryMode: config?.retryMode ??
+            (0, node_config_provider_1.loadConfig)({
+                ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
+                default: async () => (await defaultConfigProvider()).retryMode || util_retry_1.DEFAULT_RETRY_MODE,
+            }),
+        sha256: config?.sha256 ?? hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: config?.streamCollector ?? node_http_handler_1.streamCollector,
+        useDualstackEndpoint: config?.useDualstackEndpoint ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
+        useFipsEndpoint: config?.useFipsEndpoint ?? (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS),
+        utf8Decoder: config?.utf8Decoder ?? util_utf8_node_1.fromUtf8,
+        utf8Encoder: config?.utf8Encoder ?? util_utf8_node_1.toUtf8,
     };
 };
 exports.getRuntimeConfig = getRuntimeConfig;
@@ -9313,19 +9070,20 @@ exports.getRuntimeConfig = getRuntimeConfig;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getRuntimeConfig = void 0;
-const url_parser_1 = __nccwpck_require__(7190);
-const endpoints_1 = __nccwpck_require__(3571);
-const getRuntimeConfig = (config) => {
-    var _a, _b, _c, _d, _e;
-    return ({
-        apiVersion: "2011-06-15",
-        disableHostPrefix: (_a = config === null || config === void 0 ? void 0 : config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
-        logger: (_b = config === null || config === void 0 ? void 0 : config.logger) !== null && _b !== void 0 ? _b : {},
-        regionInfoProvider: (_c = config === null || config === void 0 ? void 0 : config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
-        serviceId: (_d = config === null || config === void 0 ? void 0 : config.serviceId) !== null && _d !== void 0 ? _d : "STS",
-        urlParser: (_e = config === null || config === void 0 ? void 0 : config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
-    });
-};
+const smithy_client_1 = __nccwpck_require__(4963);
+const url_parser_1 = __nccwpck_require__(2992);
+const util_base64_1 = __nccwpck_require__(7727);
+const endpointResolver_1 = __nccwpck_require__(1203);
+const getRuntimeConfig = (config) => ({
+    apiVersion: "2011-06-15",
+    base64Decoder: config?.base64Decoder ?? util_base64_1.fromBase64,
+    base64Encoder: config?.base64Encoder ?? util_base64_1.toBase64,
+    disableHostPrefix: config?.disableHostPrefix ?? false,
+    endpointProvider: config?.endpointProvider ?? endpointResolver_1.defaultEndpointResolver,
+    logger: config?.logger ?? new smithy_client_1.NoOpLogger(),
+    serviceId: config?.serviceId ?? "STS",
+    urlParser: config?.urlParser ?? url_parser_1.parseUrl,
+});
 exports.getRuntimeConfig = getRuntimeConfig;
 
 
@@ -9395,14 +9153,14 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.resolveCustomEndpointsConfig = void 0;
 const util_middleware_1 = __nccwpck_require__(236);
 const resolveCustomEndpointsConfig = (input) => {
-    var _a;
+    var _a, _b;
     const { endpoint, urlParser } = input;
     return {
         ...input,
         tls: (_a = input.tls) !== null && _a !== void 0 ? _a : true,
         endpoint: (0, util_middleware_1.normalizeProvider)(typeof endpoint === "string" ? urlParser(endpoint) : endpoint),
         isCustomEndpoint: true,
-        useDualstackEndpoint: (0, util_middleware_1.normalizeProvider)(input.useDualstackEndpoint),
+        useDualstackEndpoint: (0, util_middleware_1.normalizeProvider)((_b = input.useDualstackEndpoint) !== null && _b !== void 0 ? _b : false),
     };
 };
 exports.resolveCustomEndpointsConfig = resolveCustomEndpointsConfig;
@@ -9420,12 +9178,12 @@ exports.resolveEndpointsConfig = void 0;
 const util_middleware_1 = __nccwpck_require__(236);
 const getEndpointFromRegion_1 = __nccwpck_require__(4159);
 const resolveEndpointsConfig = (input) => {
-    var _a;
-    const useDualstackEndpoint = (0, util_middleware_1.normalizeProvider)(input.useDualstackEndpoint);
+    var _a, _b;
+    const useDualstackEndpoint = (0, util_middleware_1.normalizeProvider)((_a = input.useDualstackEndpoint) !== null && _a !== void 0 ? _a : false);
     const { endpoint, useFipsEndpoint, urlParser } = input;
     return {
         ...input,
-        tls: (_a = input.tls) !== null && _a !== void 0 ? _a : true,
+        tls: (_b = input.tls) !== null && _b !== void 0 ? _b : true,
         endpoint: endpoint
             ? (0, util_middleware_1.normalizeProvider)(typeof endpoint === "string" ? urlParser(endpoint) : endpoint)
             : () => (0, getEndpointFromRegion_1.getEndpointFromRegion)({ ...input, useDualstackEndpoint, useFipsEndpoint }),
@@ -9575,7 +9333,7 @@ const resolveRegionConfig = (input) => {
             if ((0, isFipsRegion_1.isFipsRegion)(providedRegion)) {
                 return true;
             }
-            return typeof useFipsEndpoint === "boolean" ? Promise.resolve(useFipsEndpoint) : useFipsEndpoint();
+            return typeof useFipsEndpoint !== "function" ? Promise.resolve(!!useFipsEndpoint) : useFipsEndpoint();
         },
     };
 };
@@ -9730,7 +9488,7 @@ tslib_1.__exportStar(__nccwpck_require__(6167), exports);
 
 /***/ }),
 
-/***/ 255:
+/***/ 8583:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -9769,7 +9527,7 @@ exports.fromEnv = fromEnv;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
-tslib_1.__exportStar(__nccwpck_require__(255), exports);
+tslib_1.__exportStar(__nccwpck_require__(8583), exports);
 
 
 /***/ }),
@@ -10200,7 +9958,7 @@ exports.getExtendedInstanceMetadataCredentials = getExtendedInstanceMetadataCred
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getInstanceMetadataEndpoint = void 0;
 const node_config_provider_1 = __nccwpck_require__(7684);
-const url_parser_1 = __nccwpck_require__(7190);
+const url_parser_1 = __nccwpck_require__(2992);
 const Endpoint_1 = __nccwpck_require__(3736);
 const EndpointConfigOptions_1 = __nccwpck_require__(8438);
 const EndpointMode_1 = __nccwpck_require__(1695);
@@ -10378,6 +10136,27 @@ exports.resolveCredentialSource = resolveCredentialSource;
 
 /***/ }),
 
+/***/ 9993:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveProcessCredentials = exports.isProcessProfile = void 0;
+const credential_provider_process_1 = __nccwpck_require__(9969);
+const isProcessProfile = (arg) => Boolean(arg) &&
+    typeof arg === "object" &&
+    typeof arg.credential_process === "string";
+exports.isProcessProfile = isProcessProfile;
+const resolveProcessCredentials = async (options, profile) => (0, credential_provider_process_1.fromProcess)({
+    ...options,
+    profile,
+})();
+exports.resolveProcessCredentials = resolveProcessCredentials;
+
+
+/***/ }),
+
 /***/ 5653:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -10387,6 +10166,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.resolveProfileData = void 0;
 const property_provider_1 = __nccwpck_require__(4462);
 const resolveAssumeRoleCredentials_1 = __nccwpck_require__(853);
+const resolveProcessCredentials_1 = __nccwpck_require__(9993);
 const resolveSsoCredentials_1 = __nccwpck_require__(9867);
 const resolveStaticCredentials_1 = __nccwpck_require__(3071);
 const resolveWebIdentityCredentials_1 = __nccwpck_require__(8233);
@@ -10403,6 +10183,9 @@ const resolveProfileData = async (profileName, profiles, options, visitedProfile
     }
     if ((0, resolveWebIdentityCredentials_1.isWebIdentityProfile)(data)) {
         return (0, resolveWebIdentityCredentials_1.resolveWebIdentityCredentials)(data, options);
+    }
+    if ((0, resolveProcessCredentials_1.isProcessProfile)(data)) {
+        return (0, resolveProcessCredentials_1.resolveProcessCredentials)(options, profileName);
     }
     if ((0, resolveSsoCredentials_1.isSsoProfile)(data)) {
         return (0, resolveSsoCredentials_1.resolveSsoCredentials)(data);
@@ -10425,10 +10208,11 @@ const credential_provider_sso_1 = __nccwpck_require__(6414);
 var credential_provider_sso_2 = __nccwpck_require__(6414);
 Object.defineProperty(exports, "isSsoProfile", ({ enumerable: true, get: function () { return credential_provider_sso_2.isSsoProfile; } }));
 const resolveSsoCredentials = (data) => {
-    const { sso_start_url, sso_account_id, sso_region, sso_role_name } = (0, credential_provider_sso_1.validateSsoProfile)(data);
+    const { sso_start_url, sso_account_id, sso_session, sso_region, sso_role_name } = (0, credential_provider_sso_1.validateSsoProfile)(data);
     return (0, credential_provider_sso_1.fromSSO)({
         ssoStartUrl: sso_start_url,
         ssoAccountId: sso_account_id,
+        ssoSession: sso_session,
         ssoRegion: sso_region,
         ssoRoleName: sso_role_name,
     })();
@@ -10668,29 +10452,55 @@ const isSsoProfile_1 = __nccwpck_require__(2572);
 const resolveSSOCredentials_1 = __nccwpck_require__(4729);
 const validateSsoProfile_1 = __nccwpck_require__(8098);
 const fromSSO = (init = {}) => async () => {
-    const { ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient } = init;
-    if (!ssoStartUrl && !ssoAccountId && !ssoRegion && !ssoRoleName) {
+    const { ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient, ssoSession } = init;
+    const profileName = (0, shared_ini_file_loader_1.getProfileName)(init);
+    if (!ssoStartUrl && !ssoAccountId && !ssoRegion && !ssoRoleName && !ssoSession) {
         const profiles = await (0, shared_ini_file_loader_1.parseKnownFiles)(init);
-        const profileName = (0, shared_ini_file_loader_1.getProfileName)(init);
         const profile = profiles[profileName];
+        if (!profile) {
+            throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} was not found.`);
+        }
         if (!(0, isSsoProfile_1.isSsoProfile)(profile)) {
             throw new property_provider_1.CredentialsProviderError(`Profile ${profileName} is not configured with SSO credentials.`);
         }
-        const { sso_start_url, sso_account_id, sso_region, sso_role_name } = (0, validateSsoProfile_1.validateSsoProfile)(profile);
+        if (profile === null || profile === void 0 ? void 0 : profile.sso_session) {
+            const ssoSessions = await (0, shared_ini_file_loader_1.loadSsoSessionData)(init);
+            const session = ssoSessions[profile.sso_session];
+            const conflictMsg = ` configurations in profile ${profileName} and sso-session ${profile.sso_session}`;
+            if (ssoRegion && ssoRegion !== session.sso_region) {
+                throw new property_provider_1.CredentialsProviderError(`Conflicting SSO region` + conflictMsg, false);
+            }
+            if (ssoStartUrl && ssoStartUrl !== session.sso_start_url) {
+                throw new property_provider_1.CredentialsProviderError(`Conflicting SSO start_url` + conflictMsg, false);
+            }
+            profile.sso_region = session.sso_region;
+            profile.sso_start_url = session.sso_start_url;
+        }
+        const { sso_start_url, sso_account_id, sso_region, sso_role_name, sso_session } = (0, validateSsoProfile_1.validateSsoProfile)(profile);
         return (0, resolveSSOCredentials_1.resolveSSOCredentials)({
             ssoStartUrl: sso_start_url,
+            ssoSession: sso_session,
             ssoAccountId: sso_account_id,
             ssoRegion: sso_region,
             ssoRoleName: sso_role_name,
             ssoClient: ssoClient,
+            profile: profileName,
         });
     }
     else if (!ssoStartUrl || !ssoAccountId || !ssoRegion || !ssoRoleName) {
-        throw new property_provider_1.CredentialsProviderError('Incomplete configuration. The fromSSO() argument hash must include "ssoStartUrl",' +
-            ' "ssoAccountId", "ssoRegion", "ssoRoleName"');
+        throw new property_provider_1.CredentialsProviderError("Incomplete configuration. The fromSSO() argument hash must include " +
+            '"ssoStartUrl", "ssoAccountId", "ssoRegion", "ssoRoleName"');
     }
     else {
-        return (0, resolveSSOCredentials_1.resolveSSOCredentials)({ ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient });
+        return (0, resolveSSOCredentials_1.resolveSSOCredentials)({
+            ssoStartUrl,
+            ssoSession,
+            ssoAccountId,
+            ssoRegion,
+            ssoRoleName,
+            ssoClient,
+            profile: profileName,
+        });
     }
 };
 exports.fromSSO = fromSSO;
@@ -10723,6 +10533,7 @@ exports.isSsoProfile = void 0;
 const isSsoProfile = (arg) => arg &&
     (typeof arg.sso_start_url === "string" ||
         typeof arg.sso_account_id === "string" ||
+        typeof arg.sso_session === "string" ||
         typeof arg.sso_region === "string" ||
         typeof arg.sso_role_name === "string");
 exports.isSsoProfile = isSsoProfile;
@@ -10740,16 +10551,31 @@ exports.resolveSSOCredentials = void 0;
 const client_sso_1 = __nccwpck_require__(2666);
 const property_provider_1 = __nccwpck_require__(4462);
 const shared_ini_file_loader_1 = __nccwpck_require__(7387);
+const token_providers_1 = __nccwpck_require__(2843);
 const EXPIRE_WINDOW_MS = 15 * 60 * 1000;
 const SHOULD_FAIL_CREDENTIAL_CHAIN = false;
-const resolveSSOCredentials = async ({ ssoStartUrl, ssoAccountId, ssoRegion, ssoRoleName, ssoClient, }) => {
+const resolveSSOCredentials = async ({ ssoStartUrl, ssoSession, ssoAccountId, ssoRegion, ssoRoleName, ssoClient, profile, }) => {
     let token;
     const refreshMessage = `To refresh this SSO session run aws sso login with the corresponding profile.`;
-    try {
-        token = await (0, shared_ini_file_loader_1.getSSOTokenFromFile)(ssoStartUrl);
+    if (ssoSession) {
+        try {
+            const _token = await (0, token_providers_1.fromSso)({ profile })();
+            token = {
+                accessToken: _token.token,
+                expiresAt: new Date(_token.expiration).toISOString(),
+            };
+        }
+        catch (e) {
+            throw new property_provider_1.CredentialsProviderError(e.message, SHOULD_FAIL_CREDENTIAL_CHAIN);
+        }
     }
-    catch (e) {
-        throw new property_provider_1.CredentialsProviderError(`The SSO session associated with this profile is invalid. ${refreshMessage}`, SHOULD_FAIL_CREDENTIAL_CHAIN);
+    else {
+        try {
+            token = await (0, shared_ini_file_loader_1.getSSOTokenFromFile)(ssoStartUrl);
+        }
+        catch (e) {
+            throw new property_provider_1.CredentialsProviderError(`The SSO session associated with this profile is invalid. ${refreshMessage}`, SHOULD_FAIL_CREDENTIAL_CHAIN);
+        }
     }
     if (new Date(token.expiresAt).getTime() - Date.now() <= EXPIRE_WINDOW_MS) {
         throw new property_provider_1.CredentialsProviderError(`The SSO session associated with this profile has expired. ${refreshMessage}`, SHOULD_FAIL_CREDENTIAL_CHAIN);
@@ -10799,8 +10625,8 @@ const property_provider_1 = __nccwpck_require__(4462);
 const validateSsoProfile = (profile) => {
     const { sso_start_url, sso_account_id, sso_region, sso_role_name } = profile;
     if (!sso_start_url || !sso_account_id || !sso_region || !sso_role_name) {
-        throw new property_provider_1.CredentialsProviderError(`Profile is configured with invalid SSO credentials. Required parameters "sso_account_id", "sso_region", ` +
-            `"sso_role_name", "sso_start_url". Got ${Object.keys(profile).join(", ")}\nReference: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html`, false);
+        throw new property_provider_1.CredentialsProviderError(`Profile is configured with invalid SSO credentials. Required parameters "sso_account_id", ` +
+            `"sso_region", "sso_role_name", "sso_start_url". Got ${Object.keys(profile).join(", ")}\nReference: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html`, false);
     }
     return profile;
 };
@@ -10895,17 +10721,25 @@ tslib_1.__exportStar(__nccwpck_require__(7905), exports);
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Hash = void 0;
 const util_buffer_from_1 = __nccwpck_require__(6010);
+const util_utf8_1 = __nccwpck_require__(4967);
 const buffer_1 = __nccwpck_require__(4293);
 const crypto_1 = __nccwpck_require__(6417);
 class Hash {
     constructor(algorithmIdentifier, secret) {
-        this.hash = secret ? (0, crypto_1.createHmac)(algorithmIdentifier, castSourceData(secret)) : (0, crypto_1.createHash)(algorithmIdentifier);
+        this.algorithmIdentifier = algorithmIdentifier;
+        this.secret = secret;
+        this.reset();
     }
     update(toHash, encoding) {
-        this.hash.update(castSourceData(toHash, encoding));
+        this.hash.update((0, util_utf8_1.toUint8Array)(castSourceData(toHash, encoding)));
     }
     digest() {
         return Promise.resolve(this.hash.digest());
+    }
+    reset() {
+        this.hash = this.secret
+            ? (0, crypto_1.createHmac)(this.algorithmIdentifier, castSourceData(this.secret))
+            : (0, crypto_1.createHash)(this.algorithmIdentifier);
     }
 }
 exports.Hash = Hash;
@@ -10991,6 +10825,311 @@ exports.getContentLengthPlugin = getContentLengthPlugin;
 
 /***/ }),
 
+/***/ 3504:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.createConfigValueProvider = void 0;
+const createConfigValueProvider = (configKey, canonicalEndpointParamKey, config) => {
+    const configProvider = async () => {
+        var _a;
+        const configValue = (_a = config[configKey]) !== null && _a !== void 0 ? _a : config[canonicalEndpointParamKey];
+        if (typeof configValue === "function") {
+            return configValue();
+        }
+        return configValue;
+    };
+    if (configKey === "endpoint" || canonicalEndpointParamKey === "endpoint") {
+        return async () => {
+            const endpoint = await configProvider();
+            if (endpoint && typeof endpoint === "object") {
+                if ("url" in endpoint) {
+                    return endpoint.url.href;
+                }
+                if ("hostname" in endpoint) {
+                    const { protocol, hostname, port, path } = endpoint;
+                    return `${protocol}//${hostname}${port ? ":" + port : ""}${path}`;
+                }
+            }
+            return endpoint;
+        };
+    }
+    return configProvider;
+};
+exports.createConfigValueProvider = createConfigValueProvider;
+
+
+/***/ }),
+
+/***/ 2419:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveParams = exports.getEndpointFromInstructions = void 0;
+const service_customizations_1 = __nccwpck_require__(3589);
+const createConfigValueProvider_1 = __nccwpck_require__(3504);
+const getEndpointFromInstructions = async (commandInput, instructionsSupplier, clientConfig, context) => {
+    const endpointParams = await (0, exports.resolveParams)(commandInput, instructionsSupplier, clientConfig);
+    if (typeof clientConfig.endpointProvider !== "function") {
+        throw new Error("config.endpointProvider is not set.");
+    }
+    const endpoint = clientConfig.endpointProvider(endpointParams, context);
+    return endpoint;
+};
+exports.getEndpointFromInstructions = getEndpointFromInstructions;
+const resolveParams = async (commandInput, instructionsSupplier, clientConfig) => {
+    var _a;
+    const endpointParams = {};
+    const instructions = ((_a = instructionsSupplier === null || instructionsSupplier === void 0 ? void 0 : instructionsSupplier.getEndpointParameterInstructions) === null || _a === void 0 ? void 0 : _a.call(instructionsSupplier)) || {};
+    for (const [name, instruction] of Object.entries(instructions)) {
+        switch (instruction.type) {
+            case "staticContextParams":
+                endpointParams[name] = instruction.value;
+                break;
+            case "contextParams":
+                endpointParams[name] = commandInput[instruction.name];
+                break;
+            case "clientContextParams":
+            case "builtInParams":
+                endpointParams[name] = await (0, createConfigValueProvider_1.createConfigValueProvider)(instruction.name, name, clientConfig)();
+                break;
+            default:
+                throw new Error("Unrecognized endpoint parameter instruction: " + JSON.stringify(instruction));
+        }
+    }
+    if (Object.keys(instructions).length === 0) {
+        Object.assign(endpointParams, clientConfig);
+    }
+    if (String(clientConfig.serviceId).toLowerCase() === "s3") {
+        await (0, service_customizations_1.resolveParamsForS3)(endpointParams);
+    }
+    return endpointParams;
+};
+exports.resolveParams = resolveParams;
+
+
+/***/ }),
+
+/***/ 197:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(2419), exports);
+tslib_1.__exportStar(__nccwpck_require__(8289), exports);
+
+
+/***/ }),
+
+/***/ 8289:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.toEndpointV1 = void 0;
+const url_parser_1 = __nccwpck_require__(2992);
+const toEndpointV1 = (endpoint) => {
+    if (typeof endpoint === "object") {
+        if ("url" in endpoint) {
+            return (0, url_parser_1.parseUrl)(endpoint.url);
+        }
+        return endpoint;
+    }
+    return (0, url_parser_1.parseUrl)(endpoint);
+};
+exports.toEndpointV1 = toEndpointV1;
+
+
+/***/ }),
+
+/***/ 2639:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.endpointMiddleware = void 0;
+const getEndpointFromInstructions_1 = __nccwpck_require__(2419);
+const endpointMiddleware = ({ config, instructions, }) => {
+    return (next, context) => async (args) => {
+        var _a, _b;
+        const endpoint = await (0, getEndpointFromInstructions_1.getEndpointFromInstructions)(args.input, {
+            getEndpointParameterInstructions() {
+                return instructions;
+            },
+        }, { ...config }, context);
+        context.endpointV2 = endpoint;
+        context.authSchemes = (_a = endpoint.properties) === null || _a === void 0 ? void 0 : _a.authSchemes;
+        const authScheme = (_b = context.authSchemes) === null || _b === void 0 ? void 0 : _b[0];
+        if (authScheme) {
+            context["signing_region"] = authScheme.signingRegion;
+            context["signing_service"] = authScheme.signingName;
+        }
+        return next({
+            ...args,
+        });
+    };
+};
+exports.endpointMiddleware = endpointMiddleware;
+
+
+/***/ }),
+
+/***/ 7981:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getEndpointPlugin = exports.endpointMiddlewareOptions = void 0;
+const middleware_serde_1 = __nccwpck_require__(3631);
+const endpointMiddleware_1 = __nccwpck_require__(2639);
+exports.endpointMiddlewareOptions = {
+    step: "serialize",
+    tags: ["ENDPOINT_PARAMETERS", "ENDPOINT_V2", "ENDPOINT"],
+    name: "endpointV2Middleware",
+    override: true,
+    relation: "before",
+    toMiddleware: middleware_serde_1.serializerMiddlewareOption.name,
+};
+const getEndpointPlugin = (config, instructions) => ({
+    applyToStack: (clientStack) => {
+        clientStack.addRelativeTo((0, endpointMiddleware_1.endpointMiddleware)({
+            config,
+            instructions,
+        }), exports.endpointMiddlewareOptions);
+    },
+});
+exports.getEndpointPlugin = getEndpointPlugin;
+
+
+/***/ }),
+
+/***/ 5497:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(197), exports);
+tslib_1.__exportStar(__nccwpck_require__(2639), exports);
+tslib_1.__exportStar(__nccwpck_require__(7981), exports);
+tslib_1.__exportStar(__nccwpck_require__(3157), exports);
+tslib_1.__exportStar(__nccwpck_require__(2521), exports);
+
+
+/***/ }),
+
+/***/ 3157:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveEndpointConfig = void 0;
+const util_middleware_1 = __nccwpck_require__(236);
+const toEndpointV1_1 = __nccwpck_require__(8289);
+const resolveEndpointConfig = (input) => {
+    var _a, _b, _c;
+    const tls = (_a = input.tls) !== null && _a !== void 0 ? _a : true;
+    const { endpoint } = input;
+    const customEndpointProvider = endpoint != null ? async () => (0, toEndpointV1_1.toEndpointV1)(await (0, util_middleware_1.normalizeProvider)(endpoint)()) : undefined;
+    const isCustomEndpoint = !!endpoint;
+    return {
+        ...input,
+        endpoint: customEndpointProvider,
+        tls,
+        isCustomEndpoint,
+        useDualstackEndpoint: (0, util_middleware_1.normalizeProvider)((_b = input.useDualstackEndpoint) !== null && _b !== void 0 ? _b : false),
+        useFipsEndpoint: (0, util_middleware_1.normalizeProvider)((_c = input.useFipsEndpoint) !== null && _c !== void 0 ? _c : false),
+    };
+};
+exports.resolveEndpointConfig = resolveEndpointConfig;
+
+
+/***/ }),
+
+/***/ 3589:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(8648), exports);
+
+
+/***/ }),
+
+/***/ 8648:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isArnBucketName = exports.isDnsCompatibleBucketName = exports.S3_HOSTNAME_PATTERN = exports.DOT_PATTERN = exports.resolveParamsForS3 = void 0;
+const resolveParamsForS3 = async (endpointParams) => {
+    const bucket = (endpointParams === null || endpointParams === void 0 ? void 0 : endpointParams.Bucket) || "";
+    if (typeof endpointParams.Bucket === "string") {
+        endpointParams.Bucket = bucket.replace(/#/g, encodeURIComponent("#")).replace(/\?/g, encodeURIComponent("?"));
+    }
+    if ((0, exports.isArnBucketName)(bucket)) {
+        if (endpointParams.ForcePathStyle === true) {
+            throw new Error("Path-style addressing cannot be used with ARN buckets");
+        }
+    }
+    else if (!(0, exports.isDnsCompatibleBucketName)(bucket) ||
+        (bucket.indexOf(".") !== -1 && !String(endpointParams.Endpoint).startsWith("http:")) ||
+        bucket.toLowerCase() !== bucket ||
+        bucket.length < 3) {
+        endpointParams.ForcePathStyle = true;
+    }
+    if (endpointParams.DisableMultiRegionAccessPoints) {
+        endpointParams.disableMultiRegionAccessPoints = true;
+        endpointParams.DisableMRAP = true;
+    }
+    return endpointParams;
+};
+exports.resolveParamsForS3 = resolveParamsForS3;
+const DOMAIN_PATTERN = /^[a-z0-9][a-z0-9\.\-]{1,61}[a-z0-9]$/;
+const IP_ADDRESS_PATTERN = /(\d+\.){3}\d+/;
+const DOTS_PATTERN = /\.\./;
+exports.DOT_PATTERN = /\./;
+exports.S3_HOSTNAME_PATTERN = /^(.+\.)?s3(-fips)?(\.dualstack)?[.-]([a-z0-9-]+)\./;
+const isDnsCompatibleBucketName = (bucketName) => DOMAIN_PATTERN.test(bucketName) && !IP_ADDRESS_PATTERN.test(bucketName) && !DOTS_PATTERN.test(bucketName);
+exports.isDnsCompatibleBucketName = isDnsCompatibleBucketName;
+const isArnBucketName = (bucketName) => {
+    const [arn, partition, service, region, account, typeOrId] = bucketName.split(":");
+    const isArn = arn === "arn" && bucketName.split(":").length >= 6;
+    const isValidArn = [arn, partition, service, account, typeOrId].filter(Boolean).length === 5;
+    if (isArn && !isValidArn) {
+        throw new Error(`Invalid ARN: ${bucketName} was an invalid ARN.`);
+    }
+    return arn === "arn" && !!partition && !!service && !!account && !!typeOrId;
+};
+exports.isArnBucketName = isArnBucketName;
+
+
+/***/ }),
+
+/***/ 2521:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
 /***/ 2545:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -11055,8 +11194,9 @@ tslib_1.__exportStar(__nccwpck_require__(9754), exports);
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getLoggerPlugin = exports.loggerMiddlewareOptions = exports.loggerMiddleware = void 0;
 const loggerMiddleware = () => (next, context) => async (args) => {
-    const { clientName, commandName, inputFilterSensitiveLog, logger, outputFilterSensitiveLog } = context;
     const response = await next(args);
+    const { clientName, commandName, logger, inputFilterSensitiveLog, outputFilterSensitiveLog, dynamoDbDocumentClientOptions = {}, } = context;
+    const { overrideInputFilterSensitiveLog, overrideOutputFilterSensitiveLog } = dynamoDbDocumentClientOptions;
     if (!logger) {
         return response;
     }
@@ -11065,8 +11205,8 @@ const loggerMiddleware = () => (next, context) => async (args) => {
         logger.info({
             clientName,
             commandName,
-            input: inputFilterSensitiveLog(args.input),
-            output: outputFilterSensitiveLog(outputWithoutMetadata),
+            input: (overrideInputFilterSensitiveLog !== null && overrideInputFilterSensitiveLog !== void 0 ? overrideInputFilterSensitiveLog : inputFilterSensitiveLog)(args.input),
+            output: (overrideOutputFilterSensitiveLog !== null && overrideOutputFilterSensitiveLog !== void 0 ? overrideOutputFilterSensitiveLog : outputFilterSensitiveLog)(outputWithoutMetadata),
             metadata: $metadata,
         });
     }
@@ -11143,15 +11283,14 @@ exports.getRecursionDetectionPlugin = getRecursionDetectionPlugin;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AdaptiveRetryStrategy = void 0;
-const config_1 = __nccwpck_require__(5192);
-const DefaultRateLimiter_1 = __nccwpck_require__(6402);
+const util_retry_1 = __nccwpck_require__(9395);
 const StandardRetryStrategy_1 = __nccwpck_require__(533);
 class AdaptiveRetryStrategy extends StandardRetryStrategy_1.StandardRetryStrategy {
     constructor(maxAttemptsProvider, options) {
         const { rateLimiter, ...superOptions } = options !== null && options !== void 0 ? options : {};
         super(maxAttemptsProvider, superOptions);
-        this.rateLimiter = rateLimiter !== null && rateLimiter !== void 0 ? rateLimiter : new DefaultRateLimiter_1.DefaultRateLimiter();
-        this.mode = config_1.RETRY_MODES.ADAPTIVE;
+        this.rateLimiter = rateLimiter !== null && rateLimiter !== void 0 ? rateLimiter : new util_retry_1.DefaultRateLimiter();
+        this.mode = util_retry_1.RETRY_MODES.ADAPTIVE;
     }
     async retry(next, args) {
         return super.retry(next, args, {
@@ -11169,118 +11308,6 @@ exports.AdaptiveRetryStrategy = AdaptiveRetryStrategy;
 
 /***/ }),
 
-/***/ 6402:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DefaultRateLimiter = void 0;
-const service_error_classification_1 = __nccwpck_require__(1921);
-class DefaultRateLimiter {
-    constructor(options) {
-        var _a, _b, _c, _d, _e;
-        this.currentCapacity = 0;
-        this.enabled = false;
-        this.lastMaxRate = 0;
-        this.measuredTxRate = 0;
-        this.requestCount = 0;
-        this.lastTimestamp = 0;
-        this.timeWindow = 0;
-        this.beta = (_a = options === null || options === void 0 ? void 0 : options.beta) !== null && _a !== void 0 ? _a : 0.7;
-        this.minCapacity = (_b = options === null || options === void 0 ? void 0 : options.minCapacity) !== null && _b !== void 0 ? _b : 1;
-        this.minFillRate = (_c = options === null || options === void 0 ? void 0 : options.minFillRate) !== null && _c !== void 0 ? _c : 0.5;
-        this.scaleConstant = (_d = options === null || options === void 0 ? void 0 : options.scaleConstant) !== null && _d !== void 0 ? _d : 0.4;
-        this.smooth = (_e = options === null || options === void 0 ? void 0 : options.smooth) !== null && _e !== void 0 ? _e : 0.8;
-        const currentTimeInSeconds = this.getCurrentTimeInSeconds();
-        this.lastThrottleTime = currentTimeInSeconds;
-        this.lastTxRateBucket = Math.floor(this.getCurrentTimeInSeconds());
-        this.fillRate = this.minFillRate;
-        this.maxCapacity = this.minCapacity;
-    }
-    getCurrentTimeInSeconds() {
-        return Date.now() / 1000;
-    }
-    async getSendToken() {
-        return this.acquireTokenBucket(1);
-    }
-    async acquireTokenBucket(amount) {
-        if (!this.enabled) {
-            return;
-        }
-        this.refillTokenBucket();
-        if (amount > this.currentCapacity) {
-            const delay = ((amount - this.currentCapacity) / this.fillRate) * 1000;
-            await new Promise((resolve) => setTimeout(resolve, delay));
-        }
-        this.currentCapacity = this.currentCapacity - amount;
-    }
-    refillTokenBucket() {
-        const timestamp = this.getCurrentTimeInSeconds();
-        if (!this.lastTimestamp) {
-            this.lastTimestamp = timestamp;
-            return;
-        }
-        const fillAmount = (timestamp - this.lastTimestamp) * this.fillRate;
-        this.currentCapacity = Math.min(this.maxCapacity, this.currentCapacity + fillAmount);
-        this.lastTimestamp = timestamp;
-    }
-    updateClientSendingRate(response) {
-        let calculatedRate;
-        this.updateMeasuredRate();
-        if ((0, service_error_classification_1.isThrottlingError)(response)) {
-            const rateToUse = !this.enabled ? this.measuredTxRate : Math.min(this.measuredTxRate, this.fillRate);
-            this.lastMaxRate = rateToUse;
-            this.calculateTimeWindow();
-            this.lastThrottleTime = this.getCurrentTimeInSeconds();
-            calculatedRate = this.cubicThrottle(rateToUse);
-            this.enableTokenBucket();
-        }
-        else {
-            this.calculateTimeWindow();
-            calculatedRate = this.cubicSuccess(this.getCurrentTimeInSeconds());
-        }
-        const newRate = Math.min(calculatedRate, 2 * this.measuredTxRate);
-        this.updateTokenBucketRate(newRate);
-    }
-    calculateTimeWindow() {
-        this.timeWindow = this.getPrecise(Math.pow((this.lastMaxRate * (1 - this.beta)) / this.scaleConstant, 1 / 3));
-    }
-    cubicThrottle(rateToUse) {
-        return this.getPrecise(rateToUse * this.beta);
-    }
-    cubicSuccess(timestamp) {
-        return this.getPrecise(this.scaleConstant * Math.pow(timestamp - this.lastThrottleTime - this.timeWindow, 3) + this.lastMaxRate);
-    }
-    enableTokenBucket() {
-        this.enabled = true;
-    }
-    updateTokenBucketRate(newRate) {
-        this.refillTokenBucket();
-        this.fillRate = Math.max(newRate, this.minFillRate);
-        this.maxCapacity = Math.max(newRate, this.minCapacity);
-        this.currentCapacity = Math.min(this.currentCapacity, this.maxCapacity);
-    }
-    updateMeasuredRate() {
-        const t = this.getCurrentTimeInSeconds();
-        const timeBucket = Math.floor(t * 2) / 2;
-        this.requestCount++;
-        if (timeBucket > this.lastTxRateBucket) {
-            const currentRate = this.requestCount / (timeBucket - this.lastTxRateBucket);
-            this.measuredTxRate = this.getPrecise(currentRate * this.smooth + this.measuredTxRate * (1 - this.smooth));
-            this.requestCount = 0;
-            this.lastTxRateBucket = timeBucket;
-        }
-    }
-    getPrecise(num) {
-        return parseFloat(num.toFixed(8));
-    }
-}
-exports.DefaultRateLimiter = DefaultRateLimiter;
-
-
-/***/ }),
-
 /***/ 533:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -11290,20 +11317,20 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.StandardRetryStrategy = void 0;
 const protocol_http_1 = __nccwpck_require__(223);
 const service_error_classification_1 = __nccwpck_require__(1921);
+const util_retry_1 = __nccwpck_require__(9395);
 const uuid_1 = __nccwpck_require__(5840);
-const config_1 = __nccwpck_require__(5192);
-const constants_1 = __nccwpck_require__(41);
 const defaultRetryQuota_1 = __nccwpck_require__(2568);
 const delayDecider_1 = __nccwpck_require__(5940);
 const retryDecider_1 = __nccwpck_require__(9572);
+const util_1 = __nccwpck_require__(7154);
 class StandardRetryStrategy {
     constructor(maxAttemptsProvider, options) {
         var _a, _b, _c;
         this.maxAttemptsProvider = maxAttemptsProvider;
-        this.mode = config_1.RETRY_MODES.STANDARD;
+        this.mode = util_retry_1.RETRY_MODES.STANDARD;
         this.retryDecider = (_a = options === null || options === void 0 ? void 0 : options.retryDecider) !== null && _a !== void 0 ? _a : retryDecider_1.defaultRetryDecider;
         this.delayDecider = (_b = options === null || options === void 0 ? void 0 : options.delayDecider) !== null && _b !== void 0 ? _b : delayDecider_1.defaultDelayDecider;
-        this.retryQuota = (_c = options === null || options === void 0 ? void 0 : options.retryQuota) !== null && _c !== void 0 ? _c : (0, defaultRetryQuota_1.getDefaultRetryQuota)(constants_1.INITIAL_RETRY_TOKENS);
+        this.retryQuota = (_c = options === null || options === void 0 ? void 0 : options.retryQuota) !== null && _c !== void 0 ? _c : (0, defaultRetryQuota_1.getDefaultRetryQuota)(util_retry_1.INITIAL_RETRY_TOKENS);
     }
     shouldRetry(error, attempts, maxAttempts) {
         return attempts < maxAttempts && this.retryDecider(error) && this.retryQuota.hasRetryTokens(error);
@@ -11314,7 +11341,7 @@ class StandardRetryStrategy {
             maxAttempts = await this.maxAttemptsProvider();
         }
         catch (error) {
-            maxAttempts = config_1.DEFAULT_MAX_ATTEMPTS;
+            maxAttempts = util_retry_1.DEFAULT_MAX_ATTEMPTS;
         }
         return maxAttempts;
     }
@@ -11325,12 +11352,12 @@ class StandardRetryStrategy {
         const maxAttempts = await this.getMaxAttempts();
         const { request } = args;
         if (protocol_http_1.HttpRequest.isInstance(request)) {
-            request.headers[constants_1.INVOCATION_ID_HEADER] = (0, uuid_1.v4)();
+            request.headers[util_retry_1.INVOCATION_ID_HEADER] = (0, uuid_1.v4)();
         }
         while (true) {
             try {
                 if (protocol_http_1.HttpRequest.isInstance(request)) {
-                    request.headers[constants_1.REQUEST_HEADER] = `attempt=${attempts + 1}; max=${maxAttempts}`;
+                    request.headers[util_retry_1.REQUEST_HEADER] = `attempt=${attempts + 1}; max=${maxAttempts}`;
                 }
                 if (options === null || options === void 0 ? void 0 : options.beforeRequest) {
                     await options.beforeRequest();
@@ -11345,11 +11372,11 @@ class StandardRetryStrategy {
                 return { response, output };
             }
             catch (e) {
-                const err = asSdkError(e);
+                const err = (0, util_1.asSdkError)(e);
                 attempts++;
                 if (this.shouldRetry(err, attempts, maxAttempts)) {
                     retryTokenAmount = this.retryQuota.retrieveRetryTokens(err);
-                    const delayFromDecider = this.delayDecider((0, service_error_classification_1.isThrottlingError)(err) ? constants_1.THROTTLING_RETRY_DELAY_BASE : constants_1.DEFAULT_RETRY_DELAY_BASE, attempts);
+                    const delayFromDecider = this.delayDecider((0, service_error_classification_1.isThrottlingError)(err) ? util_retry_1.THROTTLING_RETRY_DELAY_BASE : util_retry_1.DEFAULT_RETRY_DELAY_BASE, attempts);
                     const delayFromResponse = getDelayFromRetryAfterHeader(err.$response);
                     const delay = Math.max(delayFromResponse || 0, delayFromDecider);
                     totalDelay += delay;
@@ -11380,33 +11407,6 @@ const getDelayFromRetryAfterHeader = (response) => {
     const retryAfterDate = new Date(retryAfter);
     return retryAfterDate.getTime() - Date.now();
 };
-const asSdkError = (error) => {
-    if (error instanceof Error)
-        return error;
-    if (error instanceof Object)
-        return Object.assign(new Error(), error);
-    if (typeof error === "string")
-        return new Error(error);
-    return new Error(`AWS SDK error wrapper for ${error}`);
-};
-
-
-/***/ }),
-
-/***/ 5192:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DEFAULT_RETRY_MODE = exports.DEFAULT_MAX_ATTEMPTS = exports.RETRY_MODES = void 0;
-var RETRY_MODES;
-(function (RETRY_MODES) {
-    RETRY_MODES["STANDARD"] = "standard";
-    RETRY_MODES["ADAPTIVE"] = "adaptive";
-})(RETRY_MODES = exports.RETRY_MODES || (exports.RETRY_MODES = {}));
-exports.DEFAULT_MAX_ATTEMPTS = 3;
-exports.DEFAULT_RETRY_MODE = RETRY_MODES.STANDARD;
 
 
 /***/ }),
@@ -11419,9 +11419,7 @@ exports.DEFAULT_RETRY_MODE = RETRY_MODES.STANDARD;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.NODE_RETRY_MODE_CONFIG_OPTIONS = exports.CONFIG_RETRY_MODE = exports.ENV_RETRY_MODE = exports.resolveRetryConfig = exports.NODE_MAX_ATTEMPT_CONFIG_OPTIONS = exports.CONFIG_MAX_ATTEMPTS = exports.ENV_MAX_ATTEMPTS = void 0;
 const util_middleware_1 = __nccwpck_require__(236);
-const AdaptiveRetryStrategy_1 = __nccwpck_require__(7328);
-const config_1 = __nccwpck_require__(5192);
-const StandardRetryStrategy_1 = __nccwpck_require__(533);
+const util_retry_1 = __nccwpck_require__(9395);
 exports.ENV_MAX_ATTEMPTS = "AWS_MAX_ATTEMPTS";
 exports.CONFIG_MAX_ATTEMPTS = "max_attempts";
 exports.NODE_MAX_ATTEMPT_CONFIG_OPTIONS = {
@@ -11445,23 +11443,24 @@ exports.NODE_MAX_ATTEMPT_CONFIG_OPTIONS = {
         }
         return maxAttempt;
     },
-    default: config_1.DEFAULT_MAX_ATTEMPTS,
+    default: util_retry_1.DEFAULT_MAX_ATTEMPTS,
 };
 const resolveRetryConfig = (input) => {
     var _a;
-    const maxAttempts = (0, util_middleware_1.normalizeProvider)((_a = input.maxAttempts) !== null && _a !== void 0 ? _a : config_1.DEFAULT_MAX_ATTEMPTS);
+    const { retryStrategy } = input;
+    const maxAttempts = (0, util_middleware_1.normalizeProvider)((_a = input.maxAttempts) !== null && _a !== void 0 ? _a : util_retry_1.DEFAULT_MAX_ATTEMPTS);
     return {
         ...input,
         maxAttempts,
         retryStrategy: async () => {
-            if (input.retryStrategy) {
-                return input.retryStrategy;
+            if (retryStrategy) {
+                return retryStrategy;
             }
             const retryMode = await (0, util_middleware_1.normalizeProvider)(input.retryMode)();
-            if (retryMode === config_1.RETRY_MODES.ADAPTIVE) {
-                return new AdaptiveRetryStrategy_1.AdaptiveRetryStrategy(maxAttempts);
+            if (retryMode === util_retry_1.RETRY_MODES.ADAPTIVE) {
+                return new util_retry_1.AdaptiveRetryStrategy(maxAttempts);
             }
-            return new StandardRetryStrategy_1.StandardRetryStrategy(maxAttempts);
+            return new util_retry_1.StandardRetryStrategy(maxAttempts);
         },
     };
 };
@@ -11471,28 +11470,8 @@ exports.CONFIG_RETRY_MODE = "retry_mode";
 exports.NODE_RETRY_MODE_CONFIG_OPTIONS = {
     environmentVariableSelector: (env) => env[exports.ENV_RETRY_MODE],
     configFileSelector: (profile) => profile[exports.CONFIG_RETRY_MODE],
-    default: config_1.DEFAULT_RETRY_MODE,
+    default: util_retry_1.DEFAULT_RETRY_MODE,
 };
-
-
-/***/ }),
-
-/***/ 41:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.REQUEST_HEADER = exports.INVOCATION_ID_HEADER = exports.NO_RETRY_INCREMENT = exports.TIMEOUT_RETRY_COST = exports.RETRY_COST = exports.INITIAL_RETRY_TOKENS = exports.THROTTLING_RETRY_DELAY_BASE = exports.MAXIMUM_RETRY_DELAY = exports.DEFAULT_RETRY_DELAY_BASE = void 0;
-exports.DEFAULT_RETRY_DELAY_BASE = 100;
-exports.MAXIMUM_RETRY_DELAY = 20 * 1000;
-exports.THROTTLING_RETRY_DELAY_BASE = 500;
-exports.INITIAL_RETRY_TOKENS = 500;
-exports.RETRY_COST = 5;
-exports.TIMEOUT_RETRY_COST = 10;
-exports.NO_RETRY_INCREMENT = 1;
-exports.INVOCATION_ID_HEADER = "amz-sdk-invocation-id";
-exports.REQUEST_HEADER = "amz-sdk-request";
 
 
 /***/ }),
@@ -11504,13 +11483,13 @@ exports.REQUEST_HEADER = "amz-sdk-request";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getDefaultRetryQuota = void 0;
-const constants_1 = __nccwpck_require__(41);
+const util_retry_1 = __nccwpck_require__(9395);
 const getDefaultRetryQuota = (initialRetryTokens, options) => {
     var _a, _b, _c;
     const MAX_CAPACITY = initialRetryTokens;
-    const noRetryIncrement = (_a = options === null || options === void 0 ? void 0 : options.noRetryIncrement) !== null && _a !== void 0 ? _a : constants_1.NO_RETRY_INCREMENT;
-    const retryCost = (_b = options === null || options === void 0 ? void 0 : options.retryCost) !== null && _b !== void 0 ? _b : constants_1.RETRY_COST;
-    const timeoutRetryCost = (_c = options === null || options === void 0 ? void 0 : options.timeoutRetryCost) !== null && _c !== void 0 ? _c : constants_1.TIMEOUT_RETRY_COST;
+    const noRetryIncrement = (_a = options === null || options === void 0 ? void 0 : options.noRetryIncrement) !== null && _a !== void 0 ? _a : util_retry_1.NO_RETRY_INCREMENT;
+    const retryCost = (_b = options === null || options === void 0 ? void 0 : options.retryCost) !== null && _b !== void 0 ? _b : util_retry_1.RETRY_COST;
+    const timeoutRetryCost = (_c = options === null || options === void 0 ? void 0 : options.timeoutRetryCost) !== null && _c !== void 0 ? _c : util_retry_1.TIMEOUT_RETRY_COST;
     let availableCapacity = initialRetryTokens;
     const getCapacityAmount = (error) => (error.name === "TimeoutError" ? timeoutRetryCost : retryCost);
     const hasRetryTokens = (error) => getCapacityAmount(error) <= availableCapacity;
@@ -11544,8 +11523,8 @@ exports.getDefaultRetryQuota = getDefaultRetryQuota;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.defaultDelayDecider = void 0;
-const constants_1 = __nccwpck_require__(41);
-const defaultDelayDecider = (delayBase, attempts) => Math.floor(Math.min(constants_1.MAXIMUM_RETRY_DELAY, Math.random() * 2 ** attempts * delayBase));
+const util_retry_1 = __nccwpck_require__(9395);
+const defaultDelayDecider = (delayBase, attempts) => Math.floor(Math.min(util_retry_1.MAXIMUM_RETRY_DELAY, Math.random() * 2 ** attempts * delayBase));
 exports.defaultDelayDecider = defaultDelayDecider;
 
 
@@ -11559,15 +11538,12 @@ exports.defaultDelayDecider = defaultDelayDecider;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(7328), exports);
-tslib_1.__exportStar(__nccwpck_require__(6402), exports);
 tslib_1.__exportStar(__nccwpck_require__(533), exports);
-tslib_1.__exportStar(__nccwpck_require__(5192), exports);
 tslib_1.__exportStar(__nccwpck_require__(6160), exports);
 tslib_1.__exportStar(__nccwpck_require__(5940), exports);
 tslib_1.__exportStar(__nccwpck_require__(3521), exports);
 tslib_1.__exportStar(__nccwpck_require__(9572), exports);
 tslib_1.__exportStar(__nccwpck_require__(1806), exports);
-tslib_1.__exportStar(__nccwpck_require__(8580), exports);
 
 
 /***/ }),
@@ -11580,12 +11556,12 @@ tslib_1.__exportStar(__nccwpck_require__(8580), exports);
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getOmitRetryHeadersPlugin = exports.omitRetryHeadersMiddlewareOptions = exports.omitRetryHeadersMiddleware = void 0;
 const protocol_http_1 = __nccwpck_require__(223);
-const constants_1 = __nccwpck_require__(41);
+const util_retry_1 = __nccwpck_require__(9395);
 const omitRetryHeadersMiddleware = () => (next) => async (args) => {
     const { request } = args;
     if (protocol_http_1.HttpRequest.isInstance(request)) {
-        delete request.headers[constants_1.INVOCATION_ID_HEADER];
-        delete request.headers[constants_1.REQUEST_HEADER];
+        delete request.headers[util_retry_1.INVOCATION_ID_HEADER];
+        delete request.headers[util_retry_1.REQUEST_HEADER];
     }
     return next(args);
 };
@@ -11627,19 +11603,92 @@ exports.defaultRetryDecider = defaultRetryDecider;
 /***/ }),
 
 /***/ 1806:
-/***/ ((__unused_webpack_module, exports) => {
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getRetryPlugin = exports.retryMiddlewareOptions = exports.retryMiddleware = void 0;
+exports.getRetryAfterHint = exports.getRetryPlugin = exports.retryMiddlewareOptions = exports.retryMiddleware = void 0;
+const protocol_http_1 = __nccwpck_require__(223);
+const service_error_classification_1 = __nccwpck_require__(1921);
+const util_retry_1 = __nccwpck_require__(9395);
+const uuid_1 = __nccwpck_require__(5840);
+const util_1 = __nccwpck_require__(7154);
 const retryMiddleware = (options) => (next, context) => async (args) => {
-    const retryStrategy = await options.retryStrategy();
-    if (retryStrategy === null || retryStrategy === void 0 ? void 0 : retryStrategy.mode)
-        context.userAgent = [...(context.userAgent || []), ["cfg/retry-mode", retryStrategy.mode]];
-    return retryStrategy.retry(next, args);
+    let retryStrategy = await options.retryStrategy();
+    const maxAttempts = await options.maxAttempts();
+    if (isRetryStrategyV2(retryStrategy)) {
+        retryStrategy = retryStrategy;
+        let retryToken = await retryStrategy.acquireInitialRetryToken(context["partition_id"]);
+        let lastError = new Error();
+        let attempts = 0;
+        let totalRetryDelay = 0;
+        const { request } = args;
+        if (protocol_http_1.HttpRequest.isInstance(request)) {
+            request.headers[util_retry_1.INVOCATION_ID_HEADER] = (0, uuid_1.v4)();
+        }
+        while (true) {
+            try {
+                if (protocol_http_1.HttpRequest.isInstance(request)) {
+                    request.headers[util_retry_1.REQUEST_HEADER] = `attempt=${attempts + 1}; max=${maxAttempts}`;
+                }
+                const { response, output } = await next(args);
+                retryStrategy.recordSuccess(retryToken);
+                output.$metadata.attempts = attempts + 1;
+                output.$metadata.totalRetryDelay = totalRetryDelay;
+                return { response, output };
+            }
+            catch (e) {
+                const retryErrorInfo = getRetyErrorInto(e);
+                lastError = (0, util_1.asSdkError)(e);
+                try {
+                    retryToken = await retryStrategy.refreshRetryTokenForRetry(retryToken, retryErrorInfo);
+                }
+                catch (refreshError) {
+                    if (!lastError.$metadata) {
+                        lastError.$metadata = {};
+                    }
+                    lastError.$metadata.attempts = attempts + 1;
+                    lastError.$metadata.totalRetryDelay = totalRetryDelay;
+                    throw lastError;
+                }
+                attempts = retryToken.getRetryCount();
+                const delay = retryToken.getRetryDelay();
+                totalRetryDelay += delay;
+                await new Promise((resolve) => setTimeout(resolve, delay));
+            }
+        }
+    }
+    else {
+        retryStrategy = retryStrategy;
+        if (retryStrategy === null || retryStrategy === void 0 ? void 0 : retryStrategy.mode)
+            context.userAgent = [...(context.userAgent || []), ["cfg/retry-mode", retryStrategy.mode]];
+        return retryStrategy.retry(next, args);
+    }
 };
 exports.retryMiddleware = retryMiddleware;
+const isRetryStrategyV2 = (retryStrategy) => typeof retryStrategy.acquireInitialRetryToken !== "undefined" &&
+    typeof retryStrategy.refreshRetryTokenForRetry !== "undefined" &&
+    typeof retryStrategy.recordSuccess !== "undefined";
+const getRetyErrorInto = (error) => {
+    const errorInfo = {
+        errorType: getRetryErrorType(error),
+    };
+    const retryAfterHint = (0, exports.getRetryAfterHint)(error.$response);
+    if (retryAfterHint) {
+        errorInfo.retryAfterHint = retryAfterHint;
+    }
+    return errorInfo;
+};
+const getRetryErrorType = (error) => {
+    if ((0, service_error_classification_1.isThrottlingError)(error))
+        return "THROTTLING";
+    if ((0, service_error_classification_1.isTransientError)(error))
+        return "TRANSIENT";
+    if ((0, service_error_classification_1.isServerError)(error))
+        return "SERVER_ERROR";
+    return "CLIENT_ERROR";
+};
 exports.retryMiddlewareOptions = {
     name: "retryMiddleware",
     tags: ["RETRY"],
@@ -11653,16 +11702,41 @@ const getRetryPlugin = (options) => ({
     },
 });
 exports.getRetryPlugin = getRetryPlugin;
+const getRetryAfterHint = (response) => {
+    if (!protocol_http_1.HttpResponse.isInstance(response))
+        return;
+    const retryAfterHeaderName = Object.keys(response.headers).find((key) => key.toLowerCase() === "retry-after");
+    if (!retryAfterHeaderName)
+        return;
+    const retryAfter = response.headers[retryAfterHeaderName];
+    const retryAfterSeconds = Number(retryAfter);
+    if (!Number.isNaN(retryAfterSeconds))
+        return new Date(retryAfterSeconds * 1000);
+    const retryAfterDate = new Date(retryAfter);
+    return retryAfterDate;
+};
+exports.getRetryAfterHint = getRetryAfterHint;
 
 
 /***/ }),
 
-/***/ 8580:
+/***/ 7154:
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.asSdkError = void 0;
+const asSdkError = (error) => {
+    if (error instanceof Error)
+        return error;
+    if (error instanceof Object)
+        return Object.assign(new Error(), error);
+    if (typeof error === "string")
+        return new Error(error);
+    return new Error(`AWS SDK error wrapper for ${error}`);
+};
+exports.asSdkError = asSdkError;
 
 
 /***/ }),
@@ -11833,10 +11907,13 @@ const resolveAwsAuthConfig = (input) => {
     }
     else {
         signer = async (authScheme) => {
-            if (!authScheme) {
-                throw new Error("Unexpected empty auth scheme config");
-            }
-            const signingRegion = authScheme.signingScope;
+            authScheme = Object.assign({}, {
+                name: "sigv4",
+                signingName: input.signingName || input.defaultSigningName,
+                signingRegion: await (0, util_middleware_1.normalizeProvider)(input.region)(),
+                properties: {},
+            }, authScheme);
+            const signingRegion = authScheme.signingRegion;
             const signingService = authScheme.signingName;
             input.signingRegion = input.signingRegion || signingRegion;
             input.signingName = input.signingName || signingService || input.serviceId;
@@ -11923,16 +12000,17 @@ const protocol_http_1 = __nccwpck_require__(223);
 const getSkewCorrectedDate_1 = __nccwpck_require__(8253);
 const getUpdatedSystemClockOffset_1 = __nccwpck_require__(5863);
 const awsAuthMiddleware = (options) => (next, context) => async function (args) {
-    var _a, _b, _c;
+    var _a, _b, _c, _d;
     if (!protocol_http_1.HttpRequest.isInstance(args.request))
         return next(args);
-    const authScheme = (_c = (_b = (_a = (context.endpointV2)) === null || _a === void 0 ? void 0 : _a.properties) === null || _b === void 0 ? void 0 : _b.authSchemes) === null || _c === void 0 ? void 0 : _c[0];
+    const authScheme = (_c = (_b = (_a = context.endpointV2) === null || _a === void 0 ? void 0 : _a.properties) === null || _b === void 0 ? void 0 : _b.authSchemes) === null || _c === void 0 ? void 0 : _c[0];
+    const multiRegionOverride = (authScheme === null || authScheme === void 0 ? void 0 : authScheme.name) === "sigv4a" ? (_d = authScheme === null || authScheme === void 0 ? void 0 : authScheme.signingRegionSet) === null || _d === void 0 ? void 0 : _d.join(",") : undefined;
     const signer = await options.signer(authScheme);
     const output = await next({
         ...args,
         request: await signer.sign(args.request, {
             signingDate: (0, getSkewCorrectedDate_1.getSkewCorrectedDate)(options.systemClockOffset),
-            signingRegion: context["signing_region"],
+            signingRegion: multiRegionOverride || context["signing_region"],
             signingService: context["signing_service"],
         }),
     }).catch((error) => {
@@ -13296,7 +13374,7 @@ exports.parseQueryString = parseQueryString;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.TRANSIENT_ERROR_STATUS_CODES = exports.TRANSIENT_ERROR_CODES = exports.THROTTLING_ERROR_CODES = exports.CLOCK_SKEW_ERROR_CODES = void 0;
+exports.NODEJS_TIMEOUT_ERROR_CODES = exports.TRANSIENT_ERROR_STATUS_CODES = exports.TRANSIENT_ERROR_CODES = exports.THROTTLING_ERROR_CODES = exports.CLOCK_SKEW_ERROR_CODES = void 0;
 exports.CLOCK_SKEW_ERROR_CODES = [
     "AuthFailure",
     "InvalidSignatureException",
@@ -13323,6 +13401,7 @@ exports.THROTTLING_ERROR_CODES = [
 ];
 exports.TRANSIENT_ERROR_CODES = ["AbortError", "TimeoutError", "RequestTimeout", "RequestTimeoutException"];
 exports.TRANSIENT_ERROR_STATUS_CODES = [500, 502, 503, 504];
+exports.NODEJS_TIMEOUT_ERROR_CODES = ["ECONNRESET", "EPIPE", "ETIMEDOUT"];
 
 
 /***/ }),
@@ -13333,7 +13412,7 @@ exports.TRANSIENT_ERROR_STATUS_CODES = [500, 502, 503, 504];
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.isTransientError = exports.isThrottlingError = exports.isClockSkewError = exports.isRetryableByTrait = void 0;
+exports.isServerError = exports.isTransientError = exports.isThrottlingError = exports.isClockSkewError = exports.isRetryableByTrait = void 0;
 const constants_1 = __nccwpck_require__(7352);
 const isRetryableByTrait = (error) => error.$retryable !== undefined;
 exports.isRetryableByTrait = isRetryableByTrait;
@@ -13349,9 +13428,22 @@ exports.isThrottlingError = isThrottlingError;
 const isTransientError = (error) => {
     var _a;
     return constants_1.TRANSIENT_ERROR_CODES.includes(error.name) ||
+        constants_1.NODEJS_TIMEOUT_ERROR_CODES.includes((error === null || error === void 0 ? void 0 : error.code) || "") ||
         constants_1.TRANSIENT_ERROR_STATUS_CODES.includes(((_a = error.$metadata) === null || _a === void 0 ? void 0 : _a.httpStatusCode) || 0);
 };
 exports.isTransientError = isTransientError;
+const isServerError = (error) => {
+    var _a;
+    if (((_a = error.$metadata) === null || _a === void 0 ? void 0 : _a.httpStatusCode) !== undefined) {
+        const statusCode = error.$metadata.httpStatusCode;
+        if (500 <= statusCode && statusCode <= 599 && !(0, exports.isTransientError)(error)) {
+            return true;
+        }
+        return false;
+    }
+    return false;
+};
+exports.isServerError = isServerError;
 
 
 /***/ }),
@@ -13445,7 +13537,7 @@ exports.getProfileName = getProfileName;
 
 /***/ }),
 
-/***/ 2992:
+/***/ 6147:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -13455,9 +13547,9 @@ exports.getSSOTokenFilepath = void 0;
 const crypto_1 = __nccwpck_require__(6417);
 const path_1 = __nccwpck_require__(5622);
 const getHomeDir_1 = __nccwpck_require__(7363);
-const getSSOTokenFilepath = (ssoStartUrl) => {
+const getSSOTokenFilepath = (id) => {
     const hasher = (0, crypto_1.createHash)("sha1");
-    const cacheName = hasher.update(ssoStartUrl).digest("hex");
+    const cacheName = hasher.update(id).digest("hex");
     return (0, path_1.join)((0, getHomeDir_1.getHomeDir)(), ".aws", "sso", "cache", `${cacheName}.json`);
 };
 exports.getSSOTokenFilepath = getSSOTokenFilepath;
@@ -13473,10 +13565,10 @@ exports.getSSOTokenFilepath = getSSOTokenFilepath;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getSSOTokenFromFile = void 0;
 const fs_1 = __nccwpck_require__(5747);
-const getSSOTokenFilepath_1 = __nccwpck_require__(2992);
+const getSSOTokenFilepath_1 = __nccwpck_require__(6147);
 const { readFile } = fs_1.promises;
-const getSSOTokenFromFile = async (ssoStartUrl) => {
-    const ssoTokenFilepath = (0, getSSOTokenFilepath_1.getSSOTokenFilepath)(ssoStartUrl);
+const getSSOTokenFromFile = async (id) => {
+    const ssoTokenFilepath = (0, getSSOTokenFilepath_1.getSSOTokenFilepath)(id);
     const ssoTokenText = await readFile(ssoTokenFilepath, "utf8");
     return JSON.parse(ssoTokenText);
 };
@@ -13510,7 +13602,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
 tslib_1.__exportStar(__nccwpck_require__(7363), exports);
 tslib_1.__exportStar(__nccwpck_require__(6776), exports);
-tslib_1.__exportStar(__nccwpck_require__(2992), exports);
+tslib_1.__exportStar(__nccwpck_require__(6147), exports);
 tslib_1.__exportStar(__nccwpck_require__(8553), exports);
 tslib_1.__exportStar(__nccwpck_require__(7871), exports);
 tslib_1.__exportStar(__nccwpck_require__(6179), exports);
@@ -13675,6 +13767,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SignatureV4 = void 0;
 const util_hex_encoding_1 = __nccwpck_require__(1968);
 const util_middleware_1 = __nccwpck_require__(236);
+const util_utf8_1 = __nccwpck_require__(4967);
 const constants_1 = __nccwpck_require__(342);
 const credentialDerivation_1 = __nccwpck_require__(1424);
 const getCanonicalHeaders_1 = __nccwpck_require__(3590);
@@ -13751,7 +13844,7 @@ class SignatureV4 {
         const region = signingRegion !== null && signingRegion !== void 0 ? signingRegion : (await this.regionProvider());
         const { shortDate } = formatDate(signingDate);
         const hash = new this.sha256(await this.getSigningKey(credentials, region, shortDate, signingService));
-        hash.update(stringToSign);
+        hash.update((0, util_utf8_1.toUint8Array)(stringToSign));
         return (0, util_hex_encoding_1.toHex)(await hash.digest());
     }
     async signRequest(requestToSign, { signingDate = new Date(), signableHeaders, unsignableHeaders, signingRegion, signingService, } = {}) {
@@ -13790,7 +13883,7 @@ ${payloadHash}`;
     }
     async createStringToSign(longDate, credentialScope, canonicalRequest) {
         const hash = new this.sha256();
-        hash.update(canonicalRequest);
+        hash.update((0, util_utf8_1.toUint8Array)(canonicalRequest));
         const hashedRequest = await hash.digest();
         return `${constants_1.ALGORITHM_IDENTIFIER}
 ${longDate}
@@ -13821,7 +13914,7 @@ ${(0, util_hex_encoding_1.toHex)(hashedRequest)}`;
     async getSignature(longDate, credentialScope, keyPromise, canonicalRequest) {
         const stringToSign = await this.createStringToSign(longDate, credentialScope, canonicalRequest);
         const hash = new this.sha256(await keyPromise);
-        hash.update(stringToSign);
+        hash.update((0, util_utf8_1.toUint8Array)(stringToSign));
         return (0, util_hex_encoding_1.toHex)(await hash.digest());
     }
     getSigningKey(credentials, region, shortDate, service) {
@@ -13935,6 +14028,7 @@ exports.MAX_PRESIGNED_TTL = 60 * 60 * 24 * 7;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.clearCredentialCache = exports.getSigningKey = exports.createScope = void 0;
 const util_hex_encoding_1 = __nccwpck_require__(1968);
+const util_utf8_1 = __nccwpck_require__(4967);
 const constants_1 = __nccwpck_require__(342);
 const signingKeyCache = {};
 const cacheQueue = [];
@@ -13966,7 +14060,7 @@ const clearCredentialCache = () => {
 exports.clearCredentialCache = clearCredentialCache;
 const hmac = (ctor, secret, data) => {
     const hash = new ctor(secret);
-    hash.update(data);
+    hash.update((0, util_utf8_1.toUint8Array)(data));
     return hash.digest();
 };
 
@@ -14053,6 +14147,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getPayloadHash = void 0;
 const is_array_buffer_1 = __nccwpck_require__(9126);
 const util_hex_encoding_1 = __nccwpck_require__(1968);
+const util_utf8_1 = __nccwpck_require__(4967);
 const constants_1 = __nccwpck_require__(342);
 const getPayloadHash = async ({ headers, body }, hashConstructor) => {
     for (const headerName of Object.keys(headers)) {
@@ -14065,7 +14160,7 @@ const getPayloadHash = async ({ headers, body }, hashConstructor) => {
     }
     else if (typeof body === "string" || ArrayBuffer.isView(body) || (0, is_array_buffer_1.isArrayBuffer)(body)) {
         const hashCtor = new hashConstructor();
-        hashCtor.update(body);
+        hashCtor.update((0, util_utf8_1.toUint8Array)(body));
         return (0, util_hex_encoding_1.toHex)(await hashCtor.digest());
     }
     return constants_1.UNSIGNED_PAYLOAD;
@@ -14215,6 +14310,25 @@ const toDate = (time) => {
     return time;
 };
 exports.toDate = toDate;
+
+
+/***/ }),
+
+/***/ 8571:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.NoOpLogger = void 0;
+class NoOpLogger {
+    trace() { }
+    debug() { }
+    info() { }
+    warn() { }
+    error() { }
+}
+exports.NoOpLogger = NoOpLogger;
 
 
 /***/ }),
@@ -14461,7 +14575,7 @@ const throwDefaultError = ({ output, parsedBody, exceptionCtor, errorCode }) => 
     const $metadata = deserializeMetadata(output);
     const statusCode = $metadata.httpStatusCode ? $metadata.httpStatusCode + "" : undefined;
     const response = new exceptionCtor({
-        name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknowError",
+        name: parsedBody.code || parsedBody.Code || errorCode || statusCode || "UnknownError",
         $fault: "client",
         $metadata,
     });
@@ -14469,10 +14583,10 @@ const throwDefaultError = ({ output, parsedBody, exceptionCtor, errorCode }) => 
 };
 exports.throwDefaultError = throwDefaultError;
 const deserializeMetadata = (output) => {
-    var _a;
+    var _a, _b;
     return ({
         httpStatusCode: output.statusCode,
-        requestId: (_a = output.headers["x-amzn-requestid"]) !== null && _a !== void 0 ? _a : output.headers["x-amzn-request-id"],
+        requestId: (_b = (_a = output.headers["x-amzn-requestid"]) !== null && _a !== void 0 ? _a : output.headers["x-amzn-request-id"]) !== null && _b !== void 0 ? _b : output.headers["x-amz-request-id"],
         extendedRequestId: output.headers["x-amz-id-2"],
         cfId: output.headers["x-amz-cf-id"],
     });
@@ -14530,11 +14644,6 @@ let warningEmitted = false;
 const emitWarningIfUnsupportedVersion = (version) => {
     if (version && !warningEmitted && parseInt(version.substring(1, version.indexOf("."))) < 14) {
         warningEmitted = true;
-        process.emitWarning(`The AWS SDK for JavaScript (v3) will\n` +
-            `no longer support Node.js ${version} on November 1, 2022.\n\n` +
-            `To continue receiving updates to AWS services, bug fixes, and security\n` +
-            `updates please upgrade to Node.js 14.x or later.\n\n` +
-            `For details, please refer our blog post: https://a.co/48dbdYz`, `NodeDeprecationWarning`);
     }
 };
 exports.emitWarningIfUnsupportedVersion = emitWarningIfUnsupportedVersion;
@@ -14638,6 +14747,7 @@ exports.getValueFromTextNode = getValueFromTextNode;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(8571), exports);
 tslib_1.__exportStar(__nccwpck_require__(6034), exports);
 tslib_1.__exportStar(__nccwpck_require__(4014), exports);
 tslib_1.__exportStar(__nccwpck_require__(8392), exports);
@@ -15143,7 +15253,612 @@ exports.splitEvery = splitEvery;
 
 /***/ }),
 
-/***/ 7190:
+/***/ 2242:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.REFRESH_MESSAGE = exports.EXPIRE_WINDOW_MS = void 0;
+exports.EXPIRE_WINDOW_MS = 5 * 60 * 1000;
+exports.REFRESH_MESSAGE = `To refresh this SSO session run 'aws sso login' with the corresponding profile.`;
+
+
+/***/ }),
+
+/***/ 5125:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.fromSso = void 0;
+const property_provider_1 = __nccwpck_require__(4462);
+const shared_ini_file_loader_1 = __nccwpck_require__(7387);
+const constants_1 = __nccwpck_require__(2242);
+const getNewSsoOidcToken_1 = __nccwpck_require__(3601);
+const validateTokenExpiry_1 = __nccwpck_require__(8418);
+const validateTokenKey_1 = __nccwpck_require__(2488);
+const writeSSOTokenToFile_1 = __nccwpck_require__(8552);
+const lastRefreshAttemptTime = new Date(0);
+const fromSso = (init = {}) => async () => {
+    const profiles = await (0, shared_ini_file_loader_1.parseKnownFiles)(init);
+    const profileName = (0, shared_ini_file_loader_1.getProfileName)(init);
+    const profile = profiles[profileName];
+    if (!profile) {
+        throw new property_provider_1.TokenProviderError(`Profile '${profileName}' could not be found in shared credentials file.`, false);
+    }
+    else if (!profile["sso_session"]) {
+        throw new property_provider_1.TokenProviderError(`Profile '${profileName}' is missing required property 'sso_session'.`);
+    }
+    const ssoSessionName = profile["sso_session"];
+    const ssoSessions = await (0, shared_ini_file_loader_1.loadSsoSessionData)(init);
+    const ssoSession = ssoSessions[ssoSessionName];
+    if (!ssoSession) {
+        throw new property_provider_1.TokenProviderError(`Sso session '${ssoSessionName}' could not be found in shared credentials file.`, false);
+    }
+    for (const ssoSessionRequiredKey of ["sso_start_url", "sso_region"]) {
+        if (!ssoSession[ssoSessionRequiredKey]) {
+            throw new property_provider_1.TokenProviderError(`Sso session '${ssoSessionName}' is missing required property '${ssoSessionRequiredKey}'.`, false);
+        }
+    }
+    const ssoStartUrl = ssoSession["sso_start_url"];
+    const ssoRegion = ssoSession["sso_region"];
+    let ssoToken;
+    try {
+        ssoToken = await (0, shared_ini_file_loader_1.getSSOTokenFromFile)(ssoSessionName);
+    }
+    catch (e) {
+        throw new property_provider_1.TokenProviderError(`The SSO session token associated with profile=${profileName} was not found or is invalid. ${constants_1.REFRESH_MESSAGE}`, false);
+    }
+    (0, validateTokenKey_1.validateTokenKey)("accessToken", ssoToken.accessToken);
+    (0, validateTokenKey_1.validateTokenKey)("expiresAt", ssoToken.expiresAt);
+    const { accessToken, expiresAt } = ssoToken;
+    const existingToken = { token: accessToken, expiration: new Date(expiresAt) };
+    if (existingToken.expiration.getTime() - Date.now() > constants_1.EXPIRE_WINDOW_MS) {
+        return existingToken;
+    }
+    if (Date.now() - lastRefreshAttemptTime.getTime() < 30 * 1000) {
+        (0, validateTokenExpiry_1.validateTokenExpiry)(existingToken);
+        return existingToken;
+    }
+    (0, validateTokenKey_1.validateTokenKey)("clientId", ssoToken.clientId, true);
+    (0, validateTokenKey_1.validateTokenKey)("clientSecret", ssoToken.clientSecret, true);
+    (0, validateTokenKey_1.validateTokenKey)("refreshToken", ssoToken.refreshToken, true);
+    try {
+        lastRefreshAttemptTime.setTime(Date.now());
+        const newSsoOidcToken = await (0, getNewSsoOidcToken_1.getNewSsoOidcToken)(ssoToken, ssoRegion);
+        (0, validateTokenKey_1.validateTokenKey)("accessToken", newSsoOidcToken.accessToken);
+        (0, validateTokenKey_1.validateTokenKey)("expiresIn", newSsoOidcToken.expiresIn);
+        const newTokenExpiration = new Date(Date.now() + newSsoOidcToken.expiresIn * 1000);
+        try {
+            await (0, writeSSOTokenToFile_1.writeSSOTokenToFile)(ssoSessionName, {
+                ...ssoToken,
+                accessToken: newSsoOidcToken.accessToken,
+                expiresAt: newTokenExpiration.toISOString(),
+                refreshToken: newSsoOidcToken.refreshToken,
+            });
+        }
+        catch (error) {
+        }
+        return {
+            token: newSsoOidcToken.accessToken,
+            expiration: newTokenExpiration,
+        };
+    }
+    catch (error) {
+        (0, validateTokenExpiry_1.validateTokenExpiry)(existingToken);
+        return existingToken;
+    }
+};
+exports.fromSso = fromSso;
+
+
+/***/ }),
+
+/***/ 3258:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.fromStatic = void 0;
+const property_provider_1 = __nccwpck_require__(4462);
+const fromStatic = ({ token }) => async () => {
+    if (!token || !token.token) {
+        throw new property_provider_1.TokenProviderError(`Please pass a valid token to fromStatic`, false);
+    }
+    return token;
+};
+exports.fromStatic = fromStatic;
+
+
+/***/ }),
+
+/***/ 3601:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getNewSsoOidcToken = void 0;
+const client_sso_oidc_1 = __nccwpck_require__(4527);
+const getSsoOidcClient_1 = __nccwpck_require__(9775);
+const getNewSsoOidcToken = (ssoToken, ssoRegion) => {
+    const ssoOidcClient = (0, getSsoOidcClient_1.getSsoOidcClient)(ssoRegion);
+    return ssoOidcClient.send(new client_sso_oidc_1.CreateTokenCommand({
+        clientId: ssoToken.clientId,
+        clientSecret: ssoToken.clientSecret,
+        refreshToken: ssoToken.refreshToken,
+        grantType: "refresh_token",
+    }));
+};
+exports.getNewSsoOidcToken = getNewSsoOidcToken;
+
+
+/***/ }),
+
+/***/ 9775:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getSsoOidcClient = void 0;
+const client_sso_oidc_1 = __nccwpck_require__(4527);
+const ssoOidcClientsHash = {};
+const getSsoOidcClient = (ssoRegion) => {
+    if (ssoOidcClientsHash[ssoRegion]) {
+        return ssoOidcClientsHash[ssoRegion];
+    }
+    const ssoOidcClient = new client_sso_oidc_1.SSOOIDCClient({ region: ssoRegion });
+    ssoOidcClientsHash[ssoRegion] = ssoOidcClient;
+    return ssoOidcClient;
+};
+exports.getSsoOidcClient = getSsoOidcClient;
+
+
+/***/ }),
+
+/***/ 2843:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(5125), exports);
+tslib_1.__exportStar(__nccwpck_require__(3258), exports);
+tslib_1.__exportStar(__nccwpck_require__(195), exports);
+
+
+/***/ }),
+
+/***/ 195:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.nodeProvider = void 0;
+const property_provider_1 = __nccwpck_require__(4462);
+const fromSso_1 = __nccwpck_require__(5125);
+const nodeProvider = (init = {}) => (0, property_provider_1.memoize)((0, property_provider_1.chain)((0, fromSso_1.fromSso)(init), async () => {
+    throw new property_provider_1.TokenProviderError("Could not load token from any providers", false);
+}), (token) => token.expiration !== undefined && token.expiration.getTime() - Date.now() < 300000, (token) => token.expiration !== undefined);
+exports.nodeProvider = nodeProvider;
+
+
+/***/ }),
+
+/***/ 8418:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.validateTokenExpiry = void 0;
+const property_provider_1 = __nccwpck_require__(4462);
+const constants_1 = __nccwpck_require__(2242);
+const validateTokenExpiry = (token) => {
+    if (token.expiration && token.expiration.getTime() < Date.now()) {
+        throw new property_provider_1.TokenProviderError(`Token is expired. ${constants_1.REFRESH_MESSAGE}`, false);
+    }
+};
+exports.validateTokenExpiry = validateTokenExpiry;
+
+
+/***/ }),
+
+/***/ 2488:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.validateTokenKey = void 0;
+const property_provider_1 = __nccwpck_require__(4462);
+const constants_1 = __nccwpck_require__(2242);
+const validateTokenKey = (key, value, forRefresh = false) => {
+    if (typeof value === "undefined") {
+        throw new property_provider_1.TokenProviderError(`Value not present for '${key}' in SSO Token${forRefresh ? ". Cannot refresh" : ""}. ${constants_1.REFRESH_MESSAGE}`, false);
+    }
+};
+exports.validateTokenKey = validateTokenKey;
+
+
+/***/ }),
+
+/***/ 8552:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.writeSSOTokenToFile = void 0;
+const shared_ini_file_loader_1 = __nccwpck_require__(7387);
+const fs_1 = __nccwpck_require__(5747);
+const { writeFile } = fs_1.promises;
+const writeSSOTokenToFile = (id, ssoToken) => {
+    const tokenFilepath = (0, shared_ini_file_loader_1.getSSOTokenFilepath)(id);
+    const tokenString = JSON.stringify(ssoToken, null, 2);
+    return writeFile(tokenFilepath, tokenString);
+};
+exports.writeSSOTokenToFile = writeSSOTokenToFile;
+
+
+/***/ }),
+
+/***/ 2562:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 6913:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 5861:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 6527:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 8470:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 7736:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 3268:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 9385:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.EndpointURLScheme = void 0;
+var EndpointURLScheme;
+(function (EndpointURLScheme) {
+    EndpointURLScheme["HTTP"] = "http";
+    EndpointURLScheme["HTTPS"] = "https";
+})(EndpointURLScheme = exports.EndpointURLScheme || (exports.EndpointURLScheme = {}));
+
+
+/***/ }),
+
+/***/ 7521:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 1393:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 1821:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 2635:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 1301:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+;
+
+
+/***/ }),
+
+/***/ 1268:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 7192:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 640:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(1821), exports);
+tslib_1.__exportStar(__nccwpck_require__(2635), exports);
+tslib_1.__exportStar(__nccwpck_require__(1301), exports);
+tslib_1.__exportStar(__nccwpck_require__(1268), exports);
+tslib_1.__exportStar(__nccwpck_require__(7192), exports);
+
+
+/***/ }),
+
+/***/ 9029:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(2562), exports);
+tslib_1.__exportStar(__nccwpck_require__(6913), exports);
+tslib_1.__exportStar(__nccwpck_require__(5861), exports);
+tslib_1.__exportStar(__nccwpck_require__(6527), exports);
+tslib_1.__exportStar(__nccwpck_require__(8470), exports);
+tslib_1.__exportStar(__nccwpck_require__(7736), exports);
+tslib_1.__exportStar(__nccwpck_require__(3268), exports);
+tslib_1.__exportStar(__nccwpck_require__(9385), exports);
+tslib_1.__exportStar(__nccwpck_require__(7521), exports);
+tslib_1.__exportStar(__nccwpck_require__(1393), exports);
+tslib_1.__exportStar(__nccwpck_require__(640), exports);
+tslib_1.__exportStar(__nccwpck_require__(9910), exports);
+tslib_1.__exportStar(__nccwpck_require__(6678), exports);
+tslib_1.__exportStar(__nccwpck_require__(9931), exports);
+tslib_1.__exportStar(__nccwpck_require__(2620), exports);
+tslib_1.__exportStar(__nccwpck_require__(9546), exports);
+tslib_1.__exportStar(__nccwpck_require__(316), exports);
+tslib_1.__exportStar(__nccwpck_require__(7835), exports);
+tslib_1.__exportStar(__nccwpck_require__(1678), exports);
+tslib_1.__exportStar(__nccwpck_require__(3818), exports);
+tslib_1.__exportStar(__nccwpck_require__(1991), exports);
+tslib_1.__exportStar(__nccwpck_require__(7035), exports);
+tslib_1.__exportStar(__nccwpck_require__(9416), exports);
+tslib_1.__exportStar(__nccwpck_require__(134), exports);
+tslib_1.__exportStar(__nccwpck_require__(4465), exports);
+
+
+/***/ }),
+
+/***/ 9910:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 6678:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 9931:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 2620:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 9546:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 316:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 7835:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 1678:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 3818:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 1991:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 7035:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 9416:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 134:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 4465:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 2992:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
@@ -15152,7 +15867,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.parseUrl = void 0;
 const querystring_parser_1 = __nccwpck_require__(7424);
 const parseUrl = (url) => {
-    if (typeof url === 'string') {
+    if (typeof url === "string") {
         return (0, exports.parseUrl)(new URL(url));
     }
     const { hostname, pathname, port, protocol, search } = url;
@@ -15173,16 +15888,16 @@ exports.parseUrl = parseUrl;
 
 /***/ }),
 
-/***/ 8588:
+/***/ 8444:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.toBase64 = exports.fromBase64 = void 0;
+exports.fromBase64 = void 0;
 const util_buffer_from_1 = __nccwpck_require__(6010);
 const BASE64_REGEX = /^[A-Za-z0-9+/]*={0,2}$/;
-function fromBase64(input) {
+const fromBase64 = (input) => {
     if ((input.length * 3) % 4 !== 0) {
         throw new TypeError(`Incorrect padding on base64 string.`);
     }
@@ -15191,11 +15906,34 @@ function fromBase64(input) {
     }
     const buffer = (0, util_buffer_from_1.fromString)(input, "base64");
     return new Uint8Array(buffer.buffer, buffer.byteOffset, buffer.byteLength);
-}
+};
 exports.fromBase64 = fromBase64;
-function toBase64(input) {
-    return (0, util_buffer_from_1.fromArrayBuffer)(input.buffer, input.byteOffset, input.byteLength).toString("base64");
-}
+
+
+/***/ }),
+
+/***/ 7727:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(8444), exports);
+tslib_1.__exportStar(__nccwpck_require__(3439), exports);
+
+
+/***/ }),
+
+/***/ 3439:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.toBase64 = void 0;
+const util_buffer_from_1 = __nccwpck_require__(6010);
+const toBase64 = (input) => (0, util_buffer_from_1.fromArrayBuffer)(input.buffer, input.byteOffset, input.byteLength).toString("base64");
 exports.toBase64 = toBase64;
 
 
@@ -15428,6 +16166,1015 @@ const inferPhysicalRegion = async () => {
 
 /***/ }),
 
+/***/ 1809:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.debugId = void 0;
+exports.debugId = "endpoints";
+
+
+/***/ }),
+
+/***/ 7617:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(1809), exports);
+tslib_1.__exportStar(__nccwpck_require__(6833), exports);
+
+
+/***/ }),
+
+/***/ 6833:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.toDebugString = void 0;
+function toDebugString(input) {
+    if (typeof input !== "object" || input == null) {
+        return input;
+    }
+    if ("ref" in input) {
+        return `$${toDebugString(input.ref)}`;
+    }
+    if ("fn" in input) {
+        return `${input.fn}(${(input.argv || []).map(toDebugString).join(", ")})`;
+    }
+    return JSON.stringify(input, null, 2);
+}
+exports.toDebugString = toDebugString;
+
+
+/***/ }),
+
+/***/ 3350:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(7482), exports);
+tslib_1.__exportStar(__nccwpck_require__(6563), exports);
+tslib_1.__exportStar(__nccwpck_require__(7433), exports);
+
+
+/***/ }),
+
+/***/ 6835:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(8079), exports);
+tslib_1.__exportStar(__nccwpck_require__(4711), exports);
+tslib_1.__exportStar(__nccwpck_require__(7482), exports);
+
+
+/***/ }),
+
+/***/ 8079:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isVirtualHostableS3Bucket = void 0;
+const isIpAddress_1 = __nccwpck_require__(3442);
+const isValidHostLabel_1 = __nccwpck_require__(7373);
+const isVirtualHostableS3Bucket = (value, allowSubDomains = false) => {
+    if (allowSubDomains) {
+        for (const label of value.split(".")) {
+            if (!(0, exports.isVirtualHostableS3Bucket)(label)) {
+                return false;
+            }
+        }
+        return true;
+    }
+    if (!(0, isValidHostLabel_1.isValidHostLabel)(value)) {
+        return false;
+    }
+    if (value.length < 3 || value.length > 63) {
+        return false;
+    }
+    if (value !== value.toLowerCase()) {
+        return false;
+    }
+    if ((0, isIpAddress_1.isIpAddress)(value)) {
+        return false;
+    }
+    return true;
+};
+exports.isVirtualHostableS3Bucket = isVirtualHostableS3Bucket;
+
+
+/***/ }),
+
+/***/ 4711:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.parseArn = void 0;
+const parseArn = (value) => {
+    const segments = value.split(":");
+    if (segments.length < 6)
+        return null;
+    const [arn, partition, service, region, accountId, ...resourceId] = segments;
+    if (arn !== "arn" || partition === "" || service === "" || resourceId[0] === "")
+        return null;
+    return {
+        partition,
+        service,
+        region,
+        accountId,
+        resourceId: resourceId[0].includes("/") ? resourceId[0].split("/") : resourceId,
+    };
+};
+exports.parseArn = parseArn;
+
+
+/***/ }),
+
+/***/ 7482:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.partition = void 0;
+const tslib_1 = __nccwpck_require__(4351);
+const partitions_json_1 = tslib_1.__importDefault(__nccwpck_require__(1477));
+const { partitions } = partitions_json_1.default;
+const DEFAULT_PARTITION = partitions.find((partition) => partition.id === "aws");
+const partition = (value) => {
+    for (const partition of partitions) {
+        const { regions, outputs } = partition;
+        for (const [region, regionData] of Object.entries(regions)) {
+            if (region === value) {
+                return {
+                    ...outputs,
+                    ...regionData,
+                };
+            }
+        }
+    }
+    for (const partition of partitions) {
+        const { regionRegex, outputs } = partition;
+        if (new RegExp(regionRegex).test(value)) {
+            return {
+                ...outputs,
+            };
+        }
+    }
+    if (!DEFAULT_PARTITION) {
+        throw new Error("Provided region was not found in the partition array or regex," +
+            " and default partition with id 'aws' doesn't exist.");
+    }
+    return {
+        ...DEFAULT_PARTITION.outputs,
+    };
+};
+exports.partition = partition;
+
+
+/***/ }),
+
+/***/ 5370:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.booleanEquals = void 0;
+const booleanEquals = (value1, value2) => value1 === value2;
+exports.booleanEquals = booleanEquals;
+
+
+/***/ }),
+
+/***/ 767:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getAttr = void 0;
+const types_1 = __nccwpck_require__(7433);
+const getAttrPathList_1 = __nccwpck_require__(1844);
+const getAttr = (value, path) => (0, getAttrPathList_1.getAttrPathList)(path).reduce((acc, index) => {
+    if (typeof acc !== "object") {
+        throw new types_1.EndpointError(`Index '${index}' in '${path}' not found in '${JSON.stringify(value)}'`);
+    }
+    else if (Array.isArray(acc)) {
+        return acc[parseInt(index)];
+    }
+    return acc[index];
+}, value);
+exports.getAttr = getAttr;
+
+
+/***/ }),
+
+/***/ 1844:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getAttrPathList = void 0;
+const types_1 = __nccwpck_require__(7433);
+const getAttrPathList = (path) => {
+    const parts = path.split(".");
+    const pathList = [];
+    for (const part of parts) {
+        const squareBracketIndex = part.indexOf("[");
+        if (squareBracketIndex !== -1) {
+            if (part.indexOf("]") !== part.length - 1) {
+                throw new types_1.EndpointError(`Path: '${path}' does not end with ']'`);
+            }
+            const arrayIndex = part.slice(squareBracketIndex + 1, -1);
+            if (Number.isNaN(parseInt(arrayIndex))) {
+                throw new types_1.EndpointError(`Invalid array index: '${arrayIndex}' in path: '${path}'`);
+            }
+            if (squareBracketIndex !== 0) {
+                pathList.push(part.slice(0, squareBracketIndex));
+            }
+            pathList.push(arrayIndex);
+        }
+        else {
+            pathList.push(part);
+        }
+    }
+    return pathList;
+};
+exports.getAttrPathList = getAttrPathList;
+
+
+/***/ }),
+
+/***/ 3188:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.aws = void 0;
+const tslib_1 = __nccwpck_require__(4351);
+exports.aws = tslib_1.__importStar(__nccwpck_require__(6835));
+tslib_1.__exportStar(__nccwpck_require__(5370), exports);
+tslib_1.__exportStar(__nccwpck_require__(767), exports);
+tslib_1.__exportStar(__nccwpck_require__(8816), exports);
+tslib_1.__exportStar(__nccwpck_require__(7373), exports);
+tslib_1.__exportStar(__nccwpck_require__(9692), exports);
+tslib_1.__exportStar(__nccwpck_require__(2780), exports);
+tslib_1.__exportStar(__nccwpck_require__(5182), exports);
+tslib_1.__exportStar(__nccwpck_require__(8305), exports);
+tslib_1.__exportStar(__nccwpck_require__(6535), exports);
+
+
+/***/ }),
+
+/***/ 3442:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isIpAddress = void 0;
+const IP_V4_REGEX = new RegExp(`^(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)(?:\\.(?:25[0-5]|2[0-4]\\d|1\\d\\d|[1-9]\\d|\\d)){3}$`);
+const isIpAddress = (value) => IP_V4_REGEX.test(value) || (value.startsWith("[") && value.endsWith("]"));
+exports.isIpAddress = isIpAddress;
+
+
+/***/ }),
+
+/***/ 8816:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isSet = void 0;
+const isSet = (value) => value != null;
+exports.isSet = isSet;
+
+
+/***/ }),
+
+/***/ 7373:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.isValidHostLabel = void 0;
+const VALID_HOST_LABEL_REGEX = new RegExp(`^(?!.*-$)(?!-)[a-zA-Z0-9-]{1,63}$`);
+const isValidHostLabel = (value, allowSubDomains = false) => {
+    if (!allowSubDomains) {
+        return VALID_HOST_LABEL_REGEX.test(value);
+    }
+    const labels = value.split(".");
+    for (const label of labels) {
+        if (!(0, exports.isValidHostLabel)(label)) {
+            return false;
+        }
+    }
+    return true;
+};
+exports.isValidHostLabel = isValidHostLabel;
+
+
+/***/ }),
+
+/***/ 9692:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.not = void 0;
+const not = (value) => !value;
+exports.not = not;
+
+
+/***/ }),
+
+/***/ 2780:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.parseURL = void 0;
+const types_1 = __nccwpck_require__(9029);
+const isIpAddress_1 = __nccwpck_require__(3442);
+const DEFAULT_PORTS = {
+    [types_1.EndpointURLScheme.HTTP]: 80,
+    [types_1.EndpointURLScheme.HTTPS]: 443,
+};
+const parseURL = (value) => {
+    const whatwgURL = (() => {
+        try {
+            if (value instanceof URL) {
+                return value;
+            }
+            if (typeof value === "object" && "hostname" in value) {
+                const { hostname, port, protocol = "", path = "", query = {} } = value;
+                const url = new URL(`${protocol}//${hostname}${port ? `:${port}` : ""}${path}`);
+                url.search = Object.entries(query)
+                    .map(([k, v]) => `${k}=${v}`)
+                    .join("&");
+                return url;
+            }
+            return new URL(value);
+        }
+        catch (error) {
+            return null;
+        }
+    })();
+    if (!whatwgURL) {
+        console.error(`Unable to parse ${JSON.stringify(value)} as a whatwg URL.`);
+        return null;
+    }
+    const urlString = whatwgURL.href;
+    const { host, hostname, pathname, protocol, search } = whatwgURL;
+    if (search) {
+        return null;
+    }
+    const scheme = protocol.slice(0, -1);
+    if (!Object.values(types_1.EndpointURLScheme).includes(scheme)) {
+        return null;
+    }
+    const isIp = (0, isIpAddress_1.isIpAddress)(hostname);
+    const inputContainsDefaultPort = urlString.includes(`${host}:${DEFAULT_PORTS[scheme]}`) ||
+        (typeof value === "string" && value.includes(`${host}:${DEFAULT_PORTS[scheme]}`));
+    const authority = `${host}${inputContainsDefaultPort ? `:${DEFAULT_PORTS[scheme]}` : ``}`;
+    return {
+        scheme,
+        authority,
+        path: pathname,
+        normalizedPath: pathname.endsWith("/") ? pathname : `${pathname}/`,
+        isIp,
+    };
+};
+exports.parseURL = parseURL;
+
+
+/***/ }),
+
+/***/ 5182:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.stringEquals = void 0;
+const stringEquals = (value1, value2) => value1 === value2;
+exports.stringEquals = stringEquals;
+
+
+/***/ }),
+
+/***/ 8305:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.substring = void 0;
+const substring = (input, start, stop, reverse) => {
+    if (start >= stop || input.length < stop) {
+        return null;
+    }
+    if (!reverse) {
+        return input.substring(start, stop);
+    }
+    return input.substring(input.length - stop, input.length - start);
+};
+exports.substring = substring;
+
+
+/***/ }),
+
+/***/ 6535:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.uriEncode = void 0;
+const uriEncode = (value) => encodeURIComponent(value).replace(/[!*'()]/g, (c) => `%${c.charCodeAt(0).toString(16).toUpperCase()}`);
+exports.uriEncode = uriEncode;
+
+
+/***/ }),
+
+/***/ 6563:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.resolveEndpoint = void 0;
+const debug_1 = __nccwpck_require__(7617);
+const types_1 = __nccwpck_require__(7433);
+const utils_1 = __nccwpck_require__(1114);
+const resolveEndpoint = (ruleSetObject, options) => {
+    var _a, _b, _c, _d, _e, _f;
+    const { endpointParams, logger } = options;
+    const { parameters, rules } = ruleSetObject;
+    (_b = (_a = options.logger) === null || _a === void 0 ? void 0 : _a.debug) === null || _b === void 0 ? void 0 : _b.call(_a, debug_1.debugId, `Initial EndpointParams: ${(0, debug_1.toDebugString)(endpointParams)}`);
+    const paramsWithDefault = Object.entries(parameters)
+        .filter(([, v]) => v.default != null)
+        .map(([k, v]) => [k, v.default]);
+    if (paramsWithDefault.length > 0) {
+        for (const [paramKey, paramDefaultValue] of paramsWithDefault) {
+            endpointParams[paramKey] = (_c = endpointParams[paramKey]) !== null && _c !== void 0 ? _c : paramDefaultValue;
+        }
+    }
+    const requiredParams = Object.entries(parameters)
+        .filter(([, v]) => v.required)
+        .map(([k]) => k);
+    for (const requiredParam of requiredParams) {
+        if (endpointParams[requiredParam] == null) {
+            throw new types_1.EndpointError(`Missing required parameter: '${requiredParam}'`);
+        }
+    }
+    const endpoint = (0, utils_1.evaluateRules)(rules, { endpointParams, logger, referenceRecord: {} });
+    if ((_d = options.endpointParams) === null || _d === void 0 ? void 0 : _d.Endpoint) {
+        try {
+            const givenEndpoint = new URL(options.endpointParams.Endpoint);
+            const { protocol, port } = givenEndpoint;
+            endpoint.url.protocol = protocol;
+            endpoint.url.port = port;
+        }
+        catch (e) {
+        }
+    }
+    (_f = (_e = options.logger) === null || _e === void 0 ? void 0 : _e.debug) === null || _f === void 0 ? void 0 : _f.call(_e, debug_1.debugId, `Resolved endpoint: ${(0, debug_1.toDebugString)(endpoint)}`);
+    return endpoint;
+};
+exports.resolveEndpoint = resolveEndpoint;
+
+
+/***/ }),
+
+/***/ 3033:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.EndpointError = void 0;
+class EndpointError extends Error {
+    constructor(message) {
+        super(message);
+        this.name = "EndpointError";
+    }
+}
+exports.EndpointError = EndpointError;
+
+
+/***/ }),
+
+/***/ 1261:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 312:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 6083:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 1767:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 7433:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(3033), exports);
+tslib_1.__exportStar(__nccwpck_require__(1261), exports);
+tslib_1.__exportStar(__nccwpck_require__(312), exports);
+tslib_1.__exportStar(__nccwpck_require__(6083), exports);
+tslib_1.__exportStar(__nccwpck_require__(1767), exports);
+tslib_1.__exportStar(__nccwpck_require__(1811), exports);
+
+
+/***/ }),
+
+/***/ 1811:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 5075:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.callFunction = void 0;
+const tslib_1 = __nccwpck_require__(4351);
+const lib = tslib_1.__importStar(__nccwpck_require__(3188));
+const evaluateExpression_1 = __nccwpck_require__(2980);
+const callFunction = ({ fn, argv }, options) => {
+    const evaluatedArgs = argv.map((arg) => ["boolean", "number"].includes(typeof arg) ? arg : (0, evaluateExpression_1.evaluateExpression)(arg, "arg", options));
+    return fn.split(".").reduce((acc, key) => acc[key], lib)(...evaluatedArgs);
+};
+exports.callFunction = callFunction;
+
+
+/***/ }),
+
+/***/ 7851:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.evaluateCondition = void 0;
+const debug_1 = __nccwpck_require__(7617);
+const types_1 = __nccwpck_require__(7433);
+const callFunction_1 = __nccwpck_require__(5075);
+const evaluateCondition = ({ assign, ...fnArgs }, options) => {
+    var _a, _b;
+    if (assign && assign in options.referenceRecord) {
+        throw new types_1.EndpointError(`'${assign}' is already defined in Reference Record.`);
+    }
+    const value = (0, callFunction_1.callFunction)(fnArgs, options);
+    (_b = (_a = options.logger) === null || _a === void 0 ? void 0 : _a.debug) === null || _b === void 0 ? void 0 : _b.call(_a, debug_1.debugId, `evaluateCondition: ${(0, debug_1.toDebugString)(fnArgs)} = ${(0, debug_1.toDebugString)(value)}`);
+    return {
+        result: value === "" ? true : !!value,
+        ...(assign != null && { toAssign: { name: assign, value } }),
+    };
+};
+exports.evaluateCondition = evaluateCondition;
+
+
+/***/ }),
+
+/***/ 9169:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.evaluateConditions = void 0;
+const debug_1 = __nccwpck_require__(7617);
+const evaluateCondition_1 = __nccwpck_require__(7851);
+const evaluateConditions = (conditions = [], options) => {
+    var _a, _b;
+    const conditionsReferenceRecord = {};
+    for (const condition of conditions) {
+        const { result, toAssign } = (0, evaluateCondition_1.evaluateCondition)(condition, {
+            ...options,
+            referenceRecord: {
+                ...options.referenceRecord,
+                ...conditionsReferenceRecord,
+            },
+        });
+        if (!result) {
+            return { result };
+        }
+        if (toAssign) {
+            conditionsReferenceRecord[toAssign.name] = toAssign.value;
+            (_b = (_a = options.logger) === null || _a === void 0 ? void 0 : _a.debug) === null || _b === void 0 ? void 0 : _b.call(_a, debug_1.debugId, `assign: ${toAssign.name} := ${(0, debug_1.toDebugString)(toAssign.value)}`);
+        }
+    }
+    return { result: true, referenceRecord: conditionsReferenceRecord };
+};
+exports.evaluateConditions = evaluateConditions;
+
+
+/***/ }),
+
+/***/ 5324:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.evaluateEndpointRule = void 0;
+const debug_1 = __nccwpck_require__(7617);
+const evaluateConditions_1 = __nccwpck_require__(9169);
+const getEndpointHeaders_1 = __nccwpck_require__(8268);
+const getEndpointProperties_1 = __nccwpck_require__(4973);
+const getEndpointUrl_1 = __nccwpck_require__(3602);
+const evaluateEndpointRule = (endpointRule, options) => {
+    var _a, _b;
+    const { conditions, endpoint } = endpointRule;
+    const { result, referenceRecord } = (0, evaluateConditions_1.evaluateConditions)(conditions, options);
+    if (!result) {
+        return;
+    }
+    const endpointRuleOptions = {
+        ...options,
+        referenceRecord: { ...options.referenceRecord, ...referenceRecord },
+    };
+    const { url, properties, headers } = endpoint;
+    (_b = (_a = options.logger) === null || _a === void 0 ? void 0 : _a.debug) === null || _b === void 0 ? void 0 : _b.call(_a, debug_1.debugId, `Resolving endpoint from template: ${(0, debug_1.toDebugString)(endpoint)}`);
+    return {
+        ...(headers != undefined && {
+            headers: (0, getEndpointHeaders_1.getEndpointHeaders)(headers, endpointRuleOptions),
+        }),
+        ...(properties != undefined && {
+            properties: (0, getEndpointProperties_1.getEndpointProperties)(properties, endpointRuleOptions),
+        }),
+        url: (0, getEndpointUrl_1.getEndpointUrl)(url, endpointRuleOptions),
+    };
+};
+exports.evaluateEndpointRule = evaluateEndpointRule;
+
+
+/***/ }),
+
+/***/ 2110:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.evaluateErrorRule = void 0;
+const types_1 = __nccwpck_require__(7433);
+const evaluateConditions_1 = __nccwpck_require__(9169);
+const evaluateExpression_1 = __nccwpck_require__(2980);
+const evaluateErrorRule = (errorRule, options) => {
+    const { conditions, error } = errorRule;
+    const { result, referenceRecord } = (0, evaluateConditions_1.evaluateConditions)(conditions, options);
+    if (!result) {
+        return;
+    }
+    throw new types_1.EndpointError((0, evaluateExpression_1.evaluateExpression)(error, "Error", {
+        ...options,
+        referenceRecord: { ...options.referenceRecord, ...referenceRecord },
+    }));
+};
+exports.evaluateErrorRule = evaluateErrorRule;
+
+
+/***/ }),
+
+/***/ 2980:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.evaluateExpression = void 0;
+const types_1 = __nccwpck_require__(7433);
+const callFunction_1 = __nccwpck_require__(5075);
+const evaluateTemplate_1 = __nccwpck_require__(7535);
+const getReferenceValue_1 = __nccwpck_require__(8810);
+const evaluateExpression = (obj, keyName, options) => {
+    if (typeof obj === "string") {
+        return (0, evaluateTemplate_1.evaluateTemplate)(obj, options);
+    }
+    else if (obj["fn"]) {
+        return (0, callFunction_1.callFunction)(obj, options);
+    }
+    else if (obj["ref"]) {
+        return (0, getReferenceValue_1.getReferenceValue)(obj, options);
+    }
+    throw new types_1.EndpointError(`'${keyName}': ${String(obj)} is not a string, function or reference.`);
+};
+exports.evaluateExpression = evaluateExpression;
+
+
+/***/ }),
+
+/***/ 9738:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.evaluateRules = void 0;
+const types_1 = __nccwpck_require__(7433);
+const evaluateEndpointRule_1 = __nccwpck_require__(5324);
+const evaluateErrorRule_1 = __nccwpck_require__(2110);
+const evaluateTreeRule_1 = __nccwpck_require__(6587);
+const evaluateRules = (rules, options) => {
+    for (const rule of rules) {
+        if (rule.type === "endpoint") {
+            const endpointOrUndefined = (0, evaluateEndpointRule_1.evaluateEndpointRule)(rule, options);
+            if (endpointOrUndefined) {
+                return endpointOrUndefined;
+            }
+        }
+        else if (rule.type === "error") {
+            (0, evaluateErrorRule_1.evaluateErrorRule)(rule, options);
+        }
+        else if (rule.type === "tree") {
+            const endpointOrUndefined = (0, evaluateTreeRule_1.evaluateTreeRule)(rule, options);
+            if (endpointOrUndefined) {
+                return endpointOrUndefined;
+            }
+        }
+        else {
+            throw new types_1.EndpointError(`Unknown endpoint rule: ${rule}`);
+        }
+    }
+    throw new types_1.EndpointError(`Rules evaluation failed`);
+};
+exports.evaluateRules = evaluateRules;
+
+
+/***/ }),
+
+/***/ 7535:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.evaluateTemplate = void 0;
+const lib_1 = __nccwpck_require__(3188);
+const evaluateTemplate = (template, options) => {
+    const evaluatedTemplateArr = [];
+    const templateContext = {
+        ...options.endpointParams,
+        ...options.referenceRecord,
+    };
+    let currentIndex = 0;
+    while (currentIndex < template.length) {
+        const openingBraceIndex = template.indexOf("{", currentIndex);
+        if (openingBraceIndex === -1) {
+            evaluatedTemplateArr.push(template.slice(currentIndex));
+            break;
+        }
+        evaluatedTemplateArr.push(template.slice(currentIndex, openingBraceIndex));
+        const closingBraceIndex = template.indexOf("}", openingBraceIndex);
+        if (closingBraceIndex === -1) {
+            evaluatedTemplateArr.push(template.slice(openingBraceIndex));
+            break;
+        }
+        if (template[openingBraceIndex + 1] === "{" && template[closingBraceIndex + 1] === "}") {
+            evaluatedTemplateArr.push(template.slice(openingBraceIndex + 1, closingBraceIndex));
+            currentIndex = closingBraceIndex + 2;
+        }
+        const parameterName = template.substring(openingBraceIndex + 1, closingBraceIndex);
+        if (parameterName.includes("#")) {
+            const [refName, attrName] = parameterName.split("#");
+            evaluatedTemplateArr.push((0, lib_1.getAttr)(templateContext[refName], attrName));
+        }
+        else {
+            evaluatedTemplateArr.push(templateContext[parameterName]);
+        }
+        currentIndex = closingBraceIndex + 1;
+    }
+    return evaluatedTemplateArr.join("");
+};
+exports.evaluateTemplate = evaluateTemplate;
+
+
+/***/ }),
+
+/***/ 6587:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.evaluateTreeRule = void 0;
+const evaluateConditions_1 = __nccwpck_require__(9169);
+const evaluateRules_1 = __nccwpck_require__(9738);
+const evaluateTreeRule = (treeRule, options) => {
+    const { conditions, rules } = treeRule;
+    const { result, referenceRecord } = (0, evaluateConditions_1.evaluateConditions)(conditions, options);
+    if (!result) {
+        return;
+    }
+    return (0, evaluateRules_1.evaluateRules)(rules, {
+        ...options,
+        referenceRecord: { ...options.referenceRecord, ...referenceRecord },
+    });
+};
+exports.evaluateTreeRule = evaluateTreeRule;
+
+
+/***/ }),
+
+/***/ 8268:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getEndpointHeaders = void 0;
+const types_1 = __nccwpck_require__(7433);
+const evaluateExpression_1 = __nccwpck_require__(2980);
+const getEndpointHeaders = (headers, options) => Object.entries(headers).reduce((acc, [headerKey, headerVal]) => ({
+    ...acc,
+    [headerKey]: headerVal.map((headerValEntry) => {
+        const processedExpr = (0, evaluateExpression_1.evaluateExpression)(headerValEntry, "Header value entry", options);
+        if (typeof processedExpr !== "string") {
+            throw new types_1.EndpointError(`Header '${headerKey}' value '${processedExpr}' is not a string`);
+        }
+        return processedExpr;
+    }),
+}), {});
+exports.getEndpointHeaders = getEndpointHeaders;
+
+
+/***/ }),
+
+/***/ 4973:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getEndpointProperties = void 0;
+const getEndpointProperty_1 = __nccwpck_require__(2978);
+const getEndpointProperties = (properties, options) => Object.entries(properties).reduce((acc, [propertyKey, propertyVal]) => ({
+    ...acc,
+    [propertyKey]: (0, getEndpointProperty_1.getEndpointProperty)(propertyVal, options),
+}), {});
+exports.getEndpointProperties = getEndpointProperties;
+
+
+/***/ }),
+
+/***/ 2978:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getEndpointProperty = void 0;
+const types_1 = __nccwpck_require__(7433);
+const evaluateTemplate_1 = __nccwpck_require__(7535);
+const getEndpointProperties_1 = __nccwpck_require__(4973);
+const getEndpointProperty = (property, options) => {
+    if (Array.isArray(property)) {
+        return property.map((propertyEntry) => (0, exports.getEndpointProperty)(propertyEntry, options));
+    }
+    switch (typeof property) {
+        case "string":
+            return (0, evaluateTemplate_1.evaluateTemplate)(property, options);
+        case "object":
+            if (property === null) {
+                throw new types_1.EndpointError(`Unexpected endpoint property: ${property}`);
+            }
+            return (0, getEndpointProperties_1.getEndpointProperties)(property, options);
+        case "boolean":
+            return property;
+        default:
+            throw new types_1.EndpointError(`Unexpected endpoint property type: ${typeof property}`);
+    }
+};
+exports.getEndpointProperty = getEndpointProperty;
+
+
+/***/ }),
+
+/***/ 3602:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getEndpointUrl = void 0;
+const types_1 = __nccwpck_require__(7433);
+const evaluateExpression_1 = __nccwpck_require__(2980);
+const getEndpointUrl = (endpointUrl, options) => {
+    const expression = (0, evaluateExpression_1.evaluateExpression)(endpointUrl, "Endpoint URL", options);
+    if (typeof expression === "string") {
+        try {
+            return new URL(expression);
+        }
+        catch (error) {
+            console.error(`Failed to construct URL with ${expression}`, error);
+            throw error;
+        }
+    }
+    throw new types_1.EndpointError(`Endpoint URL must be a string, got ${typeof expression}`);
+};
+exports.getEndpointUrl = getEndpointUrl;
+
+
+/***/ }),
+
+/***/ 8810:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getReferenceValue = void 0;
+const getReferenceValue = ({ ref }, options) => {
+    const referenceRecord = {
+        ...options.endpointParams,
+        ...options.referenceRecord,
+    };
+    return referenceRecord[ref];
+};
+exports.getReferenceValue = getReferenceValue;
+
+
+/***/ }),
+
+/***/ 1114:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(9738), exports);
+
+
+/***/ }),
+
 /***/ 1968:
 /***/ ((__unused_webpack_module, exports) => {
 
@@ -15500,6 +17247,364 @@ const normalizeProvider = (input) => {
     return () => promisified;
 };
 exports.normalizeProvider = normalizeProvider;
+
+
+/***/ }),
+
+/***/ 6968:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AdaptiveRetryStrategy = void 0;
+const config_1 = __nccwpck_require__(6514);
+const DefaultRateLimiter_1 = __nccwpck_require__(258);
+const StandardRetryStrategy_1 = __nccwpck_require__(3449);
+class AdaptiveRetryStrategy {
+    constructor(maxAttemptsProvider, options) {
+        this.maxAttemptsProvider = maxAttemptsProvider;
+        this.mode = config_1.RETRY_MODES.ADAPTIVE;
+        const { rateLimiter } = options !== null && options !== void 0 ? options : {};
+        this.rateLimiter = rateLimiter !== null && rateLimiter !== void 0 ? rateLimiter : new DefaultRateLimiter_1.DefaultRateLimiter();
+        this.standardRetryStrategy = new StandardRetryStrategy_1.StandardRetryStrategy(maxAttemptsProvider);
+    }
+    async acquireInitialRetryToken(retryTokenScope) {
+        await this.rateLimiter.getSendToken();
+        return this.standardRetryStrategy.acquireInitialRetryToken(retryTokenScope);
+    }
+    async refreshRetryTokenForRetry(tokenToRenew, errorInfo) {
+        this.rateLimiter.updateClientSendingRate(errorInfo);
+        return this.standardRetryStrategy.refreshRetryTokenForRetry(tokenToRenew, errorInfo);
+    }
+    recordSuccess(token) {
+        this.rateLimiter.updateClientSendingRate({});
+        this.standardRetryStrategy.recordSuccess(token);
+    }
+}
+exports.AdaptiveRetryStrategy = AdaptiveRetryStrategy;
+
+
+/***/ }),
+
+/***/ 258:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DefaultRateLimiter = void 0;
+const service_error_classification_1 = __nccwpck_require__(1921);
+class DefaultRateLimiter {
+    constructor(options) {
+        var _a, _b, _c, _d, _e;
+        this.currentCapacity = 0;
+        this.enabled = false;
+        this.lastMaxRate = 0;
+        this.measuredTxRate = 0;
+        this.requestCount = 0;
+        this.lastTimestamp = 0;
+        this.timeWindow = 0;
+        this.beta = (_a = options === null || options === void 0 ? void 0 : options.beta) !== null && _a !== void 0 ? _a : 0.7;
+        this.minCapacity = (_b = options === null || options === void 0 ? void 0 : options.minCapacity) !== null && _b !== void 0 ? _b : 1;
+        this.minFillRate = (_c = options === null || options === void 0 ? void 0 : options.minFillRate) !== null && _c !== void 0 ? _c : 0.5;
+        this.scaleConstant = (_d = options === null || options === void 0 ? void 0 : options.scaleConstant) !== null && _d !== void 0 ? _d : 0.4;
+        this.smooth = (_e = options === null || options === void 0 ? void 0 : options.smooth) !== null && _e !== void 0 ? _e : 0.8;
+        const currentTimeInSeconds = this.getCurrentTimeInSeconds();
+        this.lastThrottleTime = currentTimeInSeconds;
+        this.lastTxRateBucket = Math.floor(this.getCurrentTimeInSeconds());
+        this.fillRate = this.minFillRate;
+        this.maxCapacity = this.minCapacity;
+    }
+    getCurrentTimeInSeconds() {
+        return Date.now() / 1000;
+    }
+    async getSendToken() {
+        return this.acquireTokenBucket(1);
+    }
+    async acquireTokenBucket(amount) {
+        if (!this.enabled) {
+            return;
+        }
+        this.refillTokenBucket();
+        if (amount > this.currentCapacity) {
+            const delay = ((amount - this.currentCapacity) / this.fillRate) * 1000;
+            await new Promise((resolve) => setTimeout(resolve, delay));
+        }
+        this.currentCapacity = this.currentCapacity - amount;
+    }
+    refillTokenBucket() {
+        const timestamp = this.getCurrentTimeInSeconds();
+        if (!this.lastTimestamp) {
+            this.lastTimestamp = timestamp;
+            return;
+        }
+        const fillAmount = (timestamp - this.lastTimestamp) * this.fillRate;
+        this.currentCapacity = Math.min(this.maxCapacity, this.currentCapacity + fillAmount);
+        this.lastTimestamp = timestamp;
+    }
+    updateClientSendingRate(response) {
+        let calculatedRate;
+        this.updateMeasuredRate();
+        if ((0, service_error_classification_1.isThrottlingError)(response)) {
+            const rateToUse = !this.enabled ? this.measuredTxRate : Math.min(this.measuredTxRate, this.fillRate);
+            this.lastMaxRate = rateToUse;
+            this.calculateTimeWindow();
+            this.lastThrottleTime = this.getCurrentTimeInSeconds();
+            calculatedRate = this.cubicThrottle(rateToUse);
+            this.enableTokenBucket();
+        }
+        else {
+            this.calculateTimeWindow();
+            calculatedRate = this.cubicSuccess(this.getCurrentTimeInSeconds());
+        }
+        const newRate = Math.min(calculatedRate, 2 * this.measuredTxRate);
+        this.updateTokenBucketRate(newRate);
+    }
+    calculateTimeWindow() {
+        this.timeWindow = this.getPrecise(Math.pow((this.lastMaxRate * (1 - this.beta)) / this.scaleConstant, 1 / 3));
+    }
+    cubicThrottle(rateToUse) {
+        return this.getPrecise(rateToUse * this.beta);
+    }
+    cubicSuccess(timestamp) {
+        return this.getPrecise(this.scaleConstant * Math.pow(timestamp - this.lastThrottleTime - this.timeWindow, 3) + this.lastMaxRate);
+    }
+    enableTokenBucket() {
+        this.enabled = true;
+    }
+    updateTokenBucketRate(newRate) {
+        this.refillTokenBucket();
+        this.fillRate = Math.max(newRate, this.minFillRate);
+        this.maxCapacity = Math.max(newRate, this.minCapacity);
+        this.currentCapacity = Math.min(this.currentCapacity, this.maxCapacity);
+    }
+    updateMeasuredRate() {
+        const t = this.getCurrentTimeInSeconds();
+        const timeBucket = Math.floor(t * 2) / 2;
+        this.requestCount++;
+        if (timeBucket > this.lastTxRateBucket) {
+            const currentRate = this.requestCount / (timeBucket - this.lastTxRateBucket);
+            this.measuredTxRate = this.getPrecise(currentRate * this.smooth + this.measuredTxRate * (1 - this.smooth));
+            this.requestCount = 0;
+            this.lastTxRateBucket = timeBucket;
+        }
+    }
+    getPrecise(num) {
+        return parseFloat(num.toFixed(8));
+    }
+}
+exports.DefaultRateLimiter = DefaultRateLimiter;
+
+
+/***/ }),
+
+/***/ 3449:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.StandardRetryStrategy = void 0;
+const config_1 = __nccwpck_require__(6514);
+const constants_1 = __nccwpck_require__(5056);
+const defaultRetryToken_1 = __nccwpck_require__(1360);
+class StandardRetryStrategy {
+    constructor(maxAttemptsProvider) {
+        this.maxAttemptsProvider = maxAttemptsProvider;
+        this.mode = config_1.RETRY_MODES.STANDARD;
+        this.retryToken = (0, defaultRetryToken_1.getDefaultRetryToken)(constants_1.INITIAL_RETRY_TOKENS, constants_1.DEFAULT_RETRY_DELAY_BASE);
+        this.maxAttemptsProvider = maxAttemptsProvider;
+    }
+    async acquireInitialRetryToken(retryTokenScope) {
+        return this.retryToken;
+    }
+    async refreshRetryTokenForRetry(tokenToRenew, errorInfo) {
+        const maxAttempts = await this.getMaxAttempts();
+        if (this.shouldRetry(tokenToRenew, errorInfo, maxAttempts)) {
+            tokenToRenew.getRetryTokenCount(errorInfo);
+            return tokenToRenew;
+        }
+        throw new Error("No retry token available");
+    }
+    recordSuccess(token) {
+        this.retryToken.releaseRetryTokens(token.getLastRetryCost());
+    }
+    async getMaxAttempts() {
+        let maxAttempts;
+        try {
+            return await this.maxAttemptsProvider();
+        }
+        catch (error) {
+            console.warn(`Max attempts provider could not resolve. Using default of ${config_1.DEFAULT_MAX_ATTEMPTS}`);
+            return config_1.DEFAULT_MAX_ATTEMPTS;
+        }
+    }
+    shouldRetry(tokenToRenew, errorInfo, maxAttempts) {
+        const attempts = tokenToRenew.getRetryCount();
+        return (attempts < maxAttempts &&
+            tokenToRenew.hasRetryTokens(errorInfo.errorType) &&
+            this.isRetryableError(errorInfo.errorType));
+    }
+    isRetryableError(errorType) {
+        return errorType === "THROTTLING" || errorType === "TRANSIENT";
+    }
+}
+exports.StandardRetryStrategy = StandardRetryStrategy;
+
+
+/***/ }),
+
+/***/ 6514:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DEFAULT_RETRY_MODE = exports.DEFAULT_MAX_ATTEMPTS = exports.RETRY_MODES = void 0;
+var RETRY_MODES;
+(function (RETRY_MODES) {
+    RETRY_MODES["STANDARD"] = "standard";
+    RETRY_MODES["ADAPTIVE"] = "adaptive";
+})(RETRY_MODES = exports.RETRY_MODES || (exports.RETRY_MODES = {}));
+exports.DEFAULT_MAX_ATTEMPTS = 3;
+exports.DEFAULT_RETRY_MODE = "STANDARD";
+
+
+/***/ }),
+
+/***/ 5056:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.REQUEST_HEADER = exports.INVOCATION_ID_HEADER = exports.NO_RETRY_INCREMENT = exports.TIMEOUT_RETRY_COST = exports.RETRY_COST = exports.INITIAL_RETRY_TOKENS = exports.THROTTLING_RETRY_DELAY_BASE = exports.MAXIMUM_RETRY_DELAY = exports.DEFAULT_RETRY_DELAY_BASE = void 0;
+exports.DEFAULT_RETRY_DELAY_BASE = 100;
+exports.MAXIMUM_RETRY_DELAY = 20 * 1000;
+exports.THROTTLING_RETRY_DELAY_BASE = 500;
+exports.INITIAL_RETRY_TOKENS = 500;
+exports.RETRY_COST = 5;
+exports.TIMEOUT_RETRY_COST = 10;
+exports.NO_RETRY_INCREMENT = 1;
+exports.INVOCATION_ID_HEADER = "amz-sdk-invocation-id";
+exports.REQUEST_HEADER = "amz-sdk-request";
+
+
+/***/ }),
+
+/***/ 4763:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getDefaultRetryBackoffStrategy = void 0;
+const constants_1 = __nccwpck_require__(5056);
+const getDefaultRetryBackoffStrategy = () => {
+    let delayBase = constants_1.DEFAULT_RETRY_DELAY_BASE;
+    const computeNextBackoffDelay = (attempts) => {
+        return Math.floor(Math.min(constants_1.MAXIMUM_RETRY_DELAY, Math.random() * 2 ** attempts * delayBase));
+    };
+    const setDelayBase = (delay) => {
+        delayBase = delay;
+    };
+    return {
+        computeNextBackoffDelay,
+        setDelayBase,
+    };
+};
+exports.getDefaultRetryBackoffStrategy = getDefaultRetryBackoffStrategy;
+
+
+/***/ }),
+
+/***/ 1360:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getDefaultRetryToken = void 0;
+const constants_1 = __nccwpck_require__(5056);
+const defaultRetryBackoffStrategy_1 = __nccwpck_require__(4763);
+const getDefaultRetryToken = (initialRetryTokens, initialRetryDelay, initialRetryCount, options) => {
+    var _a, _b, _c;
+    const MAX_CAPACITY = initialRetryTokens;
+    const retryCost = (_a = options === null || options === void 0 ? void 0 : options.retryCost) !== null && _a !== void 0 ? _a : constants_1.RETRY_COST;
+    const timeoutRetryCost = (_b = options === null || options === void 0 ? void 0 : options.timeoutRetryCost) !== null && _b !== void 0 ? _b : constants_1.TIMEOUT_RETRY_COST;
+    const retryBackoffStrategy = (_c = options === null || options === void 0 ? void 0 : options.retryBackoffStrategy) !== null && _c !== void 0 ? _c : (0, defaultRetryBackoffStrategy_1.getDefaultRetryBackoffStrategy)();
+    let availableCapacity = initialRetryTokens;
+    let retryDelay = Math.min(constants_1.MAXIMUM_RETRY_DELAY, initialRetryDelay);
+    let lastRetryCost = undefined;
+    let retryCount = initialRetryCount !== null && initialRetryCount !== void 0 ? initialRetryCount : 0;
+    const getCapacityAmount = (errorType) => (errorType === "TRANSIENT" ? timeoutRetryCost : retryCost);
+    const getRetryCount = () => retryCount;
+    const getRetryDelay = () => retryDelay;
+    const getLastRetryCost = () => lastRetryCost;
+    const hasRetryTokens = (errorType) => getCapacityAmount(errorType) <= availableCapacity;
+    const getRetryTokenCount = (errorInfo) => {
+        const errorType = errorInfo.errorType;
+        if (!hasRetryTokens(errorType)) {
+            throw new Error("No retry token available");
+        }
+        const capacityAmount = getCapacityAmount(errorType);
+        const delayBase = errorType === "THROTTLING" ? constants_1.THROTTLING_RETRY_DELAY_BASE : constants_1.DEFAULT_RETRY_DELAY_BASE;
+        retryBackoffStrategy.setDelayBase(delayBase);
+        const delayFromErrorType = retryBackoffStrategy.computeNextBackoffDelay(retryCount);
+        if (errorInfo.retryAfterHint) {
+            const delayFromRetryAfterHint = errorInfo.retryAfterHint.getTime() - Date.now();
+            retryDelay = Math.max(delayFromRetryAfterHint || 0, delayFromErrorType);
+        }
+        else {
+            retryDelay = delayFromErrorType;
+        }
+        retryCount++;
+        lastRetryCost = capacityAmount;
+        availableCapacity -= capacityAmount;
+        return capacityAmount;
+    };
+    const releaseRetryTokens = (releaseAmount) => {
+        availableCapacity += releaseAmount !== null && releaseAmount !== void 0 ? releaseAmount : constants_1.NO_RETRY_INCREMENT;
+        availableCapacity = Math.min(availableCapacity, MAX_CAPACITY);
+    };
+    return {
+        getRetryCount,
+        getRetryDelay,
+        getLastRetryCost,
+        hasRetryTokens,
+        getRetryTokenCount,
+        releaseRetryTokens,
+    };
+};
+exports.getDefaultRetryToken = getDefaultRetryToken;
+
+
+/***/ }),
+
+/***/ 9395:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(6968), exports);
+tslib_1.__exportStar(__nccwpck_require__(258), exports);
+tslib_1.__exportStar(__nccwpck_require__(3449), exports);
+tslib_1.__exportStar(__nccwpck_require__(6514), exports);
+tslib_1.__exportStar(__nccwpck_require__(5056), exports);
+tslib_1.__exportStar(__nccwpck_require__(1318), exports);
+
+
+/***/ }),
+
+/***/ 1318:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
 
 
 /***/ }),
@@ -15636,935 +17741,88 @@ exports.toUtf8 = toUtf8;
 
 /***/ }),
 
-/***/ 5107:
-/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
-
-"use strict";
-
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.decodeHTML = exports.decodeHTMLStrict = exports.decodeXML = void 0;
-var entities_json_1 = __importDefault(__nccwpck_require__(4007));
-var legacy_json_1 = __importDefault(__nccwpck_require__(7802));
-var xml_json_1 = __importDefault(__nccwpck_require__(2228));
-var decode_codepoint_1 = __importDefault(__nccwpck_require__(1227));
-var strictEntityRe = /&(?:[a-zA-Z0-9]+|#[xX][\da-fA-F]+|#\d+);/g;
-exports.decodeXML = getStrictDecoder(xml_json_1.default);
-exports.decodeHTMLStrict = getStrictDecoder(entities_json_1.default);
-function getStrictDecoder(map) {
-    var replace = getReplacer(map);
-    return function (str) { return String(str).replace(strictEntityRe, replace); };
-}
-var sorter = function (a, b) { return (a < b ? 1 : -1); };
-exports.decodeHTML = (function () {
-    var legacy = Object.keys(legacy_json_1.default).sort(sorter);
-    var keys = Object.keys(entities_json_1.default).sort(sorter);
-    for (var i = 0, j = 0; i < keys.length; i++) {
-        if (legacy[j] === keys[i]) {
-            keys[i] += ";?";
-            j++;
-        }
-        else {
-            keys[i] += ";";
-        }
-    }
-    var re = new RegExp("&(?:" + keys.join("|") + "|#[xX][\\da-fA-F]+;?|#\\d+;?)", "g");
-    var replace = getReplacer(entities_json_1.default);
-    function replacer(str) {
-        if (str.substr(-1) !== ";")
-            str += ";";
-        return replace(str);
-    }
-    // TODO consider creating a merged map
-    return function (str) { return String(str).replace(re, replacer); };
-})();
-function getReplacer(map) {
-    return function replace(str) {
-        if (str.charAt(1) === "#") {
-            var secondChar = str.charAt(2);
-            if (secondChar === "X" || secondChar === "x") {
-                return decode_codepoint_1.default(parseInt(str.substr(3), 16));
-            }
-            return decode_codepoint_1.default(parseInt(str.substr(2), 10));
-        }
-        // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
-        return map[str.slice(1, -1)] || str;
-    };
-}
-
-
-/***/ }),
-
-/***/ 1227:
-/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
-
-"use strict";
-
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-var decode_json_1 = __importDefault(__nccwpck_require__(4589));
-// Adapted from https://github.com/mathiasbynens/he/blob/master/src/he.js#L94-L119
-var fromCodePoint = 
-// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-String.fromCodePoint ||
-    function (codePoint) {
-        var output = "";
-        if (codePoint > 0xffff) {
-            codePoint -= 0x10000;
-            output += String.fromCharCode(((codePoint >>> 10) & 0x3ff) | 0xd800);
-            codePoint = 0xdc00 | (codePoint & 0x3ff);
-        }
-        output += String.fromCharCode(codePoint);
-        return output;
-    };
-function decodeCodePoint(codePoint) {
-    if ((codePoint >= 0xd800 && codePoint <= 0xdfff) || codePoint > 0x10ffff) {
-        return "\uFFFD";
-    }
-    if (codePoint in decode_json_1.default) {
-        codePoint = decode_json_1.default[codePoint];
-    }
-    return fromCodePoint(codePoint);
-}
-exports.default = decodeCodePoint;
-
-
-/***/ }),
-
-/***/ 2006:
-/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
-
-"use strict";
-
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.escapeUTF8 = exports.escape = exports.encodeNonAsciiHTML = exports.encodeHTML = exports.encodeXML = void 0;
-var xml_json_1 = __importDefault(__nccwpck_require__(2228));
-var inverseXML = getInverseObj(xml_json_1.default);
-var xmlReplacer = getInverseReplacer(inverseXML);
-/**
- * Encodes all non-ASCII characters, as well as characters not valid in XML
- * documents using XML entities.
- *
- * If a character has no equivalent entity, a
- * numeric hexadecimal reference (eg. `&#xfc;`) will be used.
- */
-exports.encodeXML = getASCIIEncoder(inverseXML);
-var entities_json_1 = __importDefault(__nccwpck_require__(4007));
-var inverseHTML = getInverseObj(entities_json_1.default);
-var htmlReplacer = getInverseReplacer(inverseHTML);
-/**
- * Encodes all entities and non-ASCII characters in the input.
- *
- * This includes characters that are valid ASCII characters in HTML documents.
- * For example `#` will be encoded as `&num;`. To get a more compact output,
- * consider using the `encodeNonAsciiHTML` function.
- *
- * If a character has no equivalent entity, a
- * numeric hexadecimal reference (eg. `&#xfc;`) will be used.
- */
-exports.encodeHTML = getInverse(inverseHTML, htmlReplacer);
-/**
- * Encodes all non-ASCII characters, as well as characters not valid in HTML
- * documents using HTML entities.
- *
- * If a character has no equivalent entity, a
- * numeric hexadecimal reference (eg. `&#xfc;`) will be used.
- */
-exports.encodeNonAsciiHTML = getASCIIEncoder(inverseHTML);
-function getInverseObj(obj) {
-    return Object.keys(obj)
-        .sort()
-        .reduce(function (inverse, name) {
-        inverse[obj[name]] = "&" + name + ";";
-        return inverse;
-    }, {});
-}
-function getInverseReplacer(inverse) {
-    var single = [];
-    var multiple = [];
-    for (var _i = 0, _a = Object.keys(inverse); _i < _a.length; _i++) {
-        var k = _a[_i];
-        if (k.length === 1) {
-            // Add value to single array
-            single.push("\\" + k);
-        }
-        else {
-            // Add value to multiple array
-            multiple.push(k);
-        }
-    }
-    // Add ranges to single characters.
-    single.sort();
-    for (var start = 0; start < single.length - 1; start++) {
-        // Find the end of a run of characters
-        var end = start;
-        while (end < single.length - 1 &&
-            single[end].charCodeAt(1) + 1 === single[end + 1].charCodeAt(1)) {
-            end += 1;
-        }
-        var count = 1 + end - start;
-        // We want to replace at least three characters
-        if (count < 3)
-            continue;
-        single.splice(start, count, single[start] + "-" + single[end]);
-    }
-    multiple.unshift("[" + single.join("") + "]");
-    return new RegExp(multiple.join("|"), "g");
-}
-// /[^\0-\x7F]/gu
-var reNonASCII = /(?:[\x80-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])/g;
-var getCodePoint = 
-// eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-String.prototype.codePointAt != null
-    ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        function (str) { return str.codePointAt(0); }
-    : // http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
-        function (c) {
-            return (c.charCodeAt(0) - 0xd800) * 0x400 +
-                c.charCodeAt(1) -
-                0xdc00 +
-                0x10000;
-        };
-function singleCharReplacer(c) {
-    return "&#x" + (c.length > 1 ? getCodePoint(c) : c.charCodeAt(0))
-        .toString(16)
-        .toUpperCase() + ";";
-}
-function getInverse(inverse, re) {
-    return function (data) {
-        return data
-            .replace(re, function (name) { return inverse[name]; })
-            .replace(reNonASCII, singleCharReplacer);
-    };
-}
-var reEscapeChars = new RegExp(xmlReplacer.source + "|" + reNonASCII.source, "g");
-/**
- * Encodes all non-ASCII characters, as well as characters not valid in XML
- * documents using numeric hexadecimal reference (eg. `&#xfc;`).
- *
- * Have a look at `escapeUTF8` if you want a more concise output at the expense
- * of reduced transportability.
- *
- * @param data String to escape.
- */
-function escape(data) {
-    return data.replace(reEscapeChars, singleCharReplacer);
-}
-exports.escape = escape;
-/**
- * Encodes all characters not valid in XML documents using numeric hexadecimal
- * reference (eg. `&#xfc;`).
- *
- * Note that the output will be character-set dependent.
- *
- * @param data String to escape.
- */
-function escapeUTF8(data) {
-    return data.replace(xmlReplacer, singleCharReplacer);
-}
-exports.escapeUTF8 = escapeUTF8;
-function getASCIIEncoder(obj) {
-    return function (data) {
-        return data.replace(reEscapeChars, function (c) { return obj[c] || singleCharReplacer(c); });
-    };
-}
-
-
-/***/ }),
-
-/***/ 3000:
+/***/ 255:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.decodeXMLStrict = exports.decodeHTML5Strict = exports.decodeHTML4Strict = exports.decodeHTML5 = exports.decodeHTML4 = exports.decodeHTMLStrict = exports.decodeHTML = exports.decodeXML = exports.encodeHTML5 = exports.encodeHTML4 = exports.escapeUTF8 = exports.escape = exports.encodeNonAsciiHTML = exports.encodeHTML = exports.encodeXML = exports.encode = exports.decodeStrict = exports.decode = void 0;
-var decode_1 = __nccwpck_require__(5107);
-var encode_1 = __nccwpck_require__(2006);
-/**
- * Decodes a string with entities.
- *
- * @param data String to decode.
- * @param level Optional level to decode at. 0 = XML, 1 = HTML. Default is 0.
- * @deprecated Use `decodeXML` or `decodeHTML` directly.
- */
-function decode(data, level) {
-    return (!level || level <= 0 ? decode_1.decodeXML : decode_1.decodeHTML)(data);
-}
-exports.decode = decode;
-/**
- * Decodes a string with entities. Does not allow missing trailing semicolons for entities.
- *
- * @param data String to decode.
- * @param level Optional level to decode at. 0 = XML, 1 = HTML. Default is 0.
- * @deprecated Use `decodeHTMLStrict` or `decodeXML` directly.
- */
-function decodeStrict(data, level) {
-    return (!level || level <= 0 ? decode_1.decodeXML : decode_1.decodeHTMLStrict)(data);
-}
-exports.decodeStrict = decodeStrict;
-/**
- * Encodes a string with entities.
- *
- * @param data String to encode.
- * @param level Optional level to encode at. 0 = XML, 1 = HTML. Default is 0.
- * @deprecated Use `encodeHTML`, `encodeXML` or `encodeNonAsciiHTML` directly.
- */
-function encode(data, level) {
-    return (!level || level <= 0 ? encode_1.encodeXML : encode_1.encodeHTML)(data);
-}
-exports.encode = encode;
-var encode_2 = __nccwpck_require__(2006);
-Object.defineProperty(exports, "encodeXML", ({ enumerable: true, get: function () { return encode_2.encodeXML; } }));
-Object.defineProperty(exports, "encodeHTML", ({ enumerable: true, get: function () { return encode_2.encodeHTML; } }));
-Object.defineProperty(exports, "encodeNonAsciiHTML", ({ enumerable: true, get: function () { return encode_2.encodeNonAsciiHTML; } }));
-Object.defineProperty(exports, "escape", ({ enumerable: true, get: function () { return encode_2.escape; } }));
-Object.defineProperty(exports, "escapeUTF8", ({ enumerable: true, get: function () { return encode_2.escapeUTF8; } }));
-// Legacy aliases (deprecated)
-Object.defineProperty(exports, "encodeHTML4", ({ enumerable: true, get: function () { return encode_2.encodeHTML; } }));
-Object.defineProperty(exports, "encodeHTML5", ({ enumerable: true, get: function () { return encode_2.encodeHTML; } }));
-var decode_2 = __nccwpck_require__(5107);
-Object.defineProperty(exports, "decodeXML", ({ enumerable: true, get: function () { return decode_2.decodeXML; } }));
-Object.defineProperty(exports, "decodeHTML", ({ enumerable: true, get: function () { return decode_2.decodeHTML; } }));
-Object.defineProperty(exports, "decodeHTMLStrict", ({ enumerable: true, get: function () { return decode_2.decodeHTMLStrict; } }));
-// Legacy aliases (deprecated)
-Object.defineProperty(exports, "decodeHTML4", ({ enumerable: true, get: function () { return decode_2.decodeHTML; } }));
-Object.defineProperty(exports, "decodeHTML5", ({ enumerable: true, get: function () { return decode_2.decodeHTML; } }));
-Object.defineProperty(exports, "decodeHTML4Strict", ({ enumerable: true, get: function () { return decode_2.decodeHTMLStrict; } }));
-Object.defineProperty(exports, "decodeHTML5Strict", ({ enumerable: true, get: function () { return decode_2.decodeHTMLStrict; } }));
-Object.defineProperty(exports, "decodeXMLStrict", ({ enumerable: true, get: function () { return decode_2.decodeXML; } }));
+exports.fromUtf8 = void 0;
+const util_buffer_from_1 = __nccwpck_require__(6010);
+const fromUtf8 = (input) => {
+    const buf = (0, util_buffer_from_1.fromString)(input, "utf8");
+    return new Uint8Array(buf.buffer, buf.byteOffset, buf.byteLength / Uint8Array.BYTES_PER_ELEMENT);
+};
+exports.fromUtf8 = fromUtf8;
 
 
 /***/ }),
 
-/***/ 5152:
+/***/ 4967:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4351);
+tslib_1.__exportStar(__nccwpck_require__(255), exports);
+tslib_1.__exportStar(__nccwpck_require__(1287), exports);
+tslib_1.__exportStar(__nccwpck_require__(5544), exports);
+
+
+/***/ }),
+
+/***/ 1287:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.toUint8Array = void 0;
+const fromUtf8_1 = __nccwpck_require__(255);
+const toUint8Array = (data) => {
+    if (typeof data === "string") {
+        return (0, fromUtf8_1.fromUtf8)(data);
+    }
+    if (ArrayBuffer.isView(data)) {
+        return new Uint8Array(data.buffer, data.byteOffset, data.byteLength / Uint8Array.BYTES_PER_ELEMENT);
+    }
+    return new Uint8Array(data);
+};
+exports.toUint8Array = toUint8Array;
+
+
+/***/ }),
+
+/***/ 5544:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.toUtf8 = void 0;
+const util_buffer_from_1 = __nccwpck_require__(6010);
+const toUtf8 = (input) => (0, util_buffer_from_1.fromArrayBuffer)(input.buffer, input.byteOffset, input.byteLength).toString("utf8");
+exports.toUtf8 = toUtf8;
+
+
+/***/ }),
+
+/***/ 2603:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
-//parse Empty Node as self closing node
-const buildOptions = __nccwpck_require__(8280).buildOptions;
 
-const defaultOptions = {
-  attributeNamePrefix: '@_',
-  attrNodeName: false,
-  textNodeName: '#text',
-  ignoreAttributes: true,
-  cdataTagName: false,
-  cdataPositionChar: '\\c',
-  format: false,
-  indentBy: '  ',
-  supressEmptyNode: false,
-  tagValueProcessor: function(a) {
-    return a;
-  },
-  attrValueProcessor: function(a) {
-    return a;
-  },
-};
-
-const props = [
-  'attributeNamePrefix',
-  'attrNodeName',
-  'textNodeName',
-  'ignoreAttributes',
-  'cdataTagName',
-  'cdataPositionChar',
-  'format',
-  'indentBy',
-  'supressEmptyNode',
-  'tagValueProcessor',
-  'attrValueProcessor',
-];
-
-function Parser(options) {
-  this.options = buildOptions(options, defaultOptions, props);
-  if (this.options.ignoreAttributes || this.options.attrNodeName) {
-    this.isAttribute = function(/*a*/) {
-      return false;
-    };
-  } else {
-    this.attrPrefixLen = this.options.attributeNamePrefix.length;
-    this.isAttribute = isAttribute;
-  }
-  if (this.options.cdataTagName) {
-    this.isCDATA = isCDATA;
-  } else {
-    this.isCDATA = function(/*a*/) {
-      return false;
-    };
-  }
-  this.replaceCDATAstr = replaceCDATAstr;
-  this.replaceCDATAarr = replaceCDATAarr;
-
-  if (this.options.format) {
-    this.indentate = indentate;
-    this.tagEndChar = '>\n';
-    this.newLine = '\n';
-  } else {
-    this.indentate = function() {
-      return '';
-    };
-    this.tagEndChar = '>';
-    this.newLine = '';
-  }
-
-  if (this.options.supressEmptyNode) {
-    this.buildTextNode = buildEmptyTextNode;
-    this.buildObjNode = buildEmptyObjNode;
-  } else {
-    this.buildTextNode = buildTextValNode;
-    this.buildObjNode = buildObjectNode;
-  }
-
-  this.buildTextValNode = buildTextValNode;
-  this.buildObjectNode = buildObjectNode;
-}
-
-Parser.prototype.parse = function(jObj) {
-  return this.j2x(jObj, 0).val;
-};
-
-Parser.prototype.j2x = function(jObj, level) {
-  let attrStr = '';
-  let val = '';
-  const keys = Object.keys(jObj);
-  const len = keys.length;
-  for (let i = 0; i < len; i++) {
-    const key = keys[i];
-    if (typeof jObj[key] === 'undefined') {
-      // supress undefined node
-    } else if (jObj[key] === null) {
-      val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
-    } else if (jObj[key] instanceof Date) {
-      val += this.buildTextNode(jObj[key], key, '', level);
-    } else if (typeof jObj[key] !== 'object') {
-      //premitive type
-      const attr = this.isAttribute(key);
-      if (attr) {
-        attrStr += ' ' + attr + '="' + this.options.attrValueProcessor('' + jObj[key]) + '"';
-      } else if (this.isCDATA(key)) {
-        if (jObj[this.options.textNodeName]) {
-          val += this.replaceCDATAstr(jObj[this.options.textNodeName], jObj[key]);
-        } else {
-          val += this.replaceCDATAstr('', jObj[key]);
-        }
-      } else {
-        //tag value
-        if (key === this.options.textNodeName) {
-          if (jObj[this.options.cdataTagName]) {
-            //value will added while processing cdata
-          } else {
-            val += this.options.tagValueProcessor('' + jObj[key]);
-          }
-        } else {
-          val += this.buildTextNode(jObj[key], key, '', level);
-        }
-      }
-    } else if (Array.isArray(jObj[key])) {
-      //repeated nodes
-      if (this.isCDATA(key)) {
-        val += this.indentate(level);
-        if (jObj[this.options.textNodeName]) {
-          val += this.replaceCDATAarr(jObj[this.options.textNodeName], jObj[key]);
-        } else {
-          val += this.replaceCDATAarr('', jObj[key]);
-        }
-      } else {
-        //nested nodes
-        const arrLen = jObj[key].length;
-        for (let j = 0; j < arrLen; j++) {
-          const item = jObj[key][j];
-          if (typeof item === 'undefined') {
-            // supress undefined node
-          } else if (item === null) {
-            val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
-          } else if (typeof item === 'object') {
-            const result = this.j2x(item, level + 1);
-            val += this.buildObjNode(result.val, key, result.attrStr, level);
-          } else {
-            val += this.buildTextNode(item, key, '', level);
-          }
-        }
-      }
-    } else {
-      //nested node
-      if (this.options.attrNodeName && key === this.options.attrNodeName) {
-        const Ks = Object.keys(jObj[key]);
-        const L = Ks.length;
-        for (let j = 0; j < L; j++) {
-          attrStr += ' ' + Ks[j] + '="' + this.options.attrValueProcessor('' + jObj[key][Ks[j]]) + '"';
-        }
-      } else {
-        const result = this.j2x(jObj[key], level + 1);
-        val += this.buildObjNode(result.val, key, result.attrStr, level);
-      }
-    }
-  }
-  return {attrStr: attrStr, val: val};
-};
-
-function replaceCDATAstr(str, cdata) {
-  str = this.options.tagValueProcessor('' + str);
-  if (this.options.cdataPositionChar === '' || str === '') {
-    return str + '<![CDATA[' + cdata + ']]' + this.tagEndChar;
-  } else {
-    return str.replace(this.options.cdataPositionChar, '<![CDATA[' + cdata + ']]' + this.tagEndChar);
-  }
-}
-
-function replaceCDATAarr(str, cdata) {
-  str = this.options.tagValueProcessor('' + str);
-  if (this.options.cdataPositionChar === '' || str === '') {
-    return str + '<![CDATA[' + cdata.join(']]><![CDATA[') + ']]' + this.tagEndChar;
-  } else {
-    for (let v in cdata) {
-      str = str.replace(this.options.cdataPositionChar, '<![CDATA[' + cdata[v] + ']]>');
-    }
-    return str + this.newLine;
-  }
-}
-
-function buildObjectNode(val, key, attrStr, level) {
-  if (attrStr && !val.includes('<')) {
-    return (
-      this.indentate(level) +
-      '<' +
-      key +
-      attrStr +
-      '>' +
-      val +
-      //+ this.newLine
-      // + this.indentate(level)
-      '</' +
-      key +
-      this.tagEndChar
-    );
-  } else {
-    return (
-      this.indentate(level) +
-      '<' +
-      key +
-      attrStr +
-      this.tagEndChar +
-      val +
-      //+ this.newLine
-      this.indentate(level) +
-      '</' +
-      key +
-      this.tagEndChar
-    );
-  }
-}
-
-function buildEmptyObjNode(val, key, attrStr, level) {
-  if (val !== '') {
-    return this.buildObjectNode(val, key, attrStr, level);
-  } else {
-    return this.indentate(level) + '<' + key + attrStr + '/' + this.tagEndChar;
-    //+ this.newLine
-  }
-}
-
-function buildTextValNode(val, key, attrStr, level) {
-  return (
-    this.indentate(level) +
-    '<' +
-    key +
-    attrStr +
-    '>' +
-    this.options.tagValueProcessor(val) +
-    '</' +
-    key +
-    this.tagEndChar
-  );
-}
-
-function buildEmptyTextNode(val, key, attrStr, level) {
-  if (val !== '') {
-    return this.buildTextValNode(val, key, attrStr, level);
-  } else {
-    return this.indentate(level) + '<' + key + attrStr + '/' + this.tagEndChar;
-  }
-}
-
-function indentate(level) {
-  return this.options.indentBy.repeat(level);
-}
-
-function isAttribute(name /*, options*/) {
-  if (name.startsWith(this.options.attributeNamePrefix)) {
-    return name.substr(this.attrPrefixLen);
-  } else {
-    return false;
-  }
-}
-
-function isCDATA(name) {
-  return name === this.options.cdataTagName;
-}
-
-//formatting
-//indentation
-//\n after each closing or self closing tag
-
-module.exports = Parser;
-
-
-/***/ }),
-
-/***/ 1901:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-const char = function(a) {
-  return String.fromCharCode(a);
-};
-
-const chars = {
-  nilChar: char(176),
-  missingChar: char(201),
-  nilPremitive: char(175),
-  missingPremitive: char(200),
-
-  emptyChar: char(178),
-  emptyValue: char(177), //empty Premitive
-
-  boundryChar: char(179),
-
-  objStart: char(198),
-  arrStart: char(204),
-  arrayEnd: char(185),
-};
-
-const charsArr = [
-  chars.nilChar,
-  chars.nilPremitive,
-  chars.missingChar,
-  chars.missingPremitive,
-  chars.boundryChar,
-  chars.emptyChar,
-  chars.emptyValue,
-  chars.arrayEnd,
-  chars.objStart,
-  chars.arrStart,
-];
-
-const _e = function(node, e_schema, options) {
-  if (typeof e_schema === 'string') {
-    //premitive
-    if (node && node[0] && node[0].val !== undefined) {
-      return getValue(node[0].val, e_schema);
-    } else {
-      return getValue(node, e_schema);
-    }
-  } else {
-    const hasValidData = hasData(node);
-    if (hasValidData === true) {
-      let str = '';
-      if (Array.isArray(e_schema)) {
-        //attributes can't be repeated. hence check in children tags only
-        str += chars.arrStart;
-        const itemSchema = e_schema[0];
-        //var itemSchemaType = itemSchema;
-        const arr_len = node.length;
-
-        if (typeof itemSchema === 'string') {
-          for (let arr_i = 0; arr_i < arr_len; arr_i++) {
-            const r = getValue(node[arr_i].val, itemSchema);
-            str = processValue(str, r);
-          }
-        } else {
-          for (let arr_i = 0; arr_i < arr_len; arr_i++) {
-            const r = _e(node[arr_i], itemSchema, options);
-            str = processValue(str, r);
-          }
-        }
-        str += chars.arrayEnd; //indicates that next item is not array item
-      } else {
-        //object
-        str += chars.objStart;
-        const keys = Object.keys(e_schema);
-        if (Array.isArray(node)) {
-          node = node[0];
-        }
-        for (let i in keys) {
-          const key = keys[i];
-          //a property defined in schema can be present either in attrsMap or children tags
-          //options.textNodeName will not present in both maps, take it's value from val
-          //options.attrNodeName will be present in attrsMap
-          let r;
-          if (!options.ignoreAttributes && node.attrsMap && node.attrsMap[key]) {
-            r = _e(node.attrsMap[key], e_schema[key], options);
-          } else if (key === options.textNodeName) {
-            r = _e(node.val, e_schema[key], options);
-          } else {
-            r = _e(node.child[key], e_schema[key], options);
-          }
-          str = processValue(str, r);
-        }
-      }
-      return str;
-    } else {
-      return hasValidData;
-    }
-  }
-};
-
-const getValue = function(a /*, type*/) {
-  switch (a) {
-    case undefined:
-      return chars.missingPremitive;
-    case null:
-      return chars.nilPremitive;
-    case '':
-      return chars.emptyValue;
-    default:
-      return a;
-  }
-};
-
-const processValue = function(str, r) {
-  if (!isAppChar(r[0]) && !isAppChar(str[str.length - 1])) {
-    str += chars.boundryChar;
-  }
-  return str + r;
-};
-
-const isAppChar = function(ch) {
-  return charsArr.indexOf(ch) !== -1;
-};
-
-function hasData(jObj) {
-  if (jObj === undefined) {
-    return chars.missingChar;
-  } else if (jObj === null) {
-    return chars.nilChar;
-  } else if (
-    jObj.child &&
-    Object.keys(jObj.child).length === 0 &&
-    (!jObj.attrsMap || Object.keys(jObj.attrsMap).length === 0)
-  ) {
-    return chars.emptyChar;
-  } else {
-    return true;
-  }
-}
-
-const x2j = __nccwpck_require__(6712);
-const buildOptions = __nccwpck_require__(8280).buildOptions;
-
-const convert2nimn = function(node, e_schema, options) {
-  options = buildOptions(options, x2j.defaultOptions, x2j.props);
-  return _e(node, e_schema, options);
-};
-
-exports.convert2nimn = convert2nimn;
-
-
-/***/ }),
-
-/***/ 8270:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-
-const util = __nccwpck_require__(8280);
-
-const convertToJson = function(node, options, parentTagName) {
-  const jObj = {};
-
-  // when no child node or attr is present
-  if ((!node.child || util.isEmptyObject(node.child)) && (!node.attrsMap || util.isEmptyObject(node.attrsMap))) {
-    return util.isExist(node.val) ? node.val : '';
-  }
-
-  // otherwise create a textnode if node has some text
-  if (util.isExist(node.val) && !(typeof node.val === 'string' && (node.val === '' || node.val === options.cdataPositionChar))) {
-    const asArray = util.isTagNameInArrayMode(node.tagname, options.arrayMode, parentTagName)
-    jObj[options.textNodeName] = asArray ? [node.val] : node.val;
-  }
-
-  util.merge(jObj, node.attrsMap, options.arrayMode);
-
-  const keys = Object.keys(node.child);
-  for (let index = 0; index < keys.length; index++) {
-    const tagName = keys[index];
-    if (node.child[tagName] && node.child[tagName].length > 1) {
-      jObj[tagName] = [];
-      for (let tag in node.child[tagName]) {
-        if (node.child[tagName].hasOwnProperty(tag)) {
-          jObj[tagName].push(convertToJson(node.child[tagName][tag], options, tagName));
-        }
-      }
-    } else {
-      const result = convertToJson(node.child[tagName][0], options, tagName);
-      const asArray = (options.arrayMode === true && typeof result === 'object') || util.isTagNameInArrayMode(tagName, options.arrayMode, parentTagName);
-      jObj[tagName] = asArray ? [result] : result;
-    }
-  }
-
-  //add value
-  return jObj;
-};
-
-exports.convertToJson = convertToJson;
-
-
-/***/ }),
-
-/***/ 6014:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-
-const util = __nccwpck_require__(8280);
-const buildOptions = __nccwpck_require__(8280).buildOptions;
-const x2j = __nccwpck_require__(6712);
-
-//TODO: do it later
-const convertToJsonString = function(node, options) {
-  options = buildOptions(options, x2j.defaultOptions, x2j.props);
-
-  options.indentBy = options.indentBy || '';
-  return _cToJsonStr(node, options, 0);
-};
-
-const _cToJsonStr = function(node, options, level) {
-  let jObj = '{';
-
-  //traver through all the children
-  const keys = Object.keys(node.child);
-
-  for (let index = 0; index < keys.length; index++) {
-    var tagname = keys[index];
-    if (node.child[tagname] && node.child[tagname].length > 1) {
-      jObj += '"' + tagname + '" : [ ';
-      for (var tag in node.child[tagname]) {
-        jObj += _cToJsonStr(node.child[tagname][tag], options) + ' , ';
-      }
-      jObj = jObj.substr(0, jObj.length - 1) + ' ] '; //remove extra comma in last
-    } else {
-      jObj += '"' + tagname + '" : ' + _cToJsonStr(node.child[tagname][0], options) + ' ,';
-    }
-  }
-  util.merge(jObj, node.attrsMap);
-  //add attrsMap as new children
-  if (util.isEmptyObject(jObj)) {
-    return util.isExist(node.val) ? node.val : '';
-  } else {
-    if (util.isExist(node.val)) {
-      if (!(typeof node.val === 'string' && (node.val === '' || node.val === options.cdataPositionChar))) {
-        jObj += '"' + options.textNodeName + '" : ' + stringval(node.val);
-      }
-    }
-  }
-  //add value
-  if (jObj[jObj.length - 1] === ',') {
-    jObj = jObj.substr(0, jObj.length - 2);
-  }
-  return jObj + '}';
-};
-
-function stringval(v) {
-  if (v === true || v === false || !isNaN(v)) {
-    return v;
-  } else {
-    return '"' + v + '"';
-  }
-}
-
-function indentate(options, level) {
-  return options.indentBy.repeat(level);
-}
-
-exports.convertToJsonString = convertToJsonString;
-
-
-/***/ }),
-
-/***/ 7448:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-
-const nodeToJson = __nccwpck_require__(8270);
-const xmlToNodeobj = __nccwpck_require__(6712);
-const x2xmlnode = __nccwpck_require__(6712);
-const buildOptions = __nccwpck_require__(8280).buildOptions;
 const validator = __nccwpck_require__(1739);
+const XMLParser = __nccwpck_require__(2380);
+const XMLBuilder = __nccwpck_require__(660);
 
-exports.parse = function(xmlData, options, validationOption) {
-  if( validationOption){
-    if(validationOption === true) validationOption = {}
-    
-    const result = validator.validate(xmlData, validationOption);
-    if (result !== true) {
-      throw Error( result.err.msg)
-    }
-  }
-  options = buildOptions(options, x2xmlnode.defaultOptions, x2xmlnode.props);
-  const traversableObj = xmlToNodeobj.getTraversalObj(xmlData, options)
-  //print(traversableObj, "  ");
-  return nodeToJson.convertToJson(traversableObj, options);
-};
-exports.convertTonimn = __nccwpck_require__(1901).convert2nimn;
-exports.getTraversalObj = xmlToNodeobj.getTraversalObj;
-exports.convertToJson = nodeToJson.convertToJson;
-exports.convertToJsonString = __nccwpck_require__(6014).convertToJsonString;
-exports.validate = validator.validate;
-exports.j2xParser = __nccwpck_require__(5152);
-exports.parseToNimn = function(xmlData, schema, options) {
-  return exports.convertTonimn(exports.getTraversalObj(xmlData, options), schema, options);
-};
-
-
-function print(xmlNode, indentation){
-  if(xmlNode){
-    console.log(indentation + "{")
-    console.log(indentation + "  \"tagName\": \"" + xmlNode.tagname + "\", ");
-    if(xmlNode.parent){
-      console.log(indentation + "  \"parent\": \"" + xmlNode.parent.tagname  + "\", ");
-    }
-    console.log(indentation + "  \"val\": \"" + xmlNode.val  + "\", ");
-    console.log(indentation + "  \"attrs\": " + JSON.stringify(xmlNode.attrsMap,null,4)  + ", ");
-
-    if(xmlNode.child){
-      console.log(indentation + "\"child\": {")
-      const indentation2 = indentation + indentation;
-      Object.keys(xmlNode.child).forEach( function(key) {
-        const node = xmlNode.child[key];
-
-        if(Array.isArray(node)){
-          console.log(indentation +  "\""+key+"\" :[")
-          node.forEach( function(item,index) {
-            //console.log(indentation + " \""+index+"\" : [")
-            print(item, indentation2);
-          })
-          console.log(indentation + "],")  
-        }else{
-          console.log(indentation + " \""+key+"\" : {")
-          print(node, indentation2);
-          console.log(indentation + "},")  
-        }
-      });
-      console.log(indentation + "},")
-    }
-    console.log(indentation + "},")
-  }
+module.exports = {
+  XMLParser: XMLParser,
+  XMLValidator: validator,
+  XMLBuilder: XMLBuilder
 }
-
 
 /***/ }),
 
@@ -16584,6 +17842,7 @@ const getAllMatches = function(string, regex) {
   let match = regex.exec(string);
   while (match) {
     const allmatches = [];
+    allmatches.startIndex = regex.lastIndex - match[0].length;
     const len = match.length;
     for (let index = 0; index < len; index++) {
       allmatches.push(match[index]);
@@ -16640,42 +17899,6 @@ exports.getValue = function(v) {
 // const fakeCall = function(a) {return a;};
 // const fakeCallNoReturn = function() {};
 
-exports.buildOptions = function(options, defaultOptions, props) {
-  var newOptions = {};
-  if (!options) {
-    return defaultOptions; //if there are not options
-  }
-
-  for (let i = 0; i < props.length; i++) {
-    if (options[props[i]] !== undefined) {
-      newOptions[props[i]] = options[props[i]];
-    } else {
-      newOptions[props[i]] = defaultOptions[props[i]];
-    }
-  }
-  return newOptions;
-};
-
-/**
- * Check if a tag name should be treated as array
- *
- * @param tagName the node tagname
- * @param arrayMode the array mode option
- * @param parentTagName the parent tag name
- * @returns {boolean} true if node should be parsed as array
- */
-exports.isTagNameInArrayMode = function (tagName, arrayMode, parentTagName) {
-  if (arrayMode === false) {
-    return false;
-  } else if (arrayMode instanceof RegExp) {
-    return arrayMode.test(tagName);
-  } else if (typeof arrayMode === 'function') {
-    return !!arrayMode(tagName, parentTagName);
-  }
-
-  return arrayMode === "strict";
-}
-
 exports.isName = isName;
 exports.getAllMatches = getAllMatches;
 exports.nameRegexp = nameRegexp;
@@ -16693,13 +17916,12 @@ const util = __nccwpck_require__(8280);
 
 const defaultOptions = {
   allowBooleanAttributes: false, //A tag can have attributes without any value
+  unpairedTags: []
 };
-
-const props = ['allowBooleanAttributes'];
 
 //const tagsPattern = new RegExp("<\\/?([\\w:\\-_\.]+)\\s*\/?>","g");
 exports.validate = function (xmlData, options) {
-  options = util.buildOptions(options, defaultOptions, props);
+  options = Object.assign({}, defaultOptions, options);
 
   //xmlData = xmlData.replace(/(\r\n|\n|\r)/gm,"");//make it single line
   //xmlData = xmlData.replace(/(^\s*<\?xml.*?\?>)/g,"");//Remove XML starting tag
@@ -16714,7 +17936,7 @@ exports.validate = function (xmlData, options) {
     // check for byte order mark (BOM)
     xmlData = xmlData.substr(1);
   }
-
+  
   for (let i = 0; i < xmlData.length; i++) {
 
     if (xmlData[i] === '<' && xmlData[i+1] === '?') {
@@ -16724,7 +17946,7 @@ exports.validate = function (xmlData, options) {
     }else if (xmlData[i] === '<') {
       //starting of tag
       //read until you reach to '>' avoiding any '>' in attribute value
-
+      let tagStartPos = i;
       i++;
       
       if (xmlData[i] === '!') {
@@ -16760,7 +17982,7 @@ exports.validate = function (xmlData, options) {
         if (!validateTagName(tagName)) {
           let msg;
           if (tagName.trim().length === 0) {
-            msg = "There is an unnecessary space between tag name and backward slash '</ ..'.";
+            msg = "Invalid space after '<'.";
           } else {
             msg = "Tag '"+tagName+"' is an invalid name.";
           }
@@ -16776,6 +17998,7 @@ exports.validate = function (xmlData, options) {
 
         if (attrStr[attrStr.length - 1] === '/') {
           //self closing tag
+          const attrStrStart = i - attrStr.length;
           attrStr = attrStr.substring(0, attrStr.length - 1);
           const isValid = validateAttributeString(attrStr, options);
           if (isValid === true) {
@@ -16785,17 +18008,20 @@ exports.validate = function (xmlData, options) {
             //the result from the nested function returns the position of the error within the attribute
             //in order to get the 'true' error line, we need to calculate the position where the attribute begins (i - attrStr.length) and then add the position within the attribute
             //this gives us the absolute index in the entire xml, which we can use to find the line at last
-            return getErrorObject(isValid.err.code, isValid.err.msg, getLineNumberForPosition(xmlData, i - attrStr.length + isValid.err.line));
+            return getErrorObject(isValid.err.code, isValid.err.msg, getLineNumberForPosition(xmlData, attrStrStart + isValid.err.line));
           }
         } else if (closingTag) {
           if (!result.tagClosed) {
             return getErrorObject('InvalidTag', "Closing tag '"+tagName+"' doesn't have proper closing.", getLineNumberForPosition(xmlData, i));
           } else if (attrStr.trim().length > 0) {
-            return getErrorObject('InvalidTag', "Closing tag '"+tagName+"' can't have attributes or invalid starting.", getLineNumberForPosition(xmlData, i));
+            return getErrorObject('InvalidTag', "Closing tag '"+tagName+"' can't have attributes or invalid starting.", getLineNumberForPosition(xmlData, tagStartPos));
           } else {
             const otg = tags.pop();
-            if (tagName !== otg) {
-              return getErrorObject('InvalidTag', "Closing tag '"+otg+"' is expected inplace of '"+tagName+"'.", getLineNumberForPosition(xmlData, i));
+            if (tagName !== otg.tagName) {
+              let openPos = getLineNumberForPosition(xmlData, otg.tagStartPos);
+              return getErrorObject('InvalidTag',
+                "Expected closing tag '"+otg.tagName+"' (opened in line "+openPos.line+", col "+openPos.col+") instead of closing tag '"+tagName+"'.",
+                getLineNumberForPosition(xmlData, tagStartPos));
             }
 
             //when there are no more tags, we reached the root level.
@@ -16815,8 +18041,10 @@ exports.validate = function (xmlData, options) {
           //if the root level has been reached before ...
           if (reachedRoot === true) {
             return getErrorObject('InvalidXml', 'Multiple possible root nodes found.', getLineNumberForPosition(xmlData, i));
+          } else if(options.unpairedTags.indexOf(tagName) !== -1){
+            //don't push into stack
           } else {
-            tags.push(tagName);
+            tags.push({tagName, tagStartPos});
           }
           tagFound = true;
         }
@@ -16841,6 +18069,10 @@ exports.validate = function (xmlData, options) {
             if (afterAmp == -1)
               return getErrorObject('InvalidChar', "char '&' is not expected.", getLineNumberForPosition(xmlData, i));
             i = afterAmp;
+          }else{
+            if (reachedRoot === true && !isWhiteSpace(xmlData[i])) {
+              return getErrorObject('InvalidXml', "Extra text at the end", getLineNumberForPosition(xmlData, i));
+            }
           }
         } //end of reading tag text value
         if (xmlData[i] === '<') {
@@ -16848,7 +18080,7 @@ exports.validate = function (xmlData, options) {
         }
       }
     } else {
-      if (xmlData[i] === ' ' || xmlData[i] === '\t' || xmlData[i] === '\n' || xmlData[i] === '\r') {
+      if ( isWhiteSpace(xmlData[i])) {
         continue;
       }
       return getErrorObject('InvalidChar', "char '"+xmlData[i]+"' is not expected.", getLineNumberForPosition(xmlData, i));
@@ -16857,24 +18089,31 @@ exports.validate = function (xmlData, options) {
 
   if (!tagFound) {
     return getErrorObject('InvalidXml', 'Start tag expected.', 1);
-  } else if (tags.length > 0) {
-    return getErrorObject('InvalidXml', "Invalid '"+JSON.stringify(tags, null, 4).replace(/\r?\n/g, '')+"' found.", 1);
+  }else if (tags.length == 1) {
+      return getErrorObject('InvalidTag', "Unclosed tag '"+tags[0].tagName+"'.", getLineNumberForPosition(xmlData, tags[0].tagStartPos));
+  }else if (tags.length > 0) {
+      return getErrorObject('InvalidXml', "Invalid '"+
+          JSON.stringify(tags.map(t => t.tagName), null, 4).replace(/\r?\n/g, '')+
+          "' found.", {line: 1, col: 1});
   }
 
   return true;
 };
 
+function isWhiteSpace(char){
+  return char === ' ' || char === '\t' || char === '\n'  || char === '\r';
+}
 /**
  * Read Processing insstructions and skip
  * @param {*} xmlData
  * @param {*} i
  */
 function readPI(xmlData, i) {
-  var start = i;
+  const start = i;
   for (; i < xmlData.length; i++) {
     if (xmlData[i] == '?' || xmlData[i] == ' ') {
       //tagname
-      var tagname = xmlData.substr(start, i - start);
+      const tagname = xmlData.substr(start, i - start);
       if (i > 5 && tagname === 'xml') {
         return getErrorObject('InvalidXml', 'XML declaration allowed only at the start of the document.', getLineNumberForPosition(xmlData, i));
       } else if (xmlData[i] == '?' && xmlData[i + 1] == '>') {
@@ -16940,8 +18179,8 @@ function readCommentAndCDATA(xmlData, i) {
   return i;
 }
 
-var doubleQuote = '"';
-var singleQuote = "'";
+const doubleQuote = '"';
+const singleQuote = "'";
 
 /**
  * Keep reading xmlData until '<' is found outside the attribute value.
@@ -16958,7 +18197,6 @@ function readAttributeStr(xmlData, i) {
         startChar = xmlData[i];
       } else if (startChar !== xmlData[i]) {
         //if vaue is enclosed with double quote then single quotes are allowed inside the value and vice versa
-        continue;
       } else {
         startChar = '';
       }
@@ -16999,23 +18237,25 @@ function validateAttributeString(attrStr, options) {
   for (let i = 0; i < matches.length; i++) {
     if (matches[i][1].length === 0) {
       //nospace before attribute name: a="sd"b="saf"
-      return getErrorObject('InvalidAttr', "Attribute '"+matches[i][2]+"' has no space in starting.", getPositionFromMatch(attrStr, matches[i][0]))
+      return getErrorObject('InvalidAttr', "Attribute '"+matches[i][2]+"' has no space in starting.", getPositionFromMatch(matches[i]))
+    } else if (matches[i][3] !== undefined && matches[i][4] === undefined) {
+      return getErrorObject('InvalidAttr', "Attribute '"+matches[i][2]+"' is without value.", getPositionFromMatch(matches[i]));
     } else if (matches[i][3] === undefined && !options.allowBooleanAttributes) {
       //independent attribute: ab
-      return getErrorObject('InvalidAttr', "boolean attribute '"+matches[i][2]+"' is not allowed.", getPositionFromMatch(attrStr, matches[i][0]));
+      return getErrorObject('InvalidAttr', "boolean attribute '"+matches[i][2]+"' is not allowed.", getPositionFromMatch(matches[i]));
     }
     /* else if(matches[i][6] === undefined){//attribute without value: ab=
                     return { err: { code:"InvalidAttr",msg:"attribute " + matches[i][2] + " has no value assigned."}};
                 } */
     const attrName = matches[i][2];
     if (!validateAttrName(attrName)) {
-      return getErrorObject('InvalidAttr', "Attribute '"+attrName+"' is an invalid name.", getPositionFromMatch(attrStr, matches[i][0]));
+      return getErrorObject('InvalidAttr', "Attribute '"+attrName+"' is an invalid name.", getPositionFromMatch(matches[i]));
     }
     if (!attrNames.hasOwnProperty(attrName)) {
       //check for duplicate attribute.
       attrNames[attrName] = 1;
     } else {
-      return getErrorObject('InvalidAttr', "Attribute '"+attrName+"' is repeated.", getPositionFromMatch(attrStr, matches[i][0]));
+      return getErrorObject('InvalidAttr', "Attribute '"+attrName+"' is repeated.", getPositionFromMatch(matches[i]));
     }
   }
 
@@ -17062,7 +18302,8 @@ function getErrorObject(code, message, lineNumber) {
     err: {
       code: code,
       msg: message,
-      line: lineNumber,
+      line: lineNumber.line || lineNumber,
+      col: lineNumber.col,
     },
   };
 }
@@ -17079,52 +18320,587 @@ function validateTagName(tagname) {
 
 //this function returns the line number for the character at the given index
 function getLineNumberForPosition(xmlData, index) {
-  var lines = xmlData.substring(0, index).split(/\r?\n/);
-  return lines.length;
+  const lines = xmlData.substring(0, index).split(/\r?\n/);
+  return {
+    line: lines.length,
+
+    // column number is last line's length + 1, because column numbering starts at 1:
+    col: lines[lines.length - 1].length + 1
+  };
 }
 
-//this function returns the position of the last character of match within attrStr
-function getPositionFromMatch(attrStr, match) {
-  return attrStr.indexOf(match) + match.length;
+//this function returns the position of the first character of match within attrStr
+function getPositionFromMatch(match) {
+  return match.startIndex + match[1].length;
 }
 
 
 /***/ }),
 
-/***/ 9539:
-/***/ ((module) => {
+/***/ 660:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
+//parse Empty Node as self closing node
+const buildFromOrderedJs = __nccwpck_require__(2462);
 
-module.exports = function(tagname, parent, val) {
-  this.tagname = tagname;
-  this.parent = parent;
-  this.child = {}; //child tags
-  this.attrsMap = {}; //attributes map
-  this.val = val; //text only
-  this.addChild = function(child) {
-    if (Array.isArray(this.child[child.tagname])) {
-      //already presents
-      this.child[child.tagname].push(child);
-    } else {
-      this.child[child.tagname] = [child];
-    }
-  };
+const defaultOptions = {
+  attributeNamePrefix: '@_',
+  attributesGroupName: false,
+  textNodeName: '#text',
+  ignoreAttributes: true,
+  cdataPropName: false,
+  format: false,
+  indentBy: '  ',
+  suppressEmptyNode: false,
+  suppressUnpairedNode: true,
+  suppressBooleanAttributes: true,
+  tagValueProcessor: function(key, a) {
+    return a;
+  },
+  attributeValueProcessor: function(attrName, a) {
+    return a;
+  },
+  preserveOrder: false,
+  commentPropName: false,
+  unpairedTags: [],
+  entities: [
+    { regex: new RegExp("&", "g"), val: "&amp;" },//it must be on top
+    { regex: new RegExp(">", "g"), val: "&gt;" },
+    { regex: new RegExp("<", "g"), val: "&lt;" },
+    { regex: new RegExp("\'", "g"), val: "&apos;" },
+    { regex: new RegExp("\"", "g"), val: "&quot;" }
+  ],
+  processEntities: true,
+  stopNodes: [],
+  transformTagName: false,
 };
 
+function Builder(options) {
+  this.options = Object.assign({}, defaultOptions, options);
+  if (this.options.ignoreAttributes || this.options.attributesGroupName) {
+    this.isAttribute = function(/*a*/) {
+      return false;
+    };
+  } else {
+    this.attrPrefixLen = this.options.attributeNamePrefix.length;
+    this.isAttribute = isAttribute;
+  }
+
+  this.processTextOrObjNode = processTextOrObjNode
+
+  if (this.options.format) {
+    this.indentate = indentate;
+    this.tagEndChar = '>\n';
+    this.newLine = '\n';
+  } else {
+    this.indentate = function() {
+      return '';
+    };
+    this.tagEndChar = '>';
+    this.newLine = '';
+  }
+
+  if (this.options.suppressEmptyNode) {
+    this.buildTextNode = buildEmptyTextNode;
+    this.buildObjNode = buildEmptyObjNode;
+  } else {
+    this.buildTextNode = buildTextValNode;
+    this.buildObjNode = buildObjectNode;
+  }
+
+  this.buildTextValNode = buildTextValNode;
+  this.buildObjectNode = buildObjectNode;
+
+  this.replaceEntitiesValue = replaceEntitiesValue;
+  this.buildAttrPairStr = buildAttrPairStr;
+}
+
+Builder.prototype.build = function(jObj) {
+  if(this.options.preserveOrder){
+    return buildFromOrderedJs(jObj, this.options);
+  }else {
+    if(Array.isArray(jObj) && this.options.arrayNodeName && this.options.arrayNodeName.length > 1){
+      jObj = {
+        [this.options.arrayNodeName] : jObj
+      }
+    }
+    return this.j2x(jObj, 0).val;
+  }
+};
+
+Builder.prototype.j2x = function(jObj, level) {
+  let attrStr = '';
+  let val = '';
+  for (let key in jObj) {
+    if (typeof jObj[key] === 'undefined') {
+      // supress undefined node
+    } else if (jObj[key] === null) {
+      if(key[0] === "?") val += this.indentate(level) + '<' + key + '?' + this.tagEndChar;
+      else val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
+      // val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
+    } else if (jObj[key] instanceof Date) {
+      val += this.buildTextNode(jObj[key], key, '', level);
+    } else if (typeof jObj[key] !== 'object') {
+      //premitive type
+      const attr = this.isAttribute(key);
+      if (attr) {
+        attrStr += this.buildAttrPairStr(attr, '' + jObj[key]);
+      }else {
+        //tag value
+        if (key === this.options.textNodeName) {
+          let newval = this.options.tagValueProcessor(key, '' + jObj[key]);
+          val += this.replaceEntitiesValue(newval);
+        } else {
+          val += this.buildTextNode(jObj[key], key, '', level);
+        }
+      }
+    } else if (Array.isArray(jObj[key])) {
+      //repeated nodes
+      const arrLen = jObj[key].length;
+      for (let j = 0; j < arrLen; j++) {
+        const item = jObj[key][j];
+        if (typeof item === 'undefined') {
+          // supress undefined node
+        } else if (item === null) {
+          if(key[0] === "?") val += this.indentate(level) + '<' + key + '?' + this.tagEndChar;
+          else val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
+          // val += this.indentate(level) + '<' + key + '/' + this.tagEndChar;
+        } else if (typeof item === 'object') {
+          val += this.processTextOrObjNode(item, key, level)
+        } else {
+          val += this.buildTextNode(item, key, '', level);
+        }
+      }
+    } else {
+      //nested node
+      if (this.options.attributesGroupName && key === this.options.attributesGroupName) {
+        const Ks = Object.keys(jObj[key]);
+        const L = Ks.length;
+        for (let j = 0; j < L; j++) {
+          attrStr += this.buildAttrPairStr(Ks[j], '' + jObj[key][Ks[j]]);
+        }
+      } else {
+        val += this.processTextOrObjNode(jObj[key], key, level)
+      }
+    }
+  }
+  return {attrStr: attrStr, val: val};
+};
+
+function buildAttrPairStr(attrName, val){
+  val = this.options.attributeValueProcessor(attrName, '' + val);
+  val = this.replaceEntitiesValue(val);
+  if (this.options.suppressBooleanAttributes && val === "true") {
+    return ' ' + attrName;
+  } else return ' ' + attrName + '="' + val + '"';
+}
+
+function processTextOrObjNode (object, key, level) {
+  const result = this.j2x(object, level + 1);
+  if (object[this.options.textNodeName] !== undefined && Object.keys(object).length === 1) {
+    return this.buildTextNode(object[this.options.textNodeName], key, result.attrStr, level);
+  } else {
+    return this.buildObjNode(result.val, key, result.attrStr, level);
+  }
+}
+
+function buildObjectNode(val, key, attrStr, level) {
+  let tagEndExp = '</' + key + this.tagEndChar;
+  let piClosingChar = "";
+  
+  if(key[0] === "?") {
+    piClosingChar = "?";
+    tagEndExp = "";
+  }
+
+  if (attrStr && val.indexOf('<') === -1) {
+    return ( this.indentate(level) + '<' +  key + attrStr + piClosingChar + '>' + val + tagEndExp );
+  } else if (this.options.commentPropName !== false && key === this.options.commentPropName && piClosingChar.length === 0) {
+    return this.indentate(level) + `<!--${val}-->` + this.newLine;
+  }else {
+    return (
+      this.indentate(level) + '<' + key + attrStr + piClosingChar + this.tagEndChar +
+      val +
+      this.indentate(level) + tagEndExp    );
+  }
+}
+
+function buildEmptyObjNode(val, key, attrStr, level) {
+  if (val !== '') {
+    return this.buildObjectNode(val, key, attrStr, level);
+  } else {
+    if(key[0] === "?") return  this.indentate(level) + '<' + key + attrStr+ '?' + this.tagEndChar;
+    else return  this.indentate(level) + '<' + key + attrStr + '/' + this.tagEndChar;
+  }
+}
+
+function buildTextValNode(val, key, attrStr, level) {
+  if (this.options.cdataPropName !== false && key === this.options.cdataPropName) {
+    return this.indentate(level) + `<![CDATA[${val}]]>` +  this.newLine;
+  }else if (this.options.commentPropName !== false && key === this.options.commentPropName) {
+    return this.indentate(level) + `<!--${val}-->` +  this.newLine;
+  }else{
+    let textValue = this.options.tagValueProcessor(key, val);
+    textValue = this.replaceEntitiesValue(textValue);
+  
+    if( textValue === '' && this.options.unpairedTags.indexOf(key) !== -1){ //unpaired
+      if(this.options.suppressUnpairedNode){
+        return this.indentate(level) + '<' + key + this.tagEndChar;
+      }else{
+        return this.indentate(level) + '<' + key + "/" + this.tagEndChar;
+      }
+    } else{
+      return (
+        this.indentate(level) + '<' + key + attrStr + '>' +
+         textValue +
+        '</' + key + this.tagEndChar  );
+    }
+
+  }
+}
+
+function replaceEntitiesValue(textValue){
+  if(textValue && textValue.length > 0 && this.options.processEntities){
+    for (let i=0; i<this.options.entities.length; i++) {
+      const entity = this.options.entities[i];
+      textValue = textValue.replace(entity.regex, entity.val);
+    }
+  }
+  return textValue;
+}
+
+function buildEmptyTextNode(val, key, attrStr, level) {
+  if( val === '' && this.options.unpairedTags.indexOf(key) !== -1){ //unpaired
+    if(this.options.suppressUnpairedNode){
+      return this.indentate(level) + '<' + key + this.tagEndChar;
+    }else{
+      return this.indentate(level) + '<' + key + "/" + this.tagEndChar;
+    }
+  }else if (val !== '') { //empty
+    return this.buildTextValNode(val, key, attrStr, level);
+  } else {
+    if(key[0] === "?") return  this.indentate(level) + '<' + key + attrStr+ '?' + this.tagEndChar; //PI tag
+    else return  this.indentate(level) + '<' + key + attrStr + '/' + this.tagEndChar; //normal
+  }
+}
+
+function indentate(level) {
+  return this.options.indentBy.repeat(level);
+}
+
+function isAttribute(name /*, options*/) {
+  if (name.startsWith(this.options.attributeNamePrefix)) {
+    return name.substr(this.attrPrefixLen);
+  } else {
+    return false;
+  }
+}
+
+module.exports = Builder;
+
 
 /***/ }),
 
-/***/ 6712:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+/***/ 2462:
+/***/ ((module) => {
+
+const EOL = "\n";
+
+/**
+ * 
+ * @param {array} jArray 
+ * @param {any} options 
+ * @returns 
+ */
+function toXml(jArray, options){
+    return arrToStr( jArray, options, "", 0);
+}
+
+function arrToStr(arr, options, jPath, level){
+    let xmlStr = "";
+
+    let indentation = "";
+    if(options.format && options.indentBy.length > 0){//TODO: this logic can be avoided for each call
+        indentation = EOL + "" + options.indentBy.repeat(level);
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+        const tagObj = arr[i];
+        const tagName = propName(tagObj);
+        let newJPath = "";
+        if(jPath.length === 0) newJPath = tagName
+        else newJPath = `${jPath}.${tagName}`;
+
+        if(tagName === options.textNodeName){
+            let tagText = tagObj[tagName];
+            if(!isStopNode(newJPath, options)){
+                tagText = options.tagValueProcessor( tagName, tagText);
+                tagText = replaceEntitiesValue(tagText, options);
+            }
+            xmlStr += indentation + tagText;
+            continue;
+        }else if( tagName === options.cdataPropName){
+            xmlStr += indentation + `<![CDATA[${tagObj[tagName][0][options.textNodeName]}]]>`;
+            continue;
+        }else if( tagName === options.commentPropName){
+            xmlStr += indentation + `<!--${tagObj[tagName][0][options.textNodeName]}-->`;
+            continue;
+        }else if( tagName[0] === "?"){
+            const attStr = attr_to_str(tagObj[":@"], options);
+            const tempInd = tagName === "?xml" ? "" : indentation;
+            let piTextNodeName = tagObj[tagName][0][options.textNodeName];
+            piTextNodeName = piTextNodeName.length !== 0 ? " " + piTextNodeName : ""; //remove extra spacing
+            xmlStr += tempInd + `<${tagName}${piTextNodeName}${attStr}?>`;
+            continue;
+        }
+        const attStr = attr_to_str(tagObj[":@"], options);
+        let tagStart =  indentation + `<${tagName}${attStr}`;
+        let tagValue = arrToStr(tagObj[tagName], options, newJPath, level + 1);
+        if(options.unpairedTags.indexOf(tagName) !== -1){
+            if(options.suppressUnpairedNode)  xmlStr += tagStart + ">"; 
+            else xmlStr += tagStart + "/>"; 
+        }else if( (!tagValue || tagValue.length === 0) && options.suppressEmptyNode){ 
+            xmlStr += tagStart + "/>"; 
+        }else{ 
+            //TODO: node with only text value should not parse the text value in next line
+            xmlStr += tagStart + `>${tagValue}${indentation}</${tagName}>` ;
+        }
+    }
+    
+    return xmlStr;
+}
+
+function propName(obj){
+    const keys = Object.keys(obj);
+    for (let i = 0; i < keys.length; i++) {
+      const key = keys[i];
+      if(key !== ":@") return key;
+    }
+  }
+
+function attr_to_str(attrMap, options){
+    let attrStr = "";
+    if(attrMap && !options.ignoreAttributes){
+        for (let attr in attrMap){
+            let attrVal = options.attributeValueProcessor(attr, attrMap[attr]);
+            attrVal = replaceEntitiesValue(attrVal, options);
+            if(attrVal === true && options.suppressBooleanAttributes){
+                attrStr+= ` ${attr.substr(options.attributeNamePrefix.length)}`;
+            }else{
+                attrStr+= ` ${attr.substr(options.attributeNamePrefix.length)}="${attrVal}"`;
+            }
+        }
+    }
+    return attrStr;
+}
+
+function isStopNode(jPath, options){
+    jPath = jPath.substr(0,jPath.length - options.textNodeName.length - 1);
+    let tagName = jPath.substr(jPath.lastIndexOf(".") + 1);
+    for(let index in options.stopNodes){
+        if(options.stopNodes[index] === jPath || options.stopNodes[index] === "*."+tagName) return true;
+    }
+    return false;
+}
+
+function replaceEntitiesValue(textValue, options){
+    if(textValue && textValue.length > 0 && options.processEntities){
+      for (let i=0; i< options.entities.length; i++) {
+        const entity = options.entities[i];
+        textValue = textValue.replace(entity.regex, entity.val);
+      }
+    }
+    return textValue;
+  }
+module.exports = toXml;
+
+/***/ }),
+
+/***/ 6072:
+/***/ ((module) => {
+
+//TODO: handle comments
+function readDocType(xmlData, i){
+    
+    const entities = {};
+    if( xmlData[i + 3] === 'O' &&
+         xmlData[i + 4] === 'C' &&
+         xmlData[i + 5] === 'T' &&
+         xmlData[i + 6] === 'Y' &&
+         xmlData[i + 7] === 'P' &&
+         xmlData[i + 8] === 'E')
+    {    
+        i = i+9;
+        let angleBracketsCount = 1;
+        let hasBody = false, entity = false, comment = false;
+        let exp = "";
+        for(;i<xmlData.length;i++){
+            if (xmlData[i] === '<') {
+                if( hasBody && 
+                     xmlData[i+1] === '!' &&
+                     xmlData[i+2] === 'E' &&
+                     xmlData[i+3] === 'N' &&
+                     xmlData[i+4] === 'T' &&
+                     xmlData[i+5] === 'I' &&
+                     xmlData[i+6] === 'T' &&
+                     xmlData[i+7] === 'Y'
+                ){
+                    i += 7;
+                    entity = true;
+                }else if( hasBody && 
+                    xmlData[i+1] === '!' &&
+                     xmlData[i+2] === 'E' &&
+                     xmlData[i+3] === 'L' &&
+                     xmlData[i+4] === 'E' &&
+                     xmlData[i+5] === 'M' &&
+                     xmlData[i+6] === 'E' &&
+                     xmlData[i+7] === 'N' &&
+                     xmlData[i+8] === 'T'
+                ){
+                    //Not supported
+                    i += 8;
+                }else if( hasBody && 
+                    xmlData[i+1] === '!' &&
+                    xmlData[i+2] === 'A' &&
+                    xmlData[i+3] === 'T' &&
+                    xmlData[i+4] === 'T' &&
+                    xmlData[i+5] === 'L' &&
+                    xmlData[i+6] === 'I' &&
+                    xmlData[i+7] === 'S' &&
+                    xmlData[i+8] === 'T'
+                ){
+                    //Not supported
+                    i += 8;
+                }else if( hasBody && 
+                    xmlData[i+1] === '!' &&
+                    xmlData[i+2] === 'N' &&
+                    xmlData[i+3] === 'O' &&
+                    xmlData[i+4] === 'T' &&
+                    xmlData[i+5] === 'A' &&
+                    xmlData[i+6] === 'T' &&
+                    xmlData[i+7] === 'I' &&
+                    xmlData[i+8] === 'O' &&
+                    xmlData[i+9] === 'N'
+                ){
+                    //Not supported
+                    i += 9;
+                }else if( //comment
+                    xmlData[i+1] === '!' &&
+                    xmlData[i+2] === '-' &&
+                    xmlData[i+3] === '-'
+                ){
+                    comment = true;
+                }else{
+                    throw new Error("Invalid DOCTYPE");
+                }
+                angleBracketsCount++;
+                exp = "";
+            } else if (xmlData[i] === '>') {
+                if(comment){
+                    if( xmlData[i - 1] === "-" && xmlData[i - 2] === "-"){
+                        comment = false;
+                    }else{
+                        throw new Error(`Invalid XML comment in DOCTYPE`);
+                    }
+                }else if(entity){
+                    parseEntityExp(exp, entities);
+                    entity = false;
+                }
+                angleBracketsCount--;
+                if (angleBracketsCount === 0) {
+                  break;
+                }
+            }else if( xmlData[i] === '['){
+                hasBody = true;
+            }else{
+                exp += xmlData[i];
+            }
+        }
+        if(angleBracketsCount !== 0){
+            throw new Error(`Unclosed DOCTYPE`);
+        }
+    }else{
+        throw new Error(`Invalid Tag instead of DOCTYPE`);
+    }
+    return {entities, i};
+}
+
+const entityRegex = RegExp("^\\s([a-zA-z0-0]+)[ \t](['\"])([^&]+)\\2");
+function parseEntityExp(exp, entities){
+    const match = entityRegex.exec(exp);
+    if(match){
+        entities[ match[1] ] = {
+            regx : RegExp( `&${match[1]};`,"g"),
+            val: match[3]
+        };
+    }
+}
+module.exports = readDocType;
+
+/***/ }),
+
+/***/ 6993:
+/***/ ((__unused_webpack_module, exports) => {
+
+
+const defaultOptions = {
+    preserveOrder: false,
+    attributeNamePrefix: '@_',
+    attributesGroupName: false,
+    textNodeName: '#text',
+    ignoreAttributes: true,
+    removeNSPrefix: false, // remove NS from tag name or attribute name if true
+    allowBooleanAttributes: false, //a tag can have attributes without any value
+    //ignoreRootElement : false,
+    parseTagValue: true,
+    parseAttributeValue: false,
+    trimValues: true, //Trim string values of tag and attributes
+    cdataPropName: false,
+    numberParseOptions: {
+      hex: true,
+      leadingZeros: true
+    },
+    tagValueProcessor: function(tagName, val) {
+      return val;
+    },
+    attributeValueProcessor: function(attrName, val) {
+      return val;
+    },
+    stopNodes: [], //nested tags will not be parsed even for errors
+    alwaysCreateTextNode: false,
+    isArray: () => false,
+    commentPropName: false,
+    unpairedTags: [],
+    processEntities: true,
+    htmlEntities: false,
+    ignoreDeclaration: false,
+    ignorePiTags: false,
+    transformTagName: false,
+};
+   
+const buildOptions = function(options) {
+    return Object.assign({}, defaultOptions, options);
+};
+
+exports.buildOptions = buildOptions;
+exports.defaultOptions = defaultOptions;
+
+/***/ }),
+
+/***/ 5832:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
 
+///@ts-check
 
 const util = __nccwpck_require__(8280);
-const buildOptions = __nccwpck_require__(8280).buildOptions;
-const xmlNode = __nccwpck_require__(9539);
+const xmlNode = __nccwpck_require__(7462);
+const readDocType = __nccwpck_require__(6072);
+const toNumber = __nccwpck_require__(4526);
+
 const regx =
   '<((!\\[CDATA\\[([\\s\\S]*?)(]]>))|((NAME:)?(NAME))([^>]*)>|((\\/)(NAME)\\s*>))([^<]*)'
   .replace(/NAME/g, util.nameRegexp);
@@ -17132,80 +18908,98 @@ const regx =
 //const tagsRegx = new RegExp("<(\\/?[\\w:\\-\._]+)([^>]*)>(\\s*"+cdataRegx+")*([^<]+)?","g");
 //const tagsRegx = new RegExp("<(\\/?)((\\w*:)?([\\w:\\-\._]+))([^>]*)>([^<]*)("+cdataRegx+"([^<]*))*([^<]+)?","g");
 
-//polyfill
-if (!Number.parseInt && window.parseInt) {
-  Number.parseInt = window.parseInt;
-}
-if (!Number.parseFloat && window.parseFloat) {
-  Number.parseFloat = window.parseFloat;
-}
-
-const defaultOptions = {
-  attributeNamePrefix: '@_',
-  attrNodeName: false,
-  textNodeName: '#text',
-  ignoreAttributes: true,
-  ignoreNameSpace: false,
-  allowBooleanAttributes: false, //a tag can have attributes without any value
-  //ignoreRootElement : false,
-  parseNodeValue: true,
-  parseAttributeValue: false,
-  arrayMode: false,
-  trimValues: true, //Trim string values of tag and attributes
-  cdataTagName: false,
-  cdataPositionChar: '\\c',
-  tagValueProcessor: function(a, tagName) {
-    return a;
-  },
-  attrValueProcessor: function(a, attrName) {
-    return a;
-  },
-  stopNodes: []
-  //decodeStrict: false,
-};
-
-exports.defaultOptions = defaultOptions;
-
-const props = [
-  'attributeNamePrefix',
-  'attrNodeName',
-  'textNodeName',
-  'ignoreAttributes',
-  'ignoreNameSpace',
-  'allowBooleanAttributes',
-  'parseNodeValue',
-  'parseAttributeValue',
-  'arrayMode',
-  'trimValues',
-  'cdataTagName',
-  'cdataPositionChar',
-  'tagValueProcessor',
-  'attrValueProcessor',
-  'parseTrueNumberOnly',
-  'stopNodes'
-];
-exports.props = props;
-
-/**
- * Trim -> valueProcessor -> parse value
- * @param {string} tagName
- * @param {string} val
- * @param {object} options
- */
-function processTagValue(tagName, val, options) {
-  if (val) {
-    if (options.trimValues) {
-      val = val.trim();
-    }
-    val = options.tagValueProcessor(val, tagName);
-    val = parseValue(val, options.parseNodeValue, options.parseTrueNumberOnly);
+class OrderedObjParser{
+  constructor(options){
+    this.options = options;
+    this.currentNode = null;
+    this.tagsNodeStack = [];
+    this.docTypeEntities = {};
+    this.lastEntities = {
+      "apos" : { regex: /&(apos|#39|#x27);/g, val : "'"},
+      "gt" : { regex: /&(gt|#62|#x3E);/g, val : ">"},
+      "lt" : { regex: /&(lt|#60|#x3C);/g, val : "<"},
+      "quot" : { regex: /&(quot|#34|#x22);/g, val : "\""},
+    };
+    this.ampEntity = { regex: /&(amp|#38|#x26);/g, val : "&"};
+    this.htmlEntities = {
+      "space": { regex: /&(nbsp|#160);/g, val: " " },
+      // "lt" : { regex: /&(lt|#60);/g, val: "<" },
+      // "gt" : { regex: /&(gt|#62);/g, val: ">" },
+      // "amp" : { regex: /&(amp|#38);/g, val: "&" },
+      // "quot" : { regex: /&(quot|#34);/g, val: "\"" },
+      // "apos" : { regex: /&(apos|#39);/g, val: "'" },
+      "cent" : { regex: /&(cent|#162);/g, val: "¢" },
+      "pound" : { regex: /&(pound|#163);/g, val: "£" },
+      "yen" : { regex: /&(yen|#165);/g, val: "¥" },
+      "euro" : { regex: /&(euro|#8364);/g, val: "€" },
+      "copyright" : { regex: /&(copy|#169);/g, val: "©" },
+      "reg" : { regex: /&(reg|#174);/g, val: "®" },
+      "inr" : { regex: /&(inr|#8377);/g, val: "₹" },
+    };
+    this.addExternalEntities = addExternalEntities;
+    this.parseXml = parseXml;
+    this.parseTextData = parseTextData;
+    this.resolveNameSpace = resolveNameSpace;
+    this.buildAttributesMap = buildAttributesMap;
+    this.isItStopNode = isItStopNode;
+    this.replaceEntitiesValue = replaceEntitiesValue;
+    this.readStopNodeData = readStopNodeData;
+    this.saveTextToParentTag = saveTextToParentTag;
   }
 
-  return val;
 }
 
-function resolveNameSpace(tagname, options) {
-  if (options.ignoreNameSpace) {
+function addExternalEntities(externalEntities){
+  const entKeys = Object.keys(externalEntities);
+  for (let i = 0; i < entKeys.length; i++) {
+    const ent = entKeys[i];
+    this.lastEntities[ent] = {
+       regex: new RegExp("&"+ent+";","g"),
+       val : externalEntities[ent]
+    }
+  }
+}
+
+/**
+ * @param {string} val
+ * @param {string} tagName
+ * @param {string} jPath
+ * @param {boolean} dontTrim
+ * @param {boolean} hasAttributes
+ * @param {boolean} isLeafNode
+ * @param {boolean} escapeEntities
+ */
+function parseTextData(val, tagName, jPath, dontTrim, hasAttributes, isLeafNode, escapeEntities) {
+  if (val !== undefined) {
+    if (this.options.trimValues && !dontTrim) {
+      val = val.trim();
+    }
+    if(val.length > 0){
+      if(!escapeEntities) val = this.replaceEntitiesValue(val);
+      
+      const newval = this.options.tagValueProcessor(tagName, val, jPath, hasAttributes, isLeafNode);
+      if(newval === null || newval === undefined){
+        //don't parse
+        return val;
+      }else if(typeof newval !== typeof val || newval !== val){
+        //overwrite
+        return newval;
+      }else if(this.options.trimValues){
+        return parseValue(val, this.options.parseTagValue, this.options.numberParseOptions);
+      }else{
+        const trimmedVal = val.trim();
+        if(trimmedVal === val){
+          return parseValue(val, this.options.parseTagValue, this.options.numberParseOptions);
+        }else{
+          return val;
+        }
+      }
+    }
+  }
+}
+
+function resolveNameSpace(tagname) {
+  if (this.options.removeNSPrefix) {
     const tags = tagname.split(':');
     const prefix = tagname.charAt(0) === '/' ? '/' : '';
     if (tags[0] === 'xmlns') {
@@ -17218,234 +19012,336 @@ function resolveNameSpace(tagname, options) {
   return tagname;
 }
 
-function parseValue(val, shouldParse, parseTrueNumberOnly) {
-  if (shouldParse && typeof val === 'string') {
-    let parsed;
-    if (val.trim() === '' || isNaN(val)) {
-      parsed = val === 'true' ? true : val === 'false' ? false : val;
-    } else {
-      if (val.indexOf('0x') !== -1) {
-        //support hexa decimal
-        parsed = Number.parseInt(val, 16);
-      } else if (val.indexOf('.') !== -1) {
-        parsed = Number.parseFloat(val);
-        val = val.replace(/\.?0+$/, "");
-      } else {
-        parsed = Number.parseInt(val, 10);
-      }
-      if (parseTrueNumberOnly) {
-        parsed = String(parsed) === val ? parsed : val;
-      }
-    }
-    return parsed;
-  } else {
-    if (util.isExist(val)) {
-      return val;
-    } else {
-      return '';
-    }
-  }
-}
-
 //TODO: change regex to capture NS
 //const attrsRegx = new RegExp("([\\w\\-\\.\\:]+)\\s*=\\s*(['\"])((.|\n)*?)\\2","gm");
-const attrsRegx = new RegExp('([^\\s=]+)\\s*(=\\s*([\'"])(.*?)\\3)?', 'g');
+const attrsRegx = new RegExp('([^\\s=]+)\\s*(=\\s*([\'"])([\\s\\S]*?)\\3)?', 'gm');
 
-function buildAttributesMap(attrStr, options) {
-  if (!options.ignoreAttributes && typeof attrStr === 'string') {
-    attrStr = attrStr.replace(/\r?\n/g, ' ');
+function buildAttributesMap(attrStr, jPath) {
+  if (!this.options.ignoreAttributes && typeof attrStr === 'string') {
+    // attrStr = attrStr.replace(/\r?\n/g, ' ');
     //attrStr = attrStr || attrStr.trim();
 
     const matches = util.getAllMatches(attrStr, attrsRegx);
     const len = matches.length; //don't make it inline
     const attrs = {};
     for (let i = 0; i < len; i++) {
-      const attrName = resolveNameSpace(matches[i][1], options);
+      const attrName = this.resolveNameSpace(matches[i][1]);
+      let oldVal = matches[i][4];
+      const aName = this.options.attributeNamePrefix + attrName;
       if (attrName.length) {
-        if (matches[i][4] !== undefined) {
-          if (options.trimValues) {
-            matches[i][4] = matches[i][4].trim();
+        if (oldVal !== undefined) {
+          if (this.options.trimValues) {
+            oldVal = oldVal.trim();
           }
-          matches[i][4] = options.attrValueProcessor(matches[i][4], attrName);
-          attrs[options.attributeNamePrefix + attrName] = parseValue(
-            matches[i][4],
-            options.parseAttributeValue,
-            options.parseTrueNumberOnly
-          );
-        } else if (options.allowBooleanAttributes) {
-          attrs[options.attributeNamePrefix + attrName] = true;
+          oldVal = this.replaceEntitiesValue(oldVal);
+          const newVal = this.options.attributeValueProcessor(attrName, oldVal, jPath);
+          if(newVal === null || newVal === undefined){
+            //don't parse
+            attrs[aName] = oldVal;
+          }else if(typeof newVal !== typeof oldVal || newVal !== oldVal){
+            //overwrite
+            attrs[aName] = newVal;
+          }else{
+            //parse
+            attrs[aName] = parseValue(
+              oldVal,
+              this.options.parseAttributeValue,
+              this.options.numberParseOptions
+            );
+          }
+        } else if (this.options.allowBooleanAttributes) {
+          attrs[aName] = true;
         }
       }
     }
     if (!Object.keys(attrs).length) {
       return;
     }
-    if (options.attrNodeName) {
+    if (this.options.attributesGroupName) {
       const attrCollection = {};
-      attrCollection[options.attrNodeName] = attrs;
+      attrCollection[this.options.attributesGroupName] = attrs;
       return attrCollection;
     }
     return attrs;
   }
 }
 
-const getTraversalObj = function(xmlData, options) {
-  xmlData = xmlData.replace(/\r\n?/g, "\n");
-  options = buildOptions(options, defaultOptions, props);
+const parseXml = function(xmlData) {
+  xmlData = xmlData.replace(/\r\n?/g, "\n"); //TODO: remove this line
   const xmlObj = new xmlNode('!xml');
   let currentNode = xmlObj;
   let textData = "";
-
-//function match(xmlData){
-  for(let i=0; i< xmlData.length; i++){
+  let jPath = "";
+  for(let i=0; i< xmlData.length; i++){//for each char in XML data
     const ch = xmlData[i];
     if(ch === '<'){
+      // const nextIndex = i+1;
+      // const _2ndChar = xmlData[nextIndex];
       if( xmlData[i+1] === '/') {//Closing Tag
         const closeIndex = findClosingIndex(xmlData, ">", i, "Closing Tag is not closed.")
         let tagName = xmlData.substring(i+2,closeIndex).trim();
 
-        if(options.ignoreNameSpace){
+        if(this.options.removeNSPrefix){
           const colonIndex = tagName.indexOf(":");
           if(colonIndex !== -1){
             tagName = tagName.substr(colonIndex+1);
           }
         }
 
-        /* if (currentNode.parent) {
-          currentNode.parent.val = util.getValue(currentNode.parent.val) + '' + processTagValue2(tagName, textData , options);
-        } */
-        if(currentNode){
-          if(currentNode.val){
-            currentNode.val = util.getValue(currentNode.val) + '' + processTagValue(tagName, textData , options);
-          }else{
-            currentNode.val = processTagValue(tagName, textData , options);
-          }
+        if(this.options.transformTagName) {
+          tagName = this.options.transformTagName(tagName);
         }
 
-        if (options.stopNodes.length && options.stopNodes.includes(currentNode.tagname)) {
-          currentNode.child = []
-          if (currentNode.attrsMap == undefined) { currentNode.attrsMap = {}}
-          currentNode.val = xmlData.substr(currentNode.startIndex + 1, i - currentNode.startIndex - 1)
+        if(currentNode){
+          textData = this.saveTextToParentTag(textData, currentNode, jPath);
         }
-        currentNode = currentNode.parent;
+
+        jPath = jPath.substr(0, jPath.lastIndexOf("."));
+        
+        currentNode = this.tagsNodeStack.pop();//avoid recurssion, set the parent tag scope
         textData = "";
         i = closeIndex;
       } else if( xmlData[i+1] === '?') {
-        i = findClosingIndex(xmlData, "?>", i, "Pi Tag is not closed.")
-      } else if(xmlData.substr(i + 1, 3) === '!--') {
-        i = findClosingIndex(xmlData, "-->", i, "Comment is not closed.")
-      } else if( xmlData.substr(i + 1, 2) === '!D') {
-        const closeIndex = findClosingIndex(xmlData, ">", i, "DOCTYPE is not closed.")
-        const tagExp = xmlData.substring(i, closeIndex);
-        if(tagExp.indexOf("[") >= 0){
-          i = xmlData.indexOf("]>", i) + 1;
+
+        let tagData = readTagExp(xmlData,i, false, "?>");
+        if(!tagData) throw new Error("Pi Tag is not closed.");
+
+        textData = this.saveTextToParentTag(textData, currentNode, jPath);
+        if( (this.options.ignoreDeclaration && tagData.tagName === "?xml") || this.options.ignorePiTags){
+
         }else{
-          i = closeIndex;
+  
+          const childNode = new xmlNode(tagData.tagName);
+          childNode.add(this.options.textNodeName, "");
+          
+          if(tagData.tagName !== tagData.tagExp && tagData.attrExpPresent){
+            childNode[":@"] = this.buildAttributesMap(tagData.tagExp, jPath);
+          }
+          currentNode.addChild(childNode);
+
         }
+
+
+        i = tagData.closeIndex + 1;
+      } else if(xmlData.substr(i + 1, 3) === '!--') {
+        const endIndex = findClosingIndex(xmlData, "-->", i+4, "Comment is not closed.")
+        if(this.options.commentPropName){
+          const comment = xmlData.substring(i + 4, endIndex - 2);
+
+          textData = this.saveTextToParentTag(textData, currentNode, jPath);
+
+          currentNode.add(this.options.commentPropName, [ { [this.options.textNodeName] : comment } ]);
+        }
+        i = endIndex;
+      } else if( xmlData.substr(i + 1, 2) === '!D') {
+        const result = readDocType(xmlData, i);
+        this.docTypeEntities = result.entities;
+        i = result.i;
       }else if(xmlData.substr(i + 1, 2) === '![') {
-        const closeIndex = findClosingIndex(xmlData, "]]>", i, "CDATA is not closed.") - 2
+        const closeIndex = findClosingIndex(xmlData, "]]>", i, "CDATA is not closed.") - 2;
         const tagExp = xmlData.substring(i + 9,closeIndex);
 
-        //considerations
-        //1. CDATA will always have parent node
-        //2. A tag with CDATA is not a leaf node so it's value would be string type.
-        if(textData){
-          currentNode.val = util.getValue(currentNode.val) + '' + processTagValue(currentNode.tagname, textData , options);
-          textData = "";
-        }
+        textData = this.saveTextToParentTag(textData, currentNode, jPath);
 
-        if (options.cdataTagName) {
-          //add cdata node
-          const childNode = new xmlNode(options.cdataTagName, currentNode, tagExp);
-          currentNode.addChild(childNode);
-          //for backtracking
-          currentNode.val = util.getValue(currentNode.val) + options.cdataPositionChar;
-          //add rest value to parent node
-          if (tagExp) {
-            childNode.val = tagExp;
-          }
-        } else {
-          currentNode.val = (currentNode.val || '') + (tagExp || '');
+        //cdata should be set even if it is 0 length string
+        if(this.options.cdataPropName){
+          // let val = this.parseTextData(tagExp, this.options.cdataPropName, jPath + "." + this.options.cdataPropName, true, false, true);
+          // if(!val) val = "";
+          currentNode.add(this.options.cdataPropName, [ { [this.options.textNodeName] : tagExp } ]);
+        }else{
+          let val = this.parseTextData(tagExp, currentNode.tagname, jPath, true, false, true);
+          if(val == undefined) val = "";
+          currentNode.add(this.options.textNodeName, val);
         }
-
+        
         i = closeIndex + 2;
       }else {//Opening tag
-        const result = closingIndexForOpeningTag(xmlData, i+1)
-        let tagExp = result.data;
-        const closeIndex = result.index;
-        const separatorIndex = tagExp.indexOf(" ");
-        let tagName = tagExp;
-        let shouldBuildAttributesMap = true;
-        if(separatorIndex !== -1){
-          tagName = tagExp.substr(0, separatorIndex).replace(/\s\s*$/, '');
-          tagExp = tagExp.substr(separatorIndex + 1);
-        }
+        let result = readTagExp(xmlData,i, this. options.removeNSPrefix);
+        let tagName= result.tagName;
+        let tagExp = result.tagExp;
+        let attrExpPresent = result.attrExpPresent;
+        let closeIndex = result.closeIndex;
 
-        if(options.ignoreNameSpace){
-          const colonIndex = tagName.indexOf(":");
-          if(colonIndex !== -1){
-            tagName = tagName.substr(colonIndex+1);
-            shouldBuildAttributesMap = tagName !== result.data.substr(colonIndex + 1);
-          }
+        if (this.options.transformTagName) {
+          tagName = this.options.transformTagName(tagName);
         }
-
-        //save text to parent node
+        
+        //save text as child node
         if (currentNode && textData) {
           if(currentNode.tagname !== '!xml'){
-            currentNode.val = util.getValue(currentNode.val) + '' + processTagValue( currentNode.tagname, textData, options);
+            //when nested tag is found
+            textData = this.saveTextToParentTag(textData, currentNode, jPath, false);
           }
         }
 
-        if(tagExp.length > 0 && tagExp.lastIndexOf("/") === tagExp.length - 1){//selfClosing tag
-
-          if(tagName[tagName.length - 1] === "/"){ //remove trailing '/'
-            tagName = tagName.substr(0, tagName.length - 1);
-            tagExp = tagName;
-          }else{
-            tagExp = tagExp.substr(0, tagExp.length - 1);
-          }
-
-          const childNode = new xmlNode(tagName, currentNode, '');
-          if(tagName !== tagExp){
-            childNode.attrsMap = buildAttributesMap(tagExp, options);
-          }
-          currentNode.addChild(childNode);
-        }else{//opening tag
-
-          const childNode = new xmlNode( tagName, currentNode );
-          if (options.stopNodes.length && options.stopNodes.includes(childNode.tagname)) {
-            childNode.startIndex=closeIndex;
-          }
-          if(tagName !== tagExp && shouldBuildAttributesMap){
-            childNode.attrsMap = buildAttributesMap(tagExp, options);
-          }
-          currentNode.addChild(childNode);
-          currentNode = childNode;
+        if(tagName !== xmlObj.tagname){
+          jPath += jPath ? "." + tagName : tagName;
         }
-        textData = "";
-        i = closeIndex;
+
+        //check if last tag was unpaired tag
+        const lastTag = currentNode;
+        if(lastTag && this.options.unpairedTags.indexOf(lastTag.tagname) !== -1 ){
+          currentNode = this.tagsNodeStack.pop();
+        }
+
+        if (this.isItStopNode(this.options.stopNodes, jPath, tagName)) { //TODO: namespace
+          let tagContent = "";
+          //self-closing tag
+          if(tagExp.length > 0 && tagExp.lastIndexOf("/") === tagExp.length - 1){
+            i = result.closeIndex;
+          }
+          //boolean tag
+          else if(this.options.unpairedTags.indexOf(tagName) !== -1){
+            i = result.closeIndex;
+          }
+          //normal tag
+          else{
+            //read until closing tag is found
+            const result = this.readStopNodeData(xmlData, tagName, closeIndex + 1);
+            if(!result) throw new Error(`Unexpected end of ${tagName}`);
+            i = result.i;
+            tagContent = result.tagContent;
+          }
+
+          const childNode = new xmlNode(tagName);
+          if(tagName !== tagExp && attrExpPresent){
+            childNode[":@"] = this.buildAttributesMap(tagExp, jPath);
+          }
+          if(tagContent) {
+            tagContent = this.parseTextData(tagContent, tagName, jPath, true, attrExpPresent, true, true);
+          }
+          
+          jPath = jPath.substr(0, jPath.lastIndexOf("."));
+          childNode.add(this.options.textNodeName, tagContent);
+          
+          currentNode.addChild(childNode);
+        }else{
+  //selfClosing tag
+          if(tagExp.length > 0 && tagExp.lastIndexOf("/") === tagExp.length - 1){
+            if(tagName[tagName.length - 1] === "/"){ //remove trailing '/'
+              tagName = tagName.substr(0, tagName.length - 1);
+              tagExp = tagName;
+            }else{
+              tagExp = tagExp.substr(0, tagExp.length - 1);
+            }
+            
+            if(this.options.transformTagName) {
+              tagName = this.options.transformTagName(tagName);
+            }
+
+            const childNode = new xmlNode(tagName);
+            if(tagName !== tagExp && attrExpPresent){
+              childNode[":@"] = this.buildAttributesMap(tagExp, jPath);
+            }
+            jPath = jPath.substr(0, jPath.lastIndexOf("."));
+            currentNode.addChild(childNode);
+          }
+    //opening tag
+          else{
+            const childNode = new xmlNode( tagName);
+            this.tagsNodeStack.push(currentNode);
+            
+            if(tagName !== tagExp && attrExpPresent){
+              childNode[":@"] = this.buildAttributesMap(tagExp, jPath);
+            }
+            currentNode.addChild(childNode);
+            currentNode = childNode;
+          }
+          textData = "";
+          i = closeIndex;
+        }
       }
     }else{
       textData += xmlData[i];
     }
   }
-  return xmlObj;
+  return xmlObj.child;
 }
 
-function closingIndexForOpeningTag(data, i){
+const replaceEntitiesValue = function(val){
+
+  if(this.options.processEntities){
+    for(let entityName in this.docTypeEntities){
+      const entity = this.docTypeEntities[entityName];
+      val = val.replace( entity.regx, entity.val);
+    }
+    for(let entityName in this.lastEntities){
+      const entity = this.lastEntities[entityName];
+      val = val.replace( entity.regex, entity.val);
+    }
+    if(this.options.htmlEntities){
+      for(let entityName in this.htmlEntities){
+        const entity = this.htmlEntities[entityName];
+        val = val.replace( entity.regex, entity.val);
+      }
+    }
+    val = val.replace( this.ampEntity.regex, this.ampEntity.val);
+  }
+  return val;
+}
+function saveTextToParentTag(textData, currentNode, jPath, isLeafNode) {
+  if (textData) { //store previously collected data as textNode
+    if(isLeafNode === undefined) isLeafNode = Object.keys(currentNode.child).length === 0
+    
+    textData = this.parseTextData(textData,
+      currentNode.tagname,
+      jPath,
+      false,
+      currentNode[":@"] ? Object.keys(currentNode[":@"]).length !== 0 : false,
+      isLeafNode);
+
+    if (textData !== undefined && textData !== "")
+      currentNode.add(this.options.textNodeName, textData);
+    textData = "";
+  }
+  return textData;
+}
+
+//TODO: use jPath to simplify the logic
+/**
+ * 
+ * @param {string[]} stopNodes 
+ * @param {string} jPath
+ * @param {string} currentTagName 
+ */
+function isItStopNode(stopNodes, jPath, currentTagName){
+  const allNodesExp = "*." + currentTagName;
+  for (const stopNodePath in stopNodes) {
+    const stopNodeExp = stopNodes[stopNodePath];
+    if( allNodesExp === stopNodeExp || jPath === stopNodeExp  ) return true;
+  }
+  return false;
+}
+
+/**
+ * Returns the tag Expression and where it is ending handling single-dobule quotes situation
+ * @param {string} xmlData 
+ * @param {number} i starting index
+ * @returns 
+ */
+function tagExpWithClosingIndex(xmlData, i, closingChar = ">"){
   let attrBoundary;
   let tagExp = "";
-  for (let index = i; index < data.length; index++) {
-    let ch = data[index];
+  for (let index = i; index < xmlData.length; index++) {
+    let ch = xmlData[index];
     if (attrBoundary) {
         if (ch === attrBoundary) attrBoundary = "";//reset
     } else if (ch === '"' || ch === "'") {
         attrBoundary = ch;
-    } else if (ch === '>') {
+    } else if (ch === closingChar[0]) {
+      if(closingChar[1]){
+        if(xmlData[index + 1] === closingChar[1]){
+          return {
+            data: tagExp,
+            index: index
+          }
+        }
+      }else{
         return {
           data: tagExp,
           index: index
         }
+      }
     } else if (ch === '\t') {
       ch = " "
     }
@@ -17462,7 +19358,436 @@ function findClosingIndex(xmlData, str, i, errMsg){
   }
 }
 
-exports.getTraversalObj = getTraversalObj;
+function readTagExp(xmlData,i, removeNSPrefix, closingChar = ">"){
+  const result = tagExpWithClosingIndex(xmlData, i+1, closingChar);
+  if(!result) return;
+  let tagExp = result.data;
+  const closeIndex = result.index;
+  const separatorIndex = tagExp.search(/\s/);
+  let tagName = tagExp;
+  let attrExpPresent = true;
+  if(separatorIndex !== -1){//separate tag name and attributes expression
+    tagName = tagExp.substr(0, separatorIndex).replace(/\s\s*$/, '');
+    tagExp = tagExp.substr(separatorIndex + 1);
+  }
+
+  if(removeNSPrefix){
+    const colonIndex = tagName.indexOf(":");
+    if(colonIndex !== -1){
+      tagName = tagName.substr(colonIndex+1);
+      attrExpPresent = tagName !== result.data.substr(colonIndex + 1);
+    }
+  }
+
+  return {
+    tagName: tagName,
+    tagExp: tagExp,
+    closeIndex: closeIndex,
+    attrExpPresent: attrExpPresent,
+  }
+}
+/**
+ * find paired tag for a stop node
+ * @param {string} xmlData 
+ * @param {string} tagName 
+ * @param {number} i 
+ */
+function readStopNodeData(xmlData, tagName, i){
+  const startIndex = i;
+  // Starting at 1 since we already have an open tag
+  let openTagCount = 1;
+
+  for (; i < xmlData.length; i++) {
+    if( xmlData[i] === "<"){ 
+      if (xmlData[i+1] === "/") {//close tag
+          const closeIndex = findClosingIndex(xmlData, ">", i, `${tagName} is not closed`);
+          let closeTagName = xmlData.substring(i+2,closeIndex).trim();
+          if(closeTagName === tagName){
+            openTagCount--;
+            if (openTagCount === 0) {
+              return {
+                tagContent: xmlData.substring(startIndex, i),
+                i : closeIndex
+              }
+            }
+          }
+          i=closeIndex;
+        } else if(xmlData[i+1] === '?') { 
+          const closeIndex = findClosingIndex(xmlData, "?>", i+1, "StopNode is not closed.")
+          i=closeIndex;
+        } else if(xmlData.substr(i + 1, 3) === '!--') { 
+          const closeIndex = findClosingIndex(xmlData, "-->", i+3, "StopNode is not closed.")
+          i=closeIndex;
+        } else if(xmlData.substr(i + 1, 2) === '![') { 
+          const closeIndex = findClosingIndex(xmlData, "]]>", i, "StopNode is not closed.") - 2;
+          i=closeIndex;
+        } else {
+          const tagData = readTagExp(xmlData, i, '>')
+
+          if (tagData) {
+            const openTagName = tagData && tagData.tagName;
+            if (openTagName === tagName && tagData.tagExp[tagData.tagExp.length-1] !== "/") {
+              openTagCount++;
+            }
+            i=tagData.closeIndex;
+          }
+        }
+      }
+  }//end for loop
+}
+
+function parseValue(val, shouldParse, options) {
+  if (shouldParse && typeof val === 'string') {
+    //console.log(options)
+    const newval = val.trim();
+    if(newval === 'true' ) return true;
+    else if(newval === 'false' ) return false;
+    else return toNumber(val, options);
+  } else {
+    if (util.isExist(val)) {
+      return val;
+    } else {
+      return '';
+    }
+  }
+}
+
+
+module.exports = OrderedObjParser;
+
+
+/***/ }),
+
+/***/ 2380:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+const { buildOptions} = __nccwpck_require__(6993);
+const OrderedObjParser = __nccwpck_require__(5832);
+const { prettify} = __nccwpck_require__(2882);
+const validator = __nccwpck_require__(1739);
+
+class XMLParser{
+    
+    constructor(options){
+        this.externalEntities = {};
+        this.options = buildOptions(options);
+        
+    }
+    /**
+     * Parse XML dats to JS object 
+     * @param {string|Buffer} xmlData 
+     * @param {boolean|Object} validationOption 
+     */
+    parse(xmlData,validationOption){
+        if(typeof xmlData === "string"){
+        }else if( xmlData.toString){
+            xmlData = xmlData.toString();
+        }else{
+            throw new Error("XML data is accepted in String or Bytes[] form.")
+        }
+        if( validationOption){
+            if(validationOption === true) validationOption = {}; //validate with default options
+            
+            const result = validator.validate(xmlData, validationOption);
+            if (result !== true) {
+              throw Error( `${result.err.msg}:${result.err.line}:${result.err.col}` )
+            }
+          }
+        const orderedObjParser = new OrderedObjParser(this.options);
+        orderedObjParser.addExternalEntities(this.externalEntities);
+        const orderedResult = orderedObjParser.parseXml(xmlData);
+        if(this.options.preserveOrder || orderedResult === undefined) return orderedResult;
+        else return prettify(orderedResult, this.options);
+    }
+
+    /**
+     * Add Entity which is not by default supported by this library
+     * @param {string} key 
+     * @param {string} value 
+     */
+    addEntity(key, value){
+        if(value.indexOf("&") !== -1){
+            throw new Error("Entity value can't have '&'")
+        }else if(key.indexOf("&") !== -1 || key.indexOf(";") !== -1){
+            throw new Error("An entity must be set without '&' and ';'. Eg. use '#xD' for '&#xD;'")
+        }else if(value === "&"){
+            throw new Error("An entity with value '&' is not permitted");
+        }else{
+            this.externalEntities[key] = value;
+        }
+    }
+}
+
+module.exports = XMLParser;
+
+/***/ }),
+
+/***/ 2882:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+/**
+ * 
+ * @param {array} node 
+ * @param {any} options 
+ * @returns 
+ */
+function prettify(node, options){
+  return compress( node, options);
+}
+
+/**
+ * 
+ * @param {array} arr 
+ * @param {object} options 
+ * @param {string} jPath 
+ * @returns object
+ */
+function compress(arr, options, jPath){
+  let text;
+  const compressedObj = {};
+  for (let i = 0; i < arr.length; i++) {
+    const tagObj = arr[i];
+    const property = propName(tagObj);
+    let newJpath = "";
+    if(jPath === undefined) newJpath = property;
+    else newJpath = jPath + "." + property;
+
+    if(property === options.textNodeName){
+      if(text === undefined) text = tagObj[property];
+      else text += "" + tagObj[property];
+    }else if(property === undefined){
+      continue;
+    }else if(tagObj[property]){
+      
+      let val = compress(tagObj[property], options, newJpath);
+      const isLeaf = isLeafTag(val, options);
+
+      if(tagObj[":@"]){
+        assignAttributes( val, tagObj[":@"], newJpath, options);
+      }else if(Object.keys(val).length === 1 && val[options.textNodeName] !== undefined && !options.alwaysCreateTextNode){
+        val = val[options.textNodeName];
+      }else if(Object.keys(val).length === 0){
+        if(options.alwaysCreateTextNode) val[options.textNodeName] = "";
+        else val = "";
+      }
+
+      if(compressedObj[property] !== undefined && compressedObj.hasOwnProperty(property)) {
+        if(!Array.isArray(compressedObj[property])) {
+            compressedObj[property] = [ compressedObj[property] ];
+        }
+        compressedObj[property].push(val);
+      }else{
+        //TODO: if a node is not an array, then check if it should be an array
+        //also determine if it is a leaf node
+        if (options.isArray(property, newJpath, isLeaf )) {
+          compressedObj[property] = [val];
+        }else{
+          compressedObj[property] = val;
+        }
+      }
+    }
+    
+  }
+  // if(text && text.length > 0) compressedObj[options.textNodeName] = text;
+  if(typeof text === "string"){
+    if(text.length > 0) compressedObj[options.textNodeName] = text;
+  }else if(text !== undefined) compressedObj[options.textNodeName] = text;
+  return compressedObj;
+}
+
+function propName(obj){
+  const keys = Object.keys(obj);
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[i];
+    if(key !== ":@") return key;
+  }
+}
+
+function assignAttributes(obj, attrMap, jpath, options){
+  if (attrMap) {
+    const keys = Object.keys(attrMap);
+    const len = keys.length; //don't make it inline
+    for (let i = 0; i < len; i++) {
+      const atrrName = keys[i];
+      if (options.isArray(atrrName, jpath + "." + atrrName, true, true)) {
+        obj[atrrName] = [ attrMap[atrrName] ];
+      } else {
+        obj[atrrName] = attrMap[atrrName];
+      }
+    }
+  }
+}
+
+function isLeafTag(obj, options){
+  const propCount = Object.keys(obj).length;
+  if( propCount === 0 || (propCount === 1 && obj[options.textNodeName]) ) return true;
+  return false;
+}
+exports.prettify = prettify;
+
+
+/***/ }),
+
+/***/ 7462:
+/***/ ((module) => {
+
+"use strict";
+
+
+class XmlNode{
+  constructor(tagname) {
+    this.tagname = tagname;
+    this.child = []; //nested tags, text, cdata, comments in order
+    this[":@"] = {}; //attributes map
+  }
+  add(key,val){
+    // this.child.push( {name : key, val: val, isCdata: isCdata });
+    this.child.push( {[key]: val });
+  }
+  addChild(node) {
+    if(node[":@"] && Object.keys(node[":@"]).length > 0){
+      this.child.push( { [node.tagname]: node.child, [":@"]: node[":@"] });
+    }else{
+      this.child.push( { [node.tagname]: node.child });
+    }
+  };
+};
+
+
+module.exports = XmlNode;
+
+/***/ }),
+
+/***/ 4526:
+/***/ ((module) => {
+
+const hexRegex = /^[-+]?0x[a-fA-F0-9]+$/;
+const numRegex = /^([\-\+])?(0*)(\.[0-9]+([eE]\-?[0-9]+)?|[0-9]+(\.[0-9]+([eE]\-?[0-9]+)?)?)$/;
+// const octRegex = /0x[a-z0-9]+/;
+// const binRegex = /0x[a-z0-9]+/;
+
+
+//polyfill
+if (!Number.parseInt && window.parseInt) {
+    Number.parseInt = window.parseInt;
+}
+if (!Number.parseFloat && window.parseFloat) {
+    Number.parseFloat = window.parseFloat;
+}
+
+  
+const consider = {
+    hex :  true,
+    leadingZeros: true,
+    decimalPoint: "\.",
+    eNotation: true
+    //skipLike: /regex/
+};
+
+function toNumber(str, options = {}){
+    // const options = Object.assign({}, consider);
+    // if(opt.leadingZeros === false){
+    //     options.leadingZeros = false;
+    // }else if(opt.hex === false){
+    //     options.hex = false;
+    // }
+
+    options = Object.assign({}, consider, options );
+    if(!str || typeof str !== "string" ) return str;
+    
+    let trimmedStr  = str.trim();
+    // if(trimmedStr === "0.0") return 0;
+    // else if(trimmedStr === "+0.0") return 0;
+    // else if(trimmedStr === "-0.0") return -0;
+
+    if(options.skipLike !== undefined && options.skipLike.test(trimmedStr)) return str;
+    else if (options.hex && hexRegex.test(trimmedStr)) {
+        return Number.parseInt(trimmedStr, 16);
+    // } else if (options.parseOct && octRegex.test(str)) {
+    //     return Number.parseInt(val, 8);
+    // }else if (options.parseBin && binRegex.test(str)) {
+    //     return Number.parseInt(val, 2);
+    }else{
+        //separate negative sign, leading zeros, and rest number
+        const match = numRegex.exec(trimmedStr);
+        if(match){
+            const sign = match[1];
+            const leadingZeros = match[2];
+            let numTrimmedByZeros = trimZeros(match[3]); //complete num without leading zeros
+            //trim ending zeros for floating number
+            
+            const eNotation = match[4] || match[6];
+            if(!options.leadingZeros && leadingZeros.length > 0 && sign && trimmedStr[2] !== ".") return str; //-0123
+            else if(!options.leadingZeros && leadingZeros.length > 0 && !sign && trimmedStr[1] !== ".") return str; //0123
+            else{//no leading zeros or leading zeros are allowed
+                const num = Number(trimmedStr);
+                const numStr = "" + num;
+                if(numStr.search(/[eE]/) !== -1){ //given number is long and parsed to eNotation
+                    if(options.eNotation) return num;
+                    else return str;
+                }else if(eNotation){ //given number has enotation
+                    if(options.eNotation) return num;
+                    else return str;
+                }else if(trimmedStr.indexOf(".") !== -1){ //floating number
+                    // const decimalPart = match[5].substr(1);
+                    // const intPart = trimmedStr.substr(0,trimmedStr.indexOf("."));
+
+                    
+                    // const p = numStr.indexOf(".");
+                    // const givenIntPart = numStr.substr(0,p);
+                    // const givenDecPart = numStr.substr(p+1);
+                    if(numStr === "0" && (numTrimmedByZeros === "") ) return num; //0.0
+                    else if(numStr === numTrimmedByZeros) return num; //0.456. 0.79000
+                    else if( sign && numStr === "-"+numTrimmedByZeros) return num;
+                    else return str;
+                }
+                
+                if(leadingZeros){
+                    // if(numTrimmedByZeros === numStr){
+                    //     if(options.leadingZeros) return num;
+                    //     else return str;
+                    // }else return str;
+                    if(numTrimmedByZeros === numStr) return num;
+                    else if(sign+numTrimmedByZeros === numStr) return num;
+                    else return str;
+                }
+
+                if(trimmedStr === numStr) return num;
+                else if(trimmedStr === sign+numStr) return num;
+                // else{
+                //     //number with +/- sign
+                //     trimmedStr.test(/[-+][0-9]);
+
+                // }
+                return str;
+            }
+            // else if(!eNotation && trimmedStr && trimmedStr !== Number(trimmedStr) ) return str;
+            
+        }else{ //non-numeric string
+            return str;
+        }
+    }
+}
+
+/**
+ * 
+ * @param {string} numStr without leading zeros
+ * @returns 
+ */
+function trimZeros(numStr){
+    if(numStr && numStr.indexOf(".") !== -1){//float
+        numStr = numStr.replace(/0+$/, ""); //remove ending zeros
+        if(numStr === ".")  numStr = "0";
+        else if(numStr[0] === ".")  numStr = "0"+numStr;
+        else if(numStr[numStr.length-1] === ".")  numStr = numStr.substr(0,numStr.length-1);
+        return numStr;
+    }
+    return numStr;
+}
+module.exports = toNumber
 
 
 /***/ }),
@@ -17597,7 +19922,7 @@ var __createBinding;
         function verb(n) { return function (v) { return step([n, v]); }; }
         function step(op) {
             if (f) throw new TypeError("Generator is already executing.");
-            while (_) try {
+            while (g && (g = 0, op[0] && (_ = 0)), _) try {
                 if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
                 if (y = 0, t) op = [op[0] & 2, t.value];
                 switch (op[0]) {
@@ -17787,286 +20112,6 @@ var __createBinding;
     exporter("__classPrivateFieldSet", __classPrivateFieldSet);
     exporter("__classPrivateFieldIn", __classPrivateFieldIn);
 });
-
-
-/***/ }),
-
-/***/ 4294:
-/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
-
-module.exports = __nccwpck_require__(4219);
-
-
-/***/ }),
-
-/***/ 4219:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-
-var net = __nccwpck_require__(1631);
-var tls = __nccwpck_require__(4016);
-var http = __nccwpck_require__(8605);
-var https = __nccwpck_require__(7211);
-var events = __nccwpck_require__(8614);
-var assert = __nccwpck_require__(2357);
-var util = __nccwpck_require__(1669);
-
-
-exports.httpOverHttp = httpOverHttp;
-exports.httpsOverHttp = httpsOverHttp;
-exports.httpOverHttps = httpOverHttps;
-exports.httpsOverHttps = httpsOverHttps;
-
-
-function httpOverHttp(options) {
-  var agent = new TunnelingAgent(options);
-  agent.request = http.request;
-  return agent;
-}
-
-function httpsOverHttp(options) {
-  var agent = new TunnelingAgent(options);
-  agent.request = http.request;
-  agent.createSocket = createSecureSocket;
-  agent.defaultPort = 443;
-  return agent;
-}
-
-function httpOverHttps(options) {
-  var agent = new TunnelingAgent(options);
-  agent.request = https.request;
-  return agent;
-}
-
-function httpsOverHttps(options) {
-  var agent = new TunnelingAgent(options);
-  agent.request = https.request;
-  agent.createSocket = createSecureSocket;
-  agent.defaultPort = 443;
-  return agent;
-}
-
-
-function TunnelingAgent(options) {
-  var self = this;
-  self.options = options || {};
-  self.proxyOptions = self.options.proxy || {};
-  self.maxSockets = self.options.maxSockets || http.Agent.defaultMaxSockets;
-  self.requests = [];
-  self.sockets = [];
-
-  self.on('free', function onFree(socket, host, port, localAddress) {
-    var options = toOptions(host, port, localAddress);
-    for (var i = 0, len = self.requests.length; i < len; ++i) {
-      var pending = self.requests[i];
-      if (pending.host === options.host && pending.port === options.port) {
-        // Detect the request to connect same origin server,
-        // reuse the connection.
-        self.requests.splice(i, 1);
-        pending.request.onSocket(socket);
-        return;
-      }
-    }
-    socket.destroy();
-    self.removeSocket(socket);
-  });
-}
-util.inherits(TunnelingAgent, events.EventEmitter);
-
-TunnelingAgent.prototype.addRequest = function addRequest(req, host, port, localAddress) {
-  var self = this;
-  var options = mergeOptions({request: req}, self.options, toOptions(host, port, localAddress));
-
-  if (self.sockets.length >= this.maxSockets) {
-    // We are over limit so we'll add it to the queue.
-    self.requests.push(options);
-    return;
-  }
-
-  // If we are under maxSockets create a new one.
-  self.createSocket(options, function(socket) {
-    socket.on('free', onFree);
-    socket.on('close', onCloseOrRemove);
-    socket.on('agentRemove', onCloseOrRemove);
-    req.onSocket(socket);
-
-    function onFree() {
-      self.emit('free', socket, options);
-    }
-
-    function onCloseOrRemove(err) {
-      self.removeSocket(socket);
-      socket.removeListener('free', onFree);
-      socket.removeListener('close', onCloseOrRemove);
-      socket.removeListener('agentRemove', onCloseOrRemove);
-    }
-  });
-};
-
-TunnelingAgent.prototype.createSocket = function createSocket(options, cb) {
-  var self = this;
-  var placeholder = {};
-  self.sockets.push(placeholder);
-
-  var connectOptions = mergeOptions({}, self.proxyOptions, {
-    method: 'CONNECT',
-    path: options.host + ':' + options.port,
-    agent: false,
-    headers: {
-      host: options.host + ':' + options.port
-    }
-  });
-  if (options.localAddress) {
-    connectOptions.localAddress = options.localAddress;
-  }
-  if (connectOptions.proxyAuth) {
-    connectOptions.headers = connectOptions.headers || {};
-    connectOptions.headers['Proxy-Authorization'] = 'Basic ' +
-        new Buffer(connectOptions.proxyAuth).toString('base64');
-  }
-
-  debug('making CONNECT request');
-  var connectReq = self.request(connectOptions);
-  connectReq.useChunkedEncodingByDefault = false; // for v0.6
-  connectReq.once('response', onResponse); // for v0.6
-  connectReq.once('upgrade', onUpgrade);   // for v0.6
-  connectReq.once('connect', onConnect);   // for v0.7 or later
-  connectReq.once('error', onError);
-  connectReq.end();
-
-  function onResponse(res) {
-    // Very hacky. This is necessary to avoid http-parser leaks.
-    res.upgrade = true;
-  }
-
-  function onUpgrade(res, socket, head) {
-    // Hacky.
-    process.nextTick(function() {
-      onConnect(res, socket, head);
-    });
-  }
-
-  function onConnect(res, socket, head) {
-    connectReq.removeAllListeners();
-    socket.removeAllListeners();
-
-    if (res.statusCode !== 200) {
-      debug('tunneling socket could not be established, statusCode=%d',
-        res.statusCode);
-      socket.destroy();
-      var error = new Error('tunneling socket could not be established, ' +
-        'statusCode=' + res.statusCode);
-      error.code = 'ECONNRESET';
-      options.request.emit('error', error);
-      self.removeSocket(placeholder);
-      return;
-    }
-    if (head.length > 0) {
-      debug('got illegal response body from proxy');
-      socket.destroy();
-      var error = new Error('got illegal response body from proxy');
-      error.code = 'ECONNRESET';
-      options.request.emit('error', error);
-      self.removeSocket(placeholder);
-      return;
-    }
-    debug('tunneling connection has established');
-    self.sockets[self.sockets.indexOf(placeholder)] = socket;
-    return cb(socket);
-  }
-
-  function onError(cause) {
-    connectReq.removeAllListeners();
-
-    debug('tunneling socket could not be established, cause=%s\n',
-          cause.message, cause.stack);
-    var error = new Error('tunneling socket could not be established, ' +
-                          'cause=' + cause.message);
-    error.code = 'ECONNRESET';
-    options.request.emit('error', error);
-    self.removeSocket(placeholder);
-  }
-};
-
-TunnelingAgent.prototype.removeSocket = function removeSocket(socket) {
-  var pos = this.sockets.indexOf(socket)
-  if (pos === -1) {
-    return;
-  }
-  this.sockets.splice(pos, 1);
-
-  var pending = this.requests.shift();
-  if (pending) {
-    // If we have pending requests and a socket gets closed a new one
-    // needs to be created to take over in the pool for the one that closed.
-    this.createSocket(pending, function(socket) {
-      pending.request.onSocket(socket);
-    });
-  }
-};
-
-function createSecureSocket(options, cb) {
-  var self = this;
-  TunnelingAgent.prototype.createSocket.call(self, options, function(socket) {
-    var hostHeader = options.request.getHeader('host');
-    var tlsOptions = mergeOptions({}, self.options, {
-      socket: socket,
-      servername: hostHeader ? hostHeader.replace(/:.*$/, '') : options.host
-    });
-
-    // 0 is dummy port for v0.6
-    var secureSocket = tls.connect(0, tlsOptions);
-    self.sockets[self.sockets.indexOf(socket)] = secureSocket;
-    cb(secureSocket);
-  });
-}
-
-
-function toOptions(host, port, localAddress) {
-  if (typeof host === 'string') { // since v0.10
-    return {
-      host: host,
-      port: port,
-      localAddress: localAddress
-    };
-  }
-  return host; // for v0.11 or later
-}
-
-function mergeOptions(target) {
-  for (var i = 1, len = arguments.length; i < len; ++i) {
-    var overrides = arguments[i];
-    if (typeof overrides === 'object') {
-      var keys = Object.keys(overrides);
-      for (var j = 0, keyLen = keys.length; j < keyLen; ++j) {
-        var k = keys[j];
-        if (overrides[k] !== undefined) {
-          target[k] = overrides[k];
-        }
-      }
-    }
-  }
-  return target;
-}
-
-
-var debug;
-if (process.env.NODE_DEBUG && /\btunnel\b/.test(process.env.NODE_DEBUG)) {
-  debug = function() {
-    var args = Array.prototype.slice.call(arguments);
-    if (typeof args[0] === 'string') {
-      args[0] = 'TUNNEL: ' + args[0];
-    } else {
-      args.unshift('TUNNEL:');
-    }
-    console.error.apply(console, args);
-  }
-} else {
-  debug = function() {};
-}
-exports.debug = debug; // for test
 
 
 /***/ }),
@@ -18792,51 +20837,19 @@ module.exports = {
 
 /***/ }),
 
+/***/ 7396:
+/***/ ((module) => {
+
+module.exports = eval("require")("@actions/core");
+
+
+/***/ }),
+
 /***/ 7578:
 /***/ ((module) => {
 
 module.exports = eval("require")("aws-crt");
 
-
-/***/ }),
-
-/***/ 4589:
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"0":65533,"128":8364,"130":8218,"131":402,"132":8222,"133":8230,"134":8224,"135":8225,"136":710,"137":8240,"138":352,"139":8249,"140":338,"142":381,"145":8216,"146":8217,"147":8220,"148":8221,"149":8226,"150":8211,"151":8212,"152":732,"153":8482,"154":353,"155":8250,"156":339,"158":382,"159":376}');
-
-/***/ }),
-
-/***/ 4007:
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"Aacute":"Á","aacute":"á","Abreve":"Ă","abreve":"ă","ac":"∾","acd":"∿","acE":"∾̳","Acirc":"Â","acirc":"â","acute":"´","Acy":"А","acy":"а","AElig":"Æ","aelig":"æ","af":"⁡","Afr":"𝔄","afr":"𝔞","Agrave":"À","agrave":"à","alefsym":"ℵ","aleph":"ℵ","Alpha":"Α","alpha":"α","Amacr":"Ā","amacr":"ā","amalg":"⨿","amp":"&","AMP":"&","andand":"⩕","And":"⩓","and":"∧","andd":"⩜","andslope":"⩘","andv":"⩚","ang":"∠","ange":"⦤","angle":"∠","angmsdaa":"⦨","angmsdab":"⦩","angmsdac":"⦪","angmsdad":"⦫","angmsdae":"⦬","angmsdaf":"⦭","angmsdag":"⦮","angmsdah":"⦯","angmsd":"∡","angrt":"∟","angrtvb":"⊾","angrtvbd":"⦝","angsph":"∢","angst":"Å","angzarr":"⍼","Aogon":"Ą","aogon":"ą","Aopf":"𝔸","aopf":"𝕒","apacir":"⩯","ap":"≈","apE":"⩰","ape":"≊","apid":"≋","apos":"\'","ApplyFunction":"⁡","approx":"≈","approxeq":"≊","Aring":"Å","aring":"å","Ascr":"𝒜","ascr":"𝒶","Assign":"≔","ast":"*","asymp":"≈","asympeq":"≍","Atilde":"Ã","atilde":"ã","Auml":"Ä","auml":"ä","awconint":"∳","awint":"⨑","backcong":"≌","backepsilon":"϶","backprime":"‵","backsim":"∽","backsimeq":"⋍","Backslash":"∖","Barv":"⫧","barvee":"⊽","barwed":"⌅","Barwed":"⌆","barwedge":"⌅","bbrk":"⎵","bbrktbrk":"⎶","bcong":"≌","Bcy":"Б","bcy":"б","bdquo":"„","becaus":"∵","because":"∵","Because":"∵","bemptyv":"⦰","bepsi":"϶","bernou":"ℬ","Bernoullis":"ℬ","Beta":"Β","beta":"β","beth":"ℶ","between":"≬","Bfr":"𝔅","bfr":"𝔟","bigcap":"⋂","bigcirc":"◯","bigcup":"⋃","bigodot":"⨀","bigoplus":"⨁","bigotimes":"⨂","bigsqcup":"⨆","bigstar":"★","bigtriangledown":"▽","bigtriangleup":"△","biguplus":"⨄","bigvee":"⋁","bigwedge":"⋀","bkarow":"⤍","blacklozenge":"⧫","blacksquare":"▪","blacktriangle":"▴","blacktriangledown":"▾","blacktriangleleft":"◂","blacktriangleright":"▸","blank":"␣","blk12":"▒","blk14":"░","blk34":"▓","block":"█","bne":"=⃥","bnequiv":"≡⃥","bNot":"⫭","bnot":"⌐","Bopf":"𝔹","bopf":"𝕓","bot":"⊥","bottom":"⊥","bowtie":"⋈","boxbox":"⧉","boxdl":"┐","boxdL":"╕","boxDl":"╖","boxDL":"╗","boxdr":"┌","boxdR":"╒","boxDr":"╓","boxDR":"╔","boxh":"─","boxH":"═","boxhd":"┬","boxHd":"╤","boxhD":"╥","boxHD":"╦","boxhu":"┴","boxHu":"╧","boxhU":"╨","boxHU":"╩","boxminus":"⊟","boxplus":"⊞","boxtimes":"⊠","boxul":"┘","boxuL":"╛","boxUl":"╜","boxUL":"╝","boxur":"└","boxuR":"╘","boxUr":"╙","boxUR":"╚","boxv":"│","boxV":"║","boxvh":"┼","boxvH":"╪","boxVh":"╫","boxVH":"╬","boxvl":"┤","boxvL":"╡","boxVl":"╢","boxVL":"╣","boxvr":"├","boxvR":"╞","boxVr":"╟","boxVR":"╠","bprime":"‵","breve":"˘","Breve":"˘","brvbar":"¦","bscr":"𝒷","Bscr":"ℬ","bsemi":"⁏","bsim":"∽","bsime":"⋍","bsolb":"⧅","bsol":"\\\\","bsolhsub":"⟈","bull":"•","bullet":"•","bump":"≎","bumpE":"⪮","bumpe":"≏","Bumpeq":"≎","bumpeq":"≏","Cacute":"Ć","cacute":"ć","capand":"⩄","capbrcup":"⩉","capcap":"⩋","cap":"∩","Cap":"⋒","capcup":"⩇","capdot":"⩀","CapitalDifferentialD":"ⅅ","caps":"∩︀","caret":"⁁","caron":"ˇ","Cayleys":"ℭ","ccaps":"⩍","Ccaron":"Č","ccaron":"č","Ccedil":"Ç","ccedil":"ç","Ccirc":"Ĉ","ccirc":"ĉ","Cconint":"∰","ccups":"⩌","ccupssm":"⩐","Cdot":"Ċ","cdot":"ċ","cedil":"¸","Cedilla":"¸","cemptyv":"⦲","cent":"¢","centerdot":"·","CenterDot":"·","cfr":"𝔠","Cfr":"ℭ","CHcy":"Ч","chcy":"ч","check":"✓","checkmark":"✓","Chi":"Χ","chi":"χ","circ":"ˆ","circeq":"≗","circlearrowleft":"↺","circlearrowright":"↻","circledast":"⊛","circledcirc":"⊚","circleddash":"⊝","CircleDot":"⊙","circledR":"®","circledS":"Ⓢ","CircleMinus":"⊖","CirclePlus":"⊕","CircleTimes":"⊗","cir":"○","cirE":"⧃","cire":"≗","cirfnint":"⨐","cirmid":"⫯","cirscir":"⧂","ClockwiseContourIntegral":"∲","CloseCurlyDoubleQuote":"”","CloseCurlyQuote":"’","clubs":"♣","clubsuit":"♣","colon":":","Colon":"∷","Colone":"⩴","colone":"≔","coloneq":"≔","comma":",","commat":"@","comp":"∁","compfn":"∘","complement":"∁","complexes":"ℂ","cong":"≅","congdot":"⩭","Congruent":"≡","conint":"∮","Conint":"∯","ContourIntegral":"∮","copf":"𝕔","Copf":"ℂ","coprod":"∐","Coproduct":"∐","copy":"©","COPY":"©","copysr":"℗","CounterClockwiseContourIntegral":"∳","crarr":"↵","cross":"✗","Cross":"⨯","Cscr":"𝒞","cscr":"𝒸","csub":"⫏","csube":"⫑","csup":"⫐","csupe":"⫒","ctdot":"⋯","cudarrl":"⤸","cudarrr":"⤵","cuepr":"⋞","cuesc":"⋟","cularr":"↶","cularrp":"⤽","cupbrcap":"⩈","cupcap":"⩆","CupCap":"≍","cup":"∪","Cup":"⋓","cupcup":"⩊","cupdot":"⊍","cupor":"⩅","cups":"∪︀","curarr":"↷","curarrm":"⤼","curlyeqprec":"⋞","curlyeqsucc":"⋟","curlyvee":"⋎","curlywedge":"⋏","curren":"¤","curvearrowleft":"↶","curvearrowright":"↷","cuvee":"⋎","cuwed":"⋏","cwconint":"∲","cwint":"∱","cylcty":"⌭","dagger":"†","Dagger":"‡","daleth":"ℸ","darr":"↓","Darr":"↡","dArr":"⇓","dash":"‐","Dashv":"⫤","dashv":"⊣","dbkarow":"⤏","dblac":"˝","Dcaron":"Ď","dcaron":"ď","Dcy":"Д","dcy":"д","ddagger":"‡","ddarr":"⇊","DD":"ⅅ","dd":"ⅆ","DDotrahd":"⤑","ddotseq":"⩷","deg":"°","Del":"∇","Delta":"Δ","delta":"δ","demptyv":"⦱","dfisht":"⥿","Dfr":"𝔇","dfr":"𝔡","dHar":"⥥","dharl":"⇃","dharr":"⇂","DiacriticalAcute":"´","DiacriticalDot":"˙","DiacriticalDoubleAcute":"˝","DiacriticalGrave":"`","DiacriticalTilde":"˜","diam":"⋄","diamond":"⋄","Diamond":"⋄","diamondsuit":"♦","diams":"♦","die":"¨","DifferentialD":"ⅆ","digamma":"ϝ","disin":"⋲","div":"÷","divide":"÷","divideontimes":"⋇","divonx":"⋇","DJcy":"Ђ","djcy":"ђ","dlcorn":"⌞","dlcrop":"⌍","dollar":"$","Dopf":"𝔻","dopf":"𝕕","Dot":"¨","dot":"˙","DotDot":"⃜","doteq":"≐","doteqdot":"≑","DotEqual":"≐","dotminus":"∸","dotplus":"∔","dotsquare":"⊡","doublebarwedge":"⌆","DoubleContourIntegral":"∯","DoubleDot":"¨","DoubleDownArrow":"⇓","DoubleLeftArrow":"⇐","DoubleLeftRightArrow":"⇔","DoubleLeftTee":"⫤","DoubleLongLeftArrow":"⟸","DoubleLongLeftRightArrow":"⟺","DoubleLongRightArrow":"⟹","DoubleRightArrow":"⇒","DoubleRightTee":"⊨","DoubleUpArrow":"⇑","DoubleUpDownArrow":"⇕","DoubleVerticalBar":"∥","DownArrowBar":"⤓","downarrow":"↓","DownArrow":"↓","Downarrow":"⇓","DownArrowUpArrow":"⇵","DownBreve":"̑","downdownarrows":"⇊","downharpoonleft":"⇃","downharpoonright":"⇂","DownLeftRightVector":"⥐","DownLeftTeeVector":"⥞","DownLeftVectorBar":"⥖","DownLeftVector":"↽","DownRightTeeVector":"⥟","DownRightVectorBar":"⥗","DownRightVector":"⇁","DownTeeArrow":"↧","DownTee":"⊤","drbkarow":"⤐","drcorn":"⌟","drcrop":"⌌","Dscr":"𝒟","dscr":"𝒹","DScy":"Ѕ","dscy":"ѕ","dsol":"⧶","Dstrok":"Đ","dstrok":"đ","dtdot":"⋱","dtri":"▿","dtrif":"▾","duarr":"⇵","duhar":"⥯","dwangle":"⦦","DZcy":"Џ","dzcy":"џ","dzigrarr":"⟿","Eacute":"É","eacute":"é","easter":"⩮","Ecaron":"Ě","ecaron":"ě","Ecirc":"Ê","ecirc":"ê","ecir":"≖","ecolon":"≕","Ecy":"Э","ecy":"э","eDDot":"⩷","Edot":"Ė","edot":"ė","eDot":"≑","ee":"ⅇ","efDot":"≒","Efr":"𝔈","efr":"𝔢","eg":"⪚","Egrave":"È","egrave":"è","egs":"⪖","egsdot":"⪘","el":"⪙","Element":"∈","elinters":"⏧","ell":"ℓ","els":"⪕","elsdot":"⪗","Emacr":"Ē","emacr":"ē","empty":"∅","emptyset":"∅","EmptySmallSquare":"◻","emptyv":"∅","EmptyVerySmallSquare":"▫","emsp13":" ","emsp14":" ","emsp":" ","ENG":"Ŋ","eng":"ŋ","ensp":" ","Eogon":"Ę","eogon":"ę","Eopf":"𝔼","eopf":"𝕖","epar":"⋕","eparsl":"⧣","eplus":"⩱","epsi":"ε","Epsilon":"Ε","epsilon":"ε","epsiv":"ϵ","eqcirc":"≖","eqcolon":"≕","eqsim":"≂","eqslantgtr":"⪖","eqslantless":"⪕","Equal":"⩵","equals":"=","EqualTilde":"≂","equest":"≟","Equilibrium":"⇌","equiv":"≡","equivDD":"⩸","eqvparsl":"⧥","erarr":"⥱","erDot":"≓","escr":"ℯ","Escr":"ℰ","esdot":"≐","Esim":"⩳","esim":"≂","Eta":"Η","eta":"η","ETH":"Ð","eth":"ð","Euml":"Ë","euml":"ë","euro":"€","excl":"!","exist":"∃","Exists":"∃","expectation":"ℰ","exponentiale":"ⅇ","ExponentialE":"ⅇ","fallingdotseq":"≒","Fcy":"Ф","fcy":"ф","female":"♀","ffilig":"ﬃ","fflig":"ﬀ","ffllig":"ﬄ","Ffr":"𝔉","ffr":"𝔣","filig":"ﬁ","FilledSmallSquare":"◼","FilledVerySmallSquare":"▪","fjlig":"fj","flat":"♭","fllig":"ﬂ","fltns":"▱","fnof":"ƒ","Fopf":"𝔽","fopf":"𝕗","forall":"∀","ForAll":"∀","fork":"⋔","forkv":"⫙","Fouriertrf":"ℱ","fpartint":"⨍","frac12":"½","frac13":"⅓","frac14":"¼","frac15":"⅕","frac16":"⅙","frac18":"⅛","frac23":"⅔","frac25":"⅖","frac34":"¾","frac35":"⅗","frac38":"⅜","frac45":"⅘","frac56":"⅚","frac58":"⅝","frac78":"⅞","frasl":"⁄","frown":"⌢","fscr":"𝒻","Fscr":"ℱ","gacute":"ǵ","Gamma":"Γ","gamma":"γ","Gammad":"Ϝ","gammad":"ϝ","gap":"⪆","Gbreve":"Ğ","gbreve":"ğ","Gcedil":"Ģ","Gcirc":"Ĝ","gcirc":"ĝ","Gcy":"Г","gcy":"г","Gdot":"Ġ","gdot":"ġ","ge":"≥","gE":"≧","gEl":"⪌","gel":"⋛","geq":"≥","geqq":"≧","geqslant":"⩾","gescc":"⪩","ges":"⩾","gesdot":"⪀","gesdoto":"⪂","gesdotol":"⪄","gesl":"⋛︀","gesles":"⪔","Gfr":"𝔊","gfr":"𝔤","gg":"≫","Gg":"⋙","ggg":"⋙","gimel":"ℷ","GJcy":"Ѓ","gjcy":"ѓ","gla":"⪥","gl":"≷","glE":"⪒","glj":"⪤","gnap":"⪊","gnapprox":"⪊","gne":"⪈","gnE":"≩","gneq":"⪈","gneqq":"≩","gnsim":"⋧","Gopf":"𝔾","gopf":"𝕘","grave":"`","GreaterEqual":"≥","GreaterEqualLess":"⋛","GreaterFullEqual":"≧","GreaterGreater":"⪢","GreaterLess":"≷","GreaterSlantEqual":"⩾","GreaterTilde":"≳","Gscr":"𝒢","gscr":"ℊ","gsim":"≳","gsime":"⪎","gsiml":"⪐","gtcc":"⪧","gtcir":"⩺","gt":">","GT":">","Gt":"≫","gtdot":"⋗","gtlPar":"⦕","gtquest":"⩼","gtrapprox":"⪆","gtrarr":"⥸","gtrdot":"⋗","gtreqless":"⋛","gtreqqless":"⪌","gtrless":"≷","gtrsim":"≳","gvertneqq":"≩︀","gvnE":"≩︀","Hacek":"ˇ","hairsp":" ","half":"½","hamilt":"ℋ","HARDcy":"Ъ","hardcy":"ъ","harrcir":"⥈","harr":"↔","hArr":"⇔","harrw":"↭","Hat":"^","hbar":"ℏ","Hcirc":"Ĥ","hcirc":"ĥ","hearts":"♥","heartsuit":"♥","hellip":"…","hercon":"⊹","hfr":"𝔥","Hfr":"ℌ","HilbertSpace":"ℋ","hksearow":"⤥","hkswarow":"⤦","hoarr":"⇿","homtht":"∻","hookleftarrow":"↩","hookrightarrow":"↪","hopf":"𝕙","Hopf":"ℍ","horbar":"―","HorizontalLine":"─","hscr":"𝒽","Hscr":"ℋ","hslash":"ℏ","Hstrok":"Ħ","hstrok":"ħ","HumpDownHump":"≎","HumpEqual":"≏","hybull":"⁃","hyphen":"‐","Iacute":"Í","iacute":"í","ic":"⁣","Icirc":"Î","icirc":"î","Icy":"И","icy":"и","Idot":"İ","IEcy":"Е","iecy":"е","iexcl":"¡","iff":"⇔","ifr":"𝔦","Ifr":"ℑ","Igrave":"Ì","igrave":"ì","ii":"ⅈ","iiiint":"⨌","iiint":"∭","iinfin":"⧜","iiota":"℩","IJlig":"Ĳ","ijlig":"ĳ","Imacr":"Ī","imacr":"ī","image":"ℑ","ImaginaryI":"ⅈ","imagline":"ℐ","imagpart":"ℑ","imath":"ı","Im":"ℑ","imof":"⊷","imped":"Ƶ","Implies":"⇒","incare":"℅","in":"∈","infin":"∞","infintie":"⧝","inodot":"ı","intcal":"⊺","int":"∫","Int":"∬","integers":"ℤ","Integral":"∫","intercal":"⊺","Intersection":"⋂","intlarhk":"⨗","intprod":"⨼","InvisibleComma":"⁣","InvisibleTimes":"⁢","IOcy":"Ё","iocy":"ё","Iogon":"Į","iogon":"į","Iopf":"𝕀","iopf":"𝕚","Iota":"Ι","iota":"ι","iprod":"⨼","iquest":"¿","iscr":"𝒾","Iscr":"ℐ","isin":"∈","isindot":"⋵","isinE":"⋹","isins":"⋴","isinsv":"⋳","isinv":"∈","it":"⁢","Itilde":"Ĩ","itilde":"ĩ","Iukcy":"І","iukcy":"і","Iuml":"Ï","iuml":"ï","Jcirc":"Ĵ","jcirc":"ĵ","Jcy":"Й","jcy":"й","Jfr":"𝔍","jfr":"𝔧","jmath":"ȷ","Jopf":"𝕁","jopf":"𝕛","Jscr":"𝒥","jscr":"𝒿","Jsercy":"Ј","jsercy":"ј","Jukcy":"Є","jukcy":"є","Kappa":"Κ","kappa":"κ","kappav":"ϰ","Kcedil":"Ķ","kcedil":"ķ","Kcy":"К","kcy":"к","Kfr":"𝔎","kfr":"𝔨","kgreen":"ĸ","KHcy":"Х","khcy":"х","KJcy":"Ќ","kjcy":"ќ","Kopf":"𝕂","kopf":"𝕜","Kscr":"𝒦","kscr":"𝓀","lAarr":"⇚","Lacute":"Ĺ","lacute":"ĺ","laemptyv":"⦴","lagran":"ℒ","Lambda":"Λ","lambda":"λ","lang":"⟨","Lang":"⟪","langd":"⦑","langle":"⟨","lap":"⪅","Laplacetrf":"ℒ","laquo":"«","larrb":"⇤","larrbfs":"⤟","larr":"←","Larr":"↞","lArr":"⇐","larrfs":"⤝","larrhk":"↩","larrlp":"↫","larrpl":"⤹","larrsim":"⥳","larrtl":"↢","latail":"⤙","lAtail":"⤛","lat":"⪫","late":"⪭","lates":"⪭︀","lbarr":"⤌","lBarr":"⤎","lbbrk":"❲","lbrace":"{","lbrack":"[","lbrke":"⦋","lbrksld":"⦏","lbrkslu":"⦍","Lcaron":"Ľ","lcaron":"ľ","Lcedil":"Ļ","lcedil":"ļ","lceil":"⌈","lcub":"{","Lcy":"Л","lcy":"л","ldca":"⤶","ldquo":"“","ldquor":"„","ldrdhar":"⥧","ldrushar":"⥋","ldsh":"↲","le":"≤","lE":"≦","LeftAngleBracket":"⟨","LeftArrowBar":"⇤","leftarrow":"←","LeftArrow":"←","Leftarrow":"⇐","LeftArrowRightArrow":"⇆","leftarrowtail":"↢","LeftCeiling":"⌈","LeftDoubleBracket":"⟦","LeftDownTeeVector":"⥡","LeftDownVectorBar":"⥙","LeftDownVector":"⇃","LeftFloor":"⌊","leftharpoondown":"↽","leftharpoonup":"↼","leftleftarrows":"⇇","leftrightarrow":"↔","LeftRightArrow":"↔","Leftrightarrow":"⇔","leftrightarrows":"⇆","leftrightharpoons":"⇋","leftrightsquigarrow":"↭","LeftRightVector":"⥎","LeftTeeArrow":"↤","LeftTee":"⊣","LeftTeeVector":"⥚","leftthreetimes":"⋋","LeftTriangleBar":"⧏","LeftTriangle":"⊲","LeftTriangleEqual":"⊴","LeftUpDownVector":"⥑","LeftUpTeeVector":"⥠","LeftUpVectorBar":"⥘","LeftUpVector":"↿","LeftVectorBar":"⥒","LeftVector":"↼","lEg":"⪋","leg":"⋚","leq":"≤","leqq":"≦","leqslant":"⩽","lescc":"⪨","les":"⩽","lesdot":"⩿","lesdoto":"⪁","lesdotor":"⪃","lesg":"⋚︀","lesges":"⪓","lessapprox":"⪅","lessdot":"⋖","lesseqgtr":"⋚","lesseqqgtr":"⪋","LessEqualGreater":"⋚","LessFullEqual":"≦","LessGreater":"≶","lessgtr":"≶","LessLess":"⪡","lesssim":"≲","LessSlantEqual":"⩽","LessTilde":"≲","lfisht":"⥼","lfloor":"⌊","Lfr":"𝔏","lfr":"𝔩","lg":"≶","lgE":"⪑","lHar":"⥢","lhard":"↽","lharu":"↼","lharul":"⥪","lhblk":"▄","LJcy":"Љ","ljcy":"љ","llarr":"⇇","ll":"≪","Ll":"⋘","llcorner":"⌞","Lleftarrow":"⇚","llhard":"⥫","lltri":"◺","Lmidot":"Ŀ","lmidot":"ŀ","lmoustache":"⎰","lmoust":"⎰","lnap":"⪉","lnapprox":"⪉","lne":"⪇","lnE":"≨","lneq":"⪇","lneqq":"≨","lnsim":"⋦","loang":"⟬","loarr":"⇽","lobrk":"⟦","longleftarrow":"⟵","LongLeftArrow":"⟵","Longleftarrow":"⟸","longleftrightarrow":"⟷","LongLeftRightArrow":"⟷","Longleftrightarrow":"⟺","longmapsto":"⟼","longrightarrow":"⟶","LongRightArrow":"⟶","Longrightarrow":"⟹","looparrowleft":"↫","looparrowright":"↬","lopar":"⦅","Lopf":"𝕃","lopf":"𝕝","loplus":"⨭","lotimes":"⨴","lowast":"∗","lowbar":"_","LowerLeftArrow":"↙","LowerRightArrow":"↘","loz":"◊","lozenge":"◊","lozf":"⧫","lpar":"(","lparlt":"⦓","lrarr":"⇆","lrcorner":"⌟","lrhar":"⇋","lrhard":"⥭","lrm":"‎","lrtri":"⊿","lsaquo":"‹","lscr":"𝓁","Lscr":"ℒ","lsh":"↰","Lsh":"↰","lsim":"≲","lsime":"⪍","lsimg":"⪏","lsqb":"[","lsquo":"‘","lsquor":"‚","Lstrok":"Ł","lstrok":"ł","ltcc":"⪦","ltcir":"⩹","lt":"<","LT":"<","Lt":"≪","ltdot":"⋖","lthree":"⋋","ltimes":"⋉","ltlarr":"⥶","ltquest":"⩻","ltri":"◃","ltrie":"⊴","ltrif":"◂","ltrPar":"⦖","lurdshar":"⥊","luruhar":"⥦","lvertneqq":"≨︀","lvnE":"≨︀","macr":"¯","male":"♂","malt":"✠","maltese":"✠","Map":"⤅","map":"↦","mapsto":"↦","mapstodown":"↧","mapstoleft":"↤","mapstoup":"↥","marker":"▮","mcomma":"⨩","Mcy":"М","mcy":"м","mdash":"—","mDDot":"∺","measuredangle":"∡","MediumSpace":" ","Mellintrf":"ℳ","Mfr":"𝔐","mfr":"𝔪","mho":"℧","micro":"µ","midast":"*","midcir":"⫰","mid":"∣","middot":"·","minusb":"⊟","minus":"−","minusd":"∸","minusdu":"⨪","MinusPlus":"∓","mlcp":"⫛","mldr":"…","mnplus":"∓","models":"⊧","Mopf":"𝕄","mopf":"𝕞","mp":"∓","mscr":"𝓂","Mscr":"ℳ","mstpos":"∾","Mu":"Μ","mu":"μ","multimap":"⊸","mumap":"⊸","nabla":"∇","Nacute":"Ń","nacute":"ń","nang":"∠⃒","nap":"≉","napE":"⩰̸","napid":"≋̸","napos":"ŉ","napprox":"≉","natural":"♮","naturals":"ℕ","natur":"♮","nbsp":" ","nbump":"≎̸","nbumpe":"≏̸","ncap":"⩃","Ncaron":"Ň","ncaron":"ň","Ncedil":"Ņ","ncedil":"ņ","ncong":"≇","ncongdot":"⩭̸","ncup":"⩂","Ncy":"Н","ncy":"н","ndash":"–","nearhk":"⤤","nearr":"↗","neArr":"⇗","nearrow":"↗","ne":"≠","nedot":"≐̸","NegativeMediumSpace":"​","NegativeThickSpace":"​","NegativeThinSpace":"​","NegativeVeryThinSpace":"​","nequiv":"≢","nesear":"⤨","nesim":"≂̸","NestedGreaterGreater":"≫","NestedLessLess":"≪","NewLine":"\\n","nexist":"∄","nexists":"∄","Nfr":"𝔑","nfr":"𝔫","ngE":"≧̸","nge":"≱","ngeq":"≱","ngeqq":"≧̸","ngeqslant":"⩾̸","nges":"⩾̸","nGg":"⋙̸","ngsim":"≵","nGt":"≫⃒","ngt":"≯","ngtr":"≯","nGtv":"≫̸","nharr":"↮","nhArr":"⇎","nhpar":"⫲","ni":"∋","nis":"⋼","nisd":"⋺","niv":"∋","NJcy":"Њ","njcy":"њ","nlarr":"↚","nlArr":"⇍","nldr":"‥","nlE":"≦̸","nle":"≰","nleftarrow":"↚","nLeftarrow":"⇍","nleftrightarrow":"↮","nLeftrightarrow":"⇎","nleq":"≰","nleqq":"≦̸","nleqslant":"⩽̸","nles":"⩽̸","nless":"≮","nLl":"⋘̸","nlsim":"≴","nLt":"≪⃒","nlt":"≮","nltri":"⋪","nltrie":"⋬","nLtv":"≪̸","nmid":"∤","NoBreak":"⁠","NonBreakingSpace":" ","nopf":"𝕟","Nopf":"ℕ","Not":"⫬","not":"¬","NotCongruent":"≢","NotCupCap":"≭","NotDoubleVerticalBar":"∦","NotElement":"∉","NotEqual":"≠","NotEqualTilde":"≂̸","NotExists":"∄","NotGreater":"≯","NotGreaterEqual":"≱","NotGreaterFullEqual":"≧̸","NotGreaterGreater":"≫̸","NotGreaterLess":"≹","NotGreaterSlantEqual":"⩾̸","NotGreaterTilde":"≵","NotHumpDownHump":"≎̸","NotHumpEqual":"≏̸","notin":"∉","notindot":"⋵̸","notinE":"⋹̸","notinva":"∉","notinvb":"⋷","notinvc":"⋶","NotLeftTriangleBar":"⧏̸","NotLeftTriangle":"⋪","NotLeftTriangleEqual":"⋬","NotLess":"≮","NotLessEqual":"≰","NotLessGreater":"≸","NotLessLess":"≪̸","NotLessSlantEqual":"⩽̸","NotLessTilde":"≴","NotNestedGreaterGreater":"⪢̸","NotNestedLessLess":"⪡̸","notni":"∌","notniva":"∌","notnivb":"⋾","notnivc":"⋽","NotPrecedes":"⊀","NotPrecedesEqual":"⪯̸","NotPrecedesSlantEqual":"⋠","NotReverseElement":"∌","NotRightTriangleBar":"⧐̸","NotRightTriangle":"⋫","NotRightTriangleEqual":"⋭","NotSquareSubset":"⊏̸","NotSquareSubsetEqual":"⋢","NotSquareSuperset":"⊐̸","NotSquareSupersetEqual":"⋣","NotSubset":"⊂⃒","NotSubsetEqual":"⊈","NotSucceeds":"⊁","NotSucceedsEqual":"⪰̸","NotSucceedsSlantEqual":"⋡","NotSucceedsTilde":"≿̸","NotSuperset":"⊃⃒","NotSupersetEqual":"⊉","NotTilde":"≁","NotTildeEqual":"≄","NotTildeFullEqual":"≇","NotTildeTilde":"≉","NotVerticalBar":"∤","nparallel":"∦","npar":"∦","nparsl":"⫽⃥","npart":"∂̸","npolint":"⨔","npr":"⊀","nprcue":"⋠","nprec":"⊀","npreceq":"⪯̸","npre":"⪯̸","nrarrc":"⤳̸","nrarr":"↛","nrArr":"⇏","nrarrw":"↝̸","nrightarrow":"↛","nRightarrow":"⇏","nrtri":"⋫","nrtrie":"⋭","nsc":"⊁","nsccue":"⋡","nsce":"⪰̸","Nscr":"𝒩","nscr":"𝓃","nshortmid":"∤","nshortparallel":"∦","nsim":"≁","nsime":"≄","nsimeq":"≄","nsmid":"∤","nspar":"∦","nsqsube":"⋢","nsqsupe":"⋣","nsub":"⊄","nsubE":"⫅̸","nsube":"⊈","nsubset":"⊂⃒","nsubseteq":"⊈","nsubseteqq":"⫅̸","nsucc":"⊁","nsucceq":"⪰̸","nsup":"⊅","nsupE":"⫆̸","nsupe":"⊉","nsupset":"⊃⃒","nsupseteq":"⊉","nsupseteqq":"⫆̸","ntgl":"≹","Ntilde":"Ñ","ntilde":"ñ","ntlg":"≸","ntriangleleft":"⋪","ntrianglelefteq":"⋬","ntriangleright":"⋫","ntrianglerighteq":"⋭","Nu":"Ν","nu":"ν","num":"#","numero":"№","numsp":" ","nvap":"≍⃒","nvdash":"⊬","nvDash":"⊭","nVdash":"⊮","nVDash":"⊯","nvge":"≥⃒","nvgt":">⃒","nvHarr":"⤄","nvinfin":"⧞","nvlArr":"⤂","nvle":"≤⃒","nvlt":"<⃒","nvltrie":"⊴⃒","nvrArr":"⤃","nvrtrie":"⊵⃒","nvsim":"∼⃒","nwarhk":"⤣","nwarr":"↖","nwArr":"⇖","nwarrow":"↖","nwnear":"⤧","Oacute":"Ó","oacute":"ó","oast":"⊛","Ocirc":"Ô","ocirc":"ô","ocir":"⊚","Ocy":"О","ocy":"о","odash":"⊝","Odblac":"Ő","odblac":"ő","odiv":"⨸","odot":"⊙","odsold":"⦼","OElig":"Œ","oelig":"œ","ofcir":"⦿","Ofr":"𝔒","ofr":"𝔬","ogon":"˛","Ograve":"Ò","ograve":"ò","ogt":"⧁","ohbar":"⦵","ohm":"Ω","oint":"∮","olarr":"↺","olcir":"⦾","olcross":"⦻","oline":"‾","olt":"⧀","Omacr":"Ō","omacr":"ō","Omega":"Ω","omega":"ω","Omicron":"Ο","omicron":"ο","omid":"⦶","ominus":"⊖","Oopf":"𝕆","oopf":"𝕠","opar":"⦷","OpenCurlyDoubleQuote":"“","OpenCurlyQuote":"‘","operp":"⦹","oplus":"⊕","orarr":"↻","Or":"⩔","or":"∨","ord":"⩝","order":"ℴ","orderof":"ℴ","ordf":"ª","ordm":"º","origof":"⊶","oror":"⩖","orslope":"⩗","orv":"⩛","oS":"Ⓢ","Oscr":"𝒪","oscr":"ℴ","Oslash":"Ø","oslash":"ø","osol":"⊘","Otilde":"Õ","otilde":"õ","otimesas":"⨶","Otimes":"⨷","otimes":"⊗","Ouml":"Ö","ouml":"ö","ovbar":"⌽","OverBar":"‾","OverBrace":"⏞","OverBracket":"⎴","OverParenthesis":"⏜","para":"¶","parallel":"∥","par":"∥","parsim":"⫳","parsl":"⫽","part":"∂","PartialD":"∂","Pcy":"П","pcy":"п","percnt":"%","period":".","permil":"‰","perp":"⊥","pertenk":"‱","Pfr":"𝔓","pfr":"𝔭","Phi":"Φ","phi":"φ","phiv":"ϕ","phmmat":"ℳ","phone":"☎","Pi":"Π","pi":"π","pitchfork":"⋔","piv":"ϖ","planck":"ℏ","planckh":"ℎ","plankv":"ℏ","plusacir":"⨣","plusb":"⊞","pluscir":"⨢","plus":"+","plusdo":"∔","plusdu":"⨥","pluse":"⩲","PlusMinus":"±","plusmn":"±","plussim":"⨦","plustwo":"⨧","pm":"±","Poincareplane":"ℌ","pointint":"⨕","popf":"𝕡","Popf":"ℙ","pound":"£","prap":"⪷","Pr":"⪻","pr":"≺","prcue":"≼","precapprox":"⪷","prec":"≺","preccurlyeq":"≼","Precedes":"≺","PrecedesEqual":"⪯","PrecedesSlantEqual":"≼","PrecedesTilde":"≾","preceq":"⪯","precnapprox":"⪹","precneqq":"⪵","precnsim":"⋨","pre":"⪯","prE":"⪳","precsim":"≾","prime":"′","Prime":"″","primes":"ℙ","prnap":"⪹","prnE":"⪵","prnsim":"⋨","prod":"∏","Product":"∏","profalar":"⌮","profline":"⌒","profsurf":"⌓","prop":"∝","Proportional":"∝","Proportion":"∷","propto":"∝","prsim":"≾","prurel":"⊰","Pscr":"𝒫","pscr":"𝓅","Psi":"Ψ","psi":"ψ","puncsp":" ","Qfr":"𝔔","qfr":"𝔮","qint":"⨌","qopf":"𝕢","Qopf":"ℚ","qprime":"⁗","Qscr":"𝒬","qscr":"𝓆","quaternions":"ℍ","quatint":"⨖","quest":"?","questeq":"≟","quot":"\\"","QUOT":"\\"","rAarr":"⇛","race":"∽̱","Racute":"Ŕ","racute":"ŕ","radic":"√","raemptyv":"⦳","rang":"⟩","Rang":"⟫","rangd":"⦒","range":"⦥","rangle":"⟩","raquo":"»","rarrap":"⥵","rarrb":"⇥","rarrbfs":"⤠","rarrc":"⤳","rarr":"→","Rarr":"↠","rArr":"⇒","rarrfs":"⤞","rarrhk":"↪","rarrlp":"↬","rarrpl":"⥅","rarrsim":"⥴","Rarrtl":"⤖","rarrtl":"↣","rarrw":"↝","ratail":"⤚","rAtail":"⤜","ratio":"∶","rationals":"ℚ","rbarr":"⤍","rBarr":"⤏","RBarr":"⤐","rbbrk":"❳","rbrace":"}","rbrack":"]","rbrke":"⦌","rbrksld":"⦎","rbrkslu":"⦐","Rcaron":"Ř","rcaron":"ř","Rcedil":"Ŗ","rcedil":"ŗ","rceil":"⌉","rcub":"}","Rcy":"Р","rcy":"р","rdca":"⤷","rdldhar":"⥩","rdquo":"”","rdquor":"”","rdsh":"↳","real":"ℜ","realine":"ℛ","realpart":"ℜ","reals":"ℝ","Re":"ℜ","rect":"▭","reg":"®","REG":"®","ReverseElement":"∋","ReverseEquilibrium":"⇋","ReverseUpEquilibrium":"⥯","rfisht":"⥽","rfloor":"⌋","rfr":"𝔯","Rfr":"ℜ","rHar":"⥤","rhard":"⇁","rharu":"⇀","rharul":"⥬","Rho":"Ρ","rho":"ρ","rhov":"ϱ","RightAngleBracket":"⟩","RightArrowBar":"⇥","rightarrow":"→","RightArrow":"→","Rightarrow":"⇒","RightArrowLeftArrow":"⇄","rightarrowtail":"↣","RightCeiling":"⌉","RightDoubleBracket":"⟧","RightDownTeeVector":"⥝","RightDownVectorBar":"⥕","RightDownVector":"⇂","RightFloor":"⌋","rightharpoondown":"⇁","rightharpoonup":"⇀","rightleftarrows":"⇄","rightleftharpoons":"⇌","rightrightarrows":"⇉","rightsquigarrow":"↝","RightTeeArrow":"↦","RightTee":"⊢","RightTeeVector":"⥛","rightthreetimes":"⋌","RightTriangleBar":"⧐","RightTriangle":"⊳","RightTriangleEqual":"⊵","RightUpDownVector":"⥏","RightUpTeeVector":"⥜","RightUpVectorBar":"⥔","RightUpVector":"↾","RightVectorBar":"⥓","RightVector":"⇀","ring":"˚","risingdotseq":"≓","rlarr":"⇄","rlhar":"⇌","rlm":"‏","rmoustache":"⎱","rmoust":"⎱","rnmid":"⫮","roang":"⟭","roarr":"⇾","robrk":"⟧","ropar":"⦆","ropf":"𝕣","Ropf":"ℝ","roplus":"⨮","rotimes":"⨵","RoundImplies":"⥰","rpar":")","rpargt":"⦔","rppolint":"⨒","rrarr":"⇉","Rrightarrow":"⇛","rsaquo":"›","rscr":"𝓇","Rscr":"ℛ","rsh":"↱","Rsh":"↱","rsqb":"]","rsquo":"’","rsquor":"’","rthree":"⋌","rtimes":"⋊","rtri":"▹","rtrie":"⊵","rtrif":"▸","rtriltri":"⧎","RuleDelayed":"⧴","ruluhar":"⥨","rx":"℞","Sacute":"Ś","sacute":"ś","sbquo":"‚","scap":"⪸","Scaron":"Š","scaron":"š","Sc":"⪼","sc":"≻","sccue":"≽","sce":"⪰","scE":"⪴","Scedil":"Ş","scedil":"ş","Scirc":"Ŝ","scirc":"ŝ","scnap":"⪺","scnE":"⪶","scnsim":"⋩","scpolint":"⨓","scsim":"≿","Scy":"С","scy":"с","sdotb":"⊡","sdot":"⋅","sdote":"⩦","searhk":"⤥","searr":"↘","seArr":"⇘","searrow":"↘","sect":"§","semi":";","seswar":"⤩","setminus":"∖","setmn":"∖","sext":"✶","Sfr":"𝔖","sfr":"𝔰","sfrown":"⌢","sharp":"♯","SHCHcy":"Щ","shchcy":"щ","SHcy":"Ш","shcy":"ш","ShortDownArrow":"↓","ShortLeftArrow":"←","shortmid":"∣","shortparallel":"∥","ShortRightArrow":"→","ShortUpArrow":"↑","shy":"­","Sigma":"Σ","sigma":"σ","sigmaf":"ς","sigmav":"ς","sim":"∼","simdot":"⩪","sime":"≃","simeq":"≃","simg":"⪞","simgE":"⪠","siml":"⪝","simlE":"⪟","simne":"≆","simplus":"⨤","simrarr":"⥲","slarr":"←","SmallCircle":"∘","smallsetminus":"∖","smashp":"⨳","smeparsl":"⧤","smid":"∣","smile":"⌣","smt":"⪪","smte":"⪬","smtes":"⪬︀","SOFTcy":"Ь","softcy":"ь","solbar":"⌿","solb":"⧄","sol":"/","Sopf":"𝕊","sopf":"𝕤","spades":"♠","spadesuit":"♠","spar":"∥","sqcap":"⊓","sqcaps":"⊓︀","sqcup":"⊔","sqcups":"⊔︀","Sqrt":"√","sqsub":"⊏","sqsube":"⊑","sqsubset":"⊏","sqsubseteq":"⊑","sqsup":"⊐","sqsupe":"⊒","sqsupset":"⊐","sqsupseteq":"⊒","square":"□","Square":"□","SquareIntersection":"⊓","SquareSubset":"⊏","SquareSubsetEqual":"⊑","SquareSuperset":"⊐","SquareSupersetEqual":"⊒","SquareUnion":"⊔","squarf":"▪","squ":"□","squf":"▪","srarr":"→","Sscr":"𝒮","sscr":"𝓈","ssetmn":"∖","ssmile":"⌣","sstarf":"⋆","Star":"⋆","star":"☆","starf":"★","straightepsilon":"ϵ","straightphi":"ϕ","strns":"¯","sub":"⊂","Sub":"⋐","subdot":"⪽","subE":"⫅","sube":"⊆","subedot":"⫃","submult":"⫁","subnE":"⫋","subne":"⊊","subplus":"⪿","subrarr":"⥹","subset":"⊂","Subset":"⋐","subseteq":"⊆","subseteqq":"⫅","SubsetEqual":"⊆","subsetneq":"⊊","subsetneqq":"⫋","subsim":"⫇","subsub":"⫕","subsup":"⫓","succapprox":"⪸","succ":"≻","succcurlyeq":"≽","Succeeds":"≻","SucceedsEqual":"⪰","SucceedsSlantEqual":"≽","SucceedsTilde":"≿","succeq":"⪰","succnapprox":"⪺","succneqq":"⪶","succnsim":"⋩","succsim":"≿","SuchThat":"∋","sum":"∑","Sum":"∑","sung":"♪","sup1":"¹","sup2":"²","sup3":"³","sup":"⊃","Sup":"⋑","supdot":"⪾","supdsub":"⫘","supE":"⫆","supe":"⊇","supedot":"⫄","Superset":"⊃","SupersetEqual":"⊇","suphsol":"⟉","suphsub":"⫗","suplarr":"⥻","supmult":"⫂","supnE":"⫌","supne":"⊋","supplus":"⫀","supset":"⊃","Supset":"⋑","supseteq":"⊇","supseteqq":"⫆","supsetneq":"⊋","supsetneqq":"⫌","supsim":"⫈","supsub":"⫔","supsup":"⫖","swarhk":"⤦","swarr":"↙","swArr":"⇙","swarrow":"↙","swnwar":"⤪","szlig":"ß","Tab":"\\t","target":"⌖","Tau":"Τ","tau":"τ","tbrk":"⎴","Tcaron":"Ť","tcaron":"ť","Tcedil":"Ţ","tcedil":"ţ","Tcy":"Т","tcy":"т","tdot":"⃛","telrec":"⌕","Tfr":"𝔗","tfr":"𝔱","there4":"∴","therefore":"∴","Therefore":"∴","Theta":"Θ","theta":"θ","thetasym":"ϑ","thetav":"ϑ","thickapprox":"≈","thicksim":"∼","ThickSpace":"  ","ThinSpace":" ","thinsp":" ","thkap":"≈","thksim":"∼","THORN":"Þ","thorn":"þ","tilde":"˜","Tilde":"∼","TildeEqual":"≃","TildeFullEqual":"≅","TildeTilde":"≈","timesbar":"⨱","timesb":"⊠","times":"×","timesd":"⨰","tint":"∭","toea":"⤨","topbot":"⌶","topcir":"⫱","top":"⊤","Topf":"𝕋","topf":"𝕥","topfork":"⫚","tosa":"⤩","tprime":"‴","trade":"™","TRADE":"™","triangle":"▵","triangledown":"▿","triangleleft":"◃","trianglelefteq":"⊴","triangleq":"≜","triangleright":"▹","trianglerighteq":"⊵","tridot":"◬","trie":"≜","triminus":"⨺","TripleDot":"⃛","triplus":"⨹","trisb":"⧍","tritime":"⨻","trpezium":"⏢","Tscr":"𝒯","tscr":"𝓉","TScy":"Ц","tscy":"ц","TSHcy":"Ћ","tshcy":"ћ","Tstrok":"Ŧ","tstrok":"ŧ","twixt":"≬","twoheadleftarrow":"↞","twoheadrightarrow":"↠","Uacute":"Ú","uacute":"ú","uarr":"↑","Uarr":"↟","uArr":"⇑","Uarrocir":"⥉","Ubrcy":"Ў","ubrcy":"ў","Ubreve":"Ŭ","ubreve":"ŭ","Ucirc":"Û","ucirc":"û","Ucy":"У","ucy":"у","udarr":"⇅","Udblac":"Ű","udblac":"ű","udhar":"⥮","ufisht":"⥾","Ufr":"𝔘","ufr":"𝔲","Ugrave":"Ù","ugrave":"ù","uHar":"⥣","uharl":"↿","uharr":"↾","uhblk":"▀","ulcorn":"⌜","ulcorner":"⌜","ulcrop":"⌏","ultri":"◸","Umacr":"Ū","umacr":"ū","uml":"¨","UnderBar":"_","UnderBrace":"⏟","UnderBracket":"⎵","UnderParenthesis":"⏝","Union":"⋃","UnionPlus":"⊎","Uogon":"Ų","uogon":"ų","Uopf":"𝕌","uopf":"𝕦","UpArrowBar":"⤒","uparrow":"↑","UpArrow":"↑","Uparrow":"⇑","UpArrowDownArrow":"⇅","updownarrow":"↕","UpDownArrow":"↕","Updownarrow":"⇕","UpEquilibrium":"⥮","upharpoonleft":"↿","upharpoonright":"↾","uplus":"⊎","UpperLeftArrow":"↖","UpperRightArrow":"↗","upsi":"υ","Upsi":"ϒ","upsih":"ϒ","Upsilon":"Υ","upsilon":"υ","UpTeeArrow":"↥","UpTee":"⊥","upuparrows":"⇈","urcorn":"⌝","urcorner":"⌝","urcrop":"⌎","Uring":"Ů","uring":"ů","urtri":"◹","Uscr":"𝒰","uscr":"𝓊","utdot":"⋰","Utilde":"Ũ","utilde":"ũ","utri":"▵","utrif":"▴","uuarr":"⇈","Uuml":"Ü","uuml":"ü","uwangle":"⦧","vangrt":"⦜","varepsilon":"ϵ","varkappa":"ϰ","varnothing":"∅","varphi":"ϕ","varpi":"ϖ","varpropto":"∝","varr":"↕","vArr":"⇕","varrho":"ϱ","varsigma":"ς","varsubsetneq":"⊊︀","varsubsetneqq":"⫋︀","varsupsetneq":"⊋︀","varsupsetneqq":"⫌︀","vartheta":"ϑ","vartriangleleft":"⊲","vartriangleright":"⊳","vBar":"⫨","Vbar":"⫫","vBarv":"⫩","Vcy":"В","vcy":"в","vdash":"⊢","vDash":"⊨","Vdash":"⊩","VDash":"⊫","Vdashl":"⫦","veebar":"⊻","vee":"∨","Vee":"⋁","veeeq":"≚","vellip":"⋮","verbar":"|","Verbar":"‖","vert":"|","Vert":"‖","VerticalBar":"∣","VerticalLine":"|","VerticalSeparator":"❘","VerticalTilde":"≀","VeryThinSpace":" ","Vfr":"𝔙","vfr":"𝔳","vltri":"⊲","vnsub":"⊂⃒","vnsup":"⊃⃒","Vopf":"𝕍","vopf":"𝕧","vprop":"∝","vrtri":"⊳","Vscr":"𝒱","vscr":"𝓋","vsubnE":"⫋︀","vsubne":"⊊︀","vsupnE":"⫌︀","vsupne":"⊋︀","Vvdash":"⊪","vzigzag":"⦚","Wcirc":"Ŵ","wcirc":"ŵ","wedbar":"⩟","wedge":"∧","Wedge":"⋀","wedgeq":"≙","weierp":"℘","Wfr":"𝔚","wfr":"𝔴","Wopf":"𝕎","wopf":"𝕨","wp":"℘","wr":"≀","wreath":"≀","Wscr":"𝒲","wscr":"𝓌","xcap":"⋂","xcirc":"◯","xcup":"⋃","xdtri":"▽","Xfr":"𝔛","xfr":"𝔵","xharr":"⟷","xhArr":"⟺","Xi":"Ξ","xi":"ξ","xlarr":"⟵","xlArr":"⟸","xmap":"⟼","xnis":"⋻","xodot":"⨀","Xopf":"𝕏","xopf":"𝕩","xoplus":"⨁","xotime":"⨂","xrarr":"⟶","xrArr":"⟹","Xscr":"𝒳","xscr":"𝓍","xsqcup":"⨆","xuplus":"⨄","xutri":"△","xvee":"⋁","xwedge":"⋀","Yacute":"Ý","yacute":"ý","YAcy":"Я","yacy":"я","Ycirc":"Ŷ","ycirc":"ŷ","Ycy":"Ы","ycy":"ы","yen":"¥","Yfr":"𝔜","yfr":"𝔶","YIcy":"Ї","yicy":"ї","Yopf":"𝕐","yopf":"𝕪","Yscr":"𝒴","yscr":"𝓎","YUcy":"Ю","yucy":"ю","yuml":"ÿ","Yuml":"Ÿ","Zacute":"Ź","zacute":"ź","Zcaron":"Ž","zcaron":"ž","Zcy":"З","zcy":"з","Zdot":"Ż","zdot":"ż","zeetrf":"ℨ","ZeroWidthSpace":"​","Zeta":"Ζ","zeta":"ζ","zfr":"𝔷","Zfr":"ℨ","ZHcy":"Ж","zhcy":"ж","zigrarr":"⇝","zopf":"𝕫","Zopf":"ℤ","Zscr":"𝒵","zscr":"𝓏","zwj":"‍","zwnj":"‌"}');
-
-/***/ }),
-
-/***/ 7802:
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"Aacute":"Á","aacute":"á","Acirc":"Â","acirc":"â","acute":"´","AElig":"Æ","aelig":"æ","Agrave":"À","agrave":"à","amp":"&","AMP":"&","Aring":"Å","aring":"å","Atilde":"Ã","atilde":"ã","Auml":"Ä","auml":"ä","brvbar":"¦","Ccedil":"Ç","ccedil":"ç","cedil":"¸","cent":"¢","copy":"©","COPY":"©","curren":"¤","deg":"°","divide":"÷","Eacute":"É","eacute":"é","Ecirc":"Ê","ecirc":"ê","Egrave":"È","egrave":"è","ETH":"Ð","eth":"ð","Euml":"Ë","euml":"ë","frac12":"½","frac14":"¼","frac34":"¾","gt":">","GT":">","Iacute":"Í","iacute":"í","Icirc":"Î","icirc":"î","iexcl":"¡","Igrave":"Ì","igrave":"ì","iquest":"¿","Iuml":"Ï","iuml":"ï","laquo":"«","lt":"<","LT":"<","macr":"¯","micro":"µ","middot":"·","nbsp":" ","not":"¬","Ntilde":"Ñ","ntilde":"ñ","Oacute":"Ó","oacute":"ó","Ocirc":"Ô","ocirc":"ô","Ograve":"Ò","ograve":"ò","ordf":"ª","ordm":"º","Oslash":"Ø","oslash":"ø","Otilde":"Õ","otilde":"õ","Ouml":"Ö","ouml":"ö","para":"¶","plusmn":"±","pound":"£","quot":"\\"","QUOT":"\\"","raquo":"»","reg":"®","REG":"®","sect":"§","shy":"­","sup1":"¹","sup2":"²","sup3":"³","szlig":"ß","THORN":"Þ","thorn":"þ","times":"×","Uacute":"Ú","uacute":"ú","Ucirc":"Û","ucirc":"û","Ugrave":"Ù","ugrave":"ù","uml":"¨","Uuml":"Ü","uuml":"ü","Yacute":"Ý","yacute":"ý","yen":"¥","yuml":"ÿ"}');
-
-/***/ }),
-
-/***/ 2228:
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"amp":"&","apos":"\'","gt":">","lt":"<","quot":"\\""}');
-
-/***/ }),
-
-/***/ 2357:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("assert");
 
 /***/ }),
 
@@ -18861,14 +20874,6 @@ module.exports = require("child_process");
 
 "use strict";
 module.exports = require("crypto");
-
-/***/ }),
-
-/***/ 8614:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("events");
 
 /***/ }),
 
@@ -18904,14 +20909,6 @@ module.exports = require("https");
 
 /***/ }),
 
-/***/ 1631:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("net");
-
-/***/ }),
-
 /***/ 2087:
 /***/ ((module) => {
 
@@ -18941,14 +20938,6 @@ module.exports = require("process");
 
 "use strict";
 module.exports = require("stream");
-
-/***/ }),
-
-/***/ 4016:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("tls");
 
 /***/ }),
 
@@ -18990,7 +20979,7 @@ module.exports = require("util");
 /******/ 		// Execute the module function
 /******/ 		var threw = true;
 /******/ 		try {
-/******/ 			__webpack_modules__[moduleId].call(module.exports, module, module.exports, __nccwpck_require__);
+/******/ 			__webpack_modules__[moduleId](module, module.exports, __nccwpck_require__);
 /******/ 			threw = false;
 /******/ 		} finally {
 /******/ 			if(threw) delete __webpack_module_cache__[moduleId];
@@ -19009,7 +20998,7 @@ module.exports = require("util");
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-const core = __nccwpck_require__(2186);
+const core = __nccwpck_require__(7396);
 const { getSecretsValue } = __nccwpck_require__(7657);
 const { processInputToArray } = __nccwpck_require__(1608);
 
